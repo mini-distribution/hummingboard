@@ -1,0 +1,12 @@
+# Description: Compression and file packaging/archive utility
+# URL:         http://infozip.sourceforge.net/Zip.html
+# Maintainer:  CRUX System Team, core-ports at crux dot nu
+
+name=my-filesystem
+version=1.0
+release=1
+depends=(target/file target/openssh host/xz)
+
+build() {
+	cp -a $SYSROOT/* $PKG
+}
