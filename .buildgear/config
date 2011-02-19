@@ -1,0 +1,3 @@
+# Local buildgear configuration
+
+default_build_prefix="/target"
