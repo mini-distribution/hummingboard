@@ -1,3 +1,5 @@
 # Local buildgear configuration
 
-default_build_prefix="/target"
+#default_name_prefix="target/"
+
+#source_dir="$HOME/download"
