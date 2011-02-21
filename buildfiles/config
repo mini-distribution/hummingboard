@@ -1,3 +1,16 @@
 # Buildfiles configuration
 
-toolchain="host/crosstool-ng"
+# The following keywords are reserved for buildgear
+
+# Specify toolchain build
+target_toolchain="host/crosstool-ng"
+
+# Specify build (if not defined it will be guessed)
+build="x86_64-unknown-linux-gnu"
+
+# Specify host (if not defined it will be guessed)
+host="x86_64-unknown-linux-gnu"
+
+# Specify target
+target="arm-unknown-linux-gnueabi"
+

@@ -1,7 +1,7 @@
 # Description: Secure SHell server and client tools
 # URL:         http://www.openssh.org/
 # Maintainer:  CRUX System Team, core-ports at crux dot nu
-depends=(target/{zlib,openssl,tcp_wrappers} host/xz)
+depends=(target/{zlib,openssl,tcp_wrappers})
 
 name=openssh
 version=5.8p1
