@@ -1,1 +1,3 @@
 # Buildfiles configuration
+
+toolchain="host/crosstool-ng"
