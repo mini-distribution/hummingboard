@@ -1,0 +1,17 @@
+# Description: A compression/decompression Library
+# URL:         http://www.zlib.net/
+# Maintainer:  Martin Lund <martin@martinlund.org>
+
+name=zlib
+version=1.2.5
+release=1
+source=(http://www.zlib.net/$name-$version.tar.bz2 \
+        $name-$version-lfs-decls.patch)
+
+build() {
+    cd $name-$version
+    patch -p1 -i $SRC/$name-$version-lfs-decls.patch
+    CROSS_PREFIX=arm-unknown-linux-gnueabi- ./configure --prefix=/usr
+    make
+    make DESTDIR=$PKG mandir=/usr/man install
+}
