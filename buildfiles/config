@@ -1,16 +1,17 @@
 # Buildfiles configuration
 
-# The following keywords are reserved for buildgear
+# Set toolchain build
+TARGET_TOOLCHAIN="target/crosstool-ng"
 
-# Specify toolchain build
-target_toolchain="host/crosstool-ng"
+# Set target system
+TARGET="arm-unknown-linux-gnueabi"
 
-# Specify build (if not defined it will be guessed)
-build="x86_64-unknown-linux-gnu"
+# Set target prefix
+TARGET_PREFIX="$TARGET-"
 
-# Specify host (if not defined it will be guessed)
-host="x86_64-unknown-linux-gnu"
+# Set architecture
+ARCH="arm"
 
-# Specify target
-target="arm-unknown-linux-gnueabi"
+# Set path
+PATH="$BG_HOST_SYSROOT_DIR/bin:$PATH"
 

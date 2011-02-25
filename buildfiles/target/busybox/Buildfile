@@ -1,0 +1,16 @@
+# Description: BusyBox - A collection of tiny versions of many common UNIX utilities
+# URL:         http://www.busybox.net
+# Maintainer:  Martin Lund <martin@martinlund.org>
+
+name=busybox
+version=1.18.3
+release=1
+source=(http://$name.net/downloads/$name-$version.tar.bz2)
+
+build() {
+    cd $name-$version
+
+    make ARCH=$ARCH CROSS_COMPILE=$TARGET_PREFIX defconfig
+    make ARCH=$ARCH CROSS_COMPILE=$TARGET_PREFIX
+    make ARCH=$ARCH CROSS_COMPILE=$TARGET_PREFIX CONFIG_PREFIX=$PKG install
+}

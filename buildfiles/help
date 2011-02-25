@@ -1,1 +1,34 @@
-# Buildfiles help
+
+Collection name:
+
+        Pandaboard
+
+About:
+	This buildfile collection is 
+	for the Pandaboard.
+
+
+Main target builds:
+
+	fs      - Filesystem
+	linux   - Linux kernel
+	u-boot  - Bootloader
+
+Quick build guide:
+
+	buildgear build fs
+	buildgear build linux
+	buildgear build u-boot
+
+Build options:
+
+	None
+
+Known issues:
+
+	None
+
+Maintainer:
+
+	Martin Lund <martin@martinlund.org>
+

@@ -1,12 +1,14 @@
-# Description: Compression and file packaging/archive utility
-# URL:         http://infozip.sourceforge.net/Zip.html
-# Maintainer:  CRUX System Team, core-ports at crux dot nu
+# Description: A minimal filesystem
+# URL:         None
+# Maintainer:  Martin Lund <martin@martinlund.org>
 
-name=my-filesystem
+name=fs
 version=1.0
 release=1
-depends=(target/file target/openssh host/xz)
+depends=(target/busybox)
 
 build() {
-	cp -a $SYSROOT/* $PKG
+	cp -a $BG_SYSROOT_DIR/* $PKG
+	
+	mkfs.jffs2 -r $BG_SYSROOT_DIR -e 64 -o $BUILD/fs.jffs2
 }

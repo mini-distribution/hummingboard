@@ -1,0 +1,33 @@
+# Description: A cross toolchain builder
+# URL:         http://ymorin.is-a-geek.org/projects/crosstool
+# Maintainer:  Martin Lund <martin@martinlund.org>
+
+name=crosstool-ng
+version=1.10.0
+release=1
+source=(http://ymorin.is-a-geek.org/download/$name/$name-$version.tar.bz2
+	arm-unknown-linux-gnueabi.config)
+
+build() {
+    cd $name-$version
+
+    ./configure --local
+    make
+
+    # Disable fakeroot (temporarily)
+    TEMP_LD_LIBRARY_PATH=$LD_LIBRARY_PATH
+    TEMP_LD_PRELOAD=$LD_PRELOAD
+    unset LD_LIBRARY_PATH
+    unset LD_PRELOAD
+
+    # Do ct-ng configuration
+    cp $SRC/arm-unknown-linux-gnueabi.config .config
+    sed -i /^CT_LOCAL_TARBALLS_DIR=/s:=.*:=\"$BG_SOURCE_DIR\": .config
+    sed -i /^CT_PREFIX_DIR=/s:=.*:=\"$PKG\": .config
+
+    ./ct-ng build
+
+    # Enable fakeroot again
+    export LD_LIBRARY_PATH=$TEMP_LD_LIBRARY_PATH
+    export LD_PRELOAD=$TEMP_LD_PRELOAD
+}
