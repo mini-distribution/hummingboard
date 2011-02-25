@@ -6,12 +6,12 @@ TARGET_TOOLCHAIN="target/crosstool-ng"
 # Set target system
 TARGET="arm-unknown-linux-gnueabi"
 
-# Set target prefix
-TARGET_PREFIX="$TARGET-"
-
 # Set architecture
 ARCH="arm"
 
 # Set path
 PATH="$BG_HOST_SYSROOT_DIR/bin:$PATH"
 
+# Set target sysroot
+alias $TARGET-gcc="$TARGET-gcc --sysroot=$BG_TARGET_SYSROOT_DIR"
+alias $TARGET-ld="$TARGET-ld --sysroot=$BG_TARGET_SYSROOT_DIR"

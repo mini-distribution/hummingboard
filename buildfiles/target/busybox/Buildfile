@@ -10,7 +10,7 @@ source=(http://$name.net/downloads/$name-$version.tar.bz2)
 build() {
     cd $name-$version
 
-    make ARCH=$ARCH CROSS_COMPILE=$TARGET_PREFIX defconfig
-    make ARCH=$ARCH CROSS_COMPILE=$TARGET_PREFIX
-    make ARCH=$ARCH CROSS_COMPILE=$TARGET_PREFIX CONFIG_PREFIX=$PKG install
+    make CROSS_COMPILE=$TARGET- defconfig
+    make CROSS_COMPILE=$TARGET-
+    make CROSS_COMPILE=$TARGET- CONFIG_PREFIX=$PKG install
 }
