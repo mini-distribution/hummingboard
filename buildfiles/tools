@@ -1,1 +1,14 @@
-# Buildfiles tools check-up
+# Buildfiles tools check
+
+# Tool check mechanism
+check_tool() {
+   type $1 &> /dev/null
+   if [ $? != 0 ]; then
+      echo "Failed ('$1' is not found)"
+      exit 1
+   fi
+}
+
+# Check for tools that are required 
+# to be pre-installed on host system.
+check_tool mkfs.jffs2

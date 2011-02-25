@@ -1,3 +1,4 @@
+# Buildfiles help
 
 Collection name:
 
@@ -6,7 +7,6 @@ Collection name:
 About:
 	This buildfile collection is 
 	for the Pandaboard.
-
 
 Main target builds:
 
