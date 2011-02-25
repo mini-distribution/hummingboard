@@ -1,343 +1,343 @@
-drwxr-xr-x	root/root	bin/
-lrwxrwxrwx	root/root	bin/addgroup
-lrwxrwxrwx	root/root	bin/adduser
-lrwxrwxrwx	root/root	bin/ash
-lrwxrwxrwx	root/root	bin/base64
--rwxr-xr-x	root/root	bin/busybox
-lrwxrwxrwx	root/root	bin/cat
-lrwxrwxrwx	root/root	bin/catv
-lrwxrwxrwx	root/root	bin/chattr
-lrwxrwxrwx	root/root	bin/chgrp
-lrwxrwxrwx	root/root	bin/chmod
-lrwxrwxrwx	root/root	bin/chown
-lrwxrwxrwx	root/root	bin/cp
-lrwxrwxrwx	root/root	bin/cpio
-lrwxrwxrwx	root/root	bin/cttyhack
-lrwxrwxrwx	root/root	bin/date
-lrwxrwxrwx	root/root	bin/dd
-lrwxrwxrwx	root/root	bin/delgroup
-lrwxrwxrwx	root/root	bin/deluser
-lrwxrwxrwx	root/root	bin/df
-lrwxrwxrwx	root/root	bin/dmesg
-lrwxrwxrwx	root/root	bin/dnsdomainname
-lrwxrwxrwx	root/root	bin/dumpkmap
-lrwxrwxrwx	root/root	bin/echo
-lrwxrwxrwx	root/root	bin/ed
-lrwxrwxrwx	root/root	bin/egrep
-lrwxrwxrwx	root/root	bin/false
-lrwxrwxrwx	root/root	bin/fdflush
-lrwxrwxrwx	root/root	bin/fgrep
-lrwxrwxrwx	root/root	bin/fsync
-lrwxrwxrwx	root/root	bin/getopt
-lrwxrwxrwx	root/root	bin/grep
-lrwxrwxrwx	root/root	bin/gunzip
-lrwxrwxrwx	root/root	bin/gzip
-lrwxrwxrwx	root/root	bin/hostname
-lrwxrwxrwx	root/root	bin/hush
-lrwxrwxrwx	root/root	bin/ionice
-lrwxrwxrwx	root/root	bin/iostat
-lrwxrwxrwx	root/root	bin/ip
-lrwxrwxrwx	root/root	bin/ipaddr
-lrwxrwxrwx	root/root	bin/ipcalc
-lrwxrwxrwx	root/root	bin/iplink
-lrwxrwxrwx	root/root	bin/iproute
-lrwxrwxrwx	root/root	bin/iprule
-lrwxrwxrwx	root/root	bin/iptunnel
-lrwxrwxrwx	root/root	bin/kill
-lrwxrwxrwx	root/root	bin/linux32
-lrwxrwxrwx	root/root	bin/linux64
-lrwxrwxrwx	root/root	bin/ln
-lrwxrwxrwx	root/root	bin/login
-lrwxrwxrwx	root/root	bin/ls
-lrwxrwxrwx	root/root	bin/lsattr
-lrwxrwxrwx	root/root	bin/lzop
-lrwxrwxrwx	root/root	bin/makemime
-lrwxrwxrwx	root/root	bin/mkdir
-lrwxrwxrwx	root/root	bin/mknod
-lrwxrwxrwx	root/root	bin/mktemp
-lrwxrwxrwx	root/root	bin/more
-lrwxrwxrwx	root/root	bin/mount
-lrwxrwxrwx	root/root	bin/mountpoint
-lrwxrwxrwx	root/root	bin/mpstat
-lrwxrwxrwx	root/root	bin/mt
-lrwxrwxrwx	root/root	bin/mv
-lrwxrwxrwx	root/root	bin/netstat
-lrwxrwxrwx	root/root	bin/nice
-lrwxrwxrwx	root/root	bin/pidof
-lrwxrwxrwx	root/root	bin/ping
-lrwxrwxrwx	root/root	bin/ping6
-lrwxrwxrwx	root/root	bin/pipe_progress
-lrwxrwxrwx	root/root	bin/powertop
-lrwxrwxrwx	root/root	bin/printenv
-lrwxrwxrwx	root/root	bin/ps
-lrwxrwxrwx	root/root	bin/pwd
-lrwxrwxrwx	root/root	bin/reformime
-lrwxrwxrwx	root/root	bin/rev
-lrwxrwxrwx	root/root	bin/rm
-lrwxrwxrwx	root/root	bin/rmdir
-lrwxrwxrwx	root/root	bin/rpm
-lrwxrwxrwx	root/root	bin/run-parts
-lrwxrwxrwx	root/root	bin/scriptreplay
-lrwxrwxrwx	root/root	bin/sed
-lrwxrwxrwx	root/root	bin/setarch
-lrwxrwxrwx	root/root	bin/sh
-lrwxrwxrwx	root/root	bin/sleep
-lrwxrwxrwx	root/root	bin/stat
-lrwxrwxrwx	root/root	bin/stty
-lrwxrwxrwx	root/root	bin/su
-lrwxrwxrwx	root/root	bin/sync
-lrwxrwxrwx	root/root	bin/tar
-lrwxrwxrwx	root/root	bin/touch
-lrwxrwxrwx	root/root	bin/true
-lrwxrwxrwx	root/root	bin/umount
-lrwxrwxrwx	root/root	bin/uname
-lrwxrwxrwx	root/root	bin/usleep
-lrwxrwxrwx	root/root	bin/vi
-lrwxrwxrwx	root/root	bin/watch
-lrwxrwxrwx	root/root	bin/zcat
-lrwxrwxrwx	root/root	linuxrc
-drwxr-xr-x	root/root	sbin/
-lrwxrwxrwx	root/root	sbin/acpid
-lrwxrwxrwx	root/root	sbin/adjtimex
-lrwxrwxrwx	root/root	sbin/arp
-lrwxrwxrwx	root/root	sbin/blkid
-lrwxrwxrwx	root/root	sbin/blockdev
-lrwxrwxrwx	root/root	sbin/bootchartd
-lrwxrwxrwx	root/root	sbin/depmod
-lrwxrwxrwx	root/root	sbin/devmem
-lrwxrwxrwx	root/root	sbin/fbsplash
-lrwxrwxrwx	root/root	sbin/fdisk
-lrwxrwxrwx	root/root	sbin/findfs
-lrwxrwxrwx	root/root	sbin/freeramdisk
-lrwxrwxrwx	root/root	sbin/fsck
-lrwxrwxrwx	root/root	sbin/fsck.minix
-lrwxrwxrwx	root/root	sbin/getty
-lrwxrwxrwx	root/root	sbin/halt
-lrwxrwxrwx	root/root	sbin/hdparm
-lrwxrwxrwx	root/root	sbin/hwclock
-lrwxrwxrwx	root/root	sbin/ifconfig
-lrwxrwxrwx	root/root	sbin/ifdown
-lrwxrwxrwx	root/root	sbin/ifenslave
-lrwxrwxrwx	root/root	sbin/ifup
-lrwxrwxrwx	root/root	sbin/init
-lrwxrwxrwx	root/root	sbin/insmod
-lrwxrwxrwx	root/root	sbin/klogd
-lrwxrwxrwx	root/root	sbin/loadkmap
-lrwxrwxrwx	root/root	sbin/logread
-lrwxrwxrwx	root/root	sbin/losetup
-lrwxrwxrwx	root/root	sbin/lsmod
-lrwxrwxrwx	root/root	sbin/makedevs
-lrwxrwxrwx	root/root	sbin/man
-lrwxrwxrwx	root/root	sbin/mdev
-lrwxrwxrwx	root/root	sbin/mkdosfs
-lrwxrwxrwx	root/root	sbin/mke2fs
-lrwxrwxrwx	root/root	sbin/mkfs.ext2
-lrwxrwxrwx	root/root	sbin/mkfs.minix
-lrwxrwxrwx	root/root	sbin/mkfs.vfat
-lrwxrwxrwx	root/root	sbin/mkswap
-lrwxrwxrwx	root/root	sbin/modinfo
-lrwxrwxrwx	root/root	sbin/modprobe
-lrwxrwxrwx	root/root	sbin/nameif
-lrwxrwxrwx	root/root	sbin/pivot_root
-lrwxrwxrwx	root/root	sbin/poweroff
-lrwxrwxrwx	root/root	sbin/raidautorun
-lrwxrwxrwx	root/root	sbin/reboot
-lrwxrwxrwx	root/root	sbin/rmmod
-lrwxrwxrwx	root/root	sbin/route
-lrwxrwxrwx	root/root	sbin/runlevel
-lrwxrwxrwx	root/root	sbin/setconsole
-lrwxrwxrwx	root/root	sbin/slattach
-lrwxrwxrwx	root/root	sbin/start-stop-daemon
-lrwxrwxrwx	root/root	sbin/sulogin
-lrwxrwxrwx	root/root	sbin/swapoff
-lrwxrwxrwx	root/root	sbin/swapon
-lrwxrwxrwx	root/root	sbin/switch_root
-lrwxrwxrwx	root/root	sbin/sysctl
-lrwxrwxrwx	root/root	sbin/syslogd
-lrwxrwxrwx	root/root	sbin/tunctl
-lrwxrwxrwx	root/root	sbin/udhcpc
-lrwxrwxrwx	root/root	sbin/vconfig
-lrwxrwxrwx	root/root	sbin/watchdog
-lrwxrwxrwx	root/root	sbin/zcip
-drwxr-xr-x	root/root	usr/
-drwxr-xr-x	root/root	usr/bin/
-lrwxrwxrwx	root/root	usr/bin/[
-lrwxrwxrwx	root/root	usr/bin/[[
-lrwxrwxrwx	root/root	usr/bin/add-shell
-lrwxrwxrwx	root/root	usr/bin/arping
-lrwxrwxrwx	root/root	usr/bin/awk
-lrwxrwxrwx	root/root	usr/bin/basename
-lrwxrwxrwx	root/root	usr/bin/beep
-lrwxrwxrwx	root/root	usr/bin/bunzip2
-lrwxrwxrwx	root/root	usr/bin/bzcat
-lrwxrwxrwx	root/root	usr/bin/bzip2
-lrwxrwxrwx	root/root	usr/bin/cal
-lrwxrwxrwx	root/root	usr/bin/chat
-lrwxrwxrwx	root/root	usr/bin/chpst
-lrwxrwxrwx	root/root	usr/bin/chrt
-lrwxrwxrwx	root/root	usr/bin/chvt
-lrwxrwxrwx	root/root	usr/bin/cksum
-lrwxrwxrwx	root/root	usr/bin/clear
-lrwxrwxrwx	root/root	usr/bin/cmp
-lrwxrwxrwx	root/root	usr/bin/comm
-lrwxrwxrwx	root/root	usr/bin/crontab
-lrwxrwxrwx	root/root	usr/bin/cryptpw
-lrwxrwxrwx	root/root	usr/bin/cut
-lrwxrwxrwx	root/root	usr/bin/dc
-lrwxrwxrwx	root/root	usr/bin/deallocvt
-lrwxrwxrwx	root/root	usr/bin/diff
-lrwxrwxrwx	root/root	usr/bin/dirname
-lrwxrwxrwx	root/root	usr/bin/dos2unix
-lrwxrwxrwx	root/root	usr/bin/du
-lrwxrwxrwx	root/root	usr/bin/dumpleases
-lrwxrwxrwx	root/root	usr/bin/eject
-lrwxrwxrwx	root/root	usr/bin/env
-lrwxrwxrwx	root/root	usr/bin/envdir
-lrwxrwxrwx	root/root	usr/bin/envuidgid
-lrwxrwxrwx	root/root	usr/bin/ether-wake
-lrwxrwxrwx	root/root	usr/bin/expand
-lrwxrwxrwx	root/root	usr/bin/expr
-lrwxrwxrwx	root/root	usr/bin/fdformat
-lrwxrwxrwx	root/root	usr/bin/fgconsole
-lrwxrwxrwx	root/root	usr/bin/find
-lrwxrwxrwx	root/root	usr/bin/flock
-lrwxrwxrwx	root/root	usr/bin/fold
-lrwxrwxrwx	root/root	usr/bin/free
-lrwxrwxrwx	root/root	usr/bin/ftpget
-lrwxrwxrwx	root/root	usr/bin/ftpput
-lrwxrwxrwx	root/root	usr/bin/fuser
-lrwxrwxrwx	root/root	usr/bin/hd
-lrwxrwxrwx	root/root	usr/bin/head
-lrwxrwxrwx	root/root	usr/bin/hexdump
-lrwxrwxrwx	root/root	usr/bin/hostid
-lrwxrwxrwx	root/root	usr/bin/id
-lrwxrwxrwx	root/root	usr/bin/ifplugd
-lrwxrwxrwx	root/root	usr/bin/install
-lrwxrwxrwx	root/root	usr/bin/ipcrm
-lrwxrwxrwx	root/root	usr/bin/ipcs
-lrwxrwxrwx	root/root	usr/bin/kbd_mode
-lrwxrwxrwx	root/root	usr/bin/killall
-lrwxrwxrwx	root/root	usr/bin/killall5
-lrwxrwxrwx	root/root	usr/bin/last
-lrwxrwxrwx	root/root	usr/bin/length
-lrwxrwxrwx	root/root	usr/bin/less
-lrwxrwxrwx	root/root	usr/bin/logger
-lrwxrwxrwx	root/root	usr/bin/logname
-lrwxrwxrwx	root/root	usr/bin/lpq
-lrwxrwxrwx	root/root	usr/bin/lpr
-lrwxrwxrwx	root/root	usr/bin/lspci
-lrwxrwxrwx	root/root	usr/bin/lsusb
-lrwxrwxrwx	root/root	usr/bin/lzcat
-lrwxrwxrwx	root/root	usr/bin/lzma
-lrwxrwxrwx	root/root	usr/bin/lzopcat
-lrwxrwxrwx	root/root	usr/bin/md5sum
-lrwxrwxrwx	root/root	usr/bin/mesg
-lrwxrwxrwx	root/root	usr/bin/microcom
-lrwxrwxrwx	root/root	usr/bin/mkfifo
-lrwxrwxrwx	root/root	usr/bin/mkpasswd
-lrwxrwxrwx	root/root	usr/bin/nc
-lrwxrwxrwx	root/root	usr/bin/nmeter
-lrwxrwxrwx	root/root	usr/bin/nohup
-lrwxrwxrwx	root/root	usr/bin/nslookup
-lrwxrwxrwx	root/root	usr/bin/od
-lrwxrwxrwx	root/root	usr/bin/openvt
-lrwxrwxrwx	root/root	usr/bin/passwd
-lrwxrwxrwx	root/root	usr/bin/patch
-lrwxrwxrwx	root/root	usr/bin/pgrep
-lrwxrwxrwx	root/root	usr/bin/pkill
-lrwxrwxrwx	root/root	usr/bin/pmap
-lrwxrwxrwx	root/root	usr/bin/printf
-lrwxrwxrwx	root/root	usr/bin/pscan
-lrwxrwxrwx	root/root	usr/bin/readahead
-lrwxrwxrwx	root/root	usr/bin/readlink
-lrwxrwxrwx	root/root	usr/bin/realpath
-lrwxrwxrwx	root/root	usr/bin/remove-shell
-lrwxrwxrwx	root/root	usr/bin/renice
-lrwxrwxrwx	root/root	usr/bin/reset
-lrwxrwxrwx	root/root	usr/bin/resize
-lrwxrwxrwx	root/root	usr/bin/rpm2cpio
-lrwxrwxrwx	root/root	usr/bin/rtcwake
-lrwxrwxrwx	root/root	usr/bin/runsv
-lrwxrwxrwx	root/root	usr/bin/runsvdir
-lrwxrwxrwx	root/root	usr/bin/rx
-lrwxrwxrwx	root/root	usr/bin/script
-lrwxrwxrwx	root/root	usr/bin/seq
-lrwxrwxrwx	root/root	usr/bin/setkeycodes
-lrwxrwxrwx	root/root	usr/bin/setsid
-lrwxrwxrwx	root/root	usr/bin/setuidgid
-lrwxrwxrwx	root/root	usr/bin/sha1sum
-lrwxrwxrwx	root/root	usr/bin/sha256sum
-lrwxrwxrwx	root/root	usr/bin/sha512sum
-lrwxrwxrwx	root/root	usr/bin/showkey
-lrwxrwxrwx	root/root	usr/bin/smemcap
-lrwxrwxrwx	root/root	usr/bin/softlimit
-lrwxrwxrwx	root/root	usr/bin/sort
-lrwxrwxrwx	root/root	usr/bin/split
-lrwxrwxrwx	root/root	usr/bin/strings
-lrwxrwxrwx	root/root	usr/bin/sum
-lrwxrwxrwx	root/root	usr/bin/sv
-lrwxrwxrwx	root/root	usr/bin/tac
-lrwxrwxrwx	root/root	usr/bin/tail
-lrwxrwxrwx	root/root	usr/bin/tcpsvd
-lrwxrwxrwx	root/root	usr/bin/tee
-lrwxrwxrwx	root/root	usr/bin/telnet
-lrwxrwxrwx	root/root	usr/bin/test
-lrwxrwxrwx	root/root	usr/bin/tftp
-lrwxrwxrwx	root/root	usr/bin/tftpd
-lrwxrwxrwx	root/root	usr/bin/time
-lrwxrwxrwx	root/root	usr/bin/timeout
-lrwxrwxrwx	root/root	usr/bin/top
-lrwxrwxrwx	root/root	usr/bin/tr
-lrwxrwxrwx	root/root	usr/bin/traceroute
-lrwxrwxrwx	root/root	usr/bin/traceroute6
-lrwxrwxrwx	root/root	usr/bin/tty
-lrwxrwxrwx	root/root	usr/bin/ttysize
-lrwxrwxrwx	root/root	usr/bin/udpsvd
-lrwxrwxrwx	root/root	usr/bin/unexpand
-lrwxrwxrwx	root/root	usr/bin/uniq
-lrwxrwxrwx	root/root	usr/bin/unix2dos
-lrwxrwxrwx	root/root	usr/bin/unlzma
-lrwxrwxrwx	root/root	usr/bin/unlzop
-lrwxrwxrwx	root/root	usr/bin/unxz
-lrwxrwxrwx	root/root	usr/bin/unzip
-lrwxrwxrwx	root/root	usr/bin/uptime
-lrwxrwxrwx	root/root	usr/bin/uudecode
-lrwxrwxrwx	root/root	usr/bin/uuencode
-lrwxrwxrwx	root/root	usr/bin/vlock
-lrwxrwxrwx	root/root	usr/bin/volname
-lrwxrwxrwx	root/root	usr/bin/wall
-lrwxrwxrwx	root/root	usr/bin/wc
-lrwxrwxrwx	root/root	usr/bin/wget
-lrwxrwxrwx	root/root	usr/bin/which
-lrwxrwxrwx	root/root	usr/bin/who
-lrwxrwxrwx	root/root	usr/bin/whoami
-lrwxrwxrwx	root/root	usr/bin/xargs
-lrwxrwxrwx	root/root	usr/bin/xz
-lrwxrwxrwx	root/root	usr/bin/xzcat
-lrwxrwxrwx	root/root	usr/bin/yes
-drwxr-xr-x	root/root	usr/sbin/
-lrwxrwxrwx	root/root	usr/sbin/brctl
-lrwxrwxrwx	root/root	usr/sbin/chpasswd
-lrwxrwxrwx	root/root	usr/sbin/chroot
-lrwxrwxrwx	root/root	usr/sbin/crond
-lrwxrwxrwx	root/root	usr/sbin/dhcprelay
-lrwxrwxrwx	root/root	usr/sbin/dnsd
-lrwxrwxrwx	root/root	usr/sbin/fakeidentd
-lrwxrwxrwx	root/root	usr/sbin/fbset
-lrwxrwxrwx	root/root	usr/sbin/ftpd
-lrwxrwxrwx	root/root	usr/sbin/httpd
-lrwxrwxrwx	root/root	usr/sbin/inetd
-lrwxrwxrwx	root/root	usr/sbin/loadfont
-lrwxrwxrwx	root/root	usr/sbin/lpd
-lrwxrwxrwx	root/root	usr/sbin/nbd-client
-lrwxrwxrwx	root/root	usr/sbin/ntpd
-lrwxrwxrwx	root/root	usr/sbin/popmaildir
-lrwxrwxrwx	root/root	usr/sbin/rdate
-lrwxrwxrwx	root/root	usr/sbin/rdev
-lrwxrwxrwx	root/root	usr/sbin/readprofile
-lrwxrwxrwx	root/root	usr/sbin/sendmail
-lrwxrwxrwx	root/root	usr/sbin/setfont
-lrwxrwxrwx	root/root	usr/sbin/setlogcons
-lrwxrwxrwx	root/root	usr/sbin/svlogd
-lrwxrwxrwx	root/root	usr/sbin/telnetd
-lrwxrwxrwx	root/root	usr/sbin/udhcpd
+drwxr-xr-x	bin/
+lrwxrwxrwx	bin/addgroup
+lrwxrwxrwx	bin/adduser
+lrwxrwxrwx	bin/ash
+lrwxrwxrwx	bin/base64
+-rwxr-xr-x	bin/busybox
+lrwxrwxrwx	bin/cat
+lrwxrwxrwx	bin/catv
+lrwxrwxrwx	bin/chattr
+lrwxrwxrwx	bin/chgrp
+lrwxrwxrwx	bin/chmod
+lrwxrwxrwx	bin/chown
+lrwxrwxrwx	bin/cp
+lrwxrwxrwx	bin/cpio
+lrwxrwxrwx	bin/cttyhack
+lrwxrwxrwx	bin/date
+lrwxrwxrwx	bin/dd
+lrwxrwxrwx	bin/delgroup
+lrwxrwxrwx	bin/deluser
+lrwxrwxrwx	bin/df
+lrwxrwxrwx	bin/dmesg
+lrwxrwxrwx	bin/dnsdomainname
+lrwxrwxrwx	bin/dumpkmap
+lrwxrwxrwx	bin/echo
+lrwxrwxrwx	bin/ed
+lrwxrwxrwx	bin/egrep
+lrwxrwxrwx	bin/false
+lrwxrwxrwx	bin/fdflush
+lrwxrwxrwx	bin/fgrep
+lrwxrwxrwx	bin/fsync
+lrwxrwxrwx	bin/getopt
+lrwxrwxrwx	bin/grep
+lrwxrwxrwx	bin/gunzip
+lrwxrwxrwx	bin/gzip
+lrwxrwxrwx	bin/hostname
+lrwxrwxrwx	bin/hush
+lrwxrwxrwx	bin/ionice
+lrwxrwxrwx	bin/iostat
+lrwxrwxrwx	bin/ip
+lrwxrwxrwx	bin/ipaddr
+lrwxrwxrwx	bin/ipcalc
+lrwxrwxrwx	bin/iplink
+lrwxrwxrwx	bin/iproute
+lrwxrwxrwx	bin/iprule
+lrwxrwxrwx	bin/iptunnel
+lrwxrwxrwx	bin/kill
+lrwxrwxrwx	bin/linux32
+lrwxrwxrwx	bin/linux64
+lrwxrwxrwx	bin/ln
+lrwxrwxrwx	bin/login
+lrwxrwxrwx	bin/ls
+lrwxrwxrwx	bin/lsattr
+lrwxrwxrwx	bin/lzop
+lrwxrwxrwx	bin/makemime
+lrwxrwxrwx	bin/mkdir
+lrwxrwxrwx	bin/mknod
+lrwxrwxrwx	bin/mktemp
+lrwxrwxrwx	bin/more
+lrwxrwxrwx	bin/mount
+lrwxrwxrwx	bin/mountpoint
+lrwxrwxrwx	bin/mpstat
+lrwxrwxrwx	bin/mt
+lrwxrwxrwx	bin/mv
+lrwxrwxrwx	bin/netstat
+lrwxrwxrwx	bin/nice
+lrwxrwxrwx	bin/pidof
+lrwxrwxrwx	bin/ping
+lrwxrwxrwx	bin/ping6
+lrwxrwxrwx	bin/pipe_progress
+lrwxrwxrwx	bin/powertop
+lrwxrwxrwx	bin/printenv
+lrwxrwxrwx	bin/ps
+lrwxrwxrwx	bin/pwd
+lrwxrwxrwx	bin/reformime
+lrwxrwxrwx	bin/rev
+lrwxrwxrwx	bin/rm
+lrwxrwxrwx	bin/rmdir
+lrwxrwxrwx	bin/rpm
+lrwxrwxrwx	bin/run-parts
+lrwxrwxrwx	bin/scriptreplay
+lrwxrwxrwx	bin/sed
+lrwxrwxrwx	bin/setarch
+lrwxrwxrwx	bin/sh
+lrwxrwxrwx	bin/sleep
+lrwxrwxrwx	bin/stat
+lrwxrwxrwx	bin/stty
+lrwxrwxrwx	bin/su
+lrwxrwxrwx	bin/sync
+lrwxrwxrwx	bin/tar
+lrwxrwxrwx	bin/touch
+lrwxrwxrwx	bin/true
+lrwxrwxrwx	bin/umount
+lrwxrwxrwx	bin/uname
+lrwxrwxrwx	bin/usleep
+lrwxrwxrwx	bin/vi
+lrwxrwxrwx	bin/watch
+lrwxrwxrwx	bin/zcat
+lrwxrwxrwx	linuxrc
+drwxr-xr-x	sbin/
+lrwxrwxrwx	sbin/acpid
+lrwxrwxrwx	sbin/adjtimex
+lrwxrwxrwx	sbin/arp
+lrwxrwxrwx	sbin/blkid
+lrwxrwxrwx	sbin/blockdev
+lrwxrwxrwx	sbin/bootchartd
+lrwxrwxrwx	sbin/depmod
+lrwxrwxrwx	sbin/devmem
+lrwxrwxrwx	sbin/fbsplash
+lrwxrwxrwx	sbin/fdisk
+lrwxrwxrwx	sbin/findfs
+lrwxrwxrwx	sbin/freeramdisk
+lrwxrwxrwx	sbin/fsck
+lrwxrwxrwx	sbin/fsck.minix
+lrwxrwxrwx	sbin/getty
+lrwxrwxrwx	sbin/halt
+lrwxrwxrwx	sbin/hdparm
+lrwxrwxrwx	sbin/hwclock
+lrwxrwxrwx	sbin/ifconfig
+lrwxrwxrwx	sbin/ifdown
+lrwxrwxrwx	sbin/ifenslave
+lrwxrwxrwx	sbin/ifup
+lrwxrwxrwx	sbin/init
+lrwxrwxrwx	sbin/insmod
+lrwxrwxrwx	sbin/klogd
+lrwxrwxrwx	sbin/loadkmap
+lrwxrwxrwx	sbin/logread
+lrwxrwxrwx	sbin/losetup
+lrwxrwxrwx	sbin/lsmod
+lrwxrwxrwx	sbin/makedevs
+lrwxrwxrwx	sbin/man
+lrwxrwxrwx	sbin/mdev
+lrwxrwxrwx	sbin/mkdosfs
+lrwxrwxrwx	sbin/mke2fs
+lrwxrwxrwx	sbin/mkfs.ext2
+lrwxrwxrwx	sbin/mkfs.minix
+lrwxrwxrwx	sbin/mkfs.vfat
+lrwxrwxrwx	sbin/mkswap
+lrwxrwxrwx	sbin/modinfo
+lrwxrwxrwx	sbin/modprobe
+lrwxrwxrwx	sbin/nameif
+lrwxrwxrwx	sbin/pivot_root
+lrwxrwxrwx	sbin/poweroff
+lrwxrwxrwx	sbin/raidautorun
+lrwxrwxrwx	sbin/reboot
+lrwxrwxrwx	sbin/rmmod
+lrwxrwxrwx	sbin/route
+lrwxrwxrwx	sbin/runlevel
+lrwxrwxrwx	sbin/setconsole
+lrwxrwxrwx	sbin/slattach
+lrwxrwxrwx	sbin/start-stop-daemon
+lrwxrwxrwx	sbin/sulogin
+lrwxrwxrwx	sbin/swapoff
+lrwxrwxrwx	sbin/swapon
+lrwxrwxrwx	sbin/switch_root
+lrwxrwxrwx	sbin/sysctl
+lrwxrwxrwx	sbin/syslogd
+lrwxrwxrwx	sbin/tunctl
+lrwxrwxrwx	sbin/udhcpc
+lrwxrwxrwx	sbin/vconfig
+lrwxrwxrwx	sbin/watchdog
+lrwxrwxrwx	sbin/zcip
+drwxr-xr-x	usr/
+drwxr-xr-x	usr/bin/
+lrwxrwxrwx	usr/bin/[
+lrwxrwxrwx	usr/bin/[[
+lrwxrwxrwx	usr/bin/add-shell
+lrwxrwxrwx	usr/bin/arping
+lrwxrwxrwx	usr/bin/awk
+lrwxrwxrwx	usr/bin/basename
+lrwxrwxrwx	usr/bin/beep
+lrwxrwxrwx	usr/bin/bunzip2
+lrwxrwxrwx	usr/bin/bzcat
+lrwxrwxrwx	usr/bin/bzip2
+lrwxrwxrwx	usr/bin/cal
+lrwxrwxrwx	usr/bin/chat
+lrwxrwxrwx	usr/bin/chpst
+lrwxrwxrwx	usr/bin/chrt
+lrwxrwxrwx	usr/bin/chvt
+lrwxrwxrwx	usr/bin/cksum
+lrwxrwxrwx	usr/bin/clear
+lrwxrwxrwx	usr/bin/cmp
+lrwxrwxrwx	usr/bin/comm
+lrwxrwxrwx	usr/bin/crontab
+lrwxrwxrwx	usr/bin/cryptpw
+lrwxrwxrwx	usr/bin/cut
+lrwxrwxrwx	usr/bin/dc
+lrwxrwxrwx	usr/bin/deallocvt
+lrwxrwxrwx	usr/bin/diff
+lrwxrwxrwx	usr/bin/dirname
+lrwxrwxrwx	usr/bin/dos2unix
+lrwxrwxrwx	usr/bin/du
+lrwxrwxrwx	usr/bin/dumpleases
+lrwxrwxrwx	usr/bin/eject
+lrwxrwxrwx	usr/bin/env
+lrwxrwxrwx	usr/bin/envdir
+lrwxrwxrwx	usr/bin/envuidgid
+lrwxrwxrwx	usr/bin/ether-wake
+lrwxrwxrwx	usr/bin/expand
+lrwxrwxrwx	usr/bin/expr
+lrwxrwxrwx	usr/bin/fdformat
+lrwxrwxrwx	usr/bin/fgconsole
+lrwxrwxrwx	usr/bin/find
+lrwxrwxrwx	usr/bin/flock
+lrwxrwxrwx	usr/bin/fold
+lrwxrwxrwx	usr/bin/free
+lrwxrwxrwx	usr/bin/ftpget
+lrwxrwxrwx	usr/bin/ftpput
+lrwxrwxrwx	usr/bin/fuser
+lrwxrwxrwx	usr/bin/hd
+lrwxrwxrwx	usr/bin/head
+lrwxrwxrwx	usr/bin/hexdump
+lrwxrwxrwx	usr/bin/hostid
+lrwxrwxrwx	usr/bin/id
+lrwxrwxrwx	usr/bin/ifplugd
+lrwxrwxrwx	usr/bin/install
+lrwxrwxrwx	usr/bin/ipcrm
+lrwxrwxrwx	usr/bin/ipcs
+lrwxrwxrwx	usr/bin/kbd_mode
+lrwxrwxrwx	usr/bin/killall
+lrwxrwxrwx	usr/bin/killall5
+lrwxrwxrwx	usr/bin/last
+lrwxrwxrwx	usr/bin/length
+lrwxrwxrwx	usr/bin/less
+lrwxrwxrwx	usr/bin/logger
+lrwxrwxrwx	usr/bin/logname
+lrwxrwxrwx	usr/bin/lpq
+lrwxrwxrwx	usr/bin/lpr
+lrwxrwxrwx	usr/bin/lspci
+lrwxrwxrwx	usr/bin/lsusb
+lrwxrwxrwx	usr/bin/lzcat
+lrwxrwxrwx	usr/bin/lzma
+lrwxrwxrwx	usr/bin/lzopcat
+lrwxrwxrwx	usr/bin/md5sum
+lrwxrwxrwx	usr/bin/mesg
+lrwxrwxrwx	usr/bin/microcom
+lrwxrwxrwx	usr/bin/mkfifo
+lrwxrwxrwx	usr/bin/mkpasswd
+lrwxrwxrwx	usr/bin/nc
+lrwxrwxrwx	usr/bin/nmeter
+lrwxrwxrwx	usr/bin/nohup
+lrwxrwxrwx	usr/bin/nslookup
+lrwxrwxrwx	usr/bin/od
+lrwxrwxrwx	usr/bin/openvt
+lrwxrwxrwx	usr/bin/passwd
+lrwxrwxrwx	usr/bin/patch
+lrwxrwxrwx	usr/bin/pgrep
+lrwxrwxrwx	usr/bin/pkill
+lrwxrwxrwx	usr/bin/pmap
+lrwxrwxrwx	usr/bin/printf
+lrwxrwxrwx	usr/bin/pscan
+lrwxrwxrwx	usr/bin/readahead
+lrwxrwxrwx	usr/bin/readlink
+lrwxrwxrwx	usr/bin/realpath
+lrwxrwxrwx	usr/bin/remove-shell
+lrwxrwxrwx	usr/bin/renice
+lrwxrwxrwx	usr/bin/reset
+lrwxrwxrwx	usr/bin/resize
+lrwxrwxrwx	usr/bin/rpm2cpio
+lrwxrwxrwx	usr/bin/rtcwake
+lrwxrwxrwx	usr/bin/runsv
+lrwxrwxrwx	usr/bin/runsvdir
+lrwxrwxrwx	usr/bin/rx
+lrwxrwxrwx	usr/bin/script
+lrwxrwxrwx	usr/bin/seq
+lrwxrwxrwx	usr/bin/setkeycodes
+lrwxrwxrwx	usr/bin/setsid
+lrwxrwxrwx	usr/bin/setuidgid
+lrwxrwxrwx	usr/bin/sha1sum
+lrwxrwxrwx	usr/bin/sha256sum
+lrwxrwxrwx	usr/bin/sha512sum
+lrwxrwxrwx	usr/bin/showkey
+lrwxrwxrwx	usr/bin/smemcap
+lrwxrwxrwx	usr/bin/softlimit
+lrwxrwxrwx	usr/bin/sort
+lrwxrwxrwx	usr/bin/split
+lrwxrwxrwx	usr/bin/strings
+lrwxrwxrwx	usr/bin/sum
+lrwxrwxrwx	usr/bin/sv
+lrwxrwxrwx	usr/bin/tac
+lrwxrwxrwx	usr/bin/tail
+lrwxrwxrwx	usr/bin/tcpsvd
+lrwxrwxrwx	usr/bin/tee
+lrwxrwxrwx	usr/bin/telnet
+lrwxrwxrwx	usr/bin/test
+lrwxrwxrwx	usr/bin/tftp
+lrwxrwxrwx	usr/bin/tftpd
+lrwxrwxrwx	usr/bin/time
+lrwxrwxrwx	usr/bin/timeout
+lrwxrwxrwx	usr/bin/top
+lrwxrwxrwx	usr/bin/tr
+lrwxrwxrwx	usr/bin/traceroute
+lrwxrwxrwx	usr/bin/traceroute6
+lrwxrwxrwx	usr/bin/tty
+lrwxrwxrwx	usr/bin/ttysize
+lrwxrwxrwx	usr/bin/udpsvd
+lrwxrwxrwx	usr/bin/unexpand
+lrwxrwxrwx	usr/bin/uniq
+lrwxrwxrwx	usr/bin/unix2dos
+lrwxrwxrwx	usr/bin/unlzma
+lrwxrwxrwx	usr/bin/unlzop
+lrwxrwxrwx	usr/bin/unxz
+lrwxrwxrwx	usr/bin/unzip
+lrwxrwxrwx	usr/bin/uptime
+lrwxrwxrwx	usr/bin/uudecode
+lrwxrwxrwx	usr/bin/uuencode
+lrwxrwxrwx	usr/bin/vlock
+lrwxrwxrwx	usr/bin/volname
+lrwxrwxrwx	usr/bin/wall
+lrwxrwxrwx	usr/bin/wc
+lrwxrwxrwx	usr/bin/wget
+lrwxrwxrwx	usr/bin/which
+lrwxrwxrwx	usr/bin/who
+lrwxrwxrwx	usr/bin/whoami
+lrwxrwxrwx	usr/bin/xargs
+lrwxrwxrwx	usr/bin/xz
+lrwxrwxrwx	usr/bin/xzcat
+lrwxrwxrwx	usr/bin/yes
+drwxr-xr-x	usr/sbin/
+lrwxrwxrwx	usr/sbin/brctl
+lrwxrwxrwx	usr/sbin/chpasswd
+lrwxrwxrwx	usr/sbin/chroot
+lrwxrwxrwx	usr/sbin/crond
+lrwxrwxrwx	usr/sbin/dhcprelay
+lrwxrwxrwx	usr/sbin/dnsd
+lrwxrwxrwx	usr/sbin/fakeidentd
+lrwxrwxrwx	usr/sbin/fbset
+lrwxrwxrwx	usr/sbin/ftpd
+lrwxrwxrwx	usr/sbin/httpd
+lrwxrwxrwx	usr/sbin/inetd
+lrwxrwxrwx	usr/sbin/loadfont
+lrwxrwxrwx	usr/sbin/lpd
+lrwxrwxrwx	usr/sbin/nbd-client
+lrwxrwxrwx	usr/sbin/ntpd
+lrwxrwxrwx	usr/sbin/popmaildir
+lrwxrwxrwx	usr/sbin/rdate
+lrwxrwxrwx	usr/sbin/rdev
+lrwxrwxrwx	usr/sbin/readprofile
+lrwxrwxrwx	usr/sbin/sendmail
+lrwxrwxrwx	usr/sbin/setfont
+lrwxrwxrwx	usr/sbin/setlogcons
+lrwxrwxrwx	usr/sbin/svlogd
+lrwxrwxrwx	usr/sbin/telnetd
+lrwxrwxrwx	usr/sbin/udhcpd
