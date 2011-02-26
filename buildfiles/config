@@ -1,7 +1,10 @@
 # Buildfiles configuration
 
 # Set toolchain build
-TARGET_TOOLCHAIN="target/crosstool-ng"
+TARGET_TOOLCHAIN="host/crosstool-ng"
+
+# Set target sysroot
+TARGET_SYSROOT_LINK="$BG_HOST_SYSROOT_DIR/arm-unknown-linux-gnueabi/sysroot"
 
 # Set target system
 TARGET="arm-unknown-linux-gnueabi"
@@ -12,6 +15,3 @@ ARCH="arm"
 # Set path
 PATH="$BG_HOST_SYSROOT_DIR/bin:$PATH"
 
-# Set target sysroot
-alias $TARGET-gcc="$TARGET-gcc --sysroot=$BG_TARGET_SYSROOT_DIR"
-alias $TARGET-ld="$TARGET-ld --sysroot=$BG_TARGET_SYSROOT_DIR"

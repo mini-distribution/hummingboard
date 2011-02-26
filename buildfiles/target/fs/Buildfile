@@ -5,10 +5,10 @@
 name=fs
 version=1.0
 release=1
-depends=(target/busybox)
+depends=(target/{busybox,dropbear})
 
 build() {
 	cp -a $BG_SYSROOT_DIR/* $PKG
 	
-	mkfs.jffs2 -r $BG_SYSROOT_DIR -e 64 -o $BUILD/fs.jffs2
+	mkfs.jffs2 -r $BG_SYSROOT_DIR -e 64 -o $BLD/fs.jffs2
 }

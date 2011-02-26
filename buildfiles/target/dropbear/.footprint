@@ -1,0 +1,17 @@
+drwxr-xr-x	etc/
+drwxr-xr-x	etc/dropbear/
+drwxr-xr-x	etc/rc.d/
+-rwxr-xr-x	etc/rc.d/dropbear
+drwxr-xr-x	usr/
+drwxr-xr-x	usr/bin/
+-rwxr-xr-x	usr/bin/dbclient
+-rwxr-xr-x	usr/bin/dropbearconvert
+-rwxr-xr-x	usr/bin/dropbearkey
+drwxr-xr-x	usr/man/
+drwxr-xr-x	usr/man/man1/
+-rw-r--r--	usr/man/man1/dbclient.1
+drwxr-xr-x	usr/man/man8/
+-rw-r--r--	usr/man/man8/dropbear.8
+-rw-r--r--	usr/man/man8/dropbearkey.8
+drwxr-xr-x	usr/sbin/
+-rwxr-xr-x	usr/sbin/dropbear

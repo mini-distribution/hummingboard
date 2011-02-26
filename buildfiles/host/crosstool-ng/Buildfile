@@ -27,6 +27,10 @@ build() {
 
     ./ct-ng build
 
+    # Cleanup target sysroot
+    rm -rf $PKG/arm-unknown-linux-gnueabi/sysroot/etc
+    rm -rf $PKG/arm-unknown-linux-gnueabi/sysroot/usr/share 
+
     # Enable fakeroot again
     export LD_LIBRARY_PATH=$TEMP_LD_LIBRARY_PATH
     export LD_PRELOAD=$TEMP_LD_PRELOAD
