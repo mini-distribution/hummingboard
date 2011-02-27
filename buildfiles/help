@@ -1,12 +1,16 @@
 # Buildfiles help
 
-Collection name:
+Name:
 
-        Pandaboard
+        Pandaboard Mini Distribution
 
 About:
-	This buildfile collection is 
-	for the Pandaboard.
+	A minimal filesystem for the Pandaboard.
+
+	Main features:
+		* Busybox utilities
+		* Upstart init system
+		* Dropbear SSH client/server
 
 Main target builds:
 
