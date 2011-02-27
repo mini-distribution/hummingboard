@@ -28,6 +28,18 @@ Known issues:
 
 	None
 
+Filesystem layout:
+
+	/usr/bin/		User command/application binaries
+	/usr/sbin/		System binaries (e.g. daemons)
+	/usr/lib/		Libraries
+	/usr/include/		Header files
+	/usr/lib/<prog>/	Plug-ins, addons, etc
+	/usr/man/		Man pages
+	/usr/share/<prog>/	Data files
+	/usr/etc/<prog>/	Configuration files
+	/etc/			Configuration files for system software (daemons, etc)
+
 Maintainer:
 
 	Martin Lund <martin@martinlund.org>
