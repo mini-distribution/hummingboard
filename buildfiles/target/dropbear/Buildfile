@@ -1,6 +1,6 @@
 # Description: Small and secure SSH2 server and client
 # URL:         http://matt.ucc.asn.au/dropbear/dropbear.html
-# Maintainer:  Martin Lund <martin@martinlund.org>
+# Builder:     Martin Lund <martin@martinlund.org>
 
 name=dropbear
 version=0.52

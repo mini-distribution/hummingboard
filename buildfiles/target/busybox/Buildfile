@@ -1,6 +1,6 @@
 # Description: BusyBox - A collection of tiny versions of many common UNIX utilities
 # URL:         http://www.busybox.net
-# Maintainer:  Martin Lund <martin@martinlund.org>
+# Builder:     Martin Lund <martin@martinlund.org>
 
 name=busybox
 version=1.18.3
