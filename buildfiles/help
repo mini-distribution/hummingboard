@@ -2,49 +2,50 @@
 
 Name:
 
-        Pandaboard Mini Distribution
+   Pandaboard Mini Distribution
 
 About:
-	A minimal filesystem for the Pandaboard.
 
-	Main features:
-		* Busybox utilities
-		* Upstart init system
-		* Dropbear SSH client/server
+   A minimal filesystem for the Pandaboard.
+
+Main features:
+
+   * Busybox utilities
+   * Upstart init system
+   * Dropbear SSH client/server
 
 Main target builds:
 
-	fs      - Filesystem
-	linux   - Linux kernel
-	u-boot  - Bootloader
+   fs      - Filesystem
+   linux   - Linux kernel
+   u-boot  - Bootloader
 
 Quick build guide:
 
-	buildgear build fs
-	buildgear build linux
-	buildgear build u-boot
+   buildgear build fs
+   buildgear build linux
+   buildgear build u-boot
 
 Build options:
 
-	None
+   None
 
 Known issues:
 
-	None
+   None
 
 Filesystem layout:
 
-	/usr/bin/		User command/application binaries
-	/usr/sbin/		System binaries (e.g. daemons)
-	/usr/lib/		Libraries
-	/usr/include/		Header files
-	/usr/lib/<prog>/	Plug-ins, addons, etc
-	/usr/man/		Man pages
-	/usr/share/<prog>/	Data files
-	/usr/etc/<prog>/	Configuration files
-	/etc/			Configuration files for system software (daemons, etc)
+   /usr/bin/            User command/application binaries
+   /usr/sbin/           System binaries (e.g. daemons)
+   /usr/lib/            Libraries
+   /usr/include/        Header files
+   /usr/lib/<prog>/     Plug-ins, addons, etc
+   /usr/man/            Man pages
+   /usr/share/<prog>/   Data files
+   /usr/etc/<prog>/     Configuration files
+   /etc/                Configuration files for system software (daemons, etc.)
 
 Maintainer:
 
-	Martin Lund <martin@martinlund.org>
-
+   Martin Lund <martin@martinlund.org>
