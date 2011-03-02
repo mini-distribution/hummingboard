@@ -4,7 +4,7 @@
 TARGET_TOOLCHAIN="host/crosstool-ng"
 
 # Define sysroot (target)
-TARGET_SYSROOT_LINK="$BG_HOST_SYSROOT_DIR/arm-unknown-linux-gnueabi/sysroot"
+TARGET_SYSROOT_LINK="$HOST_SYSROOT/arm-unknown-linux-gnueabi/sysroot"
 
 # Define target system
 TARGET="arm-unknown-linux-gnueabi"
@@ -13,5 +13,5 @@ TARGET="arm-unknown-linux-gnueabi"
 ARCH="arm"
 
 # Add toolchain to path
-PATH="$BG_HOST_SYSROOT_DIR/bin:$PATH"
+PATH="$HOST_SYSROOT/bin:$PATH"
 

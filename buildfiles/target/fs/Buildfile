@@ -8,7 +8,7 @@ release=1
 depends=(target/{busybox,dropbear})
 
 build() {
-	cp -a $BG_SYSROOT_DIR/* $PKG
+	cp -a $SYSROOT/* $PKG
 	
-	mkfs.jffs2 -r $BG_SYSROOT_DIR -e 64 -o $BLD/fs.jffs2
+	mkfs.jffs2 -r $SYSROOT -e 64 -o $BLD/fs.jffs2
 }
