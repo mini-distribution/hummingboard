@@ -4,10 +4,10 @@
 TARGET_TOOLCHAIN="host/crosstool-ng"
 
 # Define sysroot (target)
-TARGET_SYSROOT_LINK="$HOST_SYSROOT/arm-unknown-linux-gnueabi/sysroot"
+TARGET_SYSROOT_LINK="$HOST_SYSROOT/arm-unknown-linux-uclibcgnueabi/sysroot"
 
 # Define target system
-TARGET="arm-unknown-linux-gnueabi"
+TARGET="arm-unknown-linux-uclibcgnueabi"
 
 # Define architecture
 ARCH="arm"

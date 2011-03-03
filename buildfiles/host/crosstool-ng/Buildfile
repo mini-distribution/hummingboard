@@ -6,7 +6,9 @@ name=crosstool-ng
 version=1.10.0
 release=1
 source=(http://ymorin.is-a-geek.org/download/$name/$name-$version.tar.bz2
-	arm-unknown-linux-gnueabi.config)
+        arm-unknown-linux-gnueabi.config
+        arm-unknown-linux-uclibcgnueabi.config
+        uClibc-0.9.30.2.config)
 
 build() {
     cd $name-$version
@@ -21,7 +23,8 @@ build() {
     unset LD_PRELOAD
 
     # Do ct-ng configuration
-    cp $SRC/arm-unknown-linux-gnueabi.config .config
+    cp $SRC/arm-unknown-linux-uclibcgnueabi.config .config
+    cp $SRC/uClibc-0.9.30.2.config .
     sed -i /^CT_LOCAL_TARBALLS_DIR=/s:=.*:=\"$BG_SOURCE_DIR\": .config
     sed -i /^CT_PREFIX_DIR=/s:=.*:=\"$PKG\": .config
 
