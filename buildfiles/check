@@ -1,4 +1,4 @@
-# Buildfiles tool and library check (host)
+# Buildfiles tool and library check (build system)
 
 # Tool check mechanism
 check_tool() {
@@ -10,6 +10,6 @@ check_tool() {
 }
 
 # Check for tools or libraries that are required 
-# to be pre-installed on host system.
+# to be pre-installed on build system.
 check_tool mkfs.jffs2
 #check_lib

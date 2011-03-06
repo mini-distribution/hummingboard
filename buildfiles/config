@@ -1,17 +1,17 @@
 # Buildfiles configuration
 
-# Define toolchain build (target)
-TARGET_TOOLCHAIN="host/crosstool-ng"
+# Define host toolchain build
+HOST_TOOLCHAIN="build/crosstool-ng"
 
-# Define sysroot (target)
-TARGET_SYSROOT_LINK="$HOST_SYSROOT/arm-unknown-linux-uclibcgnueabi/sysroot"
+# Define host sysroot link
+HOST_SYSROOT_LINK="$BUILD_SYSROOT/arm-unknown-linux-uclibcgnueabi/sysroot"
 
-# Define target system
-TARGET="arm-unknown-linux-uclibcgnueabi"
-
-# Define architecture
-ARCH="arm"
+# Define host system
+HOST="arm-unknown-linux-uclibcgnueabi"
 
 # Add toolchain to path
-PATH="$HOST_SYSROOT/bin:$PATH"
+PATH="$BUILD_SYSROOT/bin:$PATH"
 
+
+# Define host architecture
+ARCH="arm"

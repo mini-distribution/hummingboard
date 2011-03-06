@@ -14,7 +14,7 @@ Main features:
    * Upstart init system
    * Dropbear SSH client/server
 
-Main target builds:
+Main builds:
 
    fs      - Filesystem
    linux   - Linux kernel

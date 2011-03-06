@@ -30,7 +30,7 @@ build() {
 
     ./ct-ng build
 
-    # Cleanup target sysroot
+    # Cleanup host sysroot
     rm -rf $PKG/arm-unknown-linux-gnueabi/sysroot/etc
     rm -rf $PKG/arm-unknown-linux-gnueabi/sysroot/usr/share 
 
