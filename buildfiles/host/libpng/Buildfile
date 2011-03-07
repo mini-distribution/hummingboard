@@ -1,0 +1,20 @@
+# Description: Library of PNG support functions
+# URL:         http://www.libpng.org
+# Builder:     Martin Lund <martin@martinlund.org>
+
+name=libpng
+version=1.4.5
+release=1
+source=(ftp://ftp.simplesystems.org/pub/$name/png/src/$name-$version.tar.xz)
+depends=host/zlib
+
+build() {
+   cd $name-$version
+
+   ./configure --prefix=/usr \
+               --build=$BUILD \
+               --host=$HOST \
+   make
+   make DESTDIR=$PKG install
+}
+

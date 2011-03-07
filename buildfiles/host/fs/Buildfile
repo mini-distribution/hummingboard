@@ -5,7 +5,7 @@
 name=fs
 version=1.0
 release=1
-depends=(host/{busybox,dropbear})
+depends=(host/{busybox,dropbear,libpng})
 
 build() {
 	cp -a $SYSROOT/* $PKG
