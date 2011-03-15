@@ -1,0 +1,22 @@
+# Description: Library giving userland programs access to USB devices
+# URL:         http://libusb.sourceforge.net/
+# Builder:     Martin Lund <martin@martinlund.org>
+
+name=libusb
+version=1.0.6
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2)
+
+build () {
+  cd $name-$version
+  
+  ./configure --build=$BUILD \
+              --host=$HOST \
+              --prefix=/usr
+  make
+  make DESTDIR=$PKG install
+  
+  install -d $PKG/lib
+  mv $PKG/usr/lib/libusb-1.0.so.* $PKG/lib
+  ln -sf ../../lib/libusb-1.0.so.0.0.0 $PKG/usr/lib/libusb-1.0.so
+}
