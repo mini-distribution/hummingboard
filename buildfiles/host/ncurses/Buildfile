@@ -1,0 +1,27 @@
+# Description: A System V Release 4.0 curses emulation library
+# URL:         http://www.gnu.org/software/ncurses/ncurses.html
+# Builder:     Martin Lund <martin@martinlund.org>
+
+name=ncurses
+version=5.7
+release=1
+source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
+
+build() {
+   cd $name-$version
+
+   local OPTIONS="\
+   --with-install-prefix=$PKG \
+   --prefix=/usr \
+   --with-normal \
+   --with-shared \
+   --without-debug \
+   --without-ada \
+   --build=$BUILD \
+   --host=$HOST
+   "
+
+    ./configure $OPTIONS
+    make
+    make install
+}

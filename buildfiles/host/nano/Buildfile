@@ -1,0 +1,20 @@
+# Description: GNU pico clone (a tiny text editor)
+# URL:         http://www.nano-editor.org
+# Builder:     Martin Lund <martin@martinlund.org>
+
+name=nano
+version=2.2.6
+release=1
+source=(http://www.nano-editor.org/dist/v2.2/$name-$version.tar.gz)
+depends=host/ncurses
+
+build(){
+    cd $name-$version
+    ./configure --prefix=/usr \
+                --disable-nls \
+                --build=$BUILD \
+                --host=$HOST
+    make
+    make DESTDIR=$PKG install
+    rm $PKG/usr/bin/rnano $PKG/usr/share/man/man1/rnano.1
+}

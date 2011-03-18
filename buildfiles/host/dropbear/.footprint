@@ -1,18 +1,18 @@
-drwxr-xr-x	etc/
-drwxr-xr-x	etc/dropbear/
-drwxr-xr-x	etc/rc.d/
--rwxr-xr-x	etc/rc.d/dropbear
-drwxr-xr-x	usr/
-drwxr-xr-x	usr/bin/
--rwxr-xr-x	usr/bin/dbclient
--rwxr-xr-x	usr/bin/dropbearconvert
--rwxr-xr-x	usr/bin/dropbearkey
-drwxr-xr-x	usr/sbin/
--rwxr-xr-x	usr/sbin/dropbear
-drwxr-xr-x	usr/share/
-drwxr-xr-x	usr/share/man/
-drwxr-xr-x	usr/share/man/man1/
--rw-r--r--	usr/share/man/man1/dbclient.1
-drwxr-xr-x	usr/share/man/man8/
--rw-r--r--	usr/share/man/man8/dropbear.8
--rw-r--r--	usr/share/man/man8/dropbearkey.8
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/dropbear/
+drwxr-xr-x	root/root	etc/rc.d/
+-rwxr-xr-x	root/root	etc/rc.d/dropbear
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/dbclient
+-rwxr-xr-x	root/root	usr/bin/dropbearconvert
+-rwxr-xr-x	root/root	usr/bin/dropbearkey
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/dropbear
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/dbclient.1
+drwxr-xr-x	root/root	usr/share/man/man8/
+-rw-r--r--	root/root	usr/share/man/man8/dropbear.8
+-rw-r--r--	root/root	usr/share/man/man8/dropbearkey.8

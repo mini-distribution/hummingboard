@@ -1,0 +1,26 @@
+# Description: An RFC2131-compliant DHCP client daemon
+# URL:         http://roy.marples.name/dhcpcd
+# Builder:     Martin Lund <martin@martinlund.org>
+
+name=dhcpcd
+version=5.1.5
+release=1
+source=(http://roy.marples.name/downloads/dhcpcd/$name-$version.tar.bz2)
+
+build () {
+  cd $name-$version
+
+  ./configure --build=$BUILD \
+              --host=$HOST \
+              --prefix= \
+              --libexecdir=/lib/dhcpcd \
+              --dbdir=/var/lib/dhcpcd \
+              --sysconfdir=/etc/dhcpcd \
+              --os=linux \
+              --with-hooks=none
+
+  make
+  make DESTDIR=$PKG install
+
+  chmod -R u+w $PKG
+}
