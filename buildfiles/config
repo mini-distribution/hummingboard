@@ -4,11 +4,12 @@
 HOST_TOOLCHAIN="build/crosstool-ng"
 
 # Define host sysroot link
-HOST_SYSROOT_LINK="$BUILD_SYSROOT/arm-unknown-linux-uclibcgnueabi/sysroot"
+HOST_SYSROOT_LINK="$BUILD_SYSROOT/arm-unknown-linux-gnueabi/sysroot"
 
 # Define host system
-HOST="arm-unknown-linux-uclibcgnueabi"
+HOST="arm-unknown-linux-gnueabi"
 
 # Add host toolchain to path
 PATH="$BUILD_SYSROOT/bin:$PATH"
+PATH="$BUILD_SYSROOT/usr/bin:$PATH"
 
