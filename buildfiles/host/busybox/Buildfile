@@ -3,14 +3,15 @@
 # Builder:     Martin Lund <martin@martinlund.org>
 
 name=busybox
-version=1.18.3
+version=1.19.3
 release=1
-source=(http://$name.net/downloads/$name-$version.tar.bz2)
+source=(http://$name.net/downloads/$name-$version.tar.bz2
+	busybox.config)
 
 build() {
     cd $name-$version
 
-    make CROSS_COMPILE=$HOST- defconfig
+    cp $SRC/busybox.config .config
     make CROSS_COMPILE=$HOST-
     make CROSS_COMPILE=$HOST- CONFIG_PREFIX=$PKG install
 }

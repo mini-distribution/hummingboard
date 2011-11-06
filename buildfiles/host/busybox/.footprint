@@ -80,6 +80,7 @@ lrwxrwxrwx	root/root	bin/run-parts
 lrwxrwxrwx	root/root	bin/scriptreplay
 lrwxrwxrwx	root/root	bin/sed
 lrwxrwxrwx	root/root	bin/setarch
+lrwxrwxrwx	root/root	bin/setserial
 lrwxrwxrwx	root/root	bin/sh
 lrwxrwxrwx	root/root	bin/sleep
 lrwxrwxrwx	root/root	bin/stat
@@ -206,6 +207,7 @@ lrwxrwxrwx	root/root	usr/bin/free
 lrwxrwxrwx	root/root	usr/bin/ftpget
 lrwxrwxrwx	root/root	usr/bin/ftpput
 lrwxrwxrwx	root/root	usr/bin/fuser
+lrwxrwxrwx	root/root	usr/bin/groups
 lrwxrwxrwx	root/root	usr/bin/hd
 lrwxrwxrwx	root/root	usr/bin/head
 lrwxrwxrwx	root/root	usr/bin/hexdump
@@ -219,7 +221,6 @@ lrwxrwxrwx	root/root	usr/bin/kbd_mode
 lrwxrwxrwx	root/root	usr/bin/killall
 lrwxrwxrwx	root/root	usr/bin/killall5
 lrwxrwxrwx	root/root	usr/bin/last
-lrwxrwxrwx	root/root	usr/bin/length
 lrwxrwxrwx	root/root	usr/bin/less
 lrwxrwxrwx	root/root	usr/bin/logger
 lrwxrwxrwx	root/root	usr/bin/logname
@@ -248,6 +249,8 @@ lrwxrwxrwx	root/root	usr/bin/pkill
 lrwxrwxrwx	root/root	usr/bin/pmap
 lrwxrwxrwx	root/root	usr/bin/printf
 lrwxrwxrwx	root/root	usr/bin/pscan
+lrwxrwxrwx	root/root	usr/bin/pstree
+lrwxrwxrwx	root/root	usr/bin/pwdx
 lrwxrwxrwx	root/root	usr/bin/readahead
 lrwxrwxrwx	root/root	usr/bin/readlink
 lrwxrwxrwx	root/root	usr/bin/realpath
@@ -301,6 +304,7 @@ lrwxrwxrwx	root/root	usr/bin/unlzop
 lrwxrwxrwx	root/root	usr/bin/unxz
 lrwxrwxrwx	root/root	usr/bin/unzip
 lrwxrwxrwx	root/root	usr/bin/uptime
+lrwxrwxrwx	root/root	usr/bin/users
 lrwxrwxrwx	root/root	usr/bin/uudecode
 lrwxrwxrwx	root/root	usr/bin/uuencode
 lrwxrwxrwx	root/root	usr/bin/vlock
@@ -311,6 +315,7 @@ lrwxrwxrwx	root/root	usr/bin/wget
 lrwxrwxrwx	root/root	usr/bin/which
 lrwxrwxrwx	root/root	usr/bin/who
 lrwxrwxrwx	root/root	usr/bin/whoami
+lrwxrwxrwx	root/root	usr/bin/whois
 lrwxrwxrwx	root/root	usr/bin/xargs
 lrwxrwxrwx	root/root	usr/bin/xz
 lrwxrwxrwx	root/root	usr/bin/xzcat

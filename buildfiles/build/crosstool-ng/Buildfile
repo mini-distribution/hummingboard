@@ -3,9 +3,9 @@
 # Builder:     Martin Lund <martin@martinlund.org>
 
 name=crosstool-ng
-version=1.10.0
+version=1.13.0
 release=1
-source=(http://ymorin.is-a-geek.org/download/$name/$name-$version.tar.bz2
+source=(http://crosstool-ng.org/download/$name/$name-$version.tar.bz2
         arm-unknown-linux-gnueabi.config
         arm-unknown-linux-uclibcgnueabi.config
         uClibc-0.9.30.2.config)

@@ -3,7 +3,7 @@
 # Builder:     Martin Lund <martin@martinlund.org>
 
 name=dhcpcd
-version=5.1.5
+version=5.2.12
 release=1
 source=(http://roy.marples.name/downloads/dhcpcd/$name-$version.tar.bz2)
 

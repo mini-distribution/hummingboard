@@ -3,7 +3,7 @@
 # Builder:     Martin Lund <martin@martinlund.org>
 
 name=ncurses
-version=5.7
+version=5.9
 release=1
 source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
 
