@@ -11,4 +11,6 @@ build() {
 	cp -a $SYSROOT/* $PKG
 	
 	mkfs.jffs2 -r $SYSROOT -e 64 -o $BLD/fs.jffs2
+	cd $SYSROOT
+	tar zcpf $BLD/fs.tar.gz .
 }

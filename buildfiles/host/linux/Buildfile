@@ -1,0 +1,18 @@
+# Description: Linux - The Linux kernel
+# URL:         http://www.kernel.org
+# Builder:     Martin Lund <martin.lund@keep-it-simple.com>
+
+name=linux
+version=3.0.8
+release=1
+source=(http://www.kernel.org/pub/$name/kernel/v3.0/$name-$version.tar.bz2
+	linux.config)
+
+build(){
+    cd $name-$version
+    cp $SRC/linux.config .config
+    make ARCH=arm CROSS_COMPILE=$HOST- uImage
+
+    cp arch/arm/boot/uImage $BLD/
+    cp arch/arm/boot/uImage $PKG/
+}
