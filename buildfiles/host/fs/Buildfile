@@ -5,7 +5,7 @@
 name=fs
 version=1.0
 release=1
-depends=(host/{filesystem,sysvinit,busybox,dropbear,libpng,libusb,dhcpcd,nano})
+depends=(host/{filesystem,sysvinit,busybox,linux-modules,dropbear,libpng,libusb,dhcpcd,nano})
 
 build() {
 	cp -a $SYSROOT/* $PKG
