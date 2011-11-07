@@ -1,0 +1,15 @@
+# Description: Basic sysvinit init scripts
+# Builder:     Martin Lund <martin@martinlund.org>
+
+name=sysvinit
+version=0.1
+release=1
+source=(inittab rcS)
+depends=host/filesystem
+
+build(){
+	mkdir -p $PKG/etc/init.d
+	cp $SRC/inittab $PKG/etc/
+	cp $SRC/rcS $PKG/etc/init.d/
+	chmod 744 $PKG/etc/init.d/rcS
+}

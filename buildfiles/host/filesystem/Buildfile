@@ -1,0 +1,40 @@
+# Description: Basic filesystem
+# Builder:     Martin Lund <martin@martinlund.org>
+
+name=filesystem
+version=0.1
+release=1
+source=(fstab)
+
+build(){
+    # Directory structure
+    mkdir -p $PKG/bin
+    mkdir -p $PKG/sbin
+    mkdir -p $PKG/boot
+    mkdir -p $PKG/dev
+    mkdir -p $PKG/dev/pts
+    mkdir -p $PKG/proc
+    mkdir -p $PKG/sys
+    mkdir -p $PKG/etc
+    mkdir -p $PKG/tmp
+    mkdir -p $PKG/mnt
+    mkdir -p $PKG/root
+    mkdir -p $PKG/lib
+    mkdir -p $PKG/lib/modules
+    mkdir -p $PKG/opt
+    mkdir -p $PKG/opt/bin
+    mkdir -p $PKG/opt/sbin
+    mkdir -p $PKG/usr
+    mkdir -p $PKG/usr/{bin,include,lib,sbin,share,src,man}
+    mkdir -p $PKG/usr/man/man{1,2,3,4,5,6,7,8}
+    ln -s ../var $PKG/usr/var
+    mkdir -p $PKG/var
+    mkdir -p $PKG/home
+
+    # /dev
+    mknod $PKG/dev/console c 5 1
+    chmod 0600 $PKG/dev/console
+
+    # /etc
+    cp fstab $PKG/etc
+}
