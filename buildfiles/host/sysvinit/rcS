@@ -3,4 +3,8 @@
 echo ""
 echo "Build Gear Test System v0.1"
 
-mount -a # Mount the default file systems mentioned in /etc/fstab.
+# Mount the default file systems mentioned in /etc/fstab.
+mount -a
+
+# Populate /dev
+mdev -s
