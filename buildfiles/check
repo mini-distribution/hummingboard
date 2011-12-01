@@ -9,7 +9,7 @@ check_tool() {
    fi
 }
 
-# Check for tools or libraries that are required 
+# Check for required tools or libraries
 # to be pre-installed on build system.
 check_tool mkfs.jffs2
 #check_lib
