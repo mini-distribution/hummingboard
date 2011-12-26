@@ -3,7 +3,7 @@
 # Builder:     Martin Lund <martin@martinlund.org>
 
 name=libpng
-version=1.5.6
+version=1.5.7
 release=1
 source=(ftp://ftp.simplesystems.org/pub/$name/png/src/$name-$version.tar.xz)
 depends=host/zlib
