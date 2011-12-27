@@ -13,3 +13,7 @@ HOST="arm-unknown-linux-gnueabi"
 PATH="$BUILD_SYSROOT/bin:$PATH"
 PATH="$BUILD_SYSROOT/usr/bin:$PATH"
 
+# PKG-CONFIG
+PKG_CONFIG_SYSROOT_DIR="$HOST_SYSROOT"
+PKG_CONFIG_LIBDIR="$HOST_SYSROOT/usr/lib/pkgconfig"
+PKG_CONFIG_PATH="HOST_SYSROOT/usr/lib/pkgconfig"

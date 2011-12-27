@@ -13,7 +13,8 @@ depends=(host/filesystem
          host/libpng
          host/libusb
          host/dhcpcd
-         host/nano)
+         host/nano
+         host/alsa-utils)
 
 build() {
 	cp -a $SYSROOT/* $PKG

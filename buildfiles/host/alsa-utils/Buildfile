@@ -1,0 +1,31 @@
+# Description: ALSA utils
+# URL: http://www.alsa-project.org
+# Builder: Martin Lund <martin.lund@keep-it-simple.com>
+
+name=alsa-utils
+version=1.0.24.2
+release=1
+source=(ftp://ftp.alsa-project.org/pub/utils/$name-$version.tar.bz2)
+depends=(host/alsa-lib host/dialog)
+
+build() {
+  cd $name-$version
+  LDFLAGS="-L$HOST_SYSROOT/usr/lib" \
+  ./configure --build=$BUILD \
+              --host=$HOST \
+              --prefix=/usr \
+              --mandir=/usr/man \
+              --disable-nls
+
+  # alsactl_init.7 is generated using xmlto, which we don't have
+  touch alsactl/alsactl_init.7
+
+  make
+  make DESTDIR=$PKG install
+  rm -rf $PKG/usr/share $PKG/usr/man/fr
+
+  # see above
+  rm -f $PKG/usr/man/man7/alsactl_init.7
+  rmdir $PKG/usr/man/man7
+
+}
