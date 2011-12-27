@@ -52,6 +52,17 @@ lrwxrwxrwx	root/root	usr/lib/libncurses.so.5
 lrwxrwxrwx	root/root	usr/lib/libpanel.so
 lrwxrwxrwx	root/root	usr/lib/libpanel.so.5
 -rwxr-xr-x	root/root	usr/lib/libpanel.so.5.9
+-rw-r--r--	root/root	usr/lib/libtinfo.a
+lrwxrwxrwx	root/root	usr/lib/libtinfo.so
+lrwxrwxrwx	root/root	usr/lib/libtinfo.so.5
+-rwxr-xr-x	root/root	usr/lib/libtinfo.so.5.9
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/form.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/menu.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/ncurses.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/ncurses++.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/panel.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/tinfo.pc
 lrwxrwxrwx	root/root	usr/lib/terminfo
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
