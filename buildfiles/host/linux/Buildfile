@@ -10,8 +10,12 @@ source=(http://www.kernel.org/pub/$name/kernel/v3.0/$name-$version.tar.bz2
 
 build(){
     cd $name-$version
+
     cp $SRC/linux.config .config
+
     make ARCH=arm CROSS_COMPILE=$HOST- uImage
+    make ARCH=arm CROSS_COMPILE=$HOST- modules
+    make ARCH=arm CROSS_COMPILE=$HOST- INSTALL_MOD_PATH=$PKG modules_install
 
     cp arch/arm/boot/uImage $BLD/
     cp arch/arm/boot/uImage $PKG/
