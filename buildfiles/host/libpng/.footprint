@@ -15,7 +15,7 @@ drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libpng15.la
 lrwxrwxrwx	root/root	usr/lib/libpng15.so
 lrwxrwxrwx	root/root	usr/lib/libpng15.so.15
--rwxr-xr-x	root/root	usr/lib/libpng15.so.15.6.0
+-rwxr-xr-x	root/root	usr/lib/libpng15.so.15.10.0
 lrwxrwxrwx	root/root	usr/lib/libpng.a
 lrwxrwxrwx	root/root	usr/lib/libpng.la
 lrwxrwxrwx	root/root	usr/lib/libpng.so
