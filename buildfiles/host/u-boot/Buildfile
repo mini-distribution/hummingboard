@@ -3,7 +3,7 @@
 # Builder:     Martin Lund <martin.lund@keep-it-simple.com>
 
 name=u-boot
-version=2011.09
+version=2012.04.01
 release=1
 source=(ftp://ftp.denx.de/pub/$name/$name-$version.tar.bz2)
 

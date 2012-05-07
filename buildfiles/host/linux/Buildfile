@@ -3,9 +3,9 @@
 # Builder:     Martin Lund <martin.lund@keep-it-simple.com>
 
 name=linux
-version=3.1
+version=3.4-rc4
 release=1
-source=(http://www.kernel.org/pub/$name/kernel/v3.0/$name-$version.tar.bz2
+source=(http://www.kernel.org/pub/$name/kernel/v3.0/testing/$name-$version.tar.bz2
 	linux.config)
 
 build(){
@@ -18,5 +18,5 @@ build(){
     make ARCH=arm CROSS_COMPILE=$HOST- INSTALL_MOD_PATH=$PKG modules_install
 
     cp arch/arm/boot/uImage $BLD/
-    cp arch/arm/boot/uImage $PKG/
+#    cp arch/arm/boot/uImage $PKG/
 }

@@ -8,7 +8,7 @@ release=1
 depends=(host/filesystem
          host/sysvinit
          host/busybox
-#         host/linux
+         host/linux
          host/dropbear
          host/libpng
          host/libusb

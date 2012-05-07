@@ -3,15 +3,13 @@
 # Builder:     Martin Lund <martin@martinlund.org>
 
 name=zlib
-version=1.2.5
+version=1.2.7
 release=1
-source=(http://www.zlib.net/$name-$version.tar.bz2 \
-        $name-$version-lfs-decls.patch)
+source=http://www.zlib.net/$name-$version.tar.bz2
 
 build() {
     cd $name-$version
 
-    patch -p1 -i $SRC/$name-$version-lfs-decls.patch
     CROSS_PREFIX=$HOST- ./configure --prefix=/usr
     make
     make DESTDIR=$PKG install
