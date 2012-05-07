@@ -5,7 +5,7 @@ name=sysvinit
 version=0.1
 release=1
 source=(inittab rcS)
-depends=host/filesystem
+depends=host/fs-skeleton
 
 build(){
 	mkdir -p $PKG/etc/init.d
