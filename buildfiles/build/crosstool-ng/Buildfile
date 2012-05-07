@@ -3,17 +3,15 @@
 # Builder:     Martin Lund <martin@martinlund.org>
 
 name=crosstool-ng
-version=1.13.0
+version=1.15.0
 release=1
 source=(http://crosstool-ng.org/download/$name/$name-$version.tar.bz2
-        arm-unknown-linux-gnueabi.config
-        arm-unknown-linux-uclibcgnueabi.config
-        uClibc-0.9.30.2.config)
+        arm-cortex_a9-linux-gnueabi.config)
 
 build() {
     cd $name-$version
 
-    ./configure --local
+    ./configure --enable-local
     make
 
     # Disable fakeroot (temporarily)
@@ -23,16 +21,15 @@ build() {
     unset LD_PRELOAD
 
     # Do ct-ng configuration
-    cp $SRC/arm-unknown-linux-gnueabi.config .config
-    #cp $SRC/uClibc-0.9.30.2.config .
+    cp $SRC/arm-cortex_a9-linux-gnueabi.config .config
     sed -i /^CT_LOCAL_TARBALLS_DIR=/s:=.*:=\"$BG_SOURCE_DIR\": .config
     sed -i /^CT_PREFIX_DIR=/s:=.*:=\"$PKG\": .config
 
     ./ct-ng build
 
     # Cleanup host sysroot
-    rm -rf $PKG/arm-unknown-linux-gnueabi/sysroot/etc
-    rm -rf $PKG/arm-unknown-linux-gnueabi/sysroot/usr/share 
+    rm -rf $PKG/arm-cortex_a9-linux-gnueabi/sysroot/etc
+    rm -rf $PKG/arm-cortex_a9-linux-gnueabi/sysroot/usr/share
 
     # Enable fakeroot again
     export LD_LIBRARY_PATH=$TEMP_LD_LIBRARY_PATH
