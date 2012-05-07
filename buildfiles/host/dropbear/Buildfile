@@ -3,7 +3,7 @@
 # Builder:     Martin Lund <martin@martinlund.org>
 
 name=dropbear
-version=0.52
+version=2012.55
 release=1
 source=(http://matt.ucc.asn.au/$name/releases/$name-$version.tar.gz \
         $name)
@@ -19,8 +19,8 @@ build () {
     make
     make DESTDIR=$PKG install
     install -d $PKG/{etc/{rc.d,dropbear},usr/share/man/man{1,8}}
+    install -m 755 $SRC/dropbear $PKG/etc/rc.d
     install -m 644 dbclient.1 $PKG/usr/share/man/man1
     install -m 644 dropbear{.8,key.8} $PKG/usr/share/man/man8
-    install -m 755 $SRC/dropbear $PKG/etc/rc.d
 }
 
