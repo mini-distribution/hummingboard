@@ -4,10 +4,10 @@
 HOST_TOOLCHAIN="build/crosstool-ng"
 
 # Define host sysroot link
-HOST_SYSROOT_LINK="$BUILD_SYSROOT/arm-unknown-linux-gnueabi/sysroot"
+HOST_SYSROOT_LINK="$BUILD_SYSROOT/arm-cortex_a9-linux-gnueabi/sysroot"
 
 # Define host system
-HOST="arm-unknown-linux-gnueabi"
+HOST="arm-cortex_a9-linux-gnueabi"
 
 # Add host toolchain to path
 PATH="$BUILD_SYSROOT/bin:$PATH"
