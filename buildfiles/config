@@ -1,19 +1,19 @@
 # Buildfiles configuration
 
 # Define host toolchain build
-HOST_TOOLCHAIN="build/crosstool-ng"
+CROSS_TOOLCHAIN="native/crosstool-ng"
 
 # Define host sysroot link
-HOST_SYSROOT_LINK="$BUILD_SYSROOT/arm-cortex_a9-linux-gnueabi/sysroot"
+CROSS_SYSROOT_LINK="$NATIVE_SYSROOT/arm-cortex_a9-linux-gnueabi/sysroot"
 
 # Define host system
 HOST="arm-cortex_a9-linux-gnueabi"
 
-# Add host toolchain to path
-PATH="$BUILD_SYSROOT/bin:$PATH"
-PATH="$BUILD_SYSROOT/usr/bin:$PATH"
+# Add cross toolchain to path
+PATH="$NATIVE_SYSROOT/bin:$PATH"
+PATH="$NATIVE_SYSROOT/usr/bin:$PATH"
 
 # PKG-CONFIG
-PKG_CONFIG_SYSROOT_DIR="$HOST_SYSROOT"
-PKG_CONFIG_LIBDIR="$HOST_SYSROOT/usr/lib/pkgconfig"
-PKG_CONFIG_PATH="HOST_SYSROOT/usr/lib/pkgconfig"
+PKG_CONFIG_SYSROOT_DIR="$CROSS_SYSROOT"
+PKG_CONFIG_LIBDIR="$CROSS_SYSROOT/usr/lib/pkgconfig"
+PKG_CONFIG_PATH="CROSS_SYSROOT/usr/lib/pkgconfig"

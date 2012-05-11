@@ -5,16 +5,16 @@
 name=fs
 version=1.0
 release=1
-depends=(host/fs-skeleton
-         host/sysvinit
-         host/busybox
-         host/linux
-         host/dropbear
-         host/libpng
-         host/libusb
-         host/dhcpcd
-         host/nano
-         host/alsa-utils)
+depends=(cross/fs-skeleton
+         cross/sysvinit
+         cross/busybox
+         cross/linux
+         cross/dropbear
+         cross/libpng
+         cross/libusb
+         cross/dhcpcd
+         cross/nano
+         cross/alsa-utils)
 
 build() {
 	cp -a $SYSROOT/* $PKG

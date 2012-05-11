@@ -1,5 +1,5 @@
 # Local buildgear configuration
 
-default_name_prefix="host/"
+default_name_prefix="cross/"
 
 #source_dir="$HOME/download"

@@ -7,7 +7,7 @@ version=2012.55
 release=1
 source=(http://matt.ucc.asn.au/$name/releases/$name-$version.tar.gz \
         $name)
-depends=host/zlib
+depends=cross/zlib
 
 build () {
     cd $name-$version

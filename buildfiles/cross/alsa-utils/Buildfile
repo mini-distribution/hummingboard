@@ -6,11 +6,11 @@ name=alsa-utils
 version=1.0.24.2
 release=1
 source=(ftp://ftp.alsa-project.org/pub/utils/$name-$version.tar.bz2)
-depends=(host/alsa-lib host/dialog)
+depends=(cross/alsa-lib cross/dialog)
 
 build() {
   cd $name-$version
-  LDFLAGS="-L$HOST_SYSROOT/usr/lib" \
+  LDFLAGS="-L$CROSS_SYSROOT/usr/lib" \
   ./configure --build=$BUILD \
               --host=$HOST \
               --prefix=/usr \
