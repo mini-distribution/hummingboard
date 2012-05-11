@@ -1,6 +1,5 @@
 # Description: A minimal filesystem
-# URL:         http://www.buildgear.org
-# Builder:     Martin Lund <martin@martinlund.org>
+# URL: http://www.buildgear.org
 
 name=fs
 version=1.0

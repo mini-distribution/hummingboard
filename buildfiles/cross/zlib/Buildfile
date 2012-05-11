@@ -1,6 +1,5 @@
 # Description: A compression/decompression Library
-# URL:         http://www.zlib.net/
-# Builder:     Martin Lund <martin@martinlund.org>
+# URL: http://www.zlib.net/
 
 name=zlib
 version=1.2.7

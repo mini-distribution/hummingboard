@@ -1,6 +1,5 @@
 # Description: Library of PNG support functions
-# URL:         http://www.libpng.org
-# Builder:     Martin Lund <martin@martinlund.org>
+# URL: http://www.libpng.org
 
 name=libpng
 version=1.5.10

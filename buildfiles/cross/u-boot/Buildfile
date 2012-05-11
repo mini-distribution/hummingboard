@@ -1,6 +1,5 @@
 # Description: U-boot - The universal bootloader
-# URL:         http://www.denx.de/wiki/U-Boot
-# Builder:     Martin Lund <martin.lund@keep-it-simple.com>
+# URL: http://www.denx.de/wiki/U-Boot
 
 name=u-boot
 version=2012.04.01

@@ -1,6 +1,5 @@
 # Description: A cross toolchain builder
-# URL:         http://ymorin.is-a-geek.org/projects/crosstool
-# Builder:     Martin Lund <martin@martinlund.org>
+# URL: http://ymorin.is-a-geek.org/projects/crosstool
 
 name=crosstool-ng
 version=1.15.0

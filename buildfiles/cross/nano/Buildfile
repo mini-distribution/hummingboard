@@ -1,6 +1,5 @@
 # Description: GNU pico clone (a tiny text editor)
-# URL:         http://www.nano-editor.org
-# Builder:     Martin Lund <martin@martinlund.org>
+# URL: http://www.nano-editor.org
 
 name=nano
 version=2.2.6

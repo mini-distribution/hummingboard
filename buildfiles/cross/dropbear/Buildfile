@@ -1,6 +1,5 @@
 # Description: Small and secure SSH server and client
-# URL:         http://matt.ucc.asn.au/dropbear/dropbear.html
-# Builder:     Martin Lund <martin@martinlund.org>
+# URL: http://matt.ucc.asn.au/dropbear/dropbear.html
 
 name=dropbear
 version=2012.55

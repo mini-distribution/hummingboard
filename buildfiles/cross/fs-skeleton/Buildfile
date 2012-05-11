@@ -1,5 +1,4 @@
-# Description: Basic filesystem
-# Builder:     Martin Lund <martin@martinlund.org>
+# Description: Filesystem skeleton
 
 name=fs-skeleton
 version=0.1

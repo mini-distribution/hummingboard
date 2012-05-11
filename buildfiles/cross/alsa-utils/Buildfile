@@ -1,6 +1,5 @@
 # Description: ALSA utils
 # URL: http://www.alsa-project.org
-# Builder: Martin Lund <martin.lund@keep-it-simple.com>
 
 name=alsa-utils
 version=1.0.24.2

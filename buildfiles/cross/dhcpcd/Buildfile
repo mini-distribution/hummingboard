@@ -1,6 +1,5 @@
 # Description: An RFC2131-compliant DHCP client daemon
-# URL:         http://roy.marples.name/dhcpcd
-# Builder:     Martin Lund <martin@martinlund.org>
+# URL: http://roy.marples.name/dhcpcd
 
 name=dhcpcd
 version=5.5.6

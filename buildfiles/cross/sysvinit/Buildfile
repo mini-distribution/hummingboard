@@ -1,5 +1,4 @@
 # Description: Basic sysvinit init scripts
-# Builder:     Martin Lund <martin@martinlund.org>
 
 name=sysvinit
 version=0.1

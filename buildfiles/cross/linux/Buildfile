@@ -1,6 +1,5 @@
 # Description: Linux - The Linux kernel
-# URL:         http://www.kernel.org
-# Builder:     Martin Lund <martin.lund@keep-it-simple.com>
+# URL: http://www.kernel.org
 
 name=linux
 version=3.4-rc4

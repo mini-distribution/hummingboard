@@ -1,6 +1,5 @@
 # Description: Library giving userland programs access to USB devices
-# URL:         http://libusb.sourceforge.net/
-# Builder:     Martin Lund <martin@martinlund.org>
+# URL: http://libusb.sourceforge.net/
 
 name=libusb
 version=1.0.9

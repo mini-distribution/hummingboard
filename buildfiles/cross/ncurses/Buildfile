@@ -1,6 +1,5 @@
 # Description: A System V Release 4.0 curses emulation library
-# URL:         http://www.gnu.org/software/ncurses/ncurses.html
-# Builder:     Martin Lund <martin@martinlund.org>
+# URL: http://www.gnu.org/software/ncurses/ncurses.html
 
 name=ncurses
 version=5.9
