@@ -1,0 +1,38 @@
+# Description: QT4 - Cross-platform application and UI framework
+# URL: http://qt-project.org/
+
+name=qt4
+version=4.8.1
+release=1
+source=(http://releases.qt-project.org/$name/source/qt-everywhere-opensource-src-$version.tar.gz)
+depends=(cross/zlib cross/libjpeg cross/libpng)
+
+build() {
+  cd qt-everywhere-opensource-src-$version
+  sed -i "s|arm-none-linux-gnueabi|$HOST|" mkspecs/qws/linux-arm-gnueabi-g++/qmake.conf
+  ./configure -prefix /usr \
+              -xplatform qws/linux-arm-gnueabi-g++ \
+              -embedded arm \
+	      -qt-gfx-linuxfb \
+	      -no-largefile \
+	      -exceptions \
+	      -no-accessibility \
+	      -no-qt3support \
+	      -qt-zlib \
+	      -no-gif \
+	      -no-libtiff \
+	      -qt-libpng \
+	      -no-libmng \
+	      -qt-libjpeg \
+	      -no-nis \
+	      -no-cups \
+	      -depths 32 \
+	      -qt-kbd-linuxinput \
+	      -nomake examples \
+	      -make demos \
+	      -qt-mouse-linuxinput \
+	      -opensource \
+	      -confirm-license
+  make
+  make INSTALL_ROOT=$PKG install
+}
