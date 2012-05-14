@@ -2,7 +2,7 @@
 # URL: http://www.kernel.org
 
 name=linux
-version=3.4-rc4
+version=3.4-rc7
 release=1
 source=(http://www.kernel.org/pub/$name/kernel/v3.0/testing/$name-$version.tar.bz2
 	linux.config)
@@ -17,5 +17,4 @@ build(){
     make ARCH=arm CROSS_COMPILE=$HOST- INSTALL_MOD_PATH=$PKG modules_install
 
     cp arch/arm/boot/uImage $BLD/
-#    cp arch/arm/boot/uImage $PKG/
 }
