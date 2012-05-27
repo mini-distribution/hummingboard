@@ -1,12 +1,12 @@
 # Buildfiles configuration
 
-# Define host toolchain build
+# Set cross toolchain build
 CROSS_TOOLCHAIN="native/crosstool-ng"
 
-# Define host sysroot link
+# Set cross sysroot path
 CROSS_SYSROOT_LINK="$NATIVE_SYSROOT/arm-cortex_a9-linux-gnueabi/sysroot"
 
-# Define host system
+# Set host system name
 HOST="arm-cortex_a9-linux-gnueabi"
 
 # Add cross toolchain to path
