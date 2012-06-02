@@ -2,7 +2,7 @@
 # URL: http://ymorin.is-a-geek.org/projects/crosstool
 
 name=crosstool-ng
-version=1.15.0
+version=1.15.2
 release=1
 source=(http://crosstool-ng.org/download/$name/$name-$version.tar.bz2
         arm-cortex_a9-linux-gnueabi.config)
