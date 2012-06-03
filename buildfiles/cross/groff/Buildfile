@@ -1,0 +1,34 @@
+# Description: The GNU troff text-formatting system
+# URL: http://www.gnu.org/software/groff/groff.html
+
+name=groff
+version=1.21
+release=1
+source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
+
+# Requires native groff for grn util
+
+build() {
+  cd $name-$version
+
+  echo "ac_try_echo=yes" >> config.cache
+  pushd src/libs/gnulib
+  ./configure --build=$BUILD \
+              --host=$HOST \
+              --prefix=/usr \
+              --mandir=/usr/man \
+              --cache-file=../../../config.cache
+  popd
+  ./configure --build=$BUILD \
+              --host=$HOST \
+              --prefix=/usr \
+              --mandir=/usr/man \
+              --cache-file=config.cache
+  make TROFFBIN=troff GROFFBIN=groff GROFF_BIN_PATH=
+  make DESTDIR=$PKG install
+
+  rm -rf $PKG/usr/share/{info,doc}
+  ln -sf eqn $PKG/usr/bin/geqn
+  ln -sf tbl $PKG/usr/bin/gtbl
+  ln -sf soelim $PKG/usr/bin/zsoelim
+}
