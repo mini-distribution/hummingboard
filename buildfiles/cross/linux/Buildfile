@@ -1,10 +1,10 @@
-# Description: Linux - The Linux kernel
+# Description: The Linux kernel
 # URL: http://www.kernel.org
 
 name=linux
-version=3.4-rc7
+version=3.4
 release=1
-source=(http://www.kernel.org/pub/$name/kernel/v3.0/testing/$name-$version.tar.bz2
+source=(http://www.kernel.org/pub/$name/kernel/v3.0/testing/$name-$version.tar.xz
 	linux.config)
 
 build(){
@@ -12,8 +12,8 @@ build(){
 
     cp $SRC/linux.config .config
 
-    make ARCH=arm CROSS_COMPILE=$HOST- uImage
-    make ARCH=arm CROSS_COMPILE=$HOST- modules
+    make -j $JOBS ARCH=arm CROSS_COMPILE=$HOST- uImage
+    make -j $JOBS ARCH=arm CROSS_COMPILE=$HOST- modules
     make ARCH=arm CROSS_COMPILE=$HOST- INSTALL_MOD_PATH=$PKG modules_install
 
     cp arch/arm/boot/uImage $BLD/
