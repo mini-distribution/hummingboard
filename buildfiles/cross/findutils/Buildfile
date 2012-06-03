@@ -1,0 +1,27 @@
+# Description: Basic directory searching utilities
+# URL: http://www.gnu.org/software/findutils/
+
+name=findutils
+version=4.4.2
+release=1
+source=(http://ftp.gnu.org/pub/gnu/$name/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  echo "gl_cv_func_wcwidth_works=yes" >> config.cache
+  echo "gl_cv_header_working_fcntl_h=yes" >> config.cache
+  echo "ac_cv_func_fnmatch_gnu=yes" >> config.cache
+
+  ./configure --build=$BUILD \
+              --host=$HOST \
+              --prefix=/usr \
+              --disable-nls \
+              --mandir=/usr/man \
+              --cache-file=config.cache
+  make -j $JOBS
+  make DESTDIR=$PKG install
+  rm $PKG/usr/bin/{updatedb,locate}
+  rm $PKG/usr/man/man1/{updatedb.1,locate.1}
+  rm -r $PKG/usr/{libexec,share,var,man/man5}
+}

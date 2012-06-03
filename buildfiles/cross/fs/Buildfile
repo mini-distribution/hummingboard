@@ -6,13 +6,18 @@ version=1.0
 release=1
 depends=(cross/fs-skeleton
          cross/sysvinit
+         cross/util-linux
          cross/linux
          cross/dropbear
          cross/libpng
          cross/libjpeg
          cross/libusb
          cross/dhcpcd
+         cross/findutils
          cross/nano
+         cross/grep
+         cross/wget
+         cross/traceroute
          cross/alsa-utils
          cross/openssl
          cross/systemd)

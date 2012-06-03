@@ -1,0 +1,28 @@
+# Description: A network utility for downloading content from the Web
+# URL: http://www.gnu.org/software/wget/
+
+name=wget
+version=1.13
+release=1
+source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.xz \
+        wgetrc)
+depends=cross/openssl
+
+build() {
+  cd $name-$version
+
+  ./configure --build=$BUILD \
+              --host=$HOST \
+              --prefix=/usr \
+              --sysconfdir=/etc \
+              --mandir=/usr/man \
+              --with-ssl=openssl \
+              --disable-debug \
+              --disable-nls
+
+  make
+  make DESTDIR=$PKG install
+  install -D -m 0644 $SRC/wgetrc $PKG/etc/wgetrc
+
+  rm -r $PKG/usr/share
+}
