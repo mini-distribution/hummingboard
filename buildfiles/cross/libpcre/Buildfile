@@ -1,0 +1,25 @@
+# Description: Perl Compatible Regular Expressions
+# URL: http://www.pcre.org
+
+name=libpcre
+version=8.30
+release=1
+source=(ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-$version.tar.bz2)
+
+build() {
+  cd pcre-$version
+
+  ./configure --build=$BUILD \
+              --host=$HOST \
+              --prefix=/usr \
+              --mandir=/usr/man \
+              --enable-utf8 \
+              --enable-unicode-properties
+  make -j $JOBS
+  make DESTDIR=$PKG install
+  
+  rm -r $PKG/usr/share
+
+  # Fix .la files
+  find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;
+}
