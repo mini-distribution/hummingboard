@@ -18,3 +18,6 @@ export PKG_CONFIG_DIR=
 export PKG_CONFIG_SYSROOT_DIR="$CROSS_SYSROOT"
 export PKG_CONFIG_LIBDIR="$CROSS_SYSROOT/usr/lib/pkgconfig:$CROSS_SYSROOT/usr/share/pkgconfig"
 export PKG_CONFIG_PATH="$CROSS_SYSROOT/usr/lib/pkgconfig"
+
+# Number of parallel make jobs
+JOBS=`cat /proc/cpuinfo | grep processor | wc -l`
