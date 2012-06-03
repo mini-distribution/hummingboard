@@ -1,0 +1,10 @@
+ec41919f4ca043c3465b3188af727c8392d1eb432da98ddbf914caea5174a02d  net-tools-1.60-arp.patch
+44cdc7799ecbf95ab43673c1f6d5cf07acc215349da3edf21ef4d644094e7e48  net-tools-1.60-compile_fixes.patch
+9703689502322da1ba4ff18e5fbce68c3f65a47ac9b567074463750e1ac05342  net-tools-1.60-config.patch
+bbcf21901a24e0f75f7b4c460a24023089995fe392f5ee840d45c52eabb8db0b  net-tools-1.60-ipv6.patch
+7416bf69b904c3bef8add004cceee72fca4d1b0bfbcde05cb3f3ae11fe1f5ef7  net-tools-1.60-man.patch
+bf74e339d9ee66caabf507de1aa00dec00061c5ee2e9d94c545ea352ed8126e4  net-tools-1.60-manydevs.patch
+41f25d04228e0e9e6f2ce007c79c8bd65f1a18a707d695bb4479cbbf51d9f147  net-tools-1.60-miiioctl.patch
+7a04cbffeb2e191c2b06cd52fbac569002c1167516387bd9b06b2520c6be60a7  net-tools-1.60-nameif.patch
+7ae4dd6d44d6715f18e10559ffd270511b6e55a8900ca54fbebafe0ae6cf7d7b  net-tools-1.60.tar.bz2
+0ea131709a60be1e99709b7333ed3fb81d8c15a9799ba1d5b8df382bfcb8db7e  net-tools-1.60-virtualname.patch

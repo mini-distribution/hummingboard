@@ -17,6 +17,7 @@ depends=(cross/fs-skeleton
          cross/nano
          cross/grep
          cross/wget
+         cross/net-tools
          cross/traceroute
          cross/alsa-utils
          cross/openssl
