@@ -18,6 +18,6 @@ build () {
     -exec sed -e "s|-I/usr|-I$HOST_SYSROOT/usr|g" -e "s|-L/usr|-L$HOST_SYSROOT/usr|g" -i {} \; 
 #    -exec sed -e 's:-ltinfo::g' -i {} \;
 
-  make
+  make -j $JOBS
   make DESTDIR=$PKG install
 }

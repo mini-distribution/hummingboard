@@ -19,6 +19,6 @@ build() {
                --without-ada 
 #               --with-pkg-config \
 #               --enable-pc-files
-    make
+    make -j $JOBS
     make DESTDIR=$PKG install
 }

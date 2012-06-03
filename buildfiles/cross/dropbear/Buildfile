@@ -15,7 +15,7 @@ build () {
     CC=$HOST-gcc ./configure --prefix=/usr \
                              --build=$BUILD \
                              --host=$HOST
-    make
+    make -j $JOBS
     make DESTDIR=$PKG install
     install -d $PKG/{etc/{rc.d,dropbear},usr/share/man/man{1,8}}
     install -m 755 $SRC/dropbear $PKG/etc/rc.d

@@ -18,7 +18,7 @@ build () {
               --os=linux \
               --with-hooks=none
 
-  make
+  make -j $JOBS
   make DESTDIR=$PKG install
 
   chmod -R u+w $PKG

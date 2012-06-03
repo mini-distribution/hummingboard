@@ -13,7 +13,7 @@ build(){
                 --disable-nls \
                 --build=$BUILD \
                 --host=$HOST
-    make
+    make -j $JOBS
     make DESTDIR=$PKG install
     rm $PKG/usr/bin/rnano $PKG/usr/share/man/man1/rnano.1
 }

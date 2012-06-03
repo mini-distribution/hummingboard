@@ -10,6 +10,6 @@ build() {
     cd $name-$version
 
     CROSS_PREFIX=$HOST- ./configure --prefix=/usr
-    make
+    make -j $JOBS
     make DESTDIR=$PKG install
 }

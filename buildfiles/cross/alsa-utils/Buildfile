@@ -19,7 +19,7 @@ build() {
   # alsactl_init.7 is generated using xmlto, which we don't have
   touch alsactl/alsactl_init.7
 
-  make
+  make -j $JOBS
   make DESTDIR=$PKG install
   rm -rf $PKG/usr/share $PKG/usr/man/fr
 

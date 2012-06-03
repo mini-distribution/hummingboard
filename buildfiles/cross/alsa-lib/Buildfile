@@ -12,7 +12,7 @@ build() {
               --host=$HOST \
               --prefix=/usr \
               --disable-python 
-  make
+  make -j $JOBS
   make DESTDIR=$PKG install
 
   # Fix .la files

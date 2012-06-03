@@ -12,7 +12,7 @@ build(){
                --disable-nls \
                --build=$BUILD \
                --host=$HOST
-   make
+   make -j $JOBS
    make DESTDIR=$PKG install
 
    # Fix .la files

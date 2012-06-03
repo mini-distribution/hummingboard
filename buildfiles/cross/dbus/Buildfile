@@ -15,7 +15,7 @@ build() {
                --host=$HOST \
                --enable-abstract-sockets \
                --disable-tests
-   make
+   make -j $JOBS
    make DESTDIR=$PKG install
 
    # Fix .la files

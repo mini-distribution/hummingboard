@@ -16,6 +16,6 @@ build() {
 	       --datarootdir=/usr/lib \
 	       --mandir=/usr/share/man
    
-   make
+   make -j $JOBS
    make DESTDIR=$PKG install
 }

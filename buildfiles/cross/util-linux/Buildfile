@@ -23,7 +23,7 @@ build() {
               --enable-{write,rdev,raw,kill} \
               --cache-file=config.cache
 
-  make -j
+  make -j $JOBS
   make DESTDIR=$PKG install
 
   rm -r $PKG/usr/{share,man/ru}

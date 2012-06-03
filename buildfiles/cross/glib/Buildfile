@@ -28,7 +28,7 @@ build() {
                --disable-xattr \
                --enable-man \
                --disable-Bsymbolic
-   make -j
+   make -j $JOBS
    make DESTDIR=$PKG install
 
    # Cleanup
