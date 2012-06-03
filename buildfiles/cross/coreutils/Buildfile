@@ -1,0 +1,28 @@
+# Description: Basic file, shell and text manipulation utilities
+# URL: http://www.gnu.org/software/coreutils
+
+name=coreutils
+version=8.17
+release=1
+source=(http://ftp.gnu.org/gnu/coreutils/$name-$version.tar.xz)
+depends=(cross/libcap cross/acl cross/libgmp)
+
+build() {
+   cd $name-$version
+
+   echo "ac_cv_func_canonicalize_file_name=no" >> config.cache
+
+   ./configure --prefix=/usr \
+               --build=$BUILD \
+               --host=$HOST \
+               --libexecdir=/usr/lib \
+               --mandir=/usr/man \
+               --disable-nls \
+               --disable-assert \
+               --cache-file=config.cache
+
+   make -j $JOBS
+   make DESTDIR=$PKG install
+   rm -r $PKG/usr/share
+}
+
