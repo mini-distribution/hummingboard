@@ -19,8 +19,15 @@ depends=(cross/fs-skeleton
 
 build() {
 	cp -a $SYSROOT/* $PKG
+
+        # Cleanup
+        rm -rf $PKG/usr/include
+        rm -rf $PKG/usr/lib/*.a
+        rm -rf $PKG/usr/lib/*.la
 	
-	mkfs.jffs2 -r $SYSROOT -e 64 -o $BLD/fs.jffs2
-	cd $SYSROOT
-	tar zcpf $BLD/fs.tar.gz .
+        # Create JFFS2 image
+	mkfs.jffs2 -r $PKG -e 64 -o $BLD/fs.jffs2
+
+        # Create tarball
+	tar -C $PKG -acpf $BLD/fs.tar.xz .
 }
