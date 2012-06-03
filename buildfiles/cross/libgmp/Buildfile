@@ -1,0 +1,19 @@
+# Description: Free library for arbitrary precision arithmetic
+# URL: http://gmplib.org/
+
+name=libgmp
+version=5.0.5
+release=1
+source=(ftp://ftp.gnu.org/gnu/gmp/gmp-$version.tar.bz2)
+
+build() {
+  cd gmp-$version
+  ./configure --build=$BUILD \
+              --host=$HOST \
+              --prefix=/usr \
+              --enable-cxx
+
+  make -j $JOBS
+  make DESTDIR=$PKG install
+  rm -r $PKG/usr/share
+}
