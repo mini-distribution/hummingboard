@@ -13,7 +13,7 @@ build() {
    ./configure --prefix=/usr \
                --build=$BUILD \
                --host=$HOST
-   make
+   make -j
    make DESTDIR=$PKG install
 
    # Fix .la files
