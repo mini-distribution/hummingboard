@@ -13,7 +13,7 @@ HOST="arm-cortex_a9-linux-gnueabi"
 PATH="$NATIVE_SYSROOT/bin:$PATH"
 PATH="$NATIVE_SYSROOT/usr/bin:$PATH"
 
-# PKG-CONFIG
+# Pkg-config cross configuration
 export PKG_CONFIG_DIR=
 export PKG_CONFIG_SYSROOT_DIR="$CROSS_SYSROOT"
 export PKG_CONFIG_LIBDIR="$CROSS_SYSROOT/usr/lib/pkgconfig:$CROSS_SYSROOT/usr/share/pkgconfig"
