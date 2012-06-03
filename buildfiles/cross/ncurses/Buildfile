@@ -9,18 +9,16 @@ source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
 build() {
    cd $name-$version
 
-   ./configure --with-install-prefix=$PKG \
-               --prefix=/usr \
+   ./configure --prefix=/usr \
+               --build=$BUILD \
+               --host=$HOST \
                --with-normal \
                --with-shared \
                --with-termlib \
                --without-debug \
-               --without-ada \
-               --build=$BUILD \
-               --host=$HOST \
-               --with-pkg-config \
-               --enable-pc-files
-
+               --without-ada 
+#               --with-pkg-config \
+#               --enable-pc-files
     make
-    make install
+    make DESTDIR=$PKG install
 }

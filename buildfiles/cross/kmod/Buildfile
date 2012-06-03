@@ -1,16 +1,15 @@
-# Description: Library of PNG support functions
-# URL: http://www.libpng.org
+# Description: Library to deal with kernel modules
+# URL: http://git.profusion.mobi/cgit.cgi/kmod.git/
 
-name=libpng
-version=1.5.10
+name=kmod
+version=8
 release=1
-source=(ftp://ftp.simplesystems.org/pub/$name/png/src/$name-$version.tar.xz)
-depends=cross/zlib
+source=(http://www.kernel.org/pub/linux/utils/kernel/kmod/$name-$version.tar.xz)
 
-build() {
+build(){
    cd $name-$version
-
    ./configure --prefix=/usr \
+               --disable-nls \
                --build=$BUILD \
                --host=$HOST
    make
@@ -19,4 +18,3 @@ build() {
    # Fix .la files
    find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;
 }
-

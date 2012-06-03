@@ -1,0 +1,34 @@
+# Description: System and service manager for Linux
+# URL: http://www.freedesktop.org/wiki/Software/systemd
+
+name=systemd
+version=184
+release=1
+source=(http://www.freedesktop.org/software/systemd/$name-$version.tar.xz
+        0001-missing-define-MS_STRICTATIME-if-not-defined-already.patch
+        0002-systemd-login-typedef-fix.patch)
+depends=(cross/libcap
+         cross/dbus
+         cross/kmod
+         cross/util-linux
+         cross/usbutils
+         cross/pciutils
+         cross/glib)
+
+build() {
+   cd $name-$version
+
+   patch -p1 < $SRC/0001-missing-define-MS_STRICTATIME-if-not-defined-already.patch
+   patch -p1 < $SRC/0002-systemd-login-typedef-fix.patch
+
+   ./configure --prefix=/usr \
+               --build=$BUILD \
+               --host=$HOST \
+               --disable-nls
+   make -j
+   make DESTDIR=$PKG install
+
+   # Fix .la files
+   find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;
+}
+

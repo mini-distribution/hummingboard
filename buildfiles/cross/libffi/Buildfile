@@ -1,11 +1,10 @@
 # Description: Library of PNG support functions
 # URL: http://www.libpng.org
 
-name=libpng
-version=1.5.10
+name=libffi
+version=3.0.11
 release=1
-source=(ftp://ftp.simplesystems.org/pub/$name/png/src/$name-$version.tar.xz)
-depends=cross/zlib
+source=(ftp://sourceware.org/pub/libffi/$name-$version.tar.gz)
 
 build() {
    cd $name-$version
@@ -17,6 +16,6 @@ build() {
    make DESTDIR=$PKG install
 
    # Fix .la files
-   find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;
+#   find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;
 }
 

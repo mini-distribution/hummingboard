@@ -1,0 +1,40 @@
+# Description: General-purpose utility library
+# URL: http://developer.gnome.org/glib
+
+name=glib
+version=2.33.1
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/glib/2.33/$name-$version.tar.xz glib-gio-dependecy-fix.patch)
+depends=(cross/zlib cross/libffi)
+
+build() {
+   cd $name-$version
+   patch -p1 < $SRC/glib-gio-dependecy-fix.patch
+
+   # Apply known hacks for cross compiling glib
+   echo "glib_cv_stack_grows=yes" >> config.cache
+   echo "glib_cv_uscore=no" >> config.cache
+   echo "ac_cv_func_posix_getpwuid_r=yes" >> config.cache
+   echo "ac_cv_func_posix_getgrgid_r=yes" >> config.cache
+
+   ./configure --prefix=/usr \
+               --build=$BUILD \
+               --host=$HOST \
+               --mandir=/usr/man \
+               --cache-file=config.cache \
+               --enable-debug=no \
+               --disable-selinux \
+               --disable-fam \
+               --disable-xattr \
+               --enable-man \
+               --disable-Bsymbolic
+   make -j
+   make DESTDIR=$PKG install
+
+   # Cleanup
+   rm -rf $PKG/usr/share/gtk-doc
+   rm -rf $PKG/usr/share/locale
+
+   # Fix .la files
+   find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;
+}

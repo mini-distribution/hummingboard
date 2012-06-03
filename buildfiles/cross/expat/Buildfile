@@ -1,11 +1,10 @@
-# Description: Library of PNG support functions
-# URL: http://www.libpng.org
+# Description: XML parser
+# URL: http://expat.sourceforge.net
 
-name=libpng
-version=1.5.10
+name=expat
+version=2.1.0
 release=1
-source=(ftp://ftp.simplesystems.org/pub/$name/png/src/$name-$version.tar.xz)
-depends=cross/zlib
+source=(http://heanet.dl.sourceforge.net/project/expat/expat/$version/$name-$version.tar.gz)
 
 build() {
    cd $name-$version

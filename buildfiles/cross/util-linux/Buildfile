@@ -1,0 +1,33 @@
+# Description: Miscellaneous system utilities
+# URL: http://kernel.org/~kzak/util-linux
+
+name=util-linux
+version=2.21
+release=1
+source=(http://www.kernel.org/pub/linux/utils/util-linux/v2.21/$name-$version.tar.xz)
+depends=(cross/ncurses cross/zlib)
+
+build() {
+  cd $name-$version
+
+  echo "scanf_cv_alloc_modifier=ms" > config.cache
+
+  ./configure --build=$BUILD \
+              --host=$HOST \
+              --prefix=/usr \
+	      --bindir=/usr/bin \
+	      --sbindir=/usr/sbin \
+              --mandir=/usr/man \
+	      --libdir=/usr/lib \
+              --disable-{nls,elvtune,wall,fallocate} \
+              --enable-{write,rdev,raw,kill} \
+              --cache-file=config.cache
+
+  make -j
+  make DESTDIR=$PKG install
+
+  rm -r $PKG/usr/{share,man/ru}
+  
+  # Fix .la files
+  find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;
+}

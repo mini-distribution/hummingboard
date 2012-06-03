@@ -1,0 +1,13 @@
+# Description: Library and utilities to access the PCI bus configuration registers
+# URL: http://mj.ucw.cz/pciutils.shtml
+
+name=pciutils
+version=3.1.7
+release=1
+source=(http://www.kernel.org/pub/software/utils/$name/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+  make CC="$HOST-gcc" AR="$HOST-ar" RANLIB="$HOST-ranlib" PREFIX=/usr ZLIB=no
+  make DESTDIR=$PKG PREFIX=/usr MANDIR=/usr/man STRIP="" install install-lib
+}

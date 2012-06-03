@@ -1,0 +1,24 @@
+# Description: Application message bus system
+# URL: http://www.freedesktop.org/wiki/Software/dbus
+
+name=dbus
+version=1.5.12
+release=1
+source=(http://dbus.freedesktop.org/releases/dbus/$name-$version.tar.gz)
+depends=cross/expat
+
+build() {
+   cd $name-$version
+
+   ./configure --prefix=/usr \
+               --build=$BUILD \
+               --host=$HOST \
+               --enable-abstract-sockets \
+               --disable-tests
+   make
+   make DESTDIR=$PKG install
+
+   # Fix .la files
+   find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;
+}
+

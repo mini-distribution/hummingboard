@@ -15,8 +15,8 @@ depends=(cross/fs-skeleton
          cross/dhcpcd
          cross/nano
          cross/alsa-utils
-	 cross/openssl
-	 cross/qt4)
+         cross/openssl
+         cross/systemd)
 
 build() {
 	cp -a $SYSROOT/* $PKG

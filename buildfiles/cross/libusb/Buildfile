@@ -14,8 +14,7 @@ build () {
               --prefix=/usr
   make
   make DESTDIR=$PKG install
-  
-  install -d $PKG/lib
-  mv $PKG/usr/lib/libusb-1.0.so.* $PKG/lib
-  ln -sf ../../lib/libusb-1.0.so.0.0.0 $PKG/usr/lib/libusb-1.0.so
+
+  # Fix .la files
+  find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;
 }

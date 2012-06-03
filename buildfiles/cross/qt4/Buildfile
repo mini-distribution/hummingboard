@@ -35,4 +35,7 @@ build() {
 	      -confirm-license
   make
   make INSTALL_ROOT=$PKG install
+  
+  # Fix .la files
+  find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;
 }

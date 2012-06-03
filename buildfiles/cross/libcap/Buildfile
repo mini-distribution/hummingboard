@@ -1,0 +1,16 @@
+# Description: Library of PNG support functions
+# URL: http://www.libpng.org
+
+name=libcap
+version=2.22
+release=1
+source=(http://ftp.is.co.za/mirror/archlinux.org/other/libcap/$name-$version.tar.gz)
+depends=cross/attr
+
+build() {
+   cd $name-$version
+
+   make CC=$HOST-gcc AR=$HOST-ar RANLIB=$HOST-ranlib BUILD_CC=gcc
+   make -C libcap DESTDIR=$PKG lib=usr/lib install
+}
+
