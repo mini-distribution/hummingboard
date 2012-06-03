@@ -1,0 +1,27 @@
+# Description: Access Control Lists library
+# URL: http://savannah.nongnu.org/projects/acl
+
+name=acl
+version=2.2.51
+release=1
+source=(http://mirrors.zerg.biz/nongnu/$name/$name-$version.src.tar.gz)
+depends=cross/attr
+
+build() {
+  cd $name-$version
+
+  ./configure --build=$BUILD \
+              --host=$HOST \
+              --prefix=/usr \
+              --bindir=/bin \
+              --libexecdir=/usr/lib \
+              --mandir=/usr/man 
+
+  make -j $JOBS
+  make DIST_ROOT=$PKG install install-lib install-dev 
+
+  rm -r $PKG/usr/share
+
+  # Fix .la files
+  find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;
+}
