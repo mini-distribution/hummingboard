@@ -189,7 +189,7 @@ lrwxrwxrwx	root/root	usr/lib/libsystemd-journal.so.0
 -rwxr-xr-x	root/root	usr/lib/libsystemd-login.la
 lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so
 lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so.0
--rwxr-xr-x	root/root	usr/lib/libsystemd-login.so.0.2.3
+-rwxr-xr-x	root/root	usr/lib/libsystemd-login.so.0.2.4
 -rw-r--r--	root/root	usr/lib/libudev.a
 -rwxr-xr-x	root/root	usr/lib/libudev.la
 lrwxrwxrwx	root/root	usr/lib/libudev.so
@@ -559,6 +559,16 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/reboot.8
 -rw-r--r--	root/root	usr/share/man/man8/runlevel.8
 -rw-r--r--	root/root	usr/share/man/man8/shutdown.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-binfmt.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-binfmt.service.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-journald.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-journald.service.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-logind.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-logind.service.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-modules-load.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-modules-load.service.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-sysctl.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-sysctl.service.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-tmpfiles.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-udevd.8
 -rw-r--r--	root/root	usr/share/man/man8/telinit.8

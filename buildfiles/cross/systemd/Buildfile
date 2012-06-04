@@ -2,11 +2,9 @@
 # URL: http://www.freedesktop.org/wiki/Software/systemd
 
 name=systemd
-version=184
+version=185
 release=1
-source=(http://www.freedesktop.org/software/systemd/$name-$version.tar.xz
-        0001-missing-define-MS_STRICTATIME-if-not-defined-already.patch
-        0002-systemd-login-typedef-fix.patch)
+source=(http://www.freedesktop.org/software/systemd/$name-$version.tar.xz)
 depends=(cross/libcap
          cross/dbus
          cross/kmod
@@ -18,13 +16,11 @@ depends=(cross/libcap
 build() {
    cd $name-$version
 
-   patch -p1 < $SRC/0001-missing-define-MS_STRICTATIME-if-not-defined-already.patch
-   patch -p1 < $SRC/0002-systemd-login-typedef-fix.patch
-
    ./configure --prefix=/usr \
                --build=$BUILD \
                --host=$HOST \
                --disable-nls
+
    make -j $JOBS
    make DESTDIR=$PKG install
 
