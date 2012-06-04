@@ -15,6 +15,7 @@ depends=(cross/fs-skeleton
          cross/libusb
          cross/dhcpcd
          cross/findutils
+         cross/bash
          cross/man
          cross/nano
          cross/grep
@@ -22,6 +23,7 @@ depends=(cross/fs-skeleton
          cross/net-tools
          cross/traceroute
          cross/alsa-utils
+         cross/gst-plugins-good
          cross/openssl
          cross/systemd)
 
