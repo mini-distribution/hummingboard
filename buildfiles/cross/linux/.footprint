@@ -65,6 +65,8 @@ drwxr-xr-x	root/root	lib/modules/3.4.0/kernel/sound/core/oss/
 -rw-r--r--	root/root	lib/modules/3.4.0/kernel/sound/core/snd-timer.ko
 drwxr-xr-x	root/root	lib/modules/3.4.0/kernel/sound/soc/
 drwxr-xr-x	root/root	lib/modules/3.4.0/kernel/sound/soc/omap/
+-rw-r--r--	root/root	lib/modules/3.4.0/kernel/sound/soc/omap/snd-soc-omap4-hdmi.ko
+-rw-r--r--	root/root	lib/modules/3.4.0/kernel/sound/soc/omap/snd-soc-omap-hdmi.ko
 -rw-r--r--	root/root	lib/modules/3.4.0/kernel/sound/soc/omap/snd-soc-omap.ko
 -rw-r--r--	root/root	lib/modules/3.4.0/kernel/sound/soc/snd-soc-core.ko
 -rw-r--r--	root/root	lib/modules/3.4.0/kernel/sound/soundcore.ko
