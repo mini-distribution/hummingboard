@@ -1,4 +1,0 @@
-drwxr-xr-x	root/root	etc/
-drwxr-xr-x	root/root	etc/init.d/
--rwxr--r--	root/root	etc/init.d/rcS
--rw-r--r--	root/root	etc/inittab

@@ -5,7 +5,6 @@ name=fs
 version=1.0
 release=1
 depends=(cross/fs-skeleton
-         cross/sysvinit
          cross/coreutils
          cross/shadow
          cross/util-linux
