@@ -8,11 +8,13 @@ source=(ftp://ftp.denx.de/pub/$name/$name-$version.tar.bz2)
 
 build(){
     cd $name-$version
+
+    # Change default configuration to ext4
+    sed -i -e "s;ext3;ext4;g" include/configs/omap4_common.h
+
     make ARCH=arm CROSS_COMPILE=$HOST- omap4_panda_config
-    make ARCH=arm CROSS_COMPILE=$HOST-
+    make -j $JOBS ARCH=arm CROSS_COMPILE=$HOST-
 
     cp u-boot.bin $BLD/
-    cp u-boot.bin $PKG/
     cp MLO $BLD/
-    cp MLO $PKG/
 }

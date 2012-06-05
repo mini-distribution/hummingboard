@@ -5,12 +5,12 @@ name=linux
 version=3.4
 release=1
 source=(http://www.kernel.org/pub/$name/kernel/v3.0/testing/$name-$version.tar.xz
-	linux.config)
+	pandaboard.config)
 
 build(){
     cd $name-$version
 
-    cp $SRC/linux.config .config
+    cp $SRC/pandaboard.config .config
 
     make -j $JOBS ARCH=arm CROSS_COMPILE=$HOST- uImage
     make -j $JOBS ARCH=arm CROSS_COMPILE=$HOST- modules
