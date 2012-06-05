@@ -6,6 +6,7 @@ version=1.0
 release=1
 depends=(cross/fs-skeleton
          cross/coreutils
+         cross/sysvinit
          cross/shadow
          cross/util-linux
          cross/linux

@@ -26,5 +26,8 @@ build() {
 
    # Fix .la files
    find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;
+
+   # Systemd target configuration
+
 }
 

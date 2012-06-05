@@ -36,4 +36,9 @@ build(){
 
     # /etc
     cp fstab $PKG/etc
+
+    # systemd required
+    echo "panda" > $PKG/etc/hostname
+    ln -s /proc/self/mounts $PKG/etc/mtab
+    ln -s /usr/lib/systemd/systemd $PKG/bin/init
 }
