@@ -19,6 +19,7 @@ build() {
    ./configure --prefix=/usr \
                --build=$BUILD \
                --host=$HOST \
+               --with-distro=other \
                --disable-nls
 
    make -j $JOBS
