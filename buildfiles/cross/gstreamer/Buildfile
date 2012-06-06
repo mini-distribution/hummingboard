@@ -19,6 +19,5 @@ build() {
    # Fix .la files
    find $PKG -name "*.la" -exec sed -i -e "/dependency_libs/s; /usr; $CROSS_SYSROOT/usr;g" {} \;
    find $PKG -name "*.la" -exec sed -i -e "/libdir/s;'/usr;'$CROSS_SYSROOT/usr;g" {} \;
-#  find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;
 }
 
