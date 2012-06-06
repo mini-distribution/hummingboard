@@ -3,42 +3,38 @@
 name=fs-skeleton
 version=0.1
 release=1
-source=(fstab)
+source=(group)
 
 build(){
     # Directory structure
+    mkdir -p $PKG/usr
     mkdir -p $PKG/bin
     mkdir -p $PKG/sbin
-    mkdir -p $PKG/boot
+    mkdir -p $PKG/etc
     mkdir -p $PKG/dev
-    mkdir -p $PKG/dev/pts
     mkdir -p $PKG/proc
     mkdir -p $PKG/sys
-    mkdir -p $PKG/etc
     mkdir -p $PKG/tmp
     mkdir -p $PKG/mnt
-    mkdir -p $PKG/root
     mkdir -p $PKG/lib
-    mkdir -p $PKG/lib/modules
     mkdir -p $PKG/opt
-    mkdir -p $PKG/opt/bin
-    mkdir -p $PKG/opt/sbin
-    mkdir -p $PKG/usr
-    mkdir -p $PKG/usr/{bin,include,lib,sbin,share,src,man}
-    mkdir -p $PKG/usr/man/man{1,2,3,4,5,6,7,8}
-    ln -s ../var $PKG/usr/var
-    mkdir -p $PKG/var
     mkdir -p $PKG/home
+    mkdir -p $PKG/root
+    mkdir -p $PKG/usr/{bin,include,lib,sbin,share,man}
+    mkdir -p $PKG/usr/man/man{1,2,3,4,5,6,7,8}
+    mkdir -p $PKG/var
+    ln -s ../var $PKG/usr/var
 
     # /dev
     mknod $PKG/dev/console c 5 1
     chmod 0600 $PKG/dev/console
 
     # /etc
-    cp fstab $PKG/etc
+    cp $SRC/group $PKG/etc/group
+    echo "root:it3Y6aTzjxuyE:0:0:root:/root:/bin/bash" >> $PKG/etc/passwd
+    echo "panda" > $PKG/etc/hostname
 
     # systemd required
-    echo "panda" > $PKG/etc/hostname
     ln -s /proc/self/mounts $PKG/etc/mtab
     ln -s /usr/lib/systemd/systemd $PKG/bin/init
 }

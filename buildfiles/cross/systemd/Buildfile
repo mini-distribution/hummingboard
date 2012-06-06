@@ -19,7 +19,13 @@ build() {
    ./configure --prefix=/usr \
                --build=$BUILD \
                --host=$HOST \
+               --sysconfdir=/etc \
+               --libexecdir=/usr/lib \
+               --localstatedir=/var \
                --with-distro=other \
+               --enable-split-usr \
+               --with-usb-ids-path=/usr/lib/usb.ids \
+               --with-pci-ids-path=/usr/share/pci.ids \
                --disable-nls
 
    make -j $JOBS
@@ -29,6 +35,8 @@ build() {
    find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;
 
    # Systemd target configuration
+   rm -f $PKG/usr/lib/tmpfiles.d/legacy.conf
+   rm -f $PKG/usr/lib/tmpfiles.d/x11.conf
 
 }
 

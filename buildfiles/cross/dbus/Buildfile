@@ -13,8 +13,11 @@ build() {
    ./configure --prefix=/usr \
                --build=$BUILD \
                --host=$HOST \
+               --sysconfdir=/etc \
+               --libexecdir=/usr/lib/dbus-1.0 \
+               --localstatedir=/var \
+               --with-systemdsystemunitdir=/etc/systemd/system \
                --enable-abstract-sockets \
-               --with-systemdsystemunitdir=/usr/lib/systemd/system \
                --disable-tests
    make -j $JOBS
    make DESTDIR=$PKG install
