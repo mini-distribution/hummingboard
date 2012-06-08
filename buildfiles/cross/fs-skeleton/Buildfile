@@ -1,4 +1,5 @@
 # Description: Filesystem skeleton
+# URL: http://www.buildgear.org
 
 name=fs-skeleton
 version=0.1
@@ -6,10 +7,8 @@ release=1
 source=(group)
 
 build(){
-    # Directory structure
+    # Create basic directories
     mkdir -p $PKG/usr
-    mkdir -p $PKG/bin
-    mkdir -p $PKG/sbin
     mkdir -p $PKG/etc
     mkdir -p $PKG/dev
     mkdir -p $PKG/proc
@@ -20,21 +19,33 @@ build(){
     mkdir -p $PKG/opt
     mkdir -p $PKG/home
     mkdir -p $PKG/root
-    mkdir -p $PKG/usr/{bin,include,lib,sbin,share,man}
+    mkdir -p $PKG/usr/{bin,sbin,include,lib,share,man}
     mkdir -p $PKG/usr/man/man{1,2,3,4,5,6,7,8}
     mkdir -p $PKG/var
+    mkdir -p $PKG/run
+
+    # Create symlinks
+    ln -s /usr/bin $PKG/bin
+    ln -s /usr/sbin $PKG/sbin
     ln -s ../var $PKG/usr/var
 
-    # /dev
-    mknod $PKG/dev/console c 5 1
-    chmod 0600 $PKG/dev/console
+    # Create basic device nodes
+#    mknod $PKG/dev/console c 5 1
+#    chmod 0600 $PKG/dev/console
 
-    # /etc
-    cp $SRC/group $PKG/etc/group
+    # Create users
     echo "root:it3Y6aTzjxuyE:0:0:root:/root:/bin/bash" >> $PKG/etc/passwd
+
+    # Create groups
+    cp $SRC/group $PKG/etc/group
+
+    # Create host name
     echo "panda" > $PKG/etc/hostname
+
+    # Create issue
+    echo -e "Pandaboard Mini Distribution 1.0\n" > $PKG/etc/issue
 
     # systemd required
     ln -s /proc/self/mounts $PKG/etc/mtab
-    ln -s /usr/lib/systemd/systemd $PKG/bin/init
+    ln -s /usr/lib/systemd/systemd $PKG/usr/bin/init
 }

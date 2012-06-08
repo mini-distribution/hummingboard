@@ -8,6 +8,7 @@ depends=(cross/fs-skeleton
          cross/coreutils
          cross/sysvinit
          cross/shadow
+         cross/procps
          cross/kbd
          cross/gzip
          cross/util-linux
