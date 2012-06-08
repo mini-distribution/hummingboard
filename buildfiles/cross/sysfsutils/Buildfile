@@ -8,8 +8,8 @@ source=(http://heanet.dl.sourceforge.net/project/linux-diag/$name/$version/$name
 
 build() {
   cd $name-$version
-  ./configure --build=$CHOST \
-              --host=$CTARGET \
+  ./configure --build=$BUILD \
+              --host=$HOST \
               --prefix=/usr
   make
   make DESTDIR=$PKG install

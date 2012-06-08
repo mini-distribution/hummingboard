@@ -1,0 +1,31 @@
+# Description: Basic networking applet
+# URL: http://www.linux-foundation.org/en/Net:Iputils
+
+name=iputils
+version=s20101006
+release=1
+source=(http://www.skbuff.net/iputils/$name-$version.tar.bz2
+        http://crux.nu/files/distfiles/$name-man-$version.tar.xz
+        iputils-s20101006-fixes-1.patch)
+depends=cross/sysfsutils
+
+
+build() {
+  cd $name-$version
+
+  sed -e "s|arping.o -lsysfs|arping.o $CROSS_SYSROOT/usr/lib/libsysfs.so|" \
+      -e 's/IPV6_TARGETS=*/IPV6_TARGETS=/' -i Makefile
+
+  patch -p1 -i $SRC/iputils-s20101006-fixes-1.patch
+
+  make CC="$HOST-gcc"
+  
+  install -d $PKG/usr/{man/man8,bin,sbin}
+  install ping $PKG/usr/bin
+  install arping $PKG/usr/sbin
+  install tracepath clockdiff rarpd rdisc ipg $PKG/usr/sbin
+  cp -d $SRC/$name-man-$version/* $PKG/usr/man/man8
+
+  rm $PKG/usr/man/man8/*6.*
+  chmod u+s $PKG/usr/bin/ping
+}
