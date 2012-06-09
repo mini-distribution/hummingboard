@@ -46,6 +46,8 @@ Filesystem layout:
    /usr/etc/<prog>/     Configuration files
    /etc/                Configuration files for system software (daemons, etc.)
 
+   The file directory hierachy is FHS 2.3 compliant.
+
 Maintainer:
 
    Martin Lund <martin.lund@keep-it-simple.com>
