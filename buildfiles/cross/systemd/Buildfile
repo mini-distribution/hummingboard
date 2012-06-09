@@ -34,9 +34,12 @@ build() {
    # Fix .la files
    find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;
 
-   # Systemd target configuration
-   rm -f $PKG/usr/lib/tmpfiles.d/legacy.conf
-   rm -f $PKG/usr/lib/tmpfiles.d/x11.conf
+   # Systemd required workarounds
+   ln -s /proc/self/mounts $PKG/etc/mtab
+   mkdir $PKG/usr/sbin
+   ln -s /usr/lib/systemd/systemd $PKG/usr/sbin/init
 
+   # Cleanup
+   rm $PKG/usr/lib/tmpfiles.d/legacy.conf
+   rm $PKG/usr/lib/tmpfiles.d/x11.conf
 }
-
