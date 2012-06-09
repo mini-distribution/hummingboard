@@ -8,19 +8,19 @@ source=(group)
 
 build(){
     # Create basic directories
+    mkdir -p $PKG/home
+    mkdir -p $PKG/root
     mkdir -p $PKG/usr
     mkdir -p $PKG/etc
     mkdir -p $PKG/dev
     mkdir -p $PKG/proc
     mkdir -p $PKG/sys
     mkdir -p $PKG/tmp
+    mkdir -p $PKG/media
     mkdir -p $PKG/mnt
     mkdir -p $PKG/lib
+    mkdir -p $PKG/srv
     mkdir -p $PKG/opt
-    mkdir -p $PKG/home
-    mkdir -p $PKG/root
-    mkdir -p $PKG/usr/{bin,sbin,include,lib,share,man}
-    mkdir -p $PKG/usr/man/man{1,2,3,4,5,6,7,8}
     mkdir -p $PKG/var
     mkdir -p $PKG/run
 

@@ -41,7 +41,7 @@ Filesystem layout:
    /usr/lib/            Libraries
    /usr/lib/<prog>/     Program specific libraries - plug-ins, addons, etc
    /usr/include/        Header files
-   /usr/man/            Man pages
+   /usr/share/man/      Man pages
    /usr/share/<prog>/   Data files
    /usr/etc/<prog>/     Configuration files
    /etc/                Configuration files for system software (daemons, etc.)
