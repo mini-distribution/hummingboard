@@ -17,11 +17,12 @@ build() {
               --host=$HOST \
               --prefix=/usr \
               --disable-nls \
-              --mandir=/usr/man \
               --cache-file=config.cache
+
   make -j $JOBS
   make DESTDIR=$PKG install
   rm $PKG/usr/bin/{updatedb,locate}
-  rm $PKG/usr/man/man1/{updatedb.1,locate.1}
-  rm -r $PKG/usr/{libexec,share,var,man/man5}
+  rm $PKG/usr/share/man/man1/{updatedb.1,locate.1}
+  rm -r $PKG/usr/{libexec,var}
+  rm -r $PKG/usr/share/info
 }

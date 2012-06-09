@@ -18,7 +18,6 @@ build() {
               --exec-prefix=/usr \
               --bindir=/usr/bin \
               --sbindir=/usr/sbin \
-              --mandir=/usr/man \
               --libdir=/usr/lib \
               --disable-{nls,elvtune,wall,fallocate} \
               --enable-{write,rdev,raw,kill} \
@@ -27,7 +26,7 @@ build() {
   make -j $JOBS
   make DESTDIR=$PKG install
 
-  rm -r $PKG/usr/{share,man/ru}
+  rm -r $PKG/usr/share/man/ru
   
   # Fix .la files
   find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;

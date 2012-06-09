@@ -8,11 +8,13 @@ source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
 
 build() {
   cd $name-$version
+
   ./configure --build=$BUILD \
               --host=$HOST \
-              --prefix=/usr \
-              --mandir=/usr/man
+              --prefix=/usr
+
   make -j $JOBS
   make DESTDIR=$PKG install
-  rm -r $PKG/usr/share
+
+  rm -r $PKG/usr/share/info
 }
