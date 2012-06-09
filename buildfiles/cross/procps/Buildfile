@@ -5,9 +5,9 @@ name=procps
 version=3.2.8
 release=3
 source=(http://procps.sourceforge.net/$name-$version.tar.gz \
-  sysctl.conf \
-  $name-$version.patch \
-  $name-$version-linux-ver-init.patch)
+        sysctl.conf \
+        $name-$version.patch \
+        $name-$version-linux-ver-init.patch)
 depends=cross/ncurses
 
 
@@ -22,9 +22,9 @@ build() {
        bin=$PKG/usr/bin/ \
        sbin=$PKG/usr/sbin/ \
        lib=$PKG/usr/lib/ \
-       man1=$PKG/usr/man/man1/ \
-       man5=$PKG/usr/man/man5/ \
-       man8=$PKG/usr/man/man8/ \
+       man1=$PKG/usr/share/man/man1/ \
+       man5=$PKG/usr/share/man/man5/ \
+       man8=$PKG/usr/share/man/man8/ \
        install
 
   install -D -m644 ../sysctl.conf $PKG/etc/sysctl.conf
