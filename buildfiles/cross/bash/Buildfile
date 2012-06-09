@@ -22,7 +22,6 @@ build() {
               --cache-file=config.cache \
               --prefix=/usr \
               --exec-prefix=/usr \
-              --mandir=/usr/man \
               --disable-nls \
               --without-bash-malloc \
               --with-curses
@@ -31,9 +30,9 @@ build() {
 
   install -D -m 644 $SRC/profile $PKG/etc/profile
 
-  # Set default shell to bash
+  # Make bash default shell
   ln -s bash $PKG/usr/bin/sh
-  ln -s bash.1 $PKG/usr/man/man1/sh.1
+  ln -s bash.1 $PKG/usr/share/man/man1/sh.1
 
-  rm -rf $PKG/usr/share
+  rm -r $PKG/usr/share/info
 }
