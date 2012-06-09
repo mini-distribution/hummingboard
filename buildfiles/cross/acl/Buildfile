@@ -13,13 +13,12 @@ build() {
   ./configure --build=$BUILD \
               --host=$HOST \
               --prefix=/usr \
-              --libexecdir=/usr/lib \
-              --mandir=/usr/man 
+              --libexecdir=/usr/lib
 
   make -j $JOBS
   make DIST_ROOT=$PKG install install-lib install-dev 
 
-  rm -r $PKG/usr/share
+  rm -r $PKG/usr/share/{doc,locale}
 
   # Fix .la files
   find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;
