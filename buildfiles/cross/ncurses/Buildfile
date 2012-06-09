@@ -12,13 +12,13 @@ build() {
    ./configure --prefix=/usr \
                --build=$BUILD \
                --host=$HOST \
+               --mandir=/usr/share/man \
                --with-normal \
                --with-shared \
                --with-termlib \
                --without-debug \
                --without-ada 
-#               --with-pkg-config \
-#               --enable-pc-files
+
     make -j $JOBS
     make DESTDIR=$PKG install
 }
