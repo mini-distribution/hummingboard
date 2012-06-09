@@ -18,7 +18,6 @@ build() {
                --build=$BUILD \
                --host=$HOST \
                --libexecdir=/usr/lib \
-               --mandir=/usr/man \
                --disable-nls \
                --disable-assert \
                --cache-file=config.cache
