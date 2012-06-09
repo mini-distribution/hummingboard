@@ -28,10 +28,7 @@ build(){
     ln -s /usr/bin $PKG/bin
     ln -s /usr/sbin $PKG/sbin
     ln -s ../var $PKG/usr/var
-
-    # Create basic device nodes
-#    mknod $PKG/dev/console c 5 1
-#    chmod 0600 $PKG/dev/console
+    ln -s ../run $PKG/var/run
 
     # Create users
     echo "root:it3Y6aTzjxuyE:0:0:root:/root:/bin/bash" >> $PKG/etc/passwd
@@ -44,8 +41,4 @@ build(){
 
     # Create issue
     echo -e "Pandaboard Mini Distribution 1.0\n" > $PKG/etc/issue
-
-    # systemd required
-    ln -s /proc/self/mounts $PKG/etc/mtab
-    ln -s /usr/lib/systemd/systemd $PKG/usr/bin/init
 }

@@ -4,7 +4,6 @@ drwxr-xr-x	root/root	etc/
 -rw-r--r--	root/root	etc/group
 -rw-r--r--	root/root	etc/hostname
 -rw-r--r--	root/root	etc/issue
-lrwxrwxrwx	root/root	etc/mtab
 -rw-r--r--	root/root	etc/passwd
 drwxr-xr-x	root/root	home/
 drwxr-xr-x	root/root	lib/
@@ -18,7 +17,6 @@ drwxr-xr-x	root/root	sys/
 drwxr-xr-x	root/root	tmp/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
-lrwxrwxrwx	root/root	usr/bin/init
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/man/
@@ -34,3 +32,4 @@ drwxr-xr-x	root/root	usr/sbin/
 drwxr-xr-x	root/root	usr/share/
 lrwxrwxrwx	root/root	usr/var
 drwxr-xr-x	root/root	var/
+lrwxrwxrwx	root/root	var/run
