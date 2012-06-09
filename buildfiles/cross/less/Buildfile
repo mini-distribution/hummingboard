@@ -14,7 +14,6 @@ build() {
   ./configure --build=$BUILD \
               --host=$HOST \
               --prefix=/usr \
-              --mandir=/usr/man \
               --with-regex=pcre
 
   make

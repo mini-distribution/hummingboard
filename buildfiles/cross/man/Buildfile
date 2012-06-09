@@ -12,9 +12,10 @@ build() {
 
   ./configure -prefix=/usr \
               -confdir=/etc \
-              -mandir=/usr/man \
+              -mandir=/usr/share/man \
               +lang none \
               -default
+
   make CC="$HOST-gcc"
   make DESTDIR=$PKG install
   install -D -m 755 $SRC/makewhatis $PKG/etc/cron/daily/makewhatis

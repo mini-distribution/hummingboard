@@ -9,12 +9,14 @@ depends=cross/libpcre
 
 build() {
   cd $name-$version
+
   ./configure --build=$BUILD \
               --host=$HOST \
               --prefix=/usr \
-              --mandir=/usr/man \
               --disable-nls
+
   make -j $JOBS
   make DESTDIR=$PKG install
-  rm -r $PKG/usr/share
+
+  rm -r $PKG/usr/share/info
 }

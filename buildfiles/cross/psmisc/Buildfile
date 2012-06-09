@@ -17,10 +17,10 @@ build() {
               --host=$HOST \
               --prefix=/usr \
               --disable-nls \
-              --mandir=/usr/man \
               --cache-file=config.cache
   
   make
   make DESTDIR=$PKG install
+
   rm -f $PKG/usr/bin/pstree.x11
 }

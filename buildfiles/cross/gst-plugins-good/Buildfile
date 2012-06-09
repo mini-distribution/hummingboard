@@ -16,8 +16,11 @@ build() {
                --disable-oss4 \
                --disable-oss \
                --disable-gst_v4l2
+
    make -j $JOBS
    make DESTDIR=$PKG install
+
+   rm -r $PKG/usr/share/locale
 
    # Fix .la files
    find $PKG -name "*.la" -exec sed -i -e "/dependency_libs/s; /usr; $CROSS_SYSROOT/usr;g" {} \;

@@ -15,7 +15,6 @@ build() {
               --host=$HOST \
               --prefix=/usr \
               --sysconfdir=/etc \
-              --mandir=/usr/man \
               --with-ssl=openssl \
               --disable-debug \
               --disable-nls
@@ -24,5 +23,5 @@ build() {
   make DESTDIR=$PKG install
   install -D -m 0644 $SRC/wgetrc $PKG/etc/wgetrc
 
-  rm -r $PKG/usr/share
+  rm -r $PKG/usr/share/info
 }

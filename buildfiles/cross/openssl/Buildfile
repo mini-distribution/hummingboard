@@ -9,6 +9,7 @@ depends=cross/zlib
 
 build() {
   cd $name-$version
+
   ./Configure --prefix=/usr \
 	      --cross-compile-prefix=$HOST- \
 	      --install_prefix=$PKG \
@@ -18,6 +19,7 @@ build() {
 	      threads \
 	      shared \
 	      linux-generic32
+
   make
-  make MANDIR=/usr/man MANSUFFIX=ssl install
+  make MANDIR=/usr/share/man MANSUFFIX=ssl install
 }
