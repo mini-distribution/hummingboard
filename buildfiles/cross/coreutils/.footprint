@@ -16,6 +16,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/cut
 -rwxr-xr-x	root/root	usr/bin/date
 -rwxr-xr-x	root/root	usr/bin/dd
+-rwxr-xr-x	root/root	usr/bin/df
 -rwxr-xr-x	root/root	usr/bin/dir
 -rwxr-xr-x	root/root	usr/bin/dircolors
 -rwxr-xr-x	root/root	usr/bin/dirname
@@ -121,6 +122,7 @@ drwxr-xr-x	root/root	usr/man/man1/
 -rw-r--r--	root/root	usr/man/man1/cut.1
 -rw-r--r--	root/root	usr/man/man1/date.1
 -rw-r--r--	root/root	usr/man/man1/dd.1
+-rw-r--r--	root/root	usr/man/man1/df.1
 -rw-r--r--	root/root	usr/man/man1/dir.1
 -rw-r--r--	root/root	usr/man/man1/dircolors.1
 -rw-r--r--	root/root	usr/man/man1/dirname.1
