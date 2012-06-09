@@ -6,13 +6,13 @@ Name:
 
 About:
 
-   A minimal filesystem for the Pandaboard.
+   A small filesystem for the Pandaboard
 
 Main features:
 
-   * Busybox utilities
-   * Upstart init system
-   * Dropbear SSH client/server
+   * Glibc based
+   * Systemd init system
+   * Open SSH client/server
 
 Main builds:
 
@@ -39,9 +39,9 @@ Filesystem layout:
    /usr/bin/            User command/application binaries
    /usr/sbin/           System binaries (e.g. daemons)
    /usr/lib/            Libraries
+   /usr/lib/<prog>/     Program specific libraries - plug-ins, addons, etc
    /usr/include/        Header files
-   /usr/lib/<prog>/     Plug-ins, addons, etc
-   /usr/share/man/      Man pages
+   /usr/man/            Man pages
    /usr/share/<prog>/   Data files
    /usr/etc/<prog>/     Configuration files
    /etc/                Configuration files for system software (daemons, etc.)
