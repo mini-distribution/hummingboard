@@ -1,12 +1,8 @@
-drwxr-xr-x	root/root	bin/
--rwxr-xr-x	root/root	bin/login
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/cron/
 drwxr-xr-x	root/root	etc/cron/daily/
 -rwxr-xr-x	root/root	etc/cron/daily/pwck
 -rw-r--r--	root/root	etc/login.defs
-drwxr-xr-x	root/root	sbin/
--rwxr-xr-x	root/root	sbin/nologin
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwsr-xr-x	root/root	usr/bin/chage
@@ -16,6 +12,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/faillog
 -rwxr-xr-x	root/root	usr/bin/groups
 -rwxr-xr-x	root/root	usr/bin/lastlog
+-rwxr-xr-x	root/root	usr/bin/login
 -rwsr-xr-x	root/root	usr/bin/newgrp
 -rwsr-xr-x	root/root	usr/bin/passwd
 lrwxrwxrwx	root/root	usr/bin/sg
@@ -64,6 +61,7 @@ drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/groupmems
 -rwxr-xr-x	root/root	usr/sbin/groupmod
 -rwxr-xr-x	root/root	usr/sbin/grpck
+-rwxr-xr-x	root/root	usr/sbin/nologin
 -rwxr-xr-x	root/root	usr/sbin/pwck
 -rwxr-xr-x	root/root	usr/sbin/useradd
 -rwxr-xr-x	root/root	usr/sbin/userdel
