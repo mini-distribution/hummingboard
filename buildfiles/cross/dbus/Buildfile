@@ -18,6 +18,7 @@ build() {
                --localstatedir=/var \
                --with-systemdsystemunitdir=/etc/systemd/system \
                --enable-abstract-sockets \
+               --with-dbus-user=root \
                --disable-tests
    make -j $JOBS
    make DESTDIR=$PKG install
