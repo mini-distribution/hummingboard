@@ -19,6 +19,9 @@ build() {
   make CC="$HOST-gcc"
   make DESTDIR=$PKG \
        ldconfig=true \
+       bin=$PKG/usr/bin/ \
+       sbin=$PKG/usr/sbin/ \
+       lib=$PKG/usr/lib/ \
        man1=$PKG/usr/man/man1/ \
        man5=$PKG/usr/man/man5/ \
        man8=$PKG/usr/man/man8/ \

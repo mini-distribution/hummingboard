@@ -15,6 +15,8 @@ build() {
   ./configure --build=$BUILD \
               --host=$HOST \
               --prefix=/usr \
+              --bindir=/usr/bin \
+              --sbindir=/usr/sbin \
               --mandir=/usr/man \
               --sysconfdir=/etc \
               --disable-shared \
@@ -31,7 +33,6 @@ build() {
   install -d $PKG/etc/cron/daily $PKG/var/log
   install -m 644 $SRC/login.defs $PKG/etc
   install -m 755 $SRC/pwck $PKG/etc/cron/daily
-  mv $PKG/bin/{su,groups} $PKG/usr/bin
   touch $PKG/var/log/{lastlog,faillog}
 
   rm -r $PKG/usr/bin/gpasswd \

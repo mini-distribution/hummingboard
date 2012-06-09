@@ -15,6 +15,9 @@ build() {
   ./configure --build=$BUILD \
               --host=$HOST \
               --prefix=/usr \
+              --exec-prefix=/usr \
+              --bindir=/usr/bin \
+              --sbindir=/usr/sbin \
               --mandir=/usr/man \
               --libdir=/usr/lib \
               --disable-{nls,elvtune,wall,fallocate} \

@@ -13,7 +13,6 @@ build() {
   ./configure --build=$BUILD \
               --host=$HOST \
               --prefix=/usr \
-              --bindir=/bin \
               --libexecdir=/usr/lib \
               --mandir=/usr/man 
 

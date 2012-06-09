@@ -11,8 +11,8 @@ build () {
 
   ./configure --build=$BUILD \
               --host=$HOST \
-              --prefix= \
-              --libexecdir=/lib/dhcpcd \
+              --prefix=/usr \
+              --libexecdir=/usr/lib/dhcpcd \
               --dbdir=/var/lib/dhcpcd \
               --sysconfdir=/etc/dhcpcd \
               --os=linux \

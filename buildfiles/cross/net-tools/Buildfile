@@ -27,5 +27,5 @@ build() {
   patch -p1 < ../$name-$version-ipv6.patch
   patch -p1 < ../$name-$version-miiioctl.patch
   make CC="$HOST-gcc"
-  make BASEDIR=$PKG mandir=/usr/man install
+  make BASEDIR=$PKG/usr mandir=/man install
 }
