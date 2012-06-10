@@ -21,6 +21,7 @@ depends=(cross/fs-skeleton
          cross/findutils
          cross/bash
          cross/man
+         cross/gawk
          cross/nano
          cross/kmod
          cross/grep
