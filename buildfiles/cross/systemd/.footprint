@@ -29,6 +29,7 @@ drwxr-xr-x	root/root	etc/tmpfiles.d/
 drwxr-xr-x	root/root	etc/udev/
 drwxr-xr-x	root/root	etc/udev/rules.d/
 -rw-r--r--	root/root	etc/udev/udev.conf
+-rw-r--r--	root/root	etc/vconsole.conf
 drwxr-xr-x	root/root	etc/xdg/
 drwxr-xr-x	root/root	etc/xdg/systemd/
 lrwxrwxrwx	root/root	etc/xdg/systemd/user
