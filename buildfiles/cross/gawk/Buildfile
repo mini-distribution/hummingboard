@@ -1,0 +1,23 @@
+# Description: A pattern scanning and processing language
+# URL: http://www.gnu.org/software/gawk/gawk.html
+
+name=gawk
+version=4.0.1
+release=1
+source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.xz)
+
+build() {
+  cd $name-$version
+
+  ./configure --build=$BUILD \
+              --host=$HOST \
+              --prefix=/usr \
+              --libexecdir=/usr/lib \
+              --enable-switch \
+              --disable-nls
+
+  make -j $JOBS
+  make DESTDIR=$PKG install
+
+  rm -r $PKG/usr/share/info
+}
