@@ -4,7 +4,8 @@
 name=dhcpcd
 version=5.5.6
 release=1
-source=(http://roy.marples.name/downloads/dhcpcd/$name-$version.tar.bz2)
+source=(http://roy.marples.name/downloads/dhcpcd/$name-$version.tar.bz2
+        dhcpcd@.service)
 
 build () {
   cd $name-$version
@@ -21,5 +22,6 @@ build () {
   make -j $JOBS
   make DESTDIR=$PKG install
 
+  install -Dm644 $SRC/dhcpcd@.service $PKG/etc/systemd/system/dhcpcd@.service
   chmod -R u+w $PKG
 }

@@ -1,4 +1,5 @@
 [Unit]
+Description=OpenSSH Socket
 Conflicts=sshd.service
 
 [Socket]
@@ -8,4 +9,3 @@ Accept=yes
 [Install]
 WantedBy=sockets.target
 Also=sshdgenkeys.service
-

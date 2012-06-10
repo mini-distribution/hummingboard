@@ -7,8 +7,7 @@ release=1
 source=(http://ftp.openbsd.dk/pub/OpenBSD/OpenSSH/portable/$name-$version.tar.gz
         sshdgenkeys.service
         sshd@.service
-        sshd.socket
-        sshd.service)
+        sshd.socket)
 depends=(cross/zlib cross/openssl)
 
 build() {
@@ -25,9 +24,7 @@ build() {
    install -Dm644 $SRC/sshdgenkeys.service $PKG/etc/systemd/system/sshdgenkeys.service
    install -Dm644 $SRC/sshd@.service $PKG/etc/systemd/system/sshd@.service
    install -Dm644 $SRC/sshd.socket $PKG/etc/systemd/system/sshd.socket
-   install -Dm644 $SRC/sshd.service $PKG/etc/systemd/system/sshd.service
 
    make -j $JOBS
    make DESTDIR=$PKG install
 }
-

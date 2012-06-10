@@ -1,6 +1,9 @@
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/dhcpcd/
 -rw-r--r--	root/root	etc/dhcpcd/dhcpcd.conf
+drwxr-xr-x	root/root	etc/systemd/
+drwxr-xr-x	root/root	etc/systemd/system/
+-rw-r--r--	root/root	etc/systemd/system/dhcpcd@.service
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/dhcpcd/
