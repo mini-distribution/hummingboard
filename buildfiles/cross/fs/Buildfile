@@ -13,10 +13,9 @@ depends=(cross/fs-skeleton
          cross/gzip
          cross/util-linux
          cross/linux
-         cross/dropbear
+         cross/openssh
          cross/libpng
          cross/libjpeg
-         cross/libusb
          cross/dhcpcd
          cross/findutils
          cross/bash
