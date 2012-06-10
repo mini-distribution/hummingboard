@@ -20,8 +20,11 @@ build() {
                --enable-abstract-sockets \
                --with-dbus-user=root \
                --disable-tests
+
    make -j $JOBS
    make DESTDIR=$PKG install
+
+   rm -r $PKG/var
 
    # Fix .la files
    find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;
