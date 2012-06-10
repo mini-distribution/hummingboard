@@ -1,0 +1,24 @@
+# Description: Libraries providing APIs to netlink protocol
+# URL: http://www.infradead.org/~tgr/libnl/
+
+name=libnl
+version=3.2.10
+release=1
+source=(http://www.infradead.org/~tgr/libnl/files/$name-$version.tar.gz)
+
+build() {
+   cd $name-$version
+
+   ./configure --prefix=/usr \
+               --build=$BUILD \
+               --host=$HOST \
+               --disable-nls
+
+   make -j $JOBS
+   make DESTDIR=$PKG install
+
+   # Fix .la files
+   find $PKG -name "*.la" -exec sed -i -e "/dependency_libs/s; /usr; $CROSS_SYSROOT/usr;g" {} \;
+   find $PKG -name "*.la" -exec sed -i -e "/libdir/s;'/usr;'$CROSS_SYSROOT/usr;g" {} \;
+}
+

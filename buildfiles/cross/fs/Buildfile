@@ -22,10 +22,13 @@ depends=(cross/fs-skeleton
          cross/bash
          cross/man
          cross/nano
+         cross/kmod
          cross/grep
          cross/wget
          cross/psmisc
          cross/net-tools
+         cross/iputils
+         cross/wireless-tools
          cross/traceroute
          cross/alsa-utils
          cross/gst-plugins-good
@@ -44,5 +47,5 @@ build() {
 	mkfs.jffs2 -r $PKG -e 64 -o $BLD/fs.jffs2
 
         # Create tarball
-	tar -C $PKG -acpf $BLD/fs.tar.xz .
+	tar -C $PKG -acpf $BLD/fs.tar.gz .
 }
