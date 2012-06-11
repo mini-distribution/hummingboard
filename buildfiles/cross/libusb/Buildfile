@@ -12,6 +12,7 @@ build () {
   ./configure --build=$BUILD \
               --host=$HOST \
               --prefix=/usr
+
   make -j $JOBS
   make DESTDIR=$PKG install
 

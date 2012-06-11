@@ -9,7 +9,9 @@ source=http://www.zlib.net/$name-$version.tar.bz2
 build() {
     cd $name-$version
 
-    CROSS_PREFIX=$HOST- ./configure --prefix=/usr
+    CROSS_PREFIX=$HOST- \
+    ./configure --prefix=/usr
+
     make -j $JOBS
     make DESTDIR=$PKG install
 }

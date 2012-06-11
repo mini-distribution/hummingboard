@@ -12,11 +12,11 @@ build () {
   ./configure --build=$BUILD \
               --host=$HOST \
               --prefix=/usr \
+              --mandir=/usr/share/man \
               --with-ncurses
 
   find -type f -name 'makefile' \
     -exec sed -e "s|-I/usr|-I$HOST_SYSROOT/usr|g" -e "s|-L/usr|-L$HOST_SYSROOT/usr|g" -i {} \; 
-#    -exec sed -e 's:-ltinfo::g' -i {} \;
 
   make -j $JOBS
   make DESTDIR=$PKG install

@@ -8,10 +8,12 @@ source=(ftp://ftp.alsa-project.org/pub/lib/$name-$version.tar.bz2)
 
 build() {
   cd $name-$version
+
   ./configure --build=$BUILD \
               --host=$HOST \
               --prefix=/usr \
               --disable-python 
+
   make -j $JOBS
   make DESTDIR=$PKG install
 

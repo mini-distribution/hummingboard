@@ -2,9 +2,9 @@
 # URL: http://www.kernel.org
 
 name=linux
-version=3.4
+version=3.4.1
 release=1
-source=(http://www.kernel.org/pub/$name/kernel/v3.0/testing/$name-$version.tar.xz
+source=(http://www.kernel.org/pub/$name/kernel/v3.0/$name-$version.tar.xz
 	pandaboard.config)
 
 build(){

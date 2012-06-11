@@ -12,10 +12,10 @@ build() {
    ./configure --prefix=/usr \
                --build=$BUILD \
                --host=$HOST
+
    make -j $JOBS
    make DESTDIR=$PKG install
 
-   # Fix .la files
-#   find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;
+   rm -r $PKG/usr/share/info
 }
 

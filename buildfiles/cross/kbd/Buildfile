@@ -1,0 +1,35 @@
+# Description: Keytable files and keyboard utilities
+# URL: ftp://ftp.win.tue.nl/pub/linux-local/utils/kbd/
+
+name=kbd
+version=1.15.3
+release=1
+source=(ftp://ftp.altlinux.org/pub/people/legion/kbd/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  export CC="$HOST-gcc" RANLIB="$HOST-ranlib"
+
+  echo "ac_cv_func_setpgrp_void=yes" >> config.cache
+  echo "ac_cv_func_malloc_0_nonnull=yes" >> config.cache
+  echo "ac_cv_func_realloc_0_nonnull=yes" >> config.cache
+
+  ./configure --build=$BUILD \
+              --host=$HOST \
+              --prefix=/usr \
+              --datadir=/usr/share/kbd \
+              --disable-nls \
+              --cache-file=config.cache
+  make
+  make DESTDIR=$PKG install
+
+  ln -sf default8x9.psfu.gz $PKG/usr/share/kbd/consolefonts/default.gz
+
+  rm -r $PKG/usr/share/kbd/keymaps/{ppc,mac,atari,amiga,sun}
+  rm $PKG/usr/bin/{psfxtable,mapscrn,loadunimap} \
+     $PKG/usr/bin/{psfaddtable,psfgettable,psfstriptable} \
+     $PKG/usr/share/man/man1/{psfaddtable.1,psfgettable.1,psfstriptable.1,psfxtable.1} \
+     $PKG/usr/share/man/man8/{loadunimap.8,resizecons.8,mapscrn.8}
+  find $PKG/usr/share/kbd/ -name "README*" -exec rm {} \;
+}

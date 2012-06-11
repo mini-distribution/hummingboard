@@ -9,11 +9,11 @@ depends=(cross/alsa-lib cross/dialog)
 
 build() {
   cd $name-$version
+
   LDFLAGS="-L$CROSS_SYSROOT/usr/lib" \
   ./configure --build=$BUILD \
               --host=$HOST \
               --prefix=/usr \
-              --mandir=/usr/man \
               --disable-nls
 
   # alsactl_init.7 is generated using xmlto, which we don't have
@@ -21,10 +21,8 @@ build() {
 
   make -j $JOBS
   make DESTDIR=$PKG install
-  rm -rf $PKG/usr/share $PKG/usr/man/fr
 
-  # see above
-  rm -f $PKG/usr/man/man7/alsactl_init.7
-  rmdir $PKG/usr/man/man7
-
+  rm -rf $PKG/usr/share/man/fr
+  rm -f $PKG/usr/share/man/man7/alsactl_init.7
+  rmdir $PKG/usr/share/man/man7
 }

@@ -15,8 +15,11 @@ build() {
                --host=$HOST \
                --disable-ogg \
                --disable-vorbis
+
    make -j $JOBS
    make DESTDIR=$PKG install
+
+   rm -r $PKG/usr/share/{gtk-doc,locale}
 
    # Fix .la files
    find $PKG -name "*.la" -exec sed -i -e "/dependency_libs/s; /usr; $CROSS_SYSROOT/usr;g" {} \;

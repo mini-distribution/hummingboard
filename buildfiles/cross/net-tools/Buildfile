@@ -17,6 +17,7 @@ source=(http://www.tazenda.demon.co.uk/phil/net-tools/$name-$version.tar.bz2 \
 
 build() {
   cd $name-$version
+
   patch -p1 < ../$name-$version-config.patch
   patch -p1 < ../$name-$version-compile_fixes.patch
   patch -p1 < ../$name-$version-arp.patch
@@ -26,6 +27,7 @@ build() {
   patch -p1 < ../$name-$version-virtualname.patch
   patch -p1 < ../$name-$version-ipv6.patch
   patch -p1 < ../$name-$version-miiioctl.patch
+
   make CC="$HOST-gcc"
-  make BASEDIR=$PKG mandir=/usr/man install
+  make BASEDIR=$PKG/usr mandir=/share/man install
 }

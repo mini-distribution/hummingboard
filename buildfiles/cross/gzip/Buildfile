@@ -1,0 +1,20 @@
+# Description: GNU compression utility (replacement for compress)
+# URL: http://www.gzip.org/
+
+name=gzip
+version=1.4
+release=1
+source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  ./configure --build=$BUILD \
+              --host=$HOST \
+              --prefix=/usr
+
+  make -j $JOBS
+  make DESTDIR=$PKG install
+
+  rm -r $PKG/usr/share/info
+}

@@ -12,13 +12,13 @@ build() {
   ./configure --build=$BUILD \
               --host=$HOST \
               --prefix=/usr \
-              --mandir=/usr/man \
               --enable-utf8 \
               --enable-unicode-properties
+
   make -j $JOBS
   make DESTDIR=$PKG install
-  
-  rm -r $PKG/usr/share
+
+  rm -r $PKG/usr/share/doc
 
   # Fix .la files
   find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;

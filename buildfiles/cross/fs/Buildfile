@@ -8,21 +8,27 @@ depends=(cross/fs-skeleton
          cross/coreutils
          cross/sysvinit
          cross/shadow
+         cross/procps
+         cross/kbd
+         cross/gzip
          cross/util-linux
          cross/linux
-         cross/dropbear
+         cross/openssh
          cross/libpng
          cross/libjpeg
-         cross/libusb
          cross/dhcpcd
          cross/findutils
          cross/bash
          cross/man
+         cross/gawk
          cross/nano
+         cross/kmod
          cross/grep
          cross/wget
          cross/psmisc
          cross/net-tools
+         cross/iputils
+         cross/wireless-tools
          cross/traceroute
          cross/alsa-utils
          cross/gst-plugins-good
@@ -41,5 +47,5 @@ build() {
 	mkfs.jffs2 -r $PKG -e 64 -o $BLD/fs.jffs2
 
         # Create tarball
-	tar -C $PKG -acpf $BLD/fs.tar.xz .
+	tar -C $PKG -acpf $BLD/fs.tar.gz .
 }

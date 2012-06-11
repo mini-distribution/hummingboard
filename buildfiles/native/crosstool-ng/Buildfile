@@ -27,8 +27,10 @@ build() {
     ./ct-ng build
 
     # Cleanup host sysroot
-    rm -rf $PKG/arm-cortex_a9-linux-gnueabi/sysroot/etc
-    rm -rf $PKG/arm-cortex_a9-linux-gnueabi/sysroot/usr/share
+    rm -r $PKG/$HOST/sysroot/etc
+    rm -r $PKG/$HOST/sysroot/usr/share
+    mv $PKG/$HOST/sysroot/sbin/* $PKG/$HOST/sysroot/usr/sbin
+    rmdir $PKG/$HOST/sysroot/sbin
 
     # Enable fakeroot again
     export LD_LIBRARY_PATH=$TEMP_LD_LIBRARY_PATH

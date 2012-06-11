@@ -16,14 +16,13 @@ build() {
   ./configure --build=$BUILD \
               --host=$HOST \
               --prefix=/usr \
-              --mandir=/usr/man \
               --cache-file=../../../config.cache
   popd
   ./configure --build=$BUILD \
               --host=$HOST \
               --prefix=/usr \
-              --mandir=/usr/man \
               --cache-file=config.cache
+
   make TROFFBIN=troff GROFFBIN=groff GROFF_BIN_PATH=
   make DESTDIR=$PKG install
 

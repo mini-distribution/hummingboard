@@ -1,0 +1,30 @@
+# Description: OpenSSH SSH client and server
+# URL: http://www.openssh.org/
+
+name=openssh
+version=6.0p1
+release=1
+source=(http://ftp.openbsd.dk/pub/OpenBSD/OpenSSH/portable/$name-$version.tar.gz
+        sshdgenkeys.service
+        sshd@.service
+        sshd.socket)
+depends=(cross/zlib cross/openssl)
+
+build() {
+   cd $name-$version
+
+   ./configure --prefix=/usr \
+               --build=$BUILD \
+               --host=$HOST \
+               --sysconfdir=/etc/ssh \
+               --disable-strip \
+               --with-privsep-user=root \
+               --disable-nls
+
+   install -Dm644 $SRC/sshdgenkeys.service $PKG/etc/systemd/system/sshdgenkeys.service
+   install -Dm644 $SRC/sshd@.service $PKG/etc/systemd/system/sshd@.service
+   install -Dm644 $SRC/sshd.socket $PKG/etc/systemd/system/sshd.socket
+
+   make -j $JOBS
+   make DESTDIR=$PKG install
+}

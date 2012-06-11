@@ -8,12 +8,21 @@ source=(http://www.kernel.org/pub/linux/utils/kernel/kmod/$name-$version.tar.xz)
 
 build(){
    cd $name-$version
+
    ./configure --prefix=/usr \
-               --disable-nls \
                --build=$BUILD \
-               --host=$HOST
+               --host=$HOST \
+               --disable-nls
+
    make -j $JOBS
    make DESTDIR=$PKG install
+
+   ln -s /usr/bin/kmod $PKG/usr/bin/lsmod
+   ln -s /usr/bin/kmod $PKG/usr/bin/rmmod
+   ln -s /usr/bin/kmod $PKG/usr/bin/insmod
+   ln -s /usr/bin/kmod $PKG/usr/bin/modinfo
+   ln -s /usr/bin/kmod $PKG/usr/bin/modprobe
+   ln -s /usr/bin/kmod $PKG/usr/bin/depmod
 
    # Fix .la files
    find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;

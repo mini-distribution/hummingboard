@@ -20,4 +20,6 @@ export PS2="\[\033[1m\]> \[\033[0m\]"
 
 umask 022
 
+alias ls='ls --color'
+
 # End of file

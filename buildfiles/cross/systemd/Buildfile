@@ -4,7 +4,9 @@
 name=systemd
 version=185
 release=1
-source=(http://www.freedesktop.org/software/systemd/$name-$version.tar.xz)
+source=(http://www.freedesktop.org/software/systemd/$name-$version.tar.xz
+        vconsole.conf)
+
 depends=(cross/libcap
          cross/dbus
          cross/kmod
@@ -19,16 +21,28 @@ build() {
    ./configure --prefix=/usr \
                --build=$BUILD \
                --host=$HOST \
+               --sysconfdir=/etc \
+               --libexecdir=/usr/lib \
+               --localstatedir=/var \
                --with-distro=other \
+               --enable-split-usr \
+               --with-usb-ids-path=/usr/lib/usb.ids \
+               --with-pci-ids-path=/usr/share/pci.ids \
                --disable-nls
 
    make -j $JOBS
    make DESTDIR=$PKG install
 
+   # Systemd required configuration
+   ln -s /proc/self/mounts $PKG/etc/mtab
+   mkdir $PKG/usr/sbin
+   ln -s /usr/lib/systemd/systemd $PKG/usr/sbin/init
+   install -Dm644 $SRC/vconsole.conf $PKG/etc/vconsole.conf
+
+   # Cleanup
+   rm $PKG/usr/lib/tmpfiles.d/legacy.conf
+   rm $PKG/usr/lib/tmpfiles.d/x11.conf
+
    # Fix .la files
    find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;
-
-   # Systemd target configuration
-
 }
-

@@ -20,7 +20,6 @@ build() {
    ./configure --prefix=/usr \
                --build=$BUILD \
                --host=$HOST \
-               --mandir=/usr/man \
                --cache-file=config.cache \
                --enable-debug=no \
                --disable-selinux \
@@ -28,12 +27,13 @@ build() {
                --disable-xattr \
                --enable-man \
                --disable-Bsymbolic
+
    make -j $JOBS
    make DESTDIR=$PKG install
 
    # Cleanup
-   rm -rf $PKG/usr/share/gtk-doc
-   rm -rf $PKG/usr/share/locale
+   rm -r $PKG/usr/share/gtk-doc
+   rm -r $PKG/usr/share/locale
 
    # Fix .la files
    find $PKG -name "*.la" -exec sed -i -e "s;/usr;$CROSS_SYSROOT/usr;g" "{}" \;

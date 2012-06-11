@@ -8,6 +8,7 @@ source=(http://www.kernel.org/pub/software/utils/$name/$name-$version.tar.gz)
 
 build() {
   cd $name-$version
+
   make -j $JOBS CC="$HOST-gcc" AR="$HOST-ar" RANLIB="$HOST-ranlib" PREFIX=/usr ZLIB=no
-  make DESTDIR=$PKG PREFIX=/usr MANDIR=/usr/man STRIP="" install install-lib
+  make DESTDIR=$PKG PREFIX=/usr MANDIR=/usr/share/man STRIP="" install install-lib
 }

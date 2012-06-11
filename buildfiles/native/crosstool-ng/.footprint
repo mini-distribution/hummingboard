@@ -706,9 +706,6 @@ lrwxrwxrwx	root/root	arm-cortex_a9-linux-gnueabi/sysroot/lib/libstdc++.so.6
 lrwxrwxrwx	root/root	arm-cortex_a9-linux-gnueabi/sysroot/lib/libthread_db.so.1
 -rwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/lib/libutil-2.14.1.so
 lrwxrwxrwx	root/root	arm-cortex_a9-linux-gnueabi/sysroot/lib/libutil.so.1
-drwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/sbin/
--rwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/sbin/ldconfig
--rwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/sbin/sln
 drwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/
 drwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/bin/
 -rwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/bin/catchsegv
@@ -2076,7 +2073,9 @@ lrwxrwxrwx	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/lib/libutil.so
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/lib/Scrt1.o
 drwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/sbin/
 -rwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/sbin/iconvconfig
+-rwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/sbin/ldconfig
 -rwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/sbin/nscd
+-rwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/sbin/sln
 -rwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/sbin/zdump
 -rwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/sbin/zic
 drwxr-xr-x	root/root	bin/

@@ -9,6 +9,7 @@ depends=(cross/libusb)
 
 build() {
    cd $name-$version
+
    ./configure --prefix=/usr \
                --build=$BUILD \
                --host=$HOST \
