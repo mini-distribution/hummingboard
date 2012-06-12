@@ -4,7 +4,7 @@
 name=wpa_supplicant
 version=0.7.3
 release=1
-source=(http://hostap.epitest.fi/releases/$name-$version.tar.gz)
+source=(http://hostap.epitest.fi/releases/$name-$version.tar.gz wpa_supplicant.conf)
 depends=(cross/openssl cross/ncurses cross/readline cross/libnl)
 
 build () {
@@ -13,12 +13,12 @@ build () {
   cp defconfig .config
   echo "CONFIG_READLINE=y" >> .config
 
-  make CC="$HOST-gcc"
+  make -j $JOBS CC="$HOST-gcc"
 
   install -d $PKG/{usr/sbin,usr/share/man/man{8,5},etc}
   install wpa_{cli,passphrase,supplicant} $PKG/usr/sbin
   install doc/docbook/wpa_{background,cli,passphrase,supplicant}.8 $PKG/usr/share/man/man8
   install doc/docbook/wpa_supplicant.conf.5 $PKG/usr/share/man/man5
-  echo -e "ctrl_interface=/var/run/wpa_supplicant\n" > $PKG/etc/wpa.conf
-  chmod 0600 $PKG/etc/wpa.conf
+  install $SRC/wpa_supplicant.conf $PKG/etc
+  chmod 0600 $PKG/etc/wpa_supplicant.conf
 }
