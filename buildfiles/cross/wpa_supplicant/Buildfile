@@ -1,0 +1,24 @@
+# Description: User space IEEE 802.1X/WPA supplicant (wireless client) 
+# URL: http://hostap.epitest.fi/wpa_supplicant/
+
+name=wpa_supplicant
+version=0.7.3
+release=1
+source=(http://hostap.epitest.fi/releases/$name-$version.tar.gz wpa_supplicant.conf)
+depends=(cross/openssl cross/ncurses cross/readline cross/libnl)
+
+build () {
+  cd $name-$version/$name
+
+  cp defconfig .config
+  echo "CONFIG_READLINE=y" >> .config
+
+  make -j $JOBS CC="$HOST-gcc"
+
+  install -d $PKG/{usr/sbin,usr/share/man/man{8,5},etc}
+  install wpa_{cli,passphrase,supplicant} $PKG/usr/sbin
+  install doc/docbook/wpa_{background,cli,passphrase,supplicant}.8 $PKG/usr/share/man/man8
+  install doc/docbook/wpa_supplicant.conf.5 $PKG/usr/share/man/man5
+  install $SRC/wpa_supplicant.conf $PKG/etc
+  chmod 0600 $PKG/etc/wpa_supplicant.conf
+}

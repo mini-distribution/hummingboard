@@ -1,4 +1,4 @@
-# Buildfiles help
+# Buildfiles readme
 
 Name:
 
@@ -26,10 +26,6 @@ Quick build guide:
    buildgear build linux
    buildgear build u-boot
 
-Build options:
-
-   None
-
 Known issues:
 
    None
@@ -46,7 +42,7 @@ Filesystem layout:
    /usr/etc/<prog>/     Configuration files
    /etc/                Configuration files for system software (daemons, etc.)
 
-   The file directory hierachy is FHS 2.3 compliant.
+   The filesystem directory hierachy is arranged according to the FHS 2.3 standard.
 
 Maintainer:
 

@@ -33,7 +33,9 @@ depends=(cross/fs-skeleton
          cross/alsa-utils
          cross/gst-plugins-good
          cross/openssl
-         cross/systemd)
+         cross/systemd
+         cross/wpa_supplicant
+         cross/wl1271-firmware)
 
 build() {
 	cp -a $SYSROOT/* $PKG
