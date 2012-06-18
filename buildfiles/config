@@ -9,7 +9,7 @@ CROSS_SYSROOT_LINK="$NATIVE_SYSROOT/arm-cortex_a9-linux-gnueabi/sysroot"
 # Set host system name
 HOST="arm-cortex_a9-linux-gnueabi"
 
-# Add cross toolchain to path
+# Add cross toolchain to native environment
 PATH="$NATIVE_SYSROOT/bin:$PATH"
 PATH="$NATIVE_SYSROOT/usr/bin:$PATH"
 

@@ -8,7 +8,9 @@ source=(http://$name.freedesktop.org/releases/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
+
 	./configure --prefix=$BUILD_SYSROOT/usr
+
 	make
 	make DESTDIR=$PKG install
 

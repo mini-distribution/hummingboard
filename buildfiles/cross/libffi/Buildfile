@@ -1,5 +1,5 @@
-# Description: Library of PNG support functions
-# URL: http://www.libpng.org
+# Description: A Portable Foreign Function Interface Library 
+# URL: http://sourceware.org/libffi/
 
 name=libffi
 version=3.0.11

@@ -1,5 +1,5 @@
-# Description: Library of PNG support functions
-# URL: http://www.libpng.org
+# Description: Library for managing Linux capabilities
+# URL: https://sites.google.com/site/fullycapable
 
 name=libcap
 version=2.22

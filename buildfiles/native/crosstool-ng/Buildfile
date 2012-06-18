@@ -1,5 +1,5 @@
 # Description: A cross toolchain builder
-# URL: http://ymorin.is-a-geek.org/projects/crosstool
+# URL: http://crosstool-ng.org
 
 name=crosstool-ng
 version=1.15.2

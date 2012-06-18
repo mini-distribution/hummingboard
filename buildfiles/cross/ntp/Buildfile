@@ -8,12 +8,6 @@ source=(http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/$name-$version.tar
 depends=cross/openssl
 
 build () {
-#  mkdir -p $PKG/etc/{rc.d,ntp} \
-#    $PKG/var/log \
-#    $PKG/var/run/ntp \
-#    $PKG/var/lib/ntp/stats \
-#    $PKG/usr/man/{man8,man5}
-
   cd $name-$version
   ./configure --build=$BUILD \
               --host=$HOST \
@@ -24,20 +18,6 @@ build () {
               --enable-ntpdate-step \
               --enable-parse-clocks \
               --enable-all-clocks
-
-  # substitute the default configuration path
-#  sed -i -e 's;\(CONFIG_FILE[^"]*"\)/etc/ntp.conf;\1/etc/ntp/ntp.conf;' \
-#    include/ntp_config.h ntpdate/ntptime_config.c
-
   make
   make DESTDIR=$PKG install
-#  rm -r $PKG/usr/sbin
-#  touch $PKG/var/log/ntp.log
-
-#  install -m 644 $SRC/ntp.conf $PKG/etc/ntp
-#  install -m 755 $SRC/ntpd $PKG/etc/rc.d
-#  install -m 755 $SRC/ntpdate $PKG/etc/rc.d
-
-  # initialize ntp.drift file
-#  echo "0.0" > $PKG/var/lib/ntp/ntp.drift
 }

@@ -8,10 +8,12 @@ source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
 
 build() {
     cd $name-$version
+
     ./configure --prefix=$BUILD_SYSROOT/usr \
                 --with-sysroot
     make
     make DESTDIR=$PKG install
+
     rm -rf $PKG/$BUILD_SYSROOT/usr/share/info
     rm $PKG/$BUILD_SYSROOT/usr/share/libtool/libltdl/README
 }

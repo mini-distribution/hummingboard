@@ -1,5 +1,5 @@
-# Description: 
-# URL: 
+# Description: Commands for Manipulating Filesystem Extended Attributes
+# URL: http://savannah.nongnu.org/projects/attr
 
 name=attr
 version=2.4.46
