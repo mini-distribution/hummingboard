@@ -9,7 +9,7 @@ source=(http://mirror3.layerjet.com/nongnu/$name/$name-${version}dsf.tar.bz2)
 build() {
   cd $name-${version}dsf
 
-  make -C src CC="$HOST-gcc"
+  make -C src CC="$HOST-gcc" SULOGINLIBS="-lcrypt"
   make -C src ROOT=$PKG install
 
   mkdir $PKG/usr/sbin

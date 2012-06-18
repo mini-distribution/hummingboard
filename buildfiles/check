@@ -1,4 +1,5 @@
-# Buildfiles tool and library check (build system)
+# Check for tools and libraries required
+# to be pre-installed on build system.
 
 # Tool check mechanism
 check_tool() {
@@ -9,7 +10,10 @@ check_tool() {
    fi
 }
 
-# Check for required tools or libraries
-# to be pre-installed on build system.
+# Required by cross/fs
 check_tool mkfs.jffs2
+
+# Required by cross/groff
+check_tool grn
+
 #check_lib

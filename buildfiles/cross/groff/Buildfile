@@ -6,8 +6,6 @@ version=1.21
 release=1
 source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
 
-# Requires native groff for grn util
-
 build() {
   cd $name-$version
 
