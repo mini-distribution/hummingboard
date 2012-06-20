@@ -1,5 +1,3 @@
-# Buildfiles readme
-
 Name:
 
    Pandaboard Mini Distribution
@@ -25,6 +23,11 @@ Quick build guide:
    buildgear build fs
    buildgear build linux
    buildgear build u-boot
+
+Build system:
+
+   Tested on Ubuntu 12.04 Minimal with the following additional packages installed:
+   sudo apt-get install ...
 
 Known issues:
 
