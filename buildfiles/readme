@@ -27,6 +27,7 @@ Quick build guide:
 Build system:
 
    Tested on Ubuntu 12.04 Minimal with the following additional packages installed:
+
    sudo apt-get install ...
 
 Known issues:
