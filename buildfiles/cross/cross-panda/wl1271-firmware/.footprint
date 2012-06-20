@@ -1,8 +1,0 @@
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/firmware/
-drwxr-xr-x	root/root	lib/firmware/ti-connectivity/
--rw-r--r--	root/root	lib/firmware/ti-connectivity/wl1271-fw-2.bin
--rw-r--r--	root/root	lib/firmware/ti-connectivity/wl1271-fw-ap.bin
--rw-r--r--	root/root	lib/firmware/ti-connectivity/wl1271-fw.bin
--rw-r--r--	root/root	lib/firmware/ti-connectivity/wl1271-nvs.bin
--rw-r--r--	root/root	lib/firmware/ti-connectivity/wl127x-fw-4-sr.bin
