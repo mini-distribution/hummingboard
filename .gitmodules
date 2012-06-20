@@ -1,0 +1,15 @@
+[submodule "buildfiles/cross/cross-core"]
+	path = buildfiles/cross/cross-core
+	url = git@github.com:martinlund/cross-core.git
+[submodule "buildfiles/cross/cross-opt"]
+	path = buildfiles/cross/cross-opt
+	url = git@github.com:martinlund/cross-opt.git
+[submodule "buildfiles/cross/cross-qt4"]
+	path = buildfiles/cross/cross-qt4
+	url = git@github.com:martinlund/cross-qt4.git
+[submodule "buildfiles/cross/cross-panda"]
+	path = buildfiles/cross/cross-panda
+	url = git@github.com:martinlund/cross-panda.git
+[submodule "buildfiles/native/native-core"]
+	path = buildfiles/native/native-core
+	url = git@github.com:martinlund/native-core.git
