@@ -11,6 +11,7 @@ Main features:
    * Glibc based
    * Systemd init system
    * Open SSH client/server
+   * ... (TBD)
 
 Main builds:
 
@@ -24,11 +25,12 @@ Quick build guide:
    buildgear build linux
    buildgear build u-boot
 
-Build system:
+Build system requirements:
 
-   Tested on Ubuntu 12.04 Minimal with the following additional packages installed:
+   Tested on Ubuntu 12.04 Minimal with the following additional packages 
+   installed:
 
-   sudo apt-get install ...
+   sudo apt-get install ... (TBD)
 
 Known issues:
 
@@ -46,7 +48,10 @@ Filesystem layout:
    /usr/etc/<prog>/     Configuration files
    /etc/                Configuration files for system software (daemons, etc.)
 
-   The filesystem directory hierachy is arranged according to the FHS 2.3 standard.
+   The filesystem directory hierachy is arranged according to the FHS 2.3 
+   standard.
+   
+   See http://www.pathname.com/fhs/pub/fhs-2.3.html for more details.
 
 Maintainer:
 
