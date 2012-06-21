@@ -1,3 +1,5 @@
 # Local buildgear configuration
 
 #source_dir="$HOME/source"
+download_mirror="http://www.buildgear.org/mirror"
+#download_mirror_first=yes
