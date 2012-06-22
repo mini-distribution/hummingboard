@@ -38,18 +38,20 @@ Known issues:
 
 Filesystem layout:
 
-   /usr/bin/            User command/application binaries
-   /usr/sbin/           System binaries (e.g. daemons)
+   /usr/bin/            User binaries
+   /usr/sbin/           System binaries (daemons, system utilities, etc.)
    /usr/lib/            Libraries
-   /usr/lib/<prog>/     Program specific libraries - plug-ins, addons, etc
+   /usr/lib/<prog>/     Program specific libraries (plug-ins, addons, etc.)
    /usr/include/        Header files
    /usr/share/man/      Man pages
-   /usr/share/<prog>/   Data files
-   /usr/etc/<prog>/     Configuration files
-   /etc/                Configuration files for system software (daemons, etc.)
+   /usr/share/<prog>/   Program data files shared across all architectures
+   /usr/etc/<prog>/     Configuration files for user programs
+   /etc/                Configuration files for system programs
 
    The filesystem directory hierachy is arranged according to the FHS 2.3 
-   standard.
+   standard with the exceptions that /bin and /sbin are unused. Instead all
+   software make use of /usr/bin and /usr/sbin. For backwards compatibility
+   /bin and /sbin remain links to /usr/bin and /usr/sbin respectively.
    
    See http://www.pathname.com/fhs/pub/fhs-2.3.html for more details.
 
