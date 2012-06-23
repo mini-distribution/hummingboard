@@ -1,13 +1,13 @@
 # Buildfiles configuration
 
+# Set host system name
+HOST="arm-cortex_a9-linux-gnueabi"
+
 # Make all cross builds depend on cross toolchain
 CROSS_DEPENDS=native/crosstool-ng
 
 # Set cross sysroot path
-CROSS_SYSROOT_LINK="$NATIVE_SYSROOT/arm-cortex_a9-linux-gnueabi/sysroot"
-
-# Set host system name
-HOST="arm-cortex_a9-linux-gnueabi"
+CROSS_SYSROOT_LINK="$NATIVE_SYSROOT/$HOST/sysroot"
 
 # Add cross toolchain to build environment
 PATH="$NATIVE_SYSROOT/bin:$PATH"
