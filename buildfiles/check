@@ -1,8 +1,9 @@
 # Check for tools and libraries required
 # to be pre-installed on build system.
 
-# Tool check mechanism
-check_tool() {
+# Tool check function
+check_tool()
+{
    type $1 &> /dev/null
    if [ $? != 0 ]; then
       echo "Failed ('$1' is not found)"
@@ -10,10 +11,19 @@ check_tool() {
    fi
 }
 
-# Required by cross/fs
-check_tool mkfs.jffs2
+# Library check function
+check_lib()
+{
+   test -e $1 &> /dev/null
+   if [ $? != 0 ]; then
+      echo "Failed ('$1' is not found)"
+      exit 1
+   fi
+}
 
-# Required by cross/groff
-check_tool grn
+# Tool checks
+check_tool mkfs.jffs2  # Required by cross/fs
+check_tool grn         # Required by cross/groff
 
-#check_lib
+# Library checks
+#check_lib /usr/lib/libfoo.so.1.0.?.?  # Required by native/friend
