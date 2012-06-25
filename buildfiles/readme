@@ -10,8 +10,9 @@ Main features:
 
    * Glibc based
    * Systemd init system
-   * Open SSH client/server
-   * ... (TBD)
+   * Ethernet and wifi network support
+   * OpenSSH client/server
+   * (TBD)...
 
 Main builds:
 
