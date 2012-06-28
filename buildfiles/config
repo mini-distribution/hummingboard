@@ -24,11 +24,9 @@ cross_env()
 }
 
 # Add environment for native builds
-native_env()
-{
-   # Add native environment here
-   echo
-}
+#native_env()
+#{
+#}
 
 # Set number of parallel make jobs
 JOBS=`cat /proc/cpuinfo | grep processor | wc -l`
