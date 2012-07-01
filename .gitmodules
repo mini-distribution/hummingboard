@@ -13,3 +13,6 @@
 [submodule "buildfiles/native/native-core"]
 	path = buildfiles/native/native-core
 	url = git@github.com:martinlund/native-core.git
+[submodule "buildfiles/native/native-panda"]
+	path = buildfiles/native/native-panda
+	url = git@github.com:lundmar/native-panda.git
