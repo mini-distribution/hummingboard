@@ -29,15 +29,15 @@ Quick build guide:
 
 Build system requirements:
 
-   Tested on Ubuntu 12.04 Minimal with the following additional packages 
-   installed:
+   Tested on Ubuntu 12.04 Minimal (64-bit x86) with the following additional
+   packages installed:
 
    $ sudo apt-get install unzip mtd-utils groff bison flex gperf texinfo \
                           libtool automake libncurses5-dev gawk libexpat1-dev \
                           gettext u-boot-tools libglib2.0-dev intltool
 
 
-   Also, reconfiguring "/bin/sh" to use bash is required:
+   Also requires reconfiguring "/bin/sh" to use bash:
 
    $ sudo dpkg-reconfigure dash
 
