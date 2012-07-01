@@ -9,11 +9,11 @@ About:
 Main features:
 
    * Arm Cortex A9 optimized
-   * Glibc based
+   * Glibc based toolchain
    * Systemd init system
+   * GNU/Linux system utilities (no busybox)
    * Ethernet and wifi network support
    * OpenSSH client/server
-   * (TBD)...
 
 Main builds:
 
@@ -32,10 +32,9 @@ Build system requirements:
    Tested on Ubuntu 12.04 Minimal with the following additional packages 
    installed:
 
-   $ sudo apt-get install build-essential libcurl4-gnutls-dev unzip mtd-utils \
-                          groff bison flex gperf texinfo libtool automake \
-                          libncurses5-dev gawk libexpat1-dev gettext u-boot-tools \
-                          libglib2.0-dev intltool
+   $ sudo apt-get install unzip mtd-utils groff bison flex gperf texinfo \
+                          libtool automake libncurses5-dev gawk libexpat1-dev \
+                          gettext u-boot-tools libglib2.0-dev intltool
 
 
    Also, reconfiguring "/bin/sh" to use bash is required:
