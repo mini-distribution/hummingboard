@@ -8,6 +8,7 @@ About:
 
 Main features:
 
+   * Arm Cortex A9 optimized
    * Glibc based
    * Systemd init system
    * Ethernet and wifi network support
@@ -31,7 +32,17 @@ Build system requirements:
    Tested on Ubuntu 12.04 Minimal with the following additional packages 
    installed:
 
-   sudo apt-get install ... (TBD)
+   sudo apt-get install build-essential libcurl4-gnutls-dev unzip mtd-utils \
+                        groff bison flex gperf texinfo libtool automake \
+                        libncurses5-dev gawk libexpat1-dev gettext u-boot-tools \
+                        libglib2.0-dev intltool git
+
+
+   Also, reconfiguring "/bin/sh" to use bash is required:
+
+   sudo dpkg-reconfigure dash
+
+   Fact: many software distributions fail to build using the dash shell.
 
 Known issues:
 
