@@ -13,3 +13,6 @@
 [submodule "buildfiles/native/native-core"]
 	path = buildfiles/native/native-core
 	url = git@github.com:lundmar/native-core.git
+[submodule "buildfiles/cross/cross-xorg"]
+	path = buildfiles/cross/cross-xorg
+	url = git@github.com:lundmar/cross-xorg.git
