@@ -1,4 +1,4 @@
-# Buildfiles configuration
+# Build files configuration
 
 # Set host system name
 HOST="arm-cortex_a9-linux-gnueabi"
