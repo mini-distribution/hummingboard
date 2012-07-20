@@ -13,7 +13,10 @@ CROSS_SYSROOT="$NATIVE_SYSROOT/$HOST/sysroot"
 PATH="$NATIVE_SYSROOT/bin:$PATH"
 PATH="$NATIVE_SYSROOT/usr/bin:$PATH"
 
-# Add environment for cross builds
+# Set number of parallel make jobs
+JOBS=`cat /proc/cpuinfo | grep processor | wc -l`
+
+# Add this environment for cross builds only
 cross_env()
 {
    # Pkg-config cross configuration
@@ -23,10 +26,30 @@ cross_env()
    export PKG_CONFIG_PATH="$CROSS_SYSROOT/usr/lib/pkgconfig"
 }
 
-# Add environment for native builds
-#native_env()
-#{
-#}
+# Add this environment for native builds only
+native_env()
+{
+   # Add configuration required for native
+   # builds here if needed.
+   :
+}
 
-# Set number of parallel make jobs
-JOBS=`cat /proc/cpuinfo | grep processor | wc -l`
+# Tool check function
+check_tool()
+{
+   type $1 &> /dev/null
+   if [ $? != 0 ]; then
+      echo "Failed ($1 is not found)"
+      exit 1
+   fi
+}
+
+# Library check function
+check_lib()
+{
+   test -e $1 &> /dev/null
+   if [ $? != 0 ]; then
+      echo "Failed ($1 is not found)"
+      exit 1
+   fi
+}
