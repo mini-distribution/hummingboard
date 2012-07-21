@@ -16,27 +16,30 @@ PATH="$NATIVE_SYSROOT/usr/bin:$PATH"
 # Set number of parallel make jobs
 JOBS=`cat /proc/cpuinfo | grep processor | wc -l`
 
-# Add this environment for cross builds only
-cross_env()
-{
-   # Pkg-config cross configuration
+# Pkg-config cross configuration
+if [ "$BUILD_TYPE" = "cross" ]; then
    export PKG_CONFIG_DIR=
    export PKG_CONFIG_SYSROOT_DIR="$CROSS_SYSROOT"
    export PKG_CONFIG_LIBDIR="$CROSS_SYSROOT/usr/lib/pkgconfig:$CROSS_SYSROOT/usr/share/pkgconfig"
    export PKG_CONFIG_PATH="$CROSS_SYSROOT/usr/lib/pkgconfig"
-}
+fi
 
-# Add this environment for native builds only
-native_env()
-{
-   # Pkg-config native configuration
+# Pkg-config native configuration
+if [ "$BUILD_TYPE" = "native" ]; then
    export PKG_CONFIG_DIR=
    export PKG_CONFIG_SYSROOT_DIR="$NATIVE_SYSROOT"
    export PKG_CONFIG_LIBDIR="$NATIVE_SYSROOT/usr/lib/pkgconfig:$NATIVE_SYSROOT/usr/share/pkgconfig"
    export PKG_CONFIG_PATH="$NATIVE_SYSROOT/usr/lib/pkgconfig"
+fi
+
+# Helper functions
+
+fix_la_files()
+{
+   find $1 -name "*.la" -exec sed -i -e "/dependency_libs/s; /usr; $SYSROOT/usr;g" {} \; \
+                        -exec sed -i -e "/libdir/s;'/usr;'$SYSROOT/usr;g" {} \;
 }
 
-# Tool check function
 check_tool()
 {
    type $1 &> /dev/null
@@ -46,7 +49,6 @@ check_tool()
    fi
 }
 
-# Library check function
 check_lib()
 {
    test -e $1 &> /dev/null
