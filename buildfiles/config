@@ -29,9 +29,11 @@ cross_env()
 # Add this environment for native builds only
 native_env()
 {
-   # Add configuration required for native
-   # builds here if needed.
-   :
+   # Pkg-config native configuration
+   export PKG_CONFIG_DIR=
+   export PKG_CONFIG_SYSROOT_DIR="$NATIVE_SYSROOT"
+   export PKG_CONFIG_LIBDIR="$NATIVE_SYSROOT/usr/lib/pkgconfig:$NATIVE_SYSROOT/usr/share/pkgconfig"
+   export PKG_CONFIG_PATH="$NATIVE_SYSROOT/usr/lib/pkgconfig"
 }
 
 # Tool check function
