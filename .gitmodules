@@ -19,3 +19,6 @@
 [submodule "buildfiles/cross/cross-extra"]
 	path = buildfiles/cross/cross-extra
 	url = git@github.com:lundmar/cross-extra.git
+[submodule "buildfiles/native/native-panda"]
+	path = buildfiles/native/native-panda
+	url = git@github.com:lundmar/native-panda.git
