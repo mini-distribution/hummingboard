@@ -1,0 +1,17 @@
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/firmware/
+drwxr-xr-x	root/root	lib/firmware/ti-connectivity/
+-rw-r--r--	root/root	lib/firmware/ti-connectivity/LICENSE
+-rw-r--r--	root/root	lib/firmware/ti-connectivity/wl1271-fw-2.bin
+-rw-r--r--	root/root	lib/firmware/ti-connectivity/wl1271-fw-ap.bin
+-rw-r--r--	root/root	lib/firmware/ti-connectivity/wl1271-fw.bin
+-rw-r--r--	root/root	lib/firmware/ti-connectivity/wl1271-nvs.bin
+-rw-r--r--	root/root	lib/firmware/ti-connectivity/wl127x-fw-3.bin
+-rw-r--r--	root/root	lib/firmware/ti-connectivity/wl127x-fw-4-mr.bin
+-rw-r--r--	root/root	lib/firmware/ti-connectivity/wl127x-fw-4-plt.bin
+-rw-r--r--	root/root	lib/firmware/ti-connectivity/wl127x-fw-4-sr.bin
+-rw-r--r--	root/root	lib/firmware/ti-connectivity/wl127x-fw-5-mr.bin
+-rw-r--r--	root/root	lib/firmware/ti-connectivity/wl127x-fw-5-plt.bin
+-rw-r--r--	root/root	lib/firmware/ti-connectivity/wl127x-fw-5-sr.bin
+-rw-r--r--	root/root	lib/firmware/ti-connectivity/wl127x-fw-plt-3.bin
+-rw-r--r--	root/root	lib/firmware/ti-connectivity/wl127x-nvs.bin

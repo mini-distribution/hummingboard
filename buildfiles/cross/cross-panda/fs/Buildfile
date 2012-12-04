@@ -1,0 +1,43 @@
+# Description: A basic GNU/linux filesystem
+# URL: http://www.buildgear.org
+
+name=fs
+version=1.0
+release=1
+depends=(core
+         linux
+         net-tools
+         traceroute
+         alsa-utils
+         gstreamer
+         gst-plugins-base
+         gst-plugins-good
+         wireless_tools
+         wpa_supplicant
+         wl1271-firmware
+         connman
+         omapconf
+         samba
+         mysql
+         lighttpd
+         ntp
+         vim)
+
+build() {
+   # Copy fully populated sysroot
+   cp -a $SYSROOT/* $PKG
+
+   # Set host name
+   echo "panda" > $PKG/etc/hostname
+
+   # Set login issue
+   echo -e "Pandaboard Mini Distribution $version\n" > $PKG/etc/issue
+
+   # Cleanup
+   #rm -rf $PKG/usr/include
+   rm -rf $PKG/usr/lib/*.a
+   rm -rf $PKG/usr/lib/*.la
+
+   # Create tarball
+   tar -C $PKG -acpf $OUTPUT/fs.tar.gz .
+}

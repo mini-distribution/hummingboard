@@ -1,0 +1,54 @@
+# Description: A cross toolchain builder
+# URL: http://www.crosstool-ng.org
+
+name=crosstool-ng
+version=1.17.0
+release=1
+source=(http://crosstool-ng.org/download/$name/$name-$version.tar.bz2
+        disable-LD_LIBRARY_PATH-check.patch
+        $HOST.config
+        http://www.kernel.org/pub/linux/kernel/v3.0/linux-3.6.tar.xz)
+
+build()
+{
+   mv linux-3.6 linux
+
+   cd $name-$version
+
+   patch -p1 -i $SRC/disable-LD_LIBRARY_PATH-check.patch
+
+   ./configure --enable-local
+   make
+
+   # Do ct-ng configuration
+   cp $SRC/$HOST.config .config
+   sed -i /^CT_LOCAL_TARBALLS_DIR=/s:=.*:=\"$BG_SOURCE_DIR\": .config
+   sed -i /^CT_PREFIX_DIR=/s:=.*:=\"$PKG\": .config
+   sed -i /^CT_KERNEL_LINUX_CUSTOM_LOCATION=/s:=.*:=\"$SRC/linux\": .config
+
+   ./ct-ng build
+
+   # Clean up host sysroot
+   rm -r $PKG/$HOST/sysroot/etc
+   rm -r $PKG/$HOST/sysroot/usr/share
+   mv $PKG/$HOST/sysroot/sbin/* $PKG/$HOST/sysroot/usr/sbin
+   rmdir $PKG/$HOST/sysroot/sbin
+
+   # Fix .la files
+   sed -i -e "/libdir/s:=.*:='$CROSS_SYSROOT/lib':" \
+       $PKG/$HOST/sysroot/lib/libstdc++.la \
+       $PKG/$HOST/sysroot/lib/libsupc++.la
+}
+
+check()
+{
+   # Test for preinstalled tools and libs
+   check_tool gawk
+   check_tool bison
+   check_tool flex
+   check_tool gperf
+   check_tool makeinfo
+   check_tool libtool
+   check_lib /usr/include/curses.h
+   check_lib /usr/include/expat.h
+}

@@ -1,0 +1,12 @@
+diff -Naur a/scripts/crosstool-NG.sh.in b/scripts/crosstool-NG.sh.in
+--- a/scripts/crosstool-NG.sh.in	2012-11-11 21:43:58.000000000 +0100
++++ b/scripts/crosstool-NG.sh.in	2012-12-01 11:00:48.884162264 +0100
+@@ -44,7 +44,7 @@
+ 
+ # Some sanity checks in the environment and needed tools
+ CT_DoLog INFO "Performing some trivial sanity checks"
+-CT_TestAndAbort "Don't set LD_LIBRARY_PATH. It screws up the build." -n "${LD_LIBRARY_PATH}"
++#CT_TestAndAbort "Don't set LD_LIBRARY_PATH. It screws up the build." -n "${LD_LIBRARY_PATH}"
+ CT_TestAndAbort "Don't set LIBRARY_PATH. It screws up the build." -n "${LIBRARY_PATH}"
+ CT_TestAndAbort "Don't set LPATH. It screws up the build." -n "${LPATH}"
+ CT_TestAndAbort "Don't set CFLAGS. It screws up the build." -n "${CFLAGS}"
