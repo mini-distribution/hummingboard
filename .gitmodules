@@ -7,9 +7,6 @@
 [submodule "buildfiles/cross/cross-qt"]
 	path = buildfiles/cross/cross-qt
 	url = git@github.com:mini-distribution/cross-qt.git
-[submodule "buildfiles/native/native-core"]
-	path = buildfiles/native/native-core
-	url = git@github.com:mini-distribution/native-core.git
 [submodule "buildfiles/cross/cross-xorg"]
 	path = buildfiles/cross/cross-xorg
 	url = git@github.com:mini-distribution/cross-xorg.git
