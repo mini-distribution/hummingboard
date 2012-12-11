@@ -22,7 +22,7 @@ build()
 
    # Do ct-ng configuration
    cp $SRC/$HOST.config .config
-   sed -i /^CT_LOCAL_TARBALLS_DIR=/s:=.*:=\"$BG_SOURCE_DIR\": .config
+   sed -i /^CT_LOCAL_TARBALLS_DIR=/s:=.*:=\"$SOURCE\": .config
    sed -i /^CT_PREFIX_DIR=/s:=.*:=\"$PKG\": .config
    sed -i /^CT_KERNEL_LINUX_CUSTOM_LOCATION=/s:=.*:=\"$SRC/linux\": .config
 
