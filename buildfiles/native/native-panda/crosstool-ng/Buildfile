@@ -49,6 +49,6 @@ check()
    check_tool gperf
    check_tool makeinfo
    check_tool libtool
-   check_lib /usr/include/curses.h
-   check_lib /usr/include/expat.h
+   check_exist /usr/include/curses.h
+   check_exist /usr/include/expat.h
 }
