@@ -7,7 +7,7 @@
 download_mirror="http://www.buildgear.org/mirror"
 
 # Download from mirror first? (default=no)
-download_mirror_first=no
+#download_mirror_first=no
 
 # Download timeout in seconds (default=20)
 #download_timeout=20
