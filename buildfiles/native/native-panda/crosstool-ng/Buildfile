@@ -7,11 +7,11 @@ release=1
 source=(http://crosstool-ng.org/download/$name/$name-$version.tar.bz2
         disable-LD_LIBRARY_PATH-check.patch
         $HOST.config
-        http://www.kernel.org/pub/linux/kernel/v3.0/linux-3.6.tar.xz)
+        http://www.kernel.org/pub/linux/kernel/v3.0/linux-3.7.1.tar.xz)
 
 build()
 {
-   mv linux-3.6 linux
+   mv linux-3.7.1 linux
 
    cd $name-$version
 

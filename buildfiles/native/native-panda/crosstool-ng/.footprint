@@ -5,8 +5,8 @@ drwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/bin/
 hrwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/bin/c++ link to arm-cortex_a9-linux-gnueabi/bin/g++
 -rwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/bin/g++
 -rwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/bin/gcc
--rwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/bin/ld
-hrwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/bin/ld.bfd link to arm-cortex_a9-linux-gnueabi/bin/ld
+-rwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/bin/ld.bfd
+hrwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/bin/ld link to arm-cortex_a9-linux-gnueabi/bin/ld.bfd
 -rwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/bin/nm
 -rwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/bin/objcopy
 -rwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/bin/objdump
@@ -2142,25 +2142,25 @@ drwxr-xr-x	root/root	bin/
 -rwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-addr2line
 hrwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-ar link to arm-cortex_a9-linux-gnueabi/bin/ar
 hrwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-as link to arm-cortex_a9-linux-gnueabi/bin/as
--rwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-c++
 lrwxrwxrwx	root/root	bin/arm-cortex_a9-linux-gnueabi-cc -> arm-cortex_a9-linux-gnueabi-gcc
 -rwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-c++filt
+hrwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-c++ link to bin/arm-cortex_a9-linux-gnueabi-g++
 -rwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-cpp
 -rwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-ct-ng.config
 -rwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-elfedit
--rwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-gcc
-hrwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-gcc-4.7.2 link to bin/arm-cortex_a9-linux-gnueabi-gcc
+-rwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-g++
+-rwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-gcc-4.7.2
 -rwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-gcc-ar
+hrwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-gcc link to bin/arm-cortex_a9-linux-gnueabi-gcc-4.7.2
 -rwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-gcc-nm
 -rwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-gcc-ranlib
 -rwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-gcov
 -rwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-gdb
 -rwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-gdbtui
-hrwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-g++ link to bin/arm-cortex_a9-linux-gnueabi-c++
 -rwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-gprof
-hrwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-ld.bfd link to arm-cortex_a9-linux-gnueabi/bin/ld
+hrwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-ld.bfd link to arm-cortex_a9-linux-gnueabi/bin/ld.bfd
 -rwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-ldd
-hrwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-ld link to arm-cortex_a9-linux-gnueabi/bin/ld
+hrwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-ld link to arm-cortex_a9-linux-gnueabi/bin/ld.bfd
 hrwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-nm link to arm-cortex_a9-linux-gnueabi/bin/nm
 hrwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-objcopy link to arm-cortex_a9-linux-gnueabi/bin/objcopy
 hrwxr-xr-x	root/root	bin/arm-cortex_a9-linux-gnueabi-objdump link to arm-cortex_a9-linux-gnueabi/bin/objdump
