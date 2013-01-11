@@ -1,7 +1,6 @@
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/modules/
 drwxr-xr-x	root/root	lib/modules/3.7.1/
-lrwxrwxrwx	root/root	lib/modules/3.7.1/build -> /home/ubuntu/pandaboard/build/work/cross/linux/src/linux-3.7.1
 drwxr-xr-x	root/root	lib/modules/3.7.1/kernel/
 drwxr-xr-x	root/root	lib/modules/3.7.1/kernel/crypto/
 -rw-r--r--	root/root	lib/modules/3.7.1/kernel/crypto/ecb.ko
@@ -78,4 +77,3 @@ drwxr-xr-x	root/root	lib/modules/3.7.1/kernel/sound/usb/
 -rw-r--r--	root/root	lib/modules/3.7.1/modules.symbols
 -rw-r--r--	root/root	lib/modules/3.7.1/modules.symbols.bin
 -rw-r--r--	root/root	lib/modules/3.7.1/modules.usbmap
-lrwxrwxrwx	root/root	lib/modules/3.7.1/source -> /home/ubuntu/pandaboard/build/work/cross/linux/src/linux-3.7.1

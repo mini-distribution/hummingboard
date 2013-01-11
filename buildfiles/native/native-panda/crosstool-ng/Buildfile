@@ -6,13 +6,11 @@ version=1.17.0
 release=1
 source=(http://crosstool-ng.org/download/$name/$name-$version.tar.bz2
         disable-LD_LIBRARY_PATH-check.patch
-        $HOST.config
-        http://www.kernel.org/pub/linux/kernel/v3.0/linux-3.7.1.tar.xz)
+        $HOST.config)
+depends=(native/linux-source)
 
 build()
 {
-   mv linux-3.7.1 linux
-
    cd $name-$version
 
    patch -p1 -i $SRC/disable-LD_LIBRARY_PATH-check.patch
@@ -24,7 +22,7 @@ build()
    cp $SRC/$HOST.config .config
    sed -i /^CT_LOCAL_TARBALLS_DIR=/s:=.*:=\"$SOURCE\": .config
    sed -i /^CT_PREFIX_DIR=/s:=.*:=\"$PKG\": .config
-   sed -i /^CT_KERNEL_LINUX_CUSTOM_LOCATION=/s:=.*:=\"$SRC/linux\": .config
+   sed -i /^CT_KERNEL_LINUX_CUSTOM_LOCATION=/s:=.*:=\"$SYSROOT/usr/src/linux\": .config
 
    ./ct-ng build
 

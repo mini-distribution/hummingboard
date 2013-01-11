@@ -4,20 +4,18 @@
 name=linux
 version=3.7.1
 release=1
-source=(http://www.kernel.org/pub/$name/kernel/v3.0/$name-$version.tar.xz
-        omap4-pandaboard-wlan-fix.patch
-        pandaboard.config)
+depends=(native/linux-source)
 
 build(){
-   cd $name-$version
-
-   cp $SRC/pandaboard.config .config
-
-   patch -p1 < $SRC/omap4-pandaboard-wlan-fix.patch
+   cd $NATIVE_SYSROOT/usr/src/linux
 
    make -j $JOBS ARCH=arm CROSS_COMPILE=$HOST- uImage
    make -j $JOBS ARCH=arm CROSS_COMPILE=$HOST- modules
    make ARCH=arm CROSS_COMPILE=$HOST- INSTALL_MOD_PATH=$PKG modules_install
+
+   # Cleanup
+   rm $PKG/lib/modules/$version/build
+   rm $PKG/lib/modules/$version/source
 
    cp arch/arm/boot/uImage $OUTPUT/
 }
