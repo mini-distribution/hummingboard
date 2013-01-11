@@ -2,15 +2,13 @@
 # URL: http://www.denx.de/wiki/U-Boot
 
 name=u-boot
-version=2012.07
+version=2012.10
 release=1
-source=(http://ftp.denx.de/pub/$name/$name-$version.tar.bz2
-        U-Boot-2-7-HACK-rearrange-link-order-for-thumb.patch)
+source=(http://ftp.denx.de/pub/$name/$name-$version.tar.bz2)
 
 build(){
-   cd $name-$version
 
-   patch -p1 < $SRC/U-Boot-2-7-HACK-rearrange-link-order-for-thumb.patch
+   cd $name-$version
 
    # Change default configuration to ext4
    sed -i -e "s;ext3;ext4;g" include/configs/omap4_common.h
@@ -18,6 +16,6 @@ build(){
    make ARCH=arm CROSS_COMPILE=$HOST- omap4_panda_config
    make -j $JOBS ARCH=arm CROSS_COMPILE=$HOST-
 
-   cp u-boot.bin $OUTPUT/u-boot.img
+   cp u-boot.img $OUTPUT/
    cp MLO $OUTPUT/
 }

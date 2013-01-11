@@ -2,7 +2,7 @@
 # URL: http://www.kernel.org
 
 name=linux
-version=3.6
+version=3.7.1
 release=1
 source=(http://www.kernel.org/pub/$name/kernel/v3.0/$name-$version.tar.xz
         omap4-pandaboard-wlan-fix.patch
