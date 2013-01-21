@@ -14,8 +14,7 @@ build(){
    make ARCH=arm CROSS_COMPILE=$HOST- INSTALL_MOD_PATH=$PKG modules_install
 
    # Cleanup
-   rm $PKG/lib/modules/$version/build
-   rm $PKG/lib/modules/$version/source
+   rm $PKG/lib/modules/$version/{build,source}
 
    cp arch/arm/boot/uImage $OUTPUT/
 }
