@@ -29,7 +29,7 @@ Quick build guide:
 
 Build system requirements:
 
-   Tested on Ubuntu 12.04 Minimal (64-bit x86) with the following additional
+   Tested on Ubuntu 12.10 Minimal (64-bit x86) with the following additional
    packages installed:
 
    $ sudo apt-get install unzip mtd-utils groff bison flex gperf texinfo \
