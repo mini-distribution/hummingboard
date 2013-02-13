@@ -38,15 +38,17 @@ fi
 
 fix_la_files()
 {
-   find $1 -name "*.la" -exec sed -i -e "/dependency_libs/s; /usr; $SYSROOT/usr;g" {} \; \
-                        -exec sed -i -e "/libdir/s;'/usr;'$SYSROOT/usr;g" {} \;
+   find $1 -name "*.la" -exec sed -i -e "/dependency_libs/s; /usr; `readlink -f $SYSROOT`/usr;g" {} \; \
+                        -exec sed -i -e "/libdir/s;'/usr;'`readlink -f $SYSROOT`/usr;g" {} \;
 }
 
 check_tool()
 {
    type $1 &> /dev/null
    if [ $? != 0 ]; then
+      echo -e "\n"
       echo "Failed ($1 is not found)"
+      echo "$2"
       exit 1
    fi
 }
@@ -55,7 +57,9 @@ check_exist()
 {
    test -e $1 &> /dev/null
    if [ $? != 0 ]; then
+      echo -e "\n"
       echo "Failed ($1 is not found)"
+      echo "$2"
       exit 1
    fi
 }
