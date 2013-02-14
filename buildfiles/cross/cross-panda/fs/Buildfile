@@ -34,9 +34,9 @@ build() {
    echo -e "Pandaboard Mini Distribution $version\n" > $PKG/etc/issue
 
    # Cleanup
-   #rm -rf $PKG/usr/include
-   rm -rf $PKG/usr/lib/*.a
-   rm -rf $PKG/usr/lib/*.la
+   cd $PKG/usr/include; rm -rf !(python|python?.?)
+   find $PKG/usr/lib -name '*.a'    -delete -o \
+                     -name '*.la'   -delete
 
    # Create tarball
    tar -C $PKG -acpf $OUTPUT/fs.tar.gz .
