@@ -2,7 +2,7 @@
 # URL: http://www.crosstool-ng.org
 
 name=crosstool-ng
-version=1.17.0
+version=1.18.0
 release=1
 source=(http://crosstool-ng.org/download/$name/$name-$version.tar.bz2
         disable-LD_LIBRARY_PATH-check.patch
@@ -31,6 +31,10 @@ build()
    rm -r $PKG/$HOST/sysroot/usr/share
    mv $PKG/$HOST/sysroot/sbin/* $PKG/$HOST/sysroot/usr/sbin
    rmdir $PKG/$HOST/sysroot/sbin
+
+   # Add ld-linux.so.3 link pointing to ld-linux-armhf.so.3
+   # Added for compatibility - only required for hard float configurations.
+   ln -s ld-linux-armhf.so.3 $PKG/$HOST/sysroot/lib/ld-linux.so.3
 
    # Fix .la files
    sed -i -e "/libdir/s:=.*:='$CROSS_SYSROOT/lib':" \
