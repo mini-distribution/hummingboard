@@ -7,9 +7,9 @@
 [submodule "buildfiles/cross/cross-qt"]
 	path = buildfiles/cross/cross-qt
 	url = git@github.com:mini-distribution/cross-qt.git
-[submodule "buildfiles/cross/cross-xorg"]
-	path = buildfiles/cross/cross-xorg
-	url = git@github.com:mini-distribution/cross-xorg.git
+[submodule "buildfiles/cross/cross-freedesktop"]
+	path = buildfiles/cross/cross-freedesktop
+	url = git@github.com:mini-distribution/cross-freedesktop.git
 [submodule "buildfiles/cross/cross-extra"]
 	path = buildfiles/cross/cross-extra
 	url = git@github.com:mini-distribution/cross-extra.git
