@@ -1,0 +1,31 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/libpng15-config
+lrwxrwxrwx	root/root	usr/bin/libpng-config -> libpng15-config
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/libpng15/
+-rw-r--r--	root/root	usr/include/libpng15/pngconf.h
+-rw-r--r--	root/root	usr/include/libpng15/png.h
+-rw-r--r--	root/root	usr/include/libpng15/pnglibconf.h
+lrwxrwxrwx	root/root	usr/include/pngconf.h -> libpng15/pngconf.h
+lrwxrwxrwx	root/root	usr/include/png.h -> libpng15/png.h
+lrwxrwxrwx	root/root	usr/include/pnglibconf.h -> libpng15/pnglibconf.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libpng15.a
+-rwxr-xr-x	root/root	usr/lib/libpng15.la
+-rwxr-xr-x	root/root	usr/lib/libpng15.so.15.14.0
+lrwxrwxrwx	root/root	usr/lib/libpng15.so.15 -> libpng15.so.15.14.0
+lrwxrwxrwx	root/root	usr/lib/libpng15.so -> libpng15.so.15.14.0
+lrwxrwxrwx	root/root	usr/lib/libpng.a -> libpng15.a
+-rwxr-xr-x	root/root	usr/lib/libpng.la
+lrwxrwxrwx	root/root	usr/lib/libpng.so -> libpng15.so
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/libpng15.pc
+lrwxrwxrwx	root/root	usr/lib/pkgconfig/libpng.pc -> libpng15.pc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man3/
+-rw-r--r--	root/root	usr/share/man/man3/libpng.3
+-rw-r--r--	root/root	usr/share/man/man3/libpngpf.3
+drwxr-xr-x	root/root	usr/share/man/man5/
+-rw-r--r--	root/root	usr/share/man/man5/png.5
