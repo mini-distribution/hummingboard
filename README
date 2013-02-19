@@ -32,9 +32,10 @@ Build system requirements:
    Tested on Ubuntu 12.10 Minimal (64-bit x86) with the following additional
    packages installed:
 
-   $ sudo apt-get install unzip mtd-utils groff bison flex gperf texinfo \
-                          libtool automake libncurses5-dev gawk libexpat1-dev \
-                          gettext u-boot-tools libglib2.0-dev intltool
+   $ sudo apt-get install unzip groff bison flex gperf texinfo xsltproc \
+                          libtool libncurses5-dev gawk libexpat1-dev \
+                          gettext u-boot-tools libglib2.0-dev intltool \
+			  libxml2-utils docbook-xml cmake
 
 
    Also requires reconfiguring "/bin/sh" to use bash:
