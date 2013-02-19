@@ -49,8 +49,8 @@ check()
    check_tool bison
    check_tool flex
    check_tool gperf
-   check_tool makeinfo
+   check_tool makeinfo "Can be found in the Ubuntu repos in package texinfo"
    check_tool libtool
-   check_exist /usr/include/curses.h
-   check_exist /usr/include/expat.h
+   check_exist /usr/include/curses.h "Can be found in the Ubuntu repos in package libncurses5-dev"
+   check_exist /usr/include/expat.h "Can be found in the Ubuntu repos in package libexpat1-dev"
 }
