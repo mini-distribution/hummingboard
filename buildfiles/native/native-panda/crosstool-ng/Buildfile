@@ -51,6 +51,7 @@ check()
    check_tool gperf
    check_tool makeinfo "Can be found in the Ubuntu repos in package texinfo"
    check_tool libtool
+   check_tool g++
    check_exist /usr/include/curses.h "Can be found in the Ubuntu repos in package libncurses5-dev"
    check_exist /usr/include/expat.h "Can be found in the Ubuntu repos in package libexpat1-dev"
 }
