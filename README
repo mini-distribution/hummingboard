@@ -23,8 +23,9 @@ Main builds:
 
 Quick build guide:
 
+   git submodule update --init
+
    buildgear build fs
-   buildgear build linux
    buildgear build u-boot
 
 Build system requirements:
