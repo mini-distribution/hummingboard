@@ -36,6 +36,10 @@ build()
    # Added for compatibility - only required for hard float configurations.
    ln -s ld-linux-armhf.so.3 $PKG/$HOST/sysroot/lib/ld-linux.so.3
 
+   # Make gnu/stubs.h a soft link to gnu/stubs-hard.h
+   rm $PKG/$HOST/sysroot/usr/include/gnu/stubs.h
+   ln -s stubs-hard.h $PKG/$HOST/sysroot/usr/include/gnu/stubs.h
+
    # Fix .la files
    sed -i -e "/libdir/s:=.*:='$CROSS_SYSROOT/lib':" \
        $PKG/$HOST/sysroot/lib/libstdc++.la \
