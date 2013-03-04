@@ -2,10 +2,10 @@
 # URL: http://www.kernel.org
 
 name=linux-source
-version=3.7.1
+version=3.8.2
 release=1
 source=(http://www.kernel.org/pub/linux/kernel/v3.0/linux-$version.tar.xz
-        omap4-pandaboard-wlan-fix.patch
+        omap4-pandaboard-wlan-fix.patch omap-ehci-clk-fix.patch
         pandaboard.config)
 
 build(){
@@ -16,4 +16,5 @@ build(){
 
    cp $SRC/pandaboard.config .config
    patch -p1 < $SRC/omap4-pandaboard-wlan-fix.patch
+   patch -p1 < $SRC/omap-ehci-clk-fix.patch
 }
