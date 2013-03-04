@@ -76,6 +76,7 @@ drwxr-xr-x	root/root	usr/lib/samba/vfs/
 -rwxr-xr-x	root/root	usr/lib/samba/vfs/audit.so
 -rwxr-xr-x	root/root	usr/lib/samba/vfs/cap.so
 -rwxr-xr-x	root/root	usr/lib/samba/vfs/catia.so
+-rwxr-xr-x	root/root	usr/lib/samba/vfs/commit.so
 -rwxr-xr-x	root/root	usr/lib/samba/vfs/crossrename.so
 -rwxr-xr-x	root/root	usr/lib/samba/vfs/default_quota.so
 -rwxr-xr-x	root/root	usr/lib/samba/vfs/dirsort.so

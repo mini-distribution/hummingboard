@@ -1012,8 +1012,8 @@ drwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/drm/
 drwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/gnu/
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/gnu/libc-version.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/gnu/lib-names.h
--rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/gnu/stubs.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/gnu/stubs-hard.h
+lrwxrwxrwx	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/gnu/stubs.h -> stubs-hard.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/gnu-versions.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/grp.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/gshadow.h
@@ -1275,6 +1275,7 @@ drwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/mmc/
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/ncp_mount.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/ncp_no.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/neighbour.h
+-rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/netconf.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/netdevice.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/net_dropmon.h
 drwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/netfilter/
