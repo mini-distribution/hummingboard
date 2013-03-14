@@ -23,8 +23,6 @@ Main builds:
 
 Quick build guide:
 
-   git submodule update --init
-
    buildgear build fs
    buildgear build u-boot
 
