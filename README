@@ -34,7 +34,7 @@ Build system requirements:
    $ sudo apt-get install unzip groff bison flex gperf texinfo xsltproc \
                           libtool libncurses5-dev gawk libexpat1-dev \
                           gettext u-boot-tools libglib2.0-dev intltool \
-			  libxml2-utils docbook-xml cmake g++
+                          libxml2-utils docbook-xml cmake g++
 
 
    Also requires reconfiguring "/bin/sh" to use bash:
