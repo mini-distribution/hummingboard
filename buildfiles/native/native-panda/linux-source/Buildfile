@@ -2,7 +2,7 @@
 # URL: http://www.kernel.org
 
 name=linux-source
-version=3.8.2
+version=3.8.4
 release=1
 source=(http://www.kernel.org/pub/linux/kernel/v3.0/linux-$version.tar.xz
         omap4-pandaboard-wlan-fix.patch omap-ehci-clk-fix.patch
