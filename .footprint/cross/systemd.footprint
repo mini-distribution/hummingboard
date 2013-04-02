@@ -97,21 +97,21 @@ lrwxrwxrwx	root/root	usr/lib/libgudev-1.0.so -> libgudev-1.0.so.0.1.3
 lrwxrwxrwx	root/root	usr/lib/libsystemd-daemon.so.0 -> libsystemd-daemon.so.0.0.8
 lrwxrwxrwx	root/root	usr/lib/libsystemd-daemon.so -> libsystemd-daemon.so.0.0.8
 -rwxr-xr-x	root/root	usr/lib/libsystemd-id128.la
--rwxr-xr-x	root/root	usr/lib/libsystemd-id128.so.0.0.18
-lrwxrwxrwx	root/root	usr/lib/libsystemd-id128.so.0 -> libsystemd-id128.so.0.0.18
-lrwxrwxrwx	root/root	usr/lib/libsystemd-id128.so -> libsystemd-id128.so.0.0.18
+-rwxr-xr-x	root/root	usr/lib/libsystemd-id128.so.0.0.19
+lrwxrwxrwx	root/root	usr/lib/libsystemd-id128.so.0 -> libsystemd-id128.so.0.0.19
+lrwxrwxrwx	root/root	usr/lib/libsystemd-id128.so -> libsystemd-id128.so.0.0.19
 -rwxr-xr-x	root/root	usr/lib/libsystemd-journal.la
--rwxr-xr-x	root/root	usr/lib/libsystemd-journal.so.0.8.1
-lrwxrwxrwx	root/root	usr/lib/libsystemd-journal.so.0 -> libsystemd-journal.so.0.8.1
-lrwxrwxrwx	root/root	usr/lib/libsystemd-journal.so -> libsystemd-journal.so.0.8.1
+-rwxr-xr-x	root/root	usr/lib/libsystemd-journal.so.0.8.2
+lrwxrwxrwx	root/root	usr/lib/libsystemd-journal.so.0 -> libsystemd-journal.so.0.8.2
+lrwxrwxrwx	root/root	usr/lib/libsystemd-journal.so -> libsystemd-journal.so.0.8.2
 -rwxr-xr-x	root/root	usr/lib/libsystemd-login.la
--rwxr-xr-x	root/root	usr/lib/libsystemd-login.so.0.4.1
-lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so.0 -> libsystemd-login.so.0.4.1
-lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so -> libsystemd-login.so.0.4.1
+-rwxr-xr-x	root/root	usr/lib/libsystemd-login.so.0.4.2
+lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so.0 -> libsystemd-login.so.0.4.2
+lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so -> libsystemd-login.so.0.4.2
 -rwxr-xr-x	root/root	usr/lib/libudev.la
--rwxr-xr-x	root/root	usr/lib/libudev.so.1.3.0
-lrwxrwxrwx	root/root	usr/lib/libudev.so.1 -> libudev.so.1.3.0
-lrwxrwxrwx	root/root	usr/lib/libudev.so -> libudev.so.1.3.0
+-rwxr-xr-x	root/root	usr/lib/libudev.so.1.3.1
+lrwxrwxrwx	root/root	usr/lib/libudev.so.1 -> libudev.so.1.3.1
+lrwxrwxrwx	root/root	usr/lib/libudev.so -> libudev.so.1.3.1
 drwxr-xr-x	root/root	usr/lib/modules-load.d/
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/gudev-1.0.pc
@@ -209,6 +209,7 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/multi-user.target.wants/getty.target
 lrwxrwxrwx	root/root	usr/lib/systemd/system/multi-user.target.wants/systemd-ask-password-wall.path -> ../systemd-ask-password-wall.path
 lrwxrwxrwx	root/root	usr/lib/systemd/system/multi-user.target.wants/systemd-logind.service -> ../systemd-logind.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/multi-user.target.wants/systemd-user-sessions.service -> ../systemd-user-sessions.service
+-rw-r--r--	root/root	usr/lib/systemd/system/network-online.target
 -rw-r--r--	root/root	usr/lib/systemd/system/network.target
 -rw-r--r--	root/root	usr/lib/systemd/system/nss-lookup.target
 -rw-r--r--	root/root	usr/lib/systemd/system/nss-user-lookup.target
@@ -221,7 +222,6 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/multi-user.target.wants/systemd-user
 -rw-r--r--	root/root	usr/lib/systemd/system/rc-local.service
 -rw-r--r--	root/root	usr/lib/systemd/system/reboot.target
 -rw-r--r--	root/root	usr/lib/systemd/system/remote-fs-pre.target
--rw-r--r--	root/root	usr/lib/systemd/system/remote-fs-setup.target
 -rw-r--r--	root/root	usr/lib/systemd/system/remote-fs.target
 -rw-r--r--	root/root	usr/lib/systemd/system/rescue.service
 -rw-r--r--	root/root	usr/lib/systemd/system/rescue.target
