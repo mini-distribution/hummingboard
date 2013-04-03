@@ -142,9 +142,6 @@ drwxr-xr-x	root/root	usr/lib/perl/arm-linux/auto/Filter/Util/
 drwxr-xr-x	root/root	usr/lib/perl/arm-linux/auto/Filter/Util/Call/
 -r--r--r--	root/root	usr/lib/perl/arm-linux/auto/Filter/Util/Call/Call.bs
 -r-xr-xr-x	root/root	usr/lib/perl/arm-linux/auto/Filter/Util/Call/Call.so
-drwxr-xr-x	root/root	usr/lib/perl/arm-linux/auto/GDBM_File/
--r--r--r--	root/root	usr/lib/perl/arm-linux/auto/GDBM_File/GDBM_File.bs
--r-xr-xr-x	root/root	usr/lib/perl/arm-linux/auto/GDBM_File/GDBM_File.so
 drwxr-xr-x	root/root	usr/lib/perl/arm-linux/auto/Hash/
 drwxr-xr-x	root/root	usr/lib/perl/arm-linux/auto/Hash/Util/
 drwxr-xr-x	root/root	usr/lib/perl/arm-linux/auto/Hash/Util/FieldHash/
@@ -179,9 +176,6 @@ drwxr-xr-x	root/root	usr/lib/perl/arm-linux/auto/MIME/Base64/
 drwxr-xr-x	root/root	usr/lib/perl/arm-linux/auto/mro/
 -r--r--r--	root/root	usr/lib/perl/arm-linux/auto/mro/mro.bs
 -r-xr-xr-x	root/root	usr/lib/perl/arm-linux/auto/mro/mro.so
-drwxr-xr-x	root/root	usr/lib/perl/arm-linux/auto/NDBM_File/
--r--r--r--	root/root	usr/lib/perl/arm-linux/auto/NDBM_File/NDBM_File.bs
--r-xr-xr-x	root/root	usr/lib/perl/arm-linux/auto/NDBM_File/NDBM_File.so
 drwxr-xr-x	root/root	usr/lib/perl/arm-linux/auto/PerlIO/
 drwxr-xr-x	root/root	usr/lib/perl/arm-linux/auto/PerlIO/encoding/
 -r--r--r--	root/root	usr/lib/perl/arm-linux/auto/PerlIO/encoding/encoding.bs
@@ -392,7 +386,6 @@ drwxr-xr-x	root/root	usr/lib/perl/arm-linux/File/Spec/
 drwxr-xr-x	root/root	usr/lib/perl/arm-linux/Filter/
 drwxr-xr-x	root/root	usr/lib/perl/arm-linux/Filter/Util/
 -r--r--r--	root/root	usr/lib/perl/arm-linux/Filter/Util/Call.pm
--r--r--r--	root/root	usr/lib/perl/arm-linux/GDBM_File.pm
 drwxr-xr-x	root/root	usr/lib/perl/arm-linux/Hash/
 drwxr-xr-x	root/root	usr/lib/perl/arm-linux/Hash/Util/
 -r--r--r--	root/root	usr/lib/perl/arm-linux/Hash/Util/FieldHash.pm
@@ -425,7 +418,6 @@ drwxr-xr-x	root/root	usr/lib/perl/arm-linux/MIME/
 -r--r--r--	root/root	usr/lib/perl/arm-linux/MIME/Base64.pm
 -r--r--r--	root/root	usr/lib/perl/arm-linux/MIME/QuotedPrint.pm
 -r--r--r--	root/root	usr/lib/perl/arm-linux/mro.pm
--r--r--r--	root/root	usr/lib/perl/arm-linux/NDBM_File.pm
 -r--r--r--	root/root	usr/lib/perl/arm-linux/O.pm
 -rw-r--r--	root/root	usr/lib/perl/arm-linux/.packlist
 drwxr-xr-x	root/root	usr/lib/perl/arm-linux/PerlIO/
@@ -2864,7 +2856,6 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/Filter::Simple.3
 -rw-r--r--	root/root	usr/share/man/man3/Filter::Util::Call.3
 -rw-r--r--	root/root	usr/share/man/man3/FindBin.3
--rw-r--r--	root/root	usr/share/man/man3/GDBM_File.3
 -rw-r--r--	root/root	usr/share/man/man3/Getopt::Long.3
 -rw-r--r--	root/root	usr/share/man/man3/Getopt::Std.3
 -rw-r--r--	root/root	usr/share/man/man3/Hash::Util.3
@@ -3012,7 +3003,6 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/Module::Pluggable.3
 -rw-r--r--	root/root	usr/share/man/man3/Module::Pluggable::Object.3
 -rw-r--r--	root/root	usr/share/man/man3/mro.3
--rw-r--r--	root/root	usr/share/man/man3/NDBM_File.3
 -rw-r--r--	root/root	usr/share/man/man3/Net::Cmd.3
 -rw-r--r--	root/root	usr/share/man/man3/Net::Config.3
 -rw-r--r--	root/root	usr/share/man/man3/Net::Domain.3
