@@ -506,8 +506,8 @@ lrwxrwxrwx	root/root	usr/bin/lastb -> last
 -rwxr-xr-x	root/root	usr/bin/lesskey
 -rwxr-xr-x	root/root	usr/bin/libgcrypt-config
 -rwxr-xr-x	root/root	usr/bin/libnetcfg
--rwxr-xr-x	root/root	usr/bin/libpng16-config
-lrwxrwxrwx	root/root	usr/bin/libpng-config -> libpng16-config
+-rwxr-xr-x	root/root	usr/bin/libpng15-config
+lrwxrwxrwx	root/root	usr/bin/libpng-config -> libpng15-config
 -rwxr-xr-x	root/root	usr/bin/link
 lrwxrwxrwx	root/root	usr/bin/linux32 -> setarch
 lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
@@ -1272,6 +1272,7 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvolume.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstwavenc.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstwavparse.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstximagesrc.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgsty4menc.so
 drwxr-xr-x	root/root	usr/lib/kernel/
 drwxr-xr-x	root/root	usr/lib/kernel/install.d/
@@ -1508,10 +1509,10 @@ lrwxrwxrwx	root/root	usr/lib/libpcreposix.so -> libpcreposix.so.0.0.1
 -rwxr-xr-x	root/root	usr/lib/libpcre.so.1.2.0
 lrwxrwxrwx	root/root	usr/lib/libpcre.so.1 -> libpcre.so.1.2.0
 lrwxrwxrwx	root/root	usr/lib/libpcre.so -> libpcre.so.1.2.0
--rwxr-xr-x	root/root	usr/lib/libpng16.so.16.1.0
-lrwxrwxrwx	root/root	usr/lib/libpng16.so.16 -> libpng16.so.16.1.0
-lrwxrwxrwx	root/root	usr/lib/libpng16.so -> libpng16.so.16.1.0
-lrwxrwxrwx	root/root	usr/lib/libpng.so -> libpng16.so
+-rwxr-xr-x	root/root	usr/lib/libpng15.so.15.14.0
+lrwxrwxrwx	root/root	usr/lib/libpng15.so.15 -> libpng15.so.15.14.0
+lrwxrwxrwx	root/root	usr/lib/libpng15.so -> libpng15.so.15.14.0
+lrwxrwxrwx	root/root	usr/lib/libpng.so -> libpng15.so
 -rwxr-xr-x	root/root	usr/lib/libproc-3.2.8.so
 -rw-r--r--	root/root	usr/lib/libpthread.so
 -r-xr-xr-x	root/root	usr/lib/libreadline.so.6.2
@@ -4026,8 +4027,8 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libpcrecpp.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libpcre.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libpcreposix.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/libpng16.pc
-lrwxrwxrwx	root/root	usr/lib/pkgconfig/libpng.pc -> libpng16.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/libpng15.pc
+lrwxrwxrwx	root/root	usr/lib/pkgconfig/libpng.pc -> libpng15.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libssl.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libsystemd-daemon.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libsystemd-id128.pc
