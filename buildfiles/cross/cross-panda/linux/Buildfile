@@ -2,7 +2,7 @@
 # URL: http://www.kernel.org
 
 name=linux
-version=3.8.2
+version=3.8.5
 release=1
 depends=(native/linux-source)
 

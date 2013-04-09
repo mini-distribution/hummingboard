@@ -1,12 +1,10 @@
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/systemd/
 drwxr-xr-x	root/root	etc/systemd/system/
--rw-------	root/root	etc/systemd/system/mysqld_install.service
 -rw-------	root/root	etc/systemd/system/mysqld.service
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/innochecksum
--r-x------	root/root	usr/bin/install_mysql
 -rwxr-xr-x	root/root	usr/bin/msql2mysql
 -rwxr-xr-x	root/root	usr/bin/myisamchk
 -rwxr-xr-x	root/root	usr/bin/myisam_ftdump

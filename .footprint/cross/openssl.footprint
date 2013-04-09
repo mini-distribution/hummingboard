@@ -782,8 +782,8 @@ lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_sign_init.3ssl -> EVP_PKEY_sign
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_type.3ssl -> EVP_PKEY_set1_RSA.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/EVP_PKEY_verify.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_verify_init.3ssl -> EVP_PKEY_verify.3ssl
--rw-r--r--	root/root	usr/share/man/man3/EVP_PKEY_verifyrecover.3ssl
-lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_verifyrecover_init.3ssl -> EVP_PKEY_verifyrecover.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/EVP_PKEY_verify_recover.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_verify_recover_init.3ssl -> EVP_PKEY_verify_recover.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_ripemd160.3ssl -> EVP_DigestInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SealFinal.3ssl -> EVP_SealInit.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/EVP_SealInit.3ssl
