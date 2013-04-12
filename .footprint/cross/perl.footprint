@@ -15,12 +15,12 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/instmodsh
 -rwxr-xr-x	root/root	usr/bin/json_pp
 -rwxr-xr-x	root/root	usr/bin/libnetcfg
--rwxr-xr-x	root/root	usr/bin/perl5.16.3
-hrwxr-xr-x	root/root	usr/bin/perlbug link to usr/bin/perlthanks
+-rwxr-xr-x	root/root	usr/bin/perl
+hrwxr-xr-x	root/root	usr/bin/perl5.16.3 link to usr/bin/perl
+-rwxr-xr-x	root/root	usr/bin/perlbug
 -rwxr-xr-x	root/root	usr/bin/perldoc
 -rwxr-xr-x	root/root	usr/bin/perlivp
-hrwxr-xr-x	root/root	usr/bin/perl link to usr/bin/perl5.16.3
--rwxr-xr-x	root/root	usr/bin/perlthanks
+hrwxr-xr-x	root/root	usr/bin/perlthanks link to usr/bin/perlbug
 -rwxr-xr-x	root/root	usr/bin/piconv
 -rwxr-xr-x	root/root	usr/bin/pl2pm
 -rwxr-xr-x	root/root	usr/bin/pod2html
@@ -31,12 +31,12 @@ hrwxr-xr-x	root/root	usr/bin/perl link to usr/bin/perl5.16.3
 -rwxr-xr-x	root/root	usr/bin/podchecker
 -rwxr-xr-x	root/root	usr/bin/podselect
 -rwxr-xr-x	root/root	usr/bin/prove
--rwxr-xr-x	root/root	usr/bin/psed
+hrwxr-xr-x	root/root	usr/bin/psed link to usr/bin/s2p
 hrwxr-xr-x	root/root	usr/bin/pstruct link to usr/bin/c2ph
 -rwxr-xr-x	root/root	usr/bin/ptar
 -rwxr-xr-x	root/root	usr/bin/ptardiff
 -rwxr-xr-x	root/root	usr/bin/ptargrep
-hrwxr-xr-x	root/root	usr/bin/s2p link to usr/bin/psed
+-rwxr-xr-x	root/root	usr/bin/s2p
 -rwxr-xr-x	root/root	usr/bin/shasum
 -rwxr-xr-x	root/root	usr/bin/splain
 -rwxr-xr-x	root/root	usr/bin/xsubpp
@@ -2452,7 +2452,7 @@ hrw-r--r--	root/root	usr/share/man/man1/c2ph.1 link to usr/share/man/man1/pstruc
 -rw-r--r--	root/root	usr/share/man/man1/perlboot.1
 -rw-r--r--	root/root	usr/share/man/man1/perlbot.1
 -rw-r--r--	root/root	usr/share/man/man1/perlbs2000.1
-hrw-r--r--	root/root	usr/share/man/man1/perlbug.1 link to usr/share/man/man1/perlthanks.1
+-rw-r--r--	root/root	usr/share/man/man1/perlbug.1
 -rw-r--r--	root/root	usr/share/man/man1/perlcall.1
 -rw-r--r--	root/root	usr/share/man/man1/perlce.1
 -rw-r--r--	root/root	usr/share/man/man1/perlcheat.1
@@ -2563,7 +2563,7 @@ hrw-r--r--	root/root	usr/share/man/man1/perlbug.1 link to usr/share/man/man1/per
 -rw-r--r--	root/root	usr/share/man/man1/perlsub.1
 -rw-r--r--	root/root	usr/share/man/man1/perlsymbian.1
 -rw-r--r--	root/root	usr/share/man/man1/perlsyn.1
--rw-r--r--	root/root	usr/share/man/man1/perlthanks.1
+hrw-r--r--	root/root	usr/share/man/man1/perlthanks.1 link to usr/share/man/man1/perlbug.1
 -rw-r--r--	root/root	usr/share/man/man1/perlthrtut.1
 -rw-r--r--	root/root	usr/share/man/man1/perltie.1
 -rw-r--r--	root/root	usr/share/man/man1/perltoc.1

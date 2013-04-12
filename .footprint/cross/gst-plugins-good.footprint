@@ -93,8 +93,6 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstwavenc.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstwavparse.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstwavparse.so
--rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstximagesrc.la
--rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstximagesrc.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgsty4menc.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgsty4menc.so
 drwxr-xr-x	root/root	usr/share/

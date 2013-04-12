@@ -632,12 +632,12 @@ lrwxrwxrwx	root/root	usr/bin/nisdomainname -> hostname
 -rwxr-xr-x	root/root	usr/bin/pdfmom
 -rwxr-xr-x	root/root	usr/bin/pdfroff
 -rwxr-xr-x	root/root	usr/bin/peekfd
--rwxr-xr-x	root/root	usr/bin/perl5.16.3
-hrwxr-xr-x	root/root	usr/bin/perlbug link to usr/bin/perlthanks
+-rwxr-xr-x	root/root	usr/bin/perl
+hrwxr-xr-x	root/root	usr/bin/perl5.16.3 link to usr/bin/perl
+-rwxr-xr-x	root/root	usr/bin/perlbug
 -rwxr-xr-x	root/root	usr/bin/perldoc
 -rwxr-xr-x	root/root	usr/bin/perlivp
-hrwxr-xr-x	root/root	usr/bin/perl link to usr/bin/perl5.16.3
--rwxr-xr-x	root/root	usr/bin/perlthanks
+hrwxr-xr-x	root/root	usr/bin/perlthanks link to usr/bin/perlbug
 -rwxr-xr-x	root/root	usr/bin/perror
 -rwxr-xr-x	root/root	usr/bin/pfbtops
 -rwxr-xr-x	root/root	usr/bin/pg
@@ -673,7 +673,7 @@ lrwxrwxrwx	root/root	usr/bin/pkill -> pgrep
 -rwxr-xr-x	root/root	usr/bin/prove
 -rwxr-xr-x	root/root	usr/bin/prtstat
 -rwxr-xr-x	root/root	usr/bin/ps
--rwxr-xr-x	root/root	usr/bin/psed
+hrwxr-xr-x	root/root	usr/bin/psed link to usr/bin/s2p
 -rwxr-xr-x	root/root	usr/bin/psktool
 -rwxr-xr-x	root/root	usr/bin/pstree
 hrwxr-xr-x	root/root	usr/bin/pstruct link to usr/bin/c2ph
@@ -708,7 +708,7 @@ lrwxrwxrwx	root/root	usr/bin/rmmod -> /usr/bin/kmod
 -rwxr-xr-x	root/root	usr/bin/runcon
 lrwxrwxrwx	root/root	usr/bin/rview -> vim
 lrwxrwxrwx	root/root	usr/bin/rvim -> vim
-hrwxr-xr-x	root/root	usr/bin/s2p link to usr/bin/psed
+-rwxr-xr-x	root/root	usr/bin/s2p
 -rwxr-xr-x	root/root	usr/bin/scp
 -rwxr-xr-x	root/root	usr/bin/script
 -rwxr-xr-x	root/root	usr/bin/scriptreplay
@@ -1272,7 +1272,6 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvolume.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstwavenc.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstwavparse.so
--rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstximagesrc.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgsty4menc.so
 drwxr-xr-x	root/root	usr/lib/kernel/
 drwxr-xr-x	root/root	usr/lib/kernel/install.d/
@@ -1432,9 +1431,9 @@ lrwxrwxrwx	root/root	usr/lib/libiw.so -> libiw.so.29
 -rwxr-xr-x	root/root	usr/lib/libjpeg.so.9.1.0
 lrwxrwxrwx	root/root	usr/lib/libjpeg.so.9 -> libjpeg.so.9.1.0
 lrwxrwxrwx	root/root	usr/lib/libjpeg.so -> libjpeg.so.9.1.0
--rwxr-xr-x	root/root	usr/lib/libkmod.so.2.2.2
-lrwxrwxrwx	root/root	usr/lib/libkmod.so.2 -> libkmod.so.2.2.2
-lrwxrwxrwx	root/root	usr/lib/libkmod.so -> libkmod.so.2.2.2
+-rwxr-xr-x	root/root	usr/lib/libkmod.so.2.2.3
+lrwxrwxrwx	root/root	usr/lib/libkmod.so.2 -> libkmod.so.2.2.3
+lrwxrwxrwx	root/root	usr/lib/libkmod.so -> libkmod.so.2.2.3
 -rwxr-xr-x	root/root	usr/lib/libmenu.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libmenu.so.5 -> libmenu.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libmenu.so -> libmenu.so.5
@@ -1529,18 +1528,18 @@ lrwxrwxrwx	root/root	usr/lib/libssl.so -> libssl.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libsysfs.so.2.0.1
 lrwxrwxrwx	root/root	usr/lib/libsysfs.so.2 -> libsysfs.so.2.0.1
 lrwxrwxrwx	root/root	usr/lib/libsysfs.so -> libsysfs.so.2.0.1
--rwxr-xr-x	root/root	usr/lib/libsystemd-daemon.so.0.0.8
-lrwxrwxrwx	root/root	usr/lib/libsystemd-daemon.so.0 -> libsystemd-daemon.so.0.0.8
-lrwxrwxrwx	root/root	usr/lib/libsystemd-daemon.so -> libsystemd-daemon.so.0.0.8
--rwxr-xr-x	root/root	usr/lib/libsystemd-id128.so.0.0.19
-lrwxrwxrwx	root/root	usr/lib/libsystemd-id128.so.0 -> libsystemd-id128.so.0.0.19
-lrwxrwxrwx	root/root	usr/lib/libsystemd-id128.so -> libsystemd-id128.so.0.0.19
--rwxr-xr-x	root/root	usr/lib/libsystemd-journal.so.0.8.2
-lrwxrwxrwx	root/root	usr/lib/libsystemd-journal.so.0 -> libsystemd-journal.so.0.8.2
-lrwxrwxrwx	root/root	usr/lib/libsystemd-journal.so -> libsystemd-journal.so.0.8.2
--rwxr-xr-x	root/root	usr/lib/libsystemd-login.so.0.4.2
-lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so.0 -> libsystemd-login.so.0.4.2
-lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so -> libsystemd-login.so.0.4.2
+-rwxr-xr-x	root/root	usr/lib/libsystemd-daemon.so.0.0.9
+lrwxrwxrwx	root/root	usr/lib/libsystemd-daemon.so.0 -> libsystemd-daemon.so.0.0.9
+lrwxrwxrwx	root/root	usr/lib/libsystemd-daemon.so -> libsystemd-daemon.so.0.0.9
+-rwxr-xr-x	root/root	usr/lib/libsystemd-id128.so.0.0.20
+lrwxrwxrwx	root/root	usr/lib/libsystemd-id128.so.0 -> libsystemd-id128.so.0.0.20
+lrwxrwxrwx	root/root	usr/lib/libsystemd-id128.so -> libsystemd-id128.so.0.0.20
+-rwxr-xr-x	root/root	usr/lib/libsystemd-journal.so.0.9.0
+lrwxrwxrwx	root/root	usr/lib/libsystemd-journal.so.0 -> libsystemd-journal.so.0.9.0
+lrwxrwxrwx	root/root	usr/lib/libsystemd-journal.so -> libsystemd-journal.so.0.9.0
+-rwxr-xr-x	root/root	usr/lib/libsystemd-login.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so.0 -> libsystemd-login.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so -> libsystemd-login.so.0.5.0
 -rwxr-xr-x	root/root	usr/lib/libtalloc-compat1-2.0.8.so
 lrwxrwxrwx	root/root	usr/lib/libtalloc.so.1 -> libtalloc-compat1-2.0.8.so
 -rwxr-xr-x	root/root	usr/lib/libtalloc.so.2.0.8
@@ -1553,9 +1552,9 @@ lrwxrwxrwx	root/root	usr/lib/libthread_db.so -> ../../lib/libthread_db.so.1
 -rwxr-xr-x	root/root	usr/lib/libtinfo.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libtinfo.so.5 -> libtinfo.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libtinfo.so -> libtinfo.so.5
--rwxr-xr-x	root/root	usr/lib/libudev.so.1.3.1
-lrwxrwxrwx	root/root	usr/lib/libudev.so.1 -> libudev.so.1.3.1
-lrwxrwxrwx	root/root	usr/lib/libudev.so -> libudev.so.1.3.1
+-rwxr-xr-x	root/root	usr/lib/libudev.so.1.3.2
+lrwxrwxrwx	root/root	usr/lib/libudev.so.1 -> libudev.so.1.3.2
+lrwxrwxrwx	root/root	usr/lib/libudev.so -> libudev.so.1.3.2
 -rwxr-xr-x	root/root	usr/lib/libusb-1.0.so.0.1.0
 lrwxrwxrwx	root/root	usr/lib/libusb-1.0.so.0 -> libusb-1.0.so.0.1.0
 lrwxrwxrwx	root/root	usr/lib/libusb-1.0.so -> libusb-1.0.so.0.1.0
@@ -6254,7 +6253,7 @@ lrwxrwxrwx	root/root	usr/share/man/man1/mdc2.1ssl -> dgst.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/perlboot.1
 -rw-r--r--	root/root	usr/share/man/man1/perlbot.1
 -rw-r--r--	root/root	usr/share/man/man1/perlbs2000.1
-hrw-r--r--	root/root	usr/share/man/man1/perlbug.1 link to usr/share/man/man1/perlthanks.1
+-rw-r--r--	root/root	usr/share/man/man1/perlbug.1
 -rw-r--r--	root/root	usr/share/man/man1/perlcall.1
 -rw-r--r--	root/root	usr/share/man/man1/perlce.1
 -rw-r--r--	root/root	usr/share/man/man1/perlcheat.1
@@ -6365,7 +6364,7 @@ hrw-r--r--	root/root	usr/share/man/man1/perlbug.1 link to usr/share/man/man1/per
 -rw-r--r--	root/root	usr/share/man/man1/perlsub.1
 -rw-r--r--	root/root	usr/share/man/man1/perlsymbian.1
 -rw-r--r--	root/root	usr/share/man/man1/perlsyn.1
--rw-r--r--	root/root	usr/share/man/man1/perlthanks.1
+hrw-r--r--	root/root	usr/share/man/man1/perlthanks.1 link to usr/share/man/man1/perlbug.1
 -rw-r--r--	root/root	usr/share/man/man1/perlthrtut.1
 -rw-r--r--	root/root	usr/share/man/man1/perltie.1
 -rw-r--r--	root/root	usr/share/man/man1/perltoc.1
@@ -9480,9 +9479,11 @@ lrwxrwxrwx	root/root	usr/share/man/man3/scr_set_sp.3ncurses.gz -> sp_funcs.3ncur
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_get_cutoff_realtime_usec.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_get_data.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_get_data_threshold.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_journal_get_events.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_get_fd.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_get_monotonic_usec.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_get_realtime_usec.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_journal_get_timeout.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_get_usage.3
 -rw-r--r--	root/root	usr/share/man/man3/SD_JOURNAL_INVALIDATE.3
 -rw-r--r--	root/root	usr/share/man/man3/SD_JOURNAL_LOCAL_ONLY.3
