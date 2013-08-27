@@ -4,7 +4,7 @@
 name=u-boot
 version=2013.01
 release=1
-source=(http://ftp.denx.de/pub/$name/$name-$version.tar.bz2)
+source=(ftp://ftp.denx.de/pub/$name/$name-$version.tar.bz2)
 
 build(){
 
