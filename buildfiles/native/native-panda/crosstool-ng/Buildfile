@@ -2,15 +2,15 @@
 # URL: http://www.crosstool-ng.org
 
 name=crosstool-ng
-version=1.18.0
+version=1.19.0
 release=1
 source=(http://crosstool-ng.org/download/$name/$name-$version.tar.bz2
         disable-LD_LIBRARY_PATH-check.patch
         $HOST.config)
 depends=(native/linux-source)
 
-build()
-{
+build() {
+
    cd $name-$version
 
    patch -p1 -i $SRC/disable-LD_LIBRARY_PATH-check.patch
@@ -46,16 +46,14 @@ build()
        $PKG/$HOST/sysroot/lib/libsupc++.la
 }
 
-check()
-{
+check() {
    # Test for preinstalled tools and libs
    check_tool gawk
    check_tool bison
    check_tool flex
    check_tool gperf
-   check_tool makeinfo "Can be found in the Ubuntu repos in package texinfo"
+   check_tool makeinfo
    check_tool libtool
-   check_tool g++
-   check_exist /usr/include/curses.h "Can be found in the Ubuntu repos in package libncurses5-dev"
-   check_exist /usr/include/expat.h "Can be found in the Ubuntu repos in package libexpat1-dev"
+   check_exist /usr/include/curses.h
+   check_exist /usr/include/expat.h
 }
