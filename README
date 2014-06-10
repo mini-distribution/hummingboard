@@ -23,8 +23,10 @@ Main builds:
 
 Quick build guide:
 
-   buildgear build fs
-   buildgear build u-boot
+   $ git clone --recursive git://github.com/mini-distribution/pandaboard.git
+   $ cd pandaboard
+   $ buildgear build fs
+   $ buildgear build u-boot
 
 Build system requirements:
 
