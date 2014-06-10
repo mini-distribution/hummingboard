@@ -18,9 +18,11 @@ drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/system/
 -rw-r--r--	root/root	usr/lib/systemd/system/alsa-restore.service
+-rw-r--r--	root/root	usr/lib/systemd/system/alsa-state.service
 -rw-r--r--	root/root	usr/lib/systemd/system/alsa-store.service
 drwxr-xr-x	root/root	usr/lib/systemd/system/basic.target.wants/
 lrwxrwxrwx	root/root	usr/lib/systemd/system/basic.target.wants/alsa-restore.service -> ../alsa-restore.service
+lrwxrwxrwx	root/root	usr/lib/systemd/system/basic.target.wants/alsa-state.service -> ../alsa-state.service
 drwxr-xr-x	root/root	usr/lib/systemd/system/shutdown.target.wants/
 lrwxrwxrwx	root/root	usr/lib/systemd/system/shutdown.target.wants/alsa-store.service -> ../alsa-store.service
 drwxr-xr-x	root/root	usr/lib/udev/
@@ -32,6 +34,7 @@ drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/alsa/
 drwxr-xr-x	root/root	usr/share/alsa/init/
 -rw-r--r--	root/root	usr/share/alsa/init/00main
+-rw-r--r--	root/root	usr/share/alsa/init/ca0106
 -rw-r--r--	root/root	usr/share/alsa/init/default
 -rw-r--r--	root/root	usr/share/alsa/init/hda
 -rw-r--r--	root/root	usr/share/alsa/init/help

@@ -79,6 +79,7 @@ drwxr-xr-x	root/root	usr/lib/xtables/
 -rwxr-xr-x	root/root	usr/lib/xtables/libipt_unclean.so
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_addrtype.so
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_AUDIT.so
+-rwxr-xr-x	root/root	usr/lib/xtables/libxt_bpf.so
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_CHECKSUM.so
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_CLASSIFY.so
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_cluster.so
@@ -133,6 +134,7 @@ drwxr-xr-x	root/root	usr/lib/xtables/
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_state.so
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_statistic.so
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_string.so
+-rwxr-xr-x	root/root	usr/lib/xtables/libxt_SYNPROXY.so
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_tcpmss.so
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_TCPMSS.so
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_TCPOPTSTRIP.so

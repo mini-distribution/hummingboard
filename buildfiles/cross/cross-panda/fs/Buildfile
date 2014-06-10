@@ -17,9 +17,6 @@ depends=(core
          wl1271-firmware
          connman
          omapconf
-         samba
-         mysql
-         lighttpd
          ntp
          vim)
 
