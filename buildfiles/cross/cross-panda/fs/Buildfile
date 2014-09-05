@@ -19,6 +19,7 @@ depends=(core
          omapconf
          ntp
          vim)
+options=(nostrip)
 
 build() {
    # Copy fully populated sysroot

@@ -8,6 +8,7 @@ source=(http://crosstool-ng.org/download/$name/$name-$version.tar.bz2
         disable-LD_LIBRARY_PATH-check.patch
         $HOST.config)
 depends=(native/linux-source)
+options=(nostrip)
 
 build() {
 
