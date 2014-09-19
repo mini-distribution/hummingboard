@@ -19,6 +19,7 @@ drwxr-xr-x	root/root	etc/dbus-1/system.d/
 -rw-r--r--	root/root	etc/dbus-1/system.d/org.freedesktop.locale1.conf
 -rw-r--r--	root/root	etc/dbus-1/system.d/org.freedesktop.login1.conf
 -rw-r--r--	root/root	etc/dbus-1/system.d/org.freedesktop.machine1.conf
+-rw-r--r--	root/root	etc/dbus-1/system.d/org.freedesktop.resolve1.conf
 -rw-r--r--	root/root	etc/dbus-1/system.d/org.freedesktop.systemd1.conf
 -rw-r--r--	root/root	etc/dbus-1/system.d/org.freedesktop.timedate1.conf
 -rw-r--r--	root/root	etc/group
@@ -40,6 +41,8 @@ lrwxrwxrwx	root/root	etc/mtab -> /proc/self/mounts
 -rw-r--r--	root/root	etc/ntp.conf
 -rw-r--r--	root/root	etc/passwd
 -rw-r--r--	root/root	etc/profile
+drwxr-xr-x	root/root	etc/profile.d/
+-rw-r--r--	root/root	etc/profile.d/systemd
 -rw-r--r--	root/root	etc/services
 drwxr-xr-x	root/root	etc/ssh/
 -rw-r--r--	root/root	etc/ssh/moduli
@@ -61,9 +64,11 @@ drwxr-xr-x	root/root	etc/sysctl.d/
 -rw-r--r--	root/root	etc/sysctl.d/99-sysctl.conf
 drwxr-xr-x	root/root	etc/systemd/
 -rw-r--r--	root/root	etc/systemd/bootchart.conf
+-rw-r--r--	root/root	etc/systemd/coredump.conf
 -rw-r--r--	root/root	etc/systemd/journald.conf
 -rw-r--r--	root/root	etc/systemd/logind.conf
-drwxr-xr-x	root/root	etc/systemd/ntp-units.d/
+drwxr-xr-x	root/root	etc/systemd/network/
+-rw-r--r--	root/root	etc/systemd/resolved.conf
 drwxr-xr-x	root/root	etc/systemd/system/
 -rw-r--r--	root/root	etc/systemd/system.conf
 -rw-r--r--	root/root	etc/systemd/system/dbus.service
@@ -71,17 +76,21 @@ drwxr-xr-x	root/root	etc/systemd/system/
 drwxr-xr-x	root/root	etc/systemd/system/dbus.target.wants/
 lrwxrwxrwx	root/root	etc/systemd/system/dbus.target.wants/dbus.socket -> ../dbus.socket
 drwxr-xr-x	root/root	etc/systemd/system/getty.target.wants/
-lrwxrwxrwx	root/root	etc/systemd/system/getty.target.wants/getty@tty1.service -> /usr/lib/systemd/system/getty@.service
+lrwxrwxrwx	root/root	etc/systemd/system/getty.target.wants/getty@tty1.service -> ../../../../usr/lib/systemd/system/getty@.service
 drwxr-xr-x	root/root	etc/systemd/system/multi-user.target.wants/
 lrwxrwxrwx	root/root	etc/systemd/system/multi-user.target.wants/dbus.service -> ../dbus.service
-lrwxrwxrwx	root/root	etc/systemd/system/multi-user.target.wants/remote-fs.target -> /usr/lib/systemd/system/remote-fs.target
+lrwxrwxrwx	root/root	etc/systemd/system/multi-user.target.wants/remote-fs.target -> ../../../../usr/lib/systemd/system/remote-fs.target
+lrwxrwxrwx	root/root	etc/systemd/system/multi-user.target.wants/systemd-resolved.service -> ../../../../usr/lib/systemd/system/systemd-resolved.service
 -rw-r--r--	root/root	etc/systemd/system/ntpd.service
 drwxr-xr-x	root/root	etc/systemd/system/sockets.target.wants/
 lrwxrwxrwx	root/root	etc/systemd/system/sockets.target.wants/dbus.socket -> ../dbus.socket
 -rw-r--r--	root/root	etc/systemd/system/sshdgenkeys.service
 -rw-r--r--	root/root	etc/systemd/system/sshd@.service
 -rw-r--r--	root/root	etc/systemd/system/sshd.socket
+drwxr-xr-x	root/root	etc/systemd/system/sysinit.target.wants/
+lrwxrwxrwx	root/root	etc/systemd/system/sysinit.target.wants/systemd-timesyncd.service -> ../../../../usr/lib/systemd/system/systemd-timesyncd.service
 -rw-r--r--	root/root	etc/systemd/system/wpa_supplicant.service
+-rw-r--r--	root/root	etc/systemd/timesyncd.conf
 drwxr-xr-x	root/root	etc/systemd/user/
 -rw-r--r--	root/root	etc/systemd/user.conf
 drwxr-xr-x	root/root	etc/tmpfiles.d/
@@ -94,7 +103,7 @@ drwxr-xr-x	root/root	etc/udev/rules.d/
 -rw-r--r--	root/root	etc/wpa_supplicant.conf
 drwxr-xr-x	root/root	etc/xdg/
 drwxr-xr-x	root/root	etc/xdg/systemd/
-lrwxrwxrwx	root/root	etc/xdg/systemd/user -> /etc/systemd/user
+lrwxrwxrwx	root/root	etc/xdg/systemd/user -> ../../systemd/user
 drwxr-xr-x	root/root	home/
 drwxr-xr-x	root/root	lib/
 lrwxrwxrwx	root/root	lib32 -> lib
@@ -313,7 +322,7 @@ lrwxrwxrwx	root/root	usr/bin/awk -> gawk
 -rwxr-xr-x	root/root	usr/bin/basename
 -rwxr-xr-x	root/root	usr/bin/bash
 -r-xr-xr-x	root/root	usr/bin/bashbug
--rwxr-xr-x	root/root	usr/bin/bootctl
+-rwxr-xr-x	root/root	usr/bin/busctl
 -rwxr-xr-x	root/root	usr/bin/cal
 lrwxrwxrwx	root/root	usr/bin/captoinfo -> tic
 -rwxr-xr-x	root/root	usr/bin/cat
@@ -341,6 +350,7 @@ lrwxrwxrwx	root/root	usr/bin/captoinfo -> tic
 -rwxr-xr-x	root/root	usr/bin/column
 -rwxr-xr-x	root/root	usr/bin/comm
 -rwxr-xr-x	root/root	usr/bin/connmanctl
+-rwxr-xr-x	root/root	usr/bin/coredumpctl
 -rwxr-xr-x	root/root	usr/bin/cp
 -rwxr-xr-x	root/root	usr/bin/c_rehash
 -rwxr-xr-x	root/root	usr/bin/csplit
@@ -393,8 +403,9 @@ lrwxrwxrwx	root/root	usr/bin/ex -> vim
 -rwxr-xr-x	root/root	usr/bin/fold
 -rwxr-xr-x	root/root	usr/bin/free
 -rwxr-xr-x	root/root	usr/bin/fuser
+-rwxr-xr-x	root/root	usr/bin/gapplication
 -rwxr-xr-x	root/root	usr/bin/gawk
-hrwxr-xr-x	root/root	usr/bin/gawk-4.1.0 link to usr/bin/gawk
+hrwxr-xr-x	root/root	usr/bin/gawk-4.1.1 link to usr/bin/gawk
 -rwxr-xr-x	root/root	usr/bin/gdbus
 -rwxr-xr-x	root/root	usr/bin/gdbus-codegen
 -rwxr-xr-x	root/root	usr/bin/gdiffmk
@@ -436,6 +447,7 @@ lrwxrwxrwx	root/root	usr/bin/geqn -> eqn
 -rwxr-xr-x	root/root	usr/bin/grotty
 -rwxr-xr-x	root/root	usr/bin/groups
 -rwxr-xr-x	root/root	usr/bin/gsettings
+-rwxr-xr-x	root/root	usr/bin/gst-device-monitor-1.0
 -rwxr-xr-x	root/root	usr/bin/gst-discoverer-1.0
 -rwxr-xr-x	root/root	usr/bin/gst-inspect-1.0
 -rwxr-xr-x	root/root	usr/bin/gst-launch-1.0
@@ -511,6 +523,17 @@ lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
 lrwxrwxrwx	root/root	usr/bin/lsmod -> /usr/bin/kmod
 -rwxr-xr-x	root/root	usr/bin/lsusb
 -rwxr-xr-x	root/root	usr/bin/lsusb.py
+lrwxrwxrwx	root/root	usr/bin/lzcat -> xz
+lrwxrwxrwx	root/root	usr/bin/lzcmp -> xzdiff
+lrwxrwxrwx	root/root	usr/bin/lzdiff -> xzdiff
+lrwxrwxrwx	root/root	usr/bin/lzegrep -> xzgrep
+lrwxrwxrwx	root/root	usr/bin/lzfgrep -> xzgrep
+lrwxrwxrwx	root/root	usr/bin/lzgrep -> xzgrep
+lrwxrwxrwx	root/root	usr/bin/lzless -> xzless
+-rwxr-xr-x	root/root	usr/bin/lzmadec
+-rwxr-xr-x	root/root	usr/bin/lzmainfo
+lrwxrwxrwx	root/root	usr/bin/lzma -> xz
+lrwxrwxrwx	root/root	usr/bin/lzmore -> xzmore
 -rwxr-xr-x	root/root	usr/bin/machinectl
 -rwxr-xr-x	root/root	usr/bin/makedb
 -rwxr-xr-x	root/root	usr/bin/man
@@ -679,15 +702,18 @@ lrwxrwxrwx	root/root	usr/bin/slogin -> ./ssh
 -rwxr-xr-x	root/root	usr/bin/systemd-cat
 -rwxr-xr-x	root/root	usr/bin/systemd-cgls
 -rwxr-xr-x	root/root	usr/bin/systemd-cgtop
--rwxr-xr-x	root/root	usr/bin/systemd-coredumpctl
 -rwxr-xr-x	root/root	usr/bin/systemd-delta
 -rwxr-xr-x	root/root	usr/bin/systemd-detect-virt
+-rwxr-xr-x	root/root	usr/bin/systemd-escape
+-rwxr-xr-x	root/root	usr/bin/systemd-firstboot
 -rwxr-xr-x	root/root	usr/bin/systemd-inhibit
 -rwxr-xr-x	root/root	usr/bin/systemd-machine-id-setup
 -rwxr-xr-x	root/root	usr/bin/systemd-notify
 -rwxr-xr-x	root/root	usr/bin/systemd-nspawn
+-rwxr-xr-x	root/root	usr/bin/systemd-path
 -rwxr-xr-x	root/root	usr/bin/systemd-run
--rwxr-xr-x	root/root	usr/bin/systemd-stdio-bridge
+lrwxrwxrwx	root/root	usr/bin/systemd-stdio-bridge -> ../lib/systemd/systemd-bus-proxyd
+-rwxr-xr-x	root/root	usr/bin/systemd-sysusers
 -rwxr-xr-x	root/root	usr/bin/systemd-tmpfiles
 -rwxr-xr-x	root/root	usr/bin/systemd-tty-ask-password-agent
 -rwxr-xr-x	root/root	usr/bin/systool
@@ -695,6 +721,7 @@ lrwxrwxrwx	root/root	usr/bin/slogin -> ./ssh
 -rwxr-xr-x	root/root	usr/bin/tac
 -rwxr-xr-x	root/root	usr/bin/tail
 -rwxr-xr-x	root/root	usr/bin/tailf
+-rwxr-xr-x	root/root	usr/bin/tar
 -rwxr-xr-x	root/root	usr/bin/taskset
 -rwxr-xr-x	root/root	usr/bin/tbl
 -rwxr-xr-x	root/root	usr/bin/tee
@@ -728,7 +755,9 @@ lrwxrwxrwx	root/root	usr/bin/slogin -> ./ssh
 -rwxr-xr-x	root/root	usr/bin/unicode_stop
 -rwxr-xr-x	root/root	usr/bin/uniq
 -rwxr-xr-x	root/root	usr/bin/unlink
+lrwxrwxrwx	root/root	usr/bin/unlzma -> xz
 -rwxr-xr-x	root/root	usr/bin/unshare
+lrwxrwxrwx	root/root	usr/bin/unxz -> xz
 -rwxr-xr-x	root/root	usr/bin/uptime
 -rwxr-xr-x	root/root	usr/bin/usb-devices
 -rwxr-xr-x	root/root	usr/bin/usbhid-dump
@@ -756,6 +785,16 @@ lrwxrwxrwx	root/root	usr/bin/vimdiff -> vim
 -rwxr-xr-x	root/root	usr/bin/xargs
 -rwxr-xr-x	root/root	usr/bin/xmlwf
 -rwxr-xr-x	root/root	usr/bin/xtrace
+-rwxr-xr-x	root/root	usr/bin/xz
+lrwxrwxrwx	root/root	usr/bin/xzcat -> xz
+lrwxrwxrwx	root/root	usr/bin/xzcmp -> xzdiff
+-rwxr-xr-x	root/root	usr/bin/xzdec
+-rwxr-xr-x	root/root	usr/bin/xzdiff
+lrwxrwxrwx	root/root	usr/bin/xzegrep -> xzgrep
+lrwxrwxrwx	root/root	usr/bin/xzfgrep -> xzgrep
+-rwxr-xr-x	root/root	usr/bin/xzgrep
+-rwxr-xr-x	root/root	usr/bin/xzless
+-rwxr-xr-x	root/root	usr/bin/xzmore
 -rwxr-xr-x	root/root	usr/bin/yes
 lrwxrwxrwx	root/root	usr/bin/ypdomainname -> hostname
 -rwxr-xr-x	root/root	usr/bin/zcat
@@ -824,6 +863,7 @@ hrwxr-xr-x	root/root	usr/libexec/getconf/XBS5_ILP32_OFFBIG link to usr/bin/getco
 drwxr-xr-x	root/root	usr/libexec/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/libexec/gstreamer-1.0/gst-plugin-scanner
 -rwsr-xr-x	root/root	usr/libexec/pt_chown
+-rwxr-xr-x	root/root	usr/libexec/rmt
 -rwxr-xr-x	root/root	usr/libexec/sftp-server
 -rws--x--x	root/root	usr/libexec/ssh-keysign
 -rwxr-xr-x	root/root	usr/libexec/ssh-pkcs11-helper
@@ -1163,7 +1203,6 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgsttcp.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgsttypefindfunctions.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstudp.so
--rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideo4linux2.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideobox.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideoconvert.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideocrop.so
@@ -1209,115 +1248,115 @@ lrwxrwxrwx	root/root	usr/lib/libcrypto.so -> libcrypto.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libcrypt.so -> ../../lib/libcrypt.so.1
 -rw-r--r--	root/root	usr/lib/libc.so
 lrwxrwxrwx	root/root	usr/lib/libcurses.so -> libncurses.so.5.9
--rwxr-xr-x	root/root	usr/lib/libdbus-1.so.3.8.3
-lrwxrwxrwx	root/root	usr/lib/libdbus-1.so.3 -> libdbus-1.so.3.8.3
-lrwxrwxrwx	root/root	usr/lib/libdbus-1.so -> libdbus-1.so.3.8.3
+-rwxr-xr-x	root/root	usr/lib/libdbus-1.so.3.8.6
+lrwxrwxrwx	root/root	usr/lib/libdbus-1.so.3 -> libdbus-1.so.3.8.6
+lrwxrwxrwx	root/root	usr/lib/libdbus-1.so -> libdbus-1.so.3.8.6
 lrwxrwxrwx	root/root	usr/lib/libdl.so -> ../../lib/libdl.so.2
 -rwxr-xr-x	root/root	usr/lib/libexpat.so.1.6.0
 lrwxrwxrwx	root/root	usr/lib/libexpat.so.1 -> libexpat.so.1.6.0
 lrwxrwxrwx	root/root	usr/lib/libexpat.so -> libexpat.so.1.6.0
-drwxr-xr-x	root/root	usr/lib/libffi-3.0.13/
-drwxr-xr-x	root/root	usr/lib/libffi-3.0.13/include/
--rw-r--r--	root/root	usr/lib/libffi-3.0.13/include/ffi.h
--rw-r--r--	root/root	usr/lib/libffi-3.0.13/include/ffitarget.h
--rwxr-xr-x	root/root	usr/lib/libffi.so.6.0.1
-lrwxrwxrwx	root/root	usr/lib/libffi.so.6 -> libffi.so.6.0.1
-lrwxrwxrwx	root/root	usr/lib/libffi.so -> libffi.so.6.0.1
+drwxr-xr-x	root/root	usr/lib/libffi-3.1/
+drwxr-xr-x	root/root	usr/lib/libffi-3.1/include/
+-rw-r--r--	root/root	usr/lib/libffi-3.1/include/ffi.h
+-rw-r--r--	root/root	usr/lib/libffi-3.1/include/ffitarget.h
+-rwxr-xr-x	root/root	usr/lib/libffi.so.6.0.2
+lrwxrwxrwx	root/root	usr/lib/libffi.so.6 -> libffi.so.6.0.2
+lrwxrwxrwx	root/root	usr/lib/libffi.so -> libffi.so.6.0.2
 -rwxr-xr-x	root/root	usr/lib/libform.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libform.so.5 -> libform.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libform.so -> libform.so.5
 -rwxr-xr-x	root/root	usr/lib/libgcrypt.so.20.0.1
 lrwxrwxrwx	root/root	usr/lib/libgcrypt.so.20 -> libgcrypt.so.20.0.1
 lrwxrwxrwx	root/root	usr/lib/libgcrypt.so -> libgcrypt.so.20.0.1
--rwxr-xr-x	root/root	usr/lib/libgio-2.0.so.0.3800.2
-lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so.0 -> libgio-2.0.so.0.3800.2
-lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so -> libgio-2.0.so.0.3800.2
--rwxr-xr-x	root/root	usr/lib/libglib-2.0.so.0.3800.2
-lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so.0 -> libglib-2.0.so.0.3800.2
-lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so -> libglib-2.0.so.0.3800.2
--rwxr-xr-x	root/root	usr/lib/libgmodule-2.0.so.0.3800.2
-lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so.0 -> libgmodule-2.0.so.0.3800.2
-lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so -> libgmodule-2.0.so.0.3800.2
--rwxr-xr-x	root/root	usr/lib/libgmp.so.10.1.3
-lrwxrwxrwx	root/root	usr/lib/libgmp.so.10 -> libgmp.so.10.1.3
-lrwxrwxrwx	root/root	usr/lib/libgmp.so -> libgmp.so.10.1.3
--rwxr-xr-x	root/root	usr/lib/libgmpxx.so.4.3.3
-lrwxrwxrwx	root/root	usr/lib/libgmpxx.so.4 -> libgmpxx.so.4.3.3
-lrwxrwxrwx	root/root	usr/lib/libgmpxx.so -> libgmpxx.so.4.3.3
+-rwxr-xr-x	root/root	usr/lib/libgio-2.0.so.0.4000.0
+lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so.0 -> libgio-2.0.so.0.4000.0
+lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so -> libgio-2.0.so.0.4000.0
+-rwxr-xr-x	root/root	usr/lib/libglib-2.0.so.0.4000.0
+lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so.0 -> libglib-2.0.so.0.4000.0
+lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so -> libglib-2.0.so.0.4000.0
+-rwxr-xr-x	root/root	usr/lib/libgmodule-2.0.so.0.4000.0
+lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so.0 -> libgmodule-2.0.so.0.4000.0
+lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so -> libgmodule-2.0.so.0.4000.0
+-rwxr-xr-x	root/root	usr/lib/libgmp.so.10.2.0
+lrwxrwxrwx	root/root	usr/lib/libgmp.so.10 -> libgmp.so.10.2.0
+lrwxrwxrwx	root/root	usr/lib/libgmp.so -> libgmp.so.10.2.0
+-rwxr-xr-x	root/root	usr/lib/libgmpxx.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libgmpxx.so.4 -> libgmpxx.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libgmpxx.so -> libgmpxx.so.4.4.0
 -rwxr-xr-x	root/root	usr/lib/libgnutls-openssl.so.27.0.2
 lrwxrwxrwx	root/root	usr/lib/libgnutls-openssl.so.27 -> libgnutls-openssl.so.27.0.2
 lrwxrwxrwx	root/root	usr/lib/libgnutls-openssl.so -> libgnutls-openssl.so.27.0.2
--rwxr-xr-x	root/root	usr/lib/libgnutls.so.28.29.1
-lrwxrwxrwx	root/root	usr/lib/libgnutls.so.28 -> libgnutls.so.28.29.1
-lrwxrwxrwx	root/root	usr/lib/libgnutls.so -> libgnutls.so.28.29.1
+-rwxr-xr-x	root/root	usr/lib/libgnutls.so.28.30.6
+lrwxrwxrwx	root/root	usr/lib/libgnutls.so.28 -> libgnutls.so.28.30.6
+lrwxrwxrwx	root/root	usr/lib/libgnutls.so -> libgnutls.so.28.30.6
 -rwxr-xr-x	root/root	usr/lib/libgnutls-xssl.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libgnutls-xssl.so.0 -> libgnutls-xssl.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libgnutls-xssl.so -> libgnutls-xssl.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libgnutlsxx.so.28.1.0
 lrwxrwxrwx	root/root	usr/lib/libgnutlsxx.so.28 -> libgnutlsxx.so.28.1.0
 lrwxrwxrwx	root/root	usr/lib/libgnutlsxx.so -> libgnutlsxx.so.28.1.0
--rwxr-xr-x	root/root	usr/lib/libgobject-2.0.so.0.3800.2
-lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so.0 -> libgobject-2.0.so.0.3800.2
-lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so -> libgobject-2.0.so.0.3800.2
+-rwxr-xr-x	root/root	usr/lib/libgobject-2.0.so.0.4000.0
+lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so.0 -> libgobject-2.0.so.0.4000.0
+lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so -> libgobject-2.0.so.0.4000.0
 -rwxr-xr-x	root/root	usr/lib/libgpg-error.so.0.10.0
 lrwxrwxrwx	root/root	usr/lib/libgpg-error.so.0 -> libgpg-error.so.0.10.0
 lrwxrwxrwx	root/root	usr/lib/libgpg-error.so -> libgpg-error.so.0.10.0
--rwxr-xr-x	root/root	usr/lib/libgstallocators-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstallocators-1.0.so.0 -> libgstallocators-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstallocators-1.0.so -> libgstallocators-1.0.so.0.203.0
--rwxr-xr-x	root/root	usr/lib/libgstapp-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstapp-1.0.so.0 -> libgstapp-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstapp-1.0.so -> libgstapp-1.0.so.0.203.0
--rwxr-xr-x	root/root	usr/lib/libgstaudio-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstaudio-1.0.so.0 -> libgstaudio-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstaudio-1.0.so -> libgstaudio-1.0.so.0.203.0
--rwxr-xr-x	root/root	usr/lib/libgstbase-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstbase-1.0.so.0 -> libgstbase-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstbase-1.0.so -> libgstbase-1.0.so.0.203.0
--rwxr-xr-x	root/root	usr/lib/libgstcheck-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstcheck-1.0.so.0 -> libgstcheck-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstcheck-1.0.so -> libgstcheck-1.0.so.0.203.0
--rwxr-xr-x	root/root	usr/lib/libgstcontroller-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstcontroller-1.0.so.0 -> libgstcontroller-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstcontroller-1.0.so -> libgstcontroller-1.0.so.0.203.0
--rwxr-xr-x	root/root	usr/lib/libgstfft-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstfft-1.0.so.0 -> libgstfft-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstfft-1.0.so -> libgstfft-1.0.so.0.203.0
--rwxr-xr-x	root/root	usr/lib/libgstnet-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstnet-1.0.so.0 -> libgstnet-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstnet-1.0.so -> libgstnet-1.0.so.0.203.0
--rwxr-xr-x	root/root	usr/lib/libgstpbutils-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstpbutils-1.0.so.0 -> libgstpbutils-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstpbutils-1.0.so -> libgstpbutils-1.0.so.0.203.0
--rwxr-xr-x	root/root	usr/lib/libgstreamer-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstreamer-1.0.so.0 -> libgstreamer-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstreamer-1.0.so -> libgstreamer-1.0.so.0.203.0
--rwxr-xr-x	root/root	usr/lib/libgstriff-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstriff-1.0.so.0 -> libgstriff-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstriff-1.0.so -> libgstriff-1.0.so.0.203.0
--rwxr-xr-x	root/root	usr/lib/libgstrtp-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstrtp-1.0.so.0 -> libgstrtp-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstrtp-1.0.so -> libgstrtp-1.0.so.0.203.0
--rwxr-xr-x	root/root	usr/lib/libgstrtsp-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstrtsp-1.0.so.0 -> libgstrtsp-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstrtsp-1.0.so -> libgstrtsp-1.0.so.0.203.0
--rwxr-xr-x	root/root	usr/lib/libgstsdp-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstsdp-1.0.so.0 -> libgstsdp-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstsdp-1.0.so -> libgstsdp-1.0.so.0.203.0
--rwxr-xr-x	root/root	usr/lib/libgsttag-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgsttag-1.0.so.0 -> libgsttag-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgsttag-1.0.so -> libgsttag-1.0.so.0.203.0
--rwxr-xr-x	root/root	usr/lib/libgstvideo-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstvideo-1.0.so.0 -> libgstvideo-1.0.so.0.203.0
-lrwxrwxrwx	root/root	usr/lib/libgstvideo-1.0.so -> libgstvideo-1.0.so.0.203.0
--rwxr-xr-x	root/root	usr/lib/libgthread-2.0.so.0.3800.2
-lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so.0 -> libgthread-2.0.so.0.3800.2
-lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so -> libgthread-2.0.so.0.3800.2
--rwxr-xr-x	root/root	usr/lib/libgudev-1.0.so.0.1.3
-lrwxrwxrwx	root/root	usr/lib/libgudev-1.0.so.0 -> libgudev-1.0.so.0.1.3
-lrwxrwxrwx	root/root	usr/lib/libgudev-1.0.so -> libgudev-1.0.so.0.1.3
--r-xr-xr-x	root/root	usr/lib/libhistory.so.6.2
-lrwxrwxrwx	root/root	usr/lib/libhistory.so.6 -> libhistory.so.6.2
+-rwxr-xr-x	root/root	usr/lib/libgstallocators-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstallocators-1.0.so.0 -> libgstallocators-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstallocators-1.0.so -> libgstallocators-1.0.so.0.400.0
+-rwxr-xr-x	root/root	usr/lib/libgstapp-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstapp-1.0.so.0 -> libgstapp-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstapp-1.0.so -> libgstapp-1.0.so.0.400.0
+-rwxr-xr-x	root/root	usr/lib/libgstaudio-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstaudio-1.0.so.0 -> libgstaudio-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstaudio-1.0.so -> libgstaudio-1.0.so.0.400.0
+-rwxr-xr-x	root/root	usr/lib/libgstbase-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstbase-1.0.so.0 -> libgstbase-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstbase-1.0.so -> libgstbase-1.0.so.0.400.0
+-rwxr-xr-x	root/root	usr/lib/libgstcheck-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstcheck-1.0.so.0 -> libgstcheck-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstcheck-1.0.so -> libgstcheck-1.0.so.0.400.0
+-rwxr-xr-x	root/root	usr/lib/libgstcontroller-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstcontroller-1.0.so.0 -> libgstcontroller-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstcontroller-1.0.so -> libgstcontroller-1.0.so.0.400.0
+-rwxr-xr-x	root/root	usr/lib/libgstfft-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstfft-1.0.so.0 -> libgstfft-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstfft-1.0.so -> libgstfft-1.0.so.0.400.0
+-rwxr-xr-x	root/root	usr/lib/libgstnet-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstnet-1.0.so.0 -> libgstnet-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstnet-1.0.so -> libgstnet-1.0.so.0.400.0
+-rwxr-xr-x	root/root	usr/lib/libgstpbutils-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstpbutils-1.0.so.0 -> libgstpbutils-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstpbutils-1.0.so -> libgstpbutils-1.0.so.0.400.0
+-rwxr-xr-x	root/root	usr/lib/libgstreamer-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstreamer-1.0.so.0 -> libgstreamer-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstreamer-1.0.so -> libgstreamer-1.0.so.0.400.0
+-rwxr-xr-x	root/root	usr/lib/libgstriff-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstriff-1.0.so.0 -> libgstriff-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstriff-1.0.so -> libgstriff-1.0.so.0.400.0
+-rwxr-xr-x	root/root	usr/lib/libgstrtp-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstrtp-1.0.so.0 -> libgstrtp-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstrtp-1.0.so -> libgstrtp-1.0.so.0.400.0
+-rwxr-xr-x	root/root	usr/lib/libgstrtsp-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstrtsp-1.0.so.0 -> libgstrtsp-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstrtsp-1.0.so -> libgstrtsp-1.0.so.0.400.0
+-rwxr-xr-x	root/root	usr/lib/libgstsdp-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstsdp-1.0.so.0 -> libgstsdp-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstsdp-1.0.so -> libgstsdp-1.0.so.0.400.0
+-rwxr-xr-x	root/root	usr/lib/libgsttag-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgsttag-1.0.so.0 -> libgsttag-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgsttag-1.0.so -> libgsttag-1.0.so.0.400.0
+-rwxr-xr-x	root/root	usr/lib/libgstvideo-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstvideo-1.0.so.0 -> libgstvideo-1.0.so.0.400.0
+lrwxrwxrwx	root/root	usr/lib/libgstvideo-1.0.so -> libgstvideo-1.0.so.0.400.0
+-rwxr-xr-x	root/root	usr/lib/libgthread-2.0.so.0.4000.0
+lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so.0 -> libgthread-2.0.so.0.4000.0
+lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so -> libgthread-2.0.so.0.4000.0
+-rwxr-xr-x	root/root	usr/lib/libgudev-1.0.so.0.2.0
+lrwxrwxrwx	root/root	usr/lib/libgudev-1.0.so.0 -> libgudev-1.0.so.0.2.0
+lrwxrwxrwx	root/root	usr/lib/libgudev-1.0.so -> libgudev-1.0.so.0.2.0
+-r-xr-xr-x	root/root	usr/lib/libhistory.so.6.3
+lrwxrwxrwx	root/root	usr/lib/libhistory.so.6 -> libhistory.so.6.3
 lrwxrwxrwx	root/root	usr/lib/libhistory.so -> libhistory.so.6
 -rw-r--r--	root/root	usr/lib/libhogweed.so.2.5
 lrwxrwxrwx	root/root	usr/lib/libhogweed.so.2 -> libhogweed.so.2.5
@@ -1339,9 +1378,12 @@ lrwxrwxrwx	root/root	usr/lib/libiw.so -> libiw.so.29
 -rwxr-xr-x	root/root	usr/lib/libjpeg.so.9.1.0
 lrwxrwxrwx	root/root	usr/lib/libjpeg.so.9 -> libjpeg.so.9.1.0
 lrwxrwxrwx	root/root	usr/lib/libjpeg.so -> libjpeg.so.9.1.0
--rwxr-xr-x	root/root	usr/lib/libkmod.so.2.2.6
-lrwxrwxrwx	root/root	usr/lib/libkmod.so.2 -> libkmod.so.2.2.6
-lrwxrwxrwx	root/root	usr/lib/libkmod.so -> libkmod.so.2.2.6
+-rwxr-xr-x	root/root	usr/lib/libkmod.so.2.2.8
+lrwxrwxrwx	root/root	usr/lib/libkmod.so.2 -> libkmod.so.2.2.8
+lrwxrwxrwx	root/root	usr/lib/libkmod.so -> libkmod.so.2.2.8
+-rwxr-xr-x	root/root	usr/lib/liblzma.so.5.0.5
+lrwxrwxrwx	root/root	usr/lib/liblzma.so.5 -> liblzma.so.5.0.5
+lrwxrwxrwx	root/root	usr/lib/liblzma.so -> liblzma.so.5.0.5
 -rwxr-xr-x	root/root	usr/lib/libmenu.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libmenu.so.5 -> libmenu.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libmenu.so -> libmenu.so.5
@@ -1393,42 +1435,45 @@ lrwxrwxrwx	root/root	usr/lib/libnss_dns.so -> ../../lib/libnss_dns.so.2
 lrwxrwxrwx	root/root	usr/lib/libnss_files.so -> ../../lib/libnss_files.so.2
 lrwxrwxrwx	root/root	usr/lib/libnss_hesiod.so -> ../../lib/libnss_hesiod.so.2
 -rwxr-xr-x	root/root	usr/lib/libnss_myhostname.so.2
+-rwxr-xr-x	root/root	usr/lib/libnss_mymachines.so.2
 lrwxrwxrwx	root/root	usr/lib/libnss_nisplus.so -> ../../lib/libnss_nisplus.so.2
 lrwxrwxrwx	root/root	usr/lib/libnss_nis.so -> ../../lib/libnss_nis.so.2
--rwxr-xr-x	root/root	usr/lib/liborc-0.4.so.0.19.0
-lrwxrwxrwx	root/root	usr/lib/liborc-0.4.so.0 -> liborc-0.4.so.0.19.0
-lrwxrwxrwx	root/root	usr/lib/liborc-0.4.so -> liborc-0.4.so.0.19.0
--rwxr-xr-x	root/root	usr/lib/liborc-test-0.4.so.0.19.0
-lrwxrwxrwx	root/root	usr/lib/liborc-test-0.4.so.0 -> liborc-test-0.4.so.0.19.0
-lrwxrwxrwx	root/root	usr/lib/liborc-test-0.4.so -> liborc-test-0.4.so.0.19.0
+-rwxr-xr-x	root/root	usr/lib/libnss_resolve.so.2
+-rwxr-xr-x	root/root	usr/lib/liborc-0.4.so.0.21.0
+lrwxrwxrwx	root/root	usr/lib/liborc-0.4.so.0 -> liborc-0.4.so.0.21.0
+lrwxrwxrwx	root/root	usr/lib/liborc-0.4.so -> liborc-0.4.so.0.21.0
+-rwxr-xr-x	root/root	usr/lib/liborc-test-0.4.so.0.21.0
+lrwxrwxrwx	root/root	usr/lib/liborc-test-0.4.so.0 -> liborc-test-0.4.so.0.21.0
+lrwxrwxrwx	root/root	usr/lib/liborc-test-0.4.so -> liborc-test-0.4.so.0.21.0
 -rwxr-xr-x	root/root	usr/lib/libpanel.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libpanel.so.5 -> libpanel.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libpanel.so -> libpanel.so.5
--rwxr-xr-x	root/root	usr/lib/libpcre16.so.0.2.2
-lrwxrwxrwx	root/root	usr/lib/libpcre16.so.0 -> libpcre16.so.0.2.2
-lrwxrwxrwx	root/root	usr/lib/libpcre16.so -> libpcre16.so.0.2.2
--rwxr-xr-x	root/root	usr/lib/libpcre32.so.0.0.2
-lrwxrwxrwx	root/root	usr/lib/libpcre32.so.0 -> libpcre32.so.0.0.2
-lrwxrwxrwx	root/root	usr/lib/libpcre32.so -> libpcre32.so.0.0.2
+-rw-r--r--	root/root	usr/lib/libpci.so.3.2.1
+-rwxr-xr-x	root/root	usr/lib/libpcre16.so.0.2.3
+lrwxrwxrwx	root/root	usr/lib/libpcre16.so.0 -> libpcre16.so.0.2.3
+lrwxrwxrwx	root/root	usr/lib/libpcre16.so -> libpcre16.so.0.2.3
+-rwxr-xr-x	root/root	usr/lib/libpcre32.so.0.0.3
+lrwxrwxrwx	root/root	usr/lib/libpcre32.so.0 -> libpcre32.so.0.0.3
+lrwxrwxrwx	root/root	usr/lib/libpcre32.so -> libpcre32.so.0.0.3
 -rwxr-xr-x	root/root	usr/lib/libpcrecpp.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libpcrecpp.so.0 -> libpcrecpp.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libpcrecpp.so -> libpcrecpp.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libpcreposix.so.0.0.2
 lrwxrwxrwx	root/root	usr/lib/libpcreposix.so.0 -> libpcreposix.so.0.0.2
 lrwxrwxrwx	root/root	usr/lib/libpcreposix.so -> libpcreposix.so.0.0.2
--rwxr-xr-x	root/root	usr/lib/libpcre.so.1.2.2
-lrwxrwxrwx	root/root	usr/lib/libpcre.so.1 -> libpcre.so.1.2.2
-lrwxrwxrwx	root/root	usr/lib/libpcre.so -> libpcre.so.1.2.2
--rwxr-xr-x	root/root	usr/lib/libpng16.so.16.7.0
-lrwxrwxrwx	root/root	usr/lib/libpng16.so.16 -> libpng16.so.16.7.0
-lrwxrwxrwx	root/root	usr/lib/libpng16.so -> libpng16.so.16.7.0
+-rwxr-xr-x	root/root	usr/lib/libpcre.so.1.2.3
+lrwxrwxrwx	root/root	usr/lib/libpcre.so.1 -> libpcre.so.1.2.3
+lrwxrwxrwx	root/root	usr/lib/libpcre.so -> libpcre.so.1.2.3
+-rwxr-xr-x	root/root	usr/lib/libpng16.so.16.9.0
+lrwxrwxrwx	root/root	usr/lib/libpng16.so.16 -> libpng16.so.16.9.0
+lrwxrwxrwx	root/root	usr/lib/libpng16.so -> libpng16.so.16.9.0
 lrwxrwxrwx	root/root	usr/lib/libpng.so -> libpng16.so
 -rwxr-xr-x	root/root	usr/lib/libprocps.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/libprocps.so.3 -> libprocps.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/libprocps.so -> libprocps.so.3.0.0
 -rw-r--r--	root/root	usr/lib/libpthread.so
--r-xr-xr-x	root/root	usr/lib/libreadline.so.6.2
-lrwxrwxrwx	root/root	usr/lib/libreadline.so.6 -> libreadline.so.6.2
+-r-xr-xr-x	root/root	usr/lib/libreadline.so.6.3
+lrwxrwxrwx	root/root	usr/lib/libreadline.so.6 -> libreadline.so.6.3
 lrwxrwxrwx	root/root	usr/lib/libreadline.so -> libreadline.so.6
 lrwxrwxrwx	root/root	usr/lib/libresolv.so -> ../../lib/libresolv.so.2
 lrwxrwxrwx	root/root	usr/lib/librt.so -> ../../lib/librt.so.1
@@ -1437,25 +1482,28 @@ lrwxrwxrwx	root/root	usr/lib/libssl.so -> libssl.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libsysfs.so.2.0.1
 lrwxrwxrwx	root/root	usr/lib/libsysfs.so.2 -> libsysfs.so.2.0.1
 lrwxrwxrwx	root/root	usr/lib/libsysfs.so -> libsysfs.so.2.0.1
--rwxr-xr-x	root/root	usr/lib/libsystemd-daemon.so.0.0.10
-lrwxrwxrwx	root/root	usr/lib/libsystemd-daemon.so.0 -> libsystemd-daemon.so.0.0.10
-lrwxrwxrwx	root/root	usr/lib/libsystemd-daemon.so -> libsystemd-daemon.so.0.0.10
--rwxr-xr-x	root/root	usr/lib/libsystemd-id128.so.0.0.26
-lrwxrwxrwx	root/root	usr/lib/libsystemd-id128.so.0 -> libsystemd-id128.so.0.0.26
-lrwxrwxrwx	root/root	usr/lib/libsystemd-id128.so -> libsystemd-id128.so.0.0.26
--rwxr-xr-x	root/root	usr/lib/libsystemd-journal.so.0.11.3
-lrwxrwxrwx	root/root	usr/lib/libsystemd-journal.so.0 -> libsystemd-journal.so.0.11.3
-lrwxrwxrwx	root/root	usr/lib/libsystemd-journal.so -> libsystemd-journal.so.0.11.3
--rwxr-xr-x	root/root	usr/lib/libsystemd-login.so.0.9.1
-lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so.0 -> libsystemd-login.so.0.9.1
-lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so -> libsystemd-login.so.0.9.1
+-rwxr-xr-x	root/root	usr/lib/libsystemd-daemon.so.0.0.12
+lrwxrwxrwx	root/root	usr/lib/libsystemd-daemon.so.0 -> libsystemd-daemon.so.0.0.12
+lrwxrwxrwx	root/root	usr/lib/libsystemd-daemon.so -> libsystemd-daemon.so.0.0.12
+-rwxr-xr-x	root/root	usr/lib/libsystemd-id128.so.0.0.28
+lrwxrwxrwx	root/root	usr/lib/libsystemd-id128.so.0 -> libsystemd-id128.so.0.0.28
+lrwxrwxrwx	root/root	usr/lib/libsystemd-id128.so -> libsystemd-id128.so.0.0.28
+-rwxr-xr-x	root/root	usr/lib/libsystemd-journal.so.0.11.5
+lrwxrwxrwx	root/root	usr/lib/libsystemd-journal.so.0 -> libsystemd-journal.so.0.11.5
+lrwxrwxrwx	root/root	usr/lib/libsystemd-journal.so -> libsystemd-journal.so.0.11.5
+-rwxr-xr-x	root/root	usr/lib/libsystemd-login.so.0.9.3
+lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so.0 -> libsystemd-login.so.0.9.3
+lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so -> libsystemd-login.so.0.9.3
+-rwxr-xr-x	root/root	usr/lib/libsystemd.so.0.4.0
+lrwxrwxrwx	root/root	usr/lib/libsystemd.so.0 -> libsystemd.so.0.4.0
+lrwxrwxrwx	root/root	usr/lib/libsystemd.so -> libsystemd.so.0.4.0
 lrwxrwxrwx	root/root	usr/lib/libthread_db.so -> ../../lib/libthread_db.so.1
 -rwxr-xr-x	root/root	usr/lib/libtinfo.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libtinfo.so.5 -> libtinfo.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libtinfo.so -> libtinfo.so.5
--rwxr-xr-x	root/root	usr/lib/libudev.so.1.4.0
-lrwxrwxrwx	root/root	usr/lib/libudev.so.1 -> libudev.so.1.4.0
-lrwxrwxrwx	root/root	usr/lib/libudev.so -> libudev.so.1.4.0
+-rwxr-xr-x	root/root	usr/lib/libudev.so.1.6.0
+lrwxrwxrwx	root/root	usr/lib/libudev.so.1 -> libudev.so.1.6.0
+lrwxrwxrwx	root/root	usr/lib/libudev.so -> libudev.so.1.6.0
 -rwxr-xr-x	root/root	usr/lib/libusb-1.0.so.0.1.0
 lrwxrwxrwx	root/root	usr/lib/libusb-1.0.so.0 -> libusb-1.0.so.0.1.0
 lrwxrwxrwx	root/root	usr/lib/libusb-1.0.so -> libusb-1.0.so.0.1.0
@@ -1516,6 +1564,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libipq.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libiptc.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libkmod.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/liblzma.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libnl-3.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libnl-cli-3.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libnl-genl-3.0.pc
@@ -1535,6 +1584,7 @@ lrwxrwxrwx	root/root	usr/lib/pkgconfig/libpng.pc -> libpng16.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libsystemd-id128.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libsystemd-journal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libsystemd-login.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/libsystemd.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libudev.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libusb-1.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/mount.pc
@@ -1555,7 +1605,13 @@ drwxr-xr-x	root/root	usr/lib/sysctl.d/
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/catalog/
 -rw-r--r--	root/root	usr/lib/systemd/catalog/systemd.catalog
-drwxr-xr-x	root/root	usr/lib/systemd/ntp-units.d/
+-rw-r--r--	root/root	usr/lib/systemd/catalog/systemd.fr.catalog
+-rw-r--r--	root/root	usr/lib/systemd/catalog/systemd.it.catalog
+-rw-r--r--	root/root	usr/lib/systemd/catalog/systemd.ru.catalog
+drwxr-xr-x	root/root	usr/lib/systemd/network/
+-rw-r--r--	root/root	usr/lib/systemd/network/80-container-host0.network
+-rw-r--r--	root/root	usr/lib/systemd/network/80-container-ve.network
+-rw-r--r--	root/root	usr/lib/systemd/network/99-default.link
 drwxr-xr-x	root/root	usr/lib/systemd/system/
 -rw-r--r--	root/root	usr/lib/systemd/system/alsa-restore.service
 -rw-r--r--	root/root	usr/lib/systemd/system/alsa-state.service
@@ -1566,9 +1622,18 @@ drwxr-xr-x	root/root	usr/lib/systemd/system/basic.target.wants/
 lrwxrwxrwx	root/root	usr/lib/systemd/system/basic.target.wants/alsa-restore.service -> ../alsa-restore.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/basic.target.wants/alsa-state.service -> ../alsa-state.service
 -rw-r--r--	root/root	usr/lib/systemd/system/bluetooth.target
+-rw-r--r--	root/root	usr/lib/systemd/system/busnames.target
+drwxr-xr-x	root/root	usr/lib/systemd/system/busnames.target.wants/
+lrwxrwxrwx	root/root	usr/lib/systemd/system/busnames.target.wants/org.freedesktop.hostname1.busname -> ../org.freedesktop.hostname1.busname
+lrwxrwxrwx	root/root	usr/lib/systemd/system/busnames.target.wants/org.freedesktop.locale1.busname -> ../org.freedesktop.locale1.busname
+lrwxrwxrwx	root/root	usr/lib/systemd/system/busnames.target.wants/org.freedesktop.login1.busname -> ../org.freedesktop.login1.busname
+lrwxrwxrwx	root/root	usr/lib/systemd/system/busnames.target.wants/org.freedesktop.machine1.busname -> ../org.freedesktop.machine1.busname
+lrwxrwxrwx	root/root	usr/lib/systemd/system/busnames.target.wants/org.freedesktop.resolve1.busname -> ../org.freedesktop.resolve1.busname
+lrwxrwxrwx	root/root	usr/lib/systemd/system/busnames.target.wants/org.freedesktop.timedate1.busname -> ../org.freedesktop.timedate1.busname
 -rw-r--r--	root/root	usr/lib/systemd/system/connman.service
 -rw-r--r--	root/root	usr/lib/systemd/system/console-getty.service
 -rw-r--r--	root/root	usr/lib/systemd/system/console-shell.service
+-rw-r--r--	root/root	usr/lib/systemd/system/container-getty@.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/ctrl-alt-del.target -> reboot.target
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-ac-power
@@ -1580,7 +1645,9 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/dbus-org.freedesktop.hostname1.servi
 lrwxrwxrwx	root/root	usr/lib/systemd/system/dbus-org.freedesktop.locale1.service -> systemd-localed.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/dbus-org.freedesktop.login1.service -> systemd-logind.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/dbus-org.freedesktop.machine1.service -> systemd-machined.service
+lrwxrwxrwx	root/root	usr/lib/systemd/system/dbus-org.freedesktop.resolve1.service -> systemd-resolved.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/dbus-org.freedesktop.timedate1.service -> systemd-timedated.service
+-rwxr-xr-x	root/root	usr/lib/systemd/systemd-bus-proxyd
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-cgroups-agent
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-coredump
 -rw-r--r--	root/root	usr/lib/systemd/system/debug-shell.service
@@ -1601,12 +1668,18 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/default.target -> multi-user.target
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-readahead
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-remount-fs
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-reply-password
+-rwxr-xr-x	root/root	usr/lib/systemd/systemd-resolved
+-rwxr-xr-x	root/root	usr/lib/systemd/systemd-resolve-host
+-rwxr-xr-x	root/root	usr/lib/systemd/systemd-rfkill
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-shutdown
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-shutdownd
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-sleep
+-rwxr-xr-x	root/root	usr/lib/systemd/systemd-socket-proxyd
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-sysctl
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-timedated
+-rwxr-xr-x	root/root	usr/lib/systemd/systemd-timesyncd
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-udevd
+-rwxr-xr-x	root/root	usr/lib/systemd/systemd-update-done
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-update-utmp
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-user-sessions
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-vconsole-setup
@@ -1614,12 +1687,13 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/default.target -> multi-user.target
 -rw-r--r--	root/root	usr/lib/systemd/system/emergency.target
 -rw-r--r--	root/root	usr/lib/systemd/system/final.target
 drwxr-xr-x	root/root	usr/lib/systemd/system-generators/
--rwxr-xr-x	root/root	usr/lib/systemd/system-generators/systemd-efi-boot-generator
+-rwxr-xr-x	root/root	usr/lib/systemd/system-generators/systemd-debug-generator
 -rwxr-xr-x	root/root	usr/lib/systemd/system-generators/systemd-fstab-generator
 -rwxr-xr-x	root/root	usr/lib/systemd/system-generators/systemd-getty-generator
 -rwxr-xr-x	root/root	usr/lib/systemd/system-generators/systemd-gpt-auto-generator
 -rwxr-xr-x	root/root	usr/lib/systemd/system-generators/systemd-rc-local-generator
 -rwxr-xr-x	root/root	usr/lib/systemd/system-generators/systemd-system-update-generator
+-rwxr-xr-x	root/root	usr/lib/systemd/system-generators/systemd-sysv-generator
 -rw-r--r--	root/root	usr/lib/systemd/system/getty@.service
 -rw-r--r--	root/root	usr/lib/systemd/system/getty.target
 -rw-r--r--	root/root	usr/lib/systemd/system/graphical.target
@@ -1637,10 +1711,10 @@ drwxr-xr-x	root/root	usr/lib/systemd/system-generators/
 -rw-r--r--	root/root	usr/lib/systemd/system/initrd-udevadm-cleanup-db.service
 -rw-r--r--	root/root	usr/lib/systemd/system/kexec.target
 -rw-r--r--	root/root	usr/lib/systemd/system/kmod-static-nodes.service
+-rw-r--r--	root/root	usr/lib/systemd/system/ldconfig.service
 -rw-r--r--	root/root	usr/lib/systemd/system/local-fs-pre.target
 -rw-r--r--	root/root	usr/lib/systemd/system/local-fs.target
 drwxr-xr-x	root/root	usr/lib/systemd/system/local-fs.target.wants/
-lrwxrwxrwx	root/root	usr/lib/systemd/system/local-fs.target.wants/systemd-fsck-root.service -> ../systemd-fsck-root.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/local-fs.target.wants/systemd-remount-fs.service -> ../systemd-remount-fs.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/local-fs.target.wants/tmp.mount -> ../tmp.mount
 -rw-r--r--	root/root	usr/lib/systemd/system/machine.slice
@@ -1651,11 +1725,20 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/multi-user.target.wants/systemd-ask-
 lrwxrwxrwx	root/root	usr/lib/systemd/system/multi-user.target.wants/systemd-logind.service -> ../systemd-logind.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/multi-user.target.wants/systemd-user-sessions.service -> ../systemd-user-sessions.service
 -rw-r--r--	root/root	usr/lib/systemd/system/network-online.target
+-rw-r--r--	root/root	usr/lib/systemd/system/network-pre.target
 -rw-r--r--	root/root	usr/lib/systemd/system/network.target
 -rw-r--r--	root/root	usr/lib/systemd/system/nss-lookup.target
 -rw-r--r--	root/root	usr/lib/systemd/system/nss-user-lookup.target
+-rw-r--r--	root/root	usr/lib/systemd/system/org.freedesktop.hostname1.busname
+-rw-r--r--	root/root	usr/lib/systemd/system/org.freedesktop.locale1.busname
+-rw-r--r--	root/root	usr/lib/systemd/system/org.freedesktop.login1.busname
+-rw-r--r--	root/root	usr/lib/systemd/system/org.freedesktop.machine1.busname
+-rw-r--r--	root/root	usr/lib/systemd/system/org.freedesktop.resolve1.busname
+-rw-r--r--	root/root	usr/lib/systemd/system/org.freedesktop.timedate1.busname
 -rw-r--r--	root/root	usr/lib/systemd/system/paths.target
 -rw-r--r--	root/root	usr/lib/systemd/system/poweroff.target
+drwxr-xr-x	root/root	usr/lib/systemd/system-preset/
+-rw-r--r--	root/root	usr/lib/systemd/system-preset/90-systemd.preset
 -rw-r--r--	root/root	usr/lib/systemd/system/printer.target
 -rw-r--r--	root/root	usr/lib/systemd/system/proc-sys-fs-binfmt_misc.automount
 -rw-r--r--	root/root	usr/lib/systemd/system/proc-sys-fs-binfmt_misc.mount
@@ -1698,6 +1781,7 @@ drwxr-xr-x	root/root	usr/lib/systemd/system-sleep/
 -rw-r--r--	root/root	usr/lib/systemd/system/sockets.target
 drwxr-xr-x	root/root	usr/lib/systemd/system/sockets.target.wants/
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sockets.target.wants/systemd-initctl.socket -> ../systemd-initctl.socket
+lrwxrwxrwx	root/root	usr/lib/systemd/system/sockets.target.wants/systemd-journald-dev-log.socket -> ../systemd-journald-dev-log.socket
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sockets.target.wants/systemd-journald.socket -> ../systemd-journald.socket
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sockets.target.wants/systemd-shutdownd.socket -> ../systemd-shutdownd.socket
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sockets.target.wants/systemd-udevd-control.socket -> ../systemd-udevd-control.socket
@@ -1711,21 +1795,27 @@ drwxr-xr-x	root/root	usr/lib/systemd/system/sysinit.target.wants/
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/dev-hugepages.mount -> ../dev-hugepages.mount
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/dev-mqueue.mount -> ../dev-mqueue.mount
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/kmod-static-nodes.service -> ../kmod-static-nodes.service
+lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/ldconfig.service -> ../ldconfig.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/proc-sys-fs-binfmt_misc.automount -> ../proc-sys-fs-binfmt_misc.automount
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/sys-fs-fuse-connections.mount -> ../sys-fs-fuse-connections.mount
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/sys-kernel-config.mount -> ../sys-kernel-config.mount
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/sys-kernel-debug.mount -> ../sys-kernel-debug.mount
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-ask-password-console.path -> ../systemd-ask-password-console.path
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-binfmt.service -> ../systemd-binfmt.service
+lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-firstboot.service -> ../systemd-firstboot.service
+lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-journal-catalog-update.service -> ../systemd-journal-catalog-update.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-journald.service -> ../systemd-journald.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-journal-flush.service -> ../systemd-journal-flush.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-modules-load.service -> ../systemd-modules-load.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-random-seed.service -> ../systemd-random-seed.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-sysctl.service -> ../systemd-sysctl.service
+lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-sysusers.service -> ../systemd-sysusers.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-tmpfiles-setup-dev.service -> ../systemd-tmpfiles-setup-dev.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-tmpfiles-setup.service -> ../systemd-tmpfiles-setup.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-udevd.service -> ../systemd-udevd.service
+lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-udev-hwdb-update.service -> ../systemd-udev-hwdb-update.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-udev-trigger.service -> ../systemd-udev-trigger.service
+lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-update-done.service -> ../systemd-update-done.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-update-utmp.service -> ../systemd-update-utmp.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-vconsole-setup.service -> ../systemd-vconsole-setup.service
 -rw-r--r--	root/root	usr/lib/systemd/system/sys-kernel-config.mount
@@ -1737,6 +1827,7 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-vconsol
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-ask-password-wall.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-backlight@.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-binfmt.service
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-firstboot.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-fsck-root.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-fsck@.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-halt.service
@@ -1745,6 +1836,8 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-vconsol
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-hybrid-sleep.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-initctl.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-initctl.socket
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-journal-catalog-update.service
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-journald-dev-log.socket
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-journald.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-journald.socket
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-journal-flush.service
@@ -1764,11 +1857,15 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-vconsol
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-readahead-replay.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-reboot.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-remount-fs.service
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-resolved.service
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-rfkill@.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-shutdownd.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-shutdownd.socket
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-suspend.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-sysctl.service
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-sysusers.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-timedated.service
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-timesyncd.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-tmpfiles-clean.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-tmpfiles-clean.timer
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-tmpfiles-setup-dev.service
@@ -1776,8 +1873,10 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-vconsol
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-udevd-control.socket
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-udevd-kernel.socket
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-udevd.service
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-udev-hwdb-update.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-udev-settle.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-udev-trigger.service
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-update-done.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-update-utmp-runlevel.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-update-utmp.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-user-sessions.service
@@ -1793,22 +1892,32 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/timers.target.wants/systemd-tmpfiles
 -rw-r--r--	root/root	usr/lib/systemd/system/user@.service
 -rw-r--r--	root/root	usr/lib/systemd/system/user.slice
 drwxr-xr-x	root/root	usr/lib/systemd/user/
-lrwxrwxrwx	root/root	usr/lib/systemd/user/bluetooth.target -> /usr/lib/systemd/system/bluetooth.target
+-rw-r--r--	root/root	usr/lib/systemd/user/basic.target
+lrwxrwxrwx	root/root	usr/lib/systemd/user/bluetooth.target -> ../system/bluetooth.target
+lrwxrwxrwx	root/root	usr/lib/systemd/user/busnames.target -> ../system/busnames.target
 -rw-r--r--	root/root	usr/lib/systemd/user/default.target
 -rw-r--r--	root/root	usr/lib/systemd/user/exit.target
 drwxr-xr-x	root/root	usr/lib/systemd/user-generators/
-lrwxrwxrwx	root/root	usr/lib/systemd/user/paths.target -> /usr/lib/systemd/system/paths.target
-lrwxrwxrwx	root/root	usr/lib/systemd/user/printer.target -> /usr/lib/systemd/system/printer.target
-lrwxrwxrwx	root/root	usr/lib/systemd/user/shutdown.target -> /usr/lib/systemd/system/shutdown.target
-lrwxrwxrwx	root/root	usr/lib/systemd/user/smartcard.target -> /usr/lib/systemd/system/smartcard.target
-lrwxrwxrwx	root/root	usr/lib/systemd/user/sockets.target -> /usr/lib/systemd/system/sockets.target
-lrwxrwxrwx	root/root	usr/lib/systemd/user/sound.target -> /usr/lib/systemd/system/sound.target
+lrwxrwxrwx	root/root	usr/lib/systemd/user/paths.target -> ../system/paths.target
+lrwxrwxrwx	root/root	usr/lib/systemd/user/printer.target -> ../system/printer.target
+lrwxrwxrwx	root/root	usr/lib/systemd/user/shutdown.target -> ../system/shutdown.target
+lrwxrwxrwx	root/root	usr/lib/systemd/user/smartcard.target -> ../system/smartcard.target
+lrwxrwxrwx	root/root	usr/lib/systemd/user/sockets.target -> ../system/sockets.target
+lrwxrwxrwx	root/root	usr/lib/systemd/user/sound.target -> ../system/sound.target
 -rw-r--r--	root/root	usr/lib/systemd/user/systemd-exit.service
-lrwxrwxrwx	root/root	usr/lib/systemd/user/timers.target -> /usr/lib/systemd/system/timers.target
+lrwxrwxrwx	root/root	usr/lib/systemd/user/timers.target -> ../system/timers.target
+drwxr-xr-x	root/root	usr/lib/sysusers.d/
+-rw-r--r--	root/root	usr/lib/sysusers.d/basic.conf
+-rw-r--r--	root/root	usr/lib/sysusers.d/systemd.conf
+-rw-r--r--	root/root	usr/lib/sysusers.d/systemd-remote.conf
 lrwxrwxrwx	root/root	usr/lib/terminfo -> ../share/terminfo
 drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
+-rw-r--r--	root/root	usr/lib/tmpfiles.d/etc.conf
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/systemd.conf
+-rw-r--r--	root/root	usr/lib/tmpfiles.d/systemd-nologin.conf
+-rw-r--r--	root/root	usr/lib/tmpfiles.d/systemd-remote.conf
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/tmp.conf
+-rw-r--r--	root/root	usr/lib/tmpfiles.d/var.conf
 drwxr-xr-x	root/root	usr/lib/udev/
 -rwxr-xr-x	root/root	usr/lib/udev/accelerometer
 -rwxr-xr-x	root/root	usr/lib/udev/ata_id
@@ -1817,9 +1926,12 @@ drwxr-xr-x	root/root	usr/lib/udev/
 drwxr-xr-x	root/root	usr/lib/udev/hwdb.d/
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/20-acpi-vendor.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/20-bluetooth-vendor-product.hwdb
+-rw-r--r--	root/root	usr/lib/udev/hwdb.d/20-net-ifname.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/20-OUI.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/20-pci-classes.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/20-pci-vendor-model.hwdb
+-rw-r--r--	root/root	usr/lib/udev/hwdb.d/20-sdio-classes.hwdb
+-rw-r--r--	root/root	usr/lib/udev/hwdb.d/20-sdio-vendor-model.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/20-usb-classes.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/20-usb-vendor-model.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/60-keyboard.hwdb
@@ -1829,6 +1941,7 @@ drwxr-xr-x	root/root	usr/lib/udev/rules.d/
 -rw-r--r--	root/root	usr/lib/udev/rules.d/50-firmware.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/50-udev-default.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/60-cdrom_id.rules
+-rw-r--r--	root/root	usr/lib/udev/rules.d/60-drm.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/60-keyboard.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/60-persistent-alsa.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/60-persistent-input.rules
@@ -1846,7 +1959,7 @@ drwxr-xr-x	root/root	usr/lib/udev/rules.d/
 -rw-r--r--	root/root	usr/lib/udev/rules.d/75-tty-description.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/78-sound-card.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/80-drivers.rules
--rw-r--r--	root/root	usr/lib/udev/rules.d/80-net-name-slot.rules
+-rw-r--r--	root/root	usr/lib/udev/rules.d/80-net-setup-link.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/90-alsa-restore.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/95-udev-late.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/99-systemd.rules
@@ -2158,6 +2271,7 @@ drwxr-xr-x	root/root	usr/share/alsa/cards/
 -rw-r--r--	root/root	usr/share/alsa/cards/ICH4.conf
 -rw-r--r--	root/root	usr/share/alsa/cards/ICH.conf
 -rw-r--r--	root/root	usr/share/alsa/cards/ICH-MODEM.conf
+-rw-r--r--	root/root	usr/share/alsa/cards/Loopback.conf
 -rw-r--r--	root/root	usr/share/alsa/cards/Maestro3.conf
 -rw-r--r--	root/root	usr/share/alsa/cards/NFORCE.conf
 -rw-r--r--	root/root	usr/share/alsa/cards/PC-Speaker.conf
@@ -2201,6 +2315,7 @@ drwxr-xr-x	root/root	usr/share/alsa/pcm/
 -rw-r--r--	root/root	usr/share/alsa/pcm/modem.conf
 -rw-r--r--	root/root	usr/share/alsa/pcm/rear.conf
 -rw-r--r--	root/root	usr/share/alsa/pcm/side.conf
+-rw-r--r--	root/root	usr/share/alsa/pcm/surround21.conf
 -rw-r--r--	root/root	usr/share/alsa/pcm/surround40.conf
 -rw-r--r--	root/root	usr/share/alsa/pcm/surround41.conf
 -rw-r--r--	root/root	usr/share/alsa/pcm/surround50.conf
@@ -2257,6 +2372,7 @@ drwxr-xr-x	root/root	usr/share/awk/
 -rw-r--r--	root/root	usr/share/awk/passwd.awk
 -rw-r--r--	root/root	usr/share/awk/quicksort.awk
 -rw-r--r--	root/root	usr/share/awk/readable.awk
+-rw-r--r--	root/root	usr/share/awk/readfile.awk
 -rw-r--r--	root/root	usr/share/awk/rewind.awk
 -rw-r--r--	root/root	usr/share/awk/round.awk
 -rw-r--r--	root/root	usr/share/awk/strtonum.awk
@@ -2268,6 +2384,7 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/blkdiscard
 -rw-r--r--	root/root	usr/share/bash-completion/completions/blkid
 -rw-r--r--	root/root	usr/share/bash-completion/completions/blockdev
+-rw-r--r--	root/root	usr/share/bash-completion/completions/busctl
 -rw-r--r--	root/root	usr/share/bash-completion/completions/cal
 -rw-r--r--	root/root	usr/share/bash-completion/completions/cfdisk
 -rw-r--r--	root/root	usr/share/bash-completion/completions/chcpu
@@ -2276,6 +2393,7 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/colcrt
 -rw-r--r--	root/root	usr/share/bash-completion/completions/colrm
 -rw-r--r--	root/root	usr/share/bash-completion/completions/column
+-rw-r--r--	root/root	usr/share/bash-completion/completions/coredumpctl
 -rw-r--r--	root/root	usr/share/bash-completion/completions/ctrlaltdel
 -rw-r--r--	root/root	usr/share/bash-completion/completions/cytune
 -rw-r--r--	root/root	usr/share/bash-completion/completions/delpart
@@ -2290,6 +2408,7 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/fsck.minix
 -rw-r--r--	root/root	usr/share/bash-completion/completions/fsfreeze
 -rw-r--r--	root/root	usr/share/bash-completion/completions/fstrim
+-rw-r--r--	root/root	usr/share/bash-completion/completions/gapplication
 -rw-r--r--	root/root	usr/share/bash-completion/completions/gdbus
 -rw-r--r--	root/root	usr/share/bash-completion/completions/getopt
 -rw-r--r--	root/root	usr/share/bash-completion/completions/gresource
@@ -2313,6 +2432,7 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/lsblk
 -rw-r--r--	root/root	usr/share/bash-completion/completions/lscpu
 -rw-r--r--	root/root	usr/share/bash-completion/completions/lslocks
+-rw-r--r--	root/root	usr/share/bash-completion/completions/machinectl
 -rw-r--r--	root/root	usr/share/bash-completion/completions/mcookie
 -rw-r--r--	root/root	usr/share/bash-completion/completions/mesg
 -rw-r--r--	root/root	usr/share/bash-completion/completions/mkfs
@@ -2345,7 +2465,12 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/swapon
 -rw-r--r--	root/root	usr/share/bash-completion/completions/systemctl
 -rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-analyze
--rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-coredumpctl
+-rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-cat
+-rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-cgls
+-rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-cgtop
+-rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-delta
+-rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-detect-virt
+-rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-nspawn
 -rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-run
 -rw-r--r--	root/root	usr/share/bash-completion/completions/tailf
 -rw-r--r--	root/root	usr/share/bash-completion/completions/taskset
@@ -2368,23 +2493,6 @@ drwxr-xr-x	root/root	usr/share/common-lisp/source/gpg-error/
 -rw-r--r--	root/root	usr/share/common-lisp/source/gpg-error/gpg-error.lisp
 -rw-r--r--	root/root	usr/share/common-lisp/source/gpg-error/gpg-error-package.lisp
 drwxr-xr-x	root/root	usr/share/dbus-1/
-drwxr-xr-x	root/root	usr/share/dbus-1/interfaces/
--rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.hostname1.xml
--rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.locale1.xml
--rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.systemd1.Automount.xml
--rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.systemd1.Device.xml
--rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.systemd1.Job.xml
--rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.systemd1.Manager.xml
--rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.systemd1.Mount.xml
--rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.systemd1.Path.xml
--rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.systemd1.Service.xml
--rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.systemd1.Snapshot.xml
--rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.systemd1.Socket.xml
--rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.systemd1.Swap.xml
--rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.systemd1.Target.xml
--rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.systemd1.Timer.xml
--rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.systemd1.Unit.xml
--rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.timedate1.xml
 drwxr-xr-x	root/root	usr/share/dbus-1/services/
 lrwxrwxrwx	root/root	usr/share/dbus-1/services/org.freedesktop.systemd1.service -> ../system-services/org.freedesktop.systemd1.service
 drwxr-xr-x	root/root	usr/share/dbus-1/system-services/
@@ -2394,36 +2502,37 @@ drwxr-xr-x	root/root	usr/share/dbus-1/system-services/
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/org.freedesktop.locale1.service
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/org.freedesktop.login1.service
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/org.freedesktop.machine1.service
+-rw-r--r--	root/root	usr/share/dbus-1/system-services/org.freedesktop.resolve1.service
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/org.freedesktop.systemd1.service
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/org.freedesktop.timedate1.service
 drwxr-xr-x	root/root	usr/share/doc/
-drwxr-xr-x	root/root	usr/share/doc/attr/
--rw-r--r--	root/root	usr/share/doc/attr/CHANGES.gz
--rw-r--r--	root/root	usr/share/doc/attr/COPYING
--rw-r--r--	root/root	usr/share/doc/attr/COPYING.LGPL
--rw-r--r--	root/root	usr/share/doc/attr/PORTING
--rw-r--r--	root/root	usr/share/doc/attr/README
-drwxr-xr-x	root/root	usr/share/doc/dbus/
--rw-r--r--	root/root	usr/share/doc/dbus/diagram.png
--rw-r--r--	root/root	usr/share/doc/dbus/diagram.svg
--rw-r--r--	root/root	usr/share/doc/dbus/system-activation.txt
 drwxr-xr-x	root/root	usr/share/doc/systemd/
+-rw-r--r--	root/root	usr/share/doc/systemd/DIFFERENCES
 -rw-r--r--	root/root	usr/share/doc/systemd/DISTRO_PORTING
+-rw-r--r--	root/root	usr/share/doc/systemd/GVARIANT-SERIALIZATION
 -rw-r--r--	root/root	usr/share/doc/systemd/LICENSE.GPL2
 -rw-r--r--	root/root	usr/share/doc/systemd/LICENSE.LGPL2.1
 -rw-r--r--	root/root	usr/share/doc/systemd/LICENSE.MIT
 -rw-r--r--	root/root	usr/share/doc/systemd/NEWS
+-rw-r--r--	root/root	usr/share/doc/systemd/PORTING-DBUS1
 -rw-r--r--	root/root	usr/share/doc/systemd/README
 -rw-r--r--	root/root	usr/share/doc/systemd/sd-readahead.c
 -rw-r--r--	root/root	usr/share/doc/systemd/sd-readahead.h
+-rw-r--r--	root/root	usr/share/doc/systemd/sd-shutdown.h
 drwxr-xr-x	root/root	usr/share/doc/util-linux/
 drwxr-xr-x	root/root	usr/share/doc/util-linux/getopt/
 -rwxr-xr-x	root/root	usr/share/doc/util-linux/getopt/getopt-parse.bash
 -rwxr-xr-x	root/root	usr/share/doc/util-linux/getopt/getopt-parse.tcsh
+drwxr-xr-x	root/root	usr/share/factory/
+drwxr-xr-x	root/root	usr/share/factory/etc/
+-rw-r--r--	root/root	usr/share/factory/etc/nsswitch.conf
+drwxr-xr-x	root/root	usr/share/factory/etc/pam.d/
+-rw-r--r--	root/root	usr/share/factory/etc/pam.d/other
+-rw-r--r--	root/root	usr/share/factory/etc/pam.d/system-auth
 drwxr-xr-x	root/root	usr/share/gdb/
 drwxr-xr-x	root/root	usr/share/gdb/auto-load/
--rwxr-xr-x	root/root	usr/share/gdb/auto-load/libglib-2.0.so.0.3800.2-gdb.py
--rwxr-xr-x	root/root	usr/share/gdb/auto-load/libgobject-2.0.so.0.3800.2-gdb.py
+-rwxr-xr-x	root/root	usr/share/gdb/auto-load/libglib-2.0.so.0.4000.0-gdb.py
+-rwxr-xr-x	root/root	usr/share/gdb/auto-load/libgobject-2.0.so.0.4000.0-gdb.py
 drwxr-xr-x	root/root	usr/share/glib-2.0/
 drwxr-xr-x	root/root	usr/share/glib-2.0/codegen/
 -rw-r--r--	root/root	usr/share/glib-2.0/codegen/codegen_docbook.py
@@ -2896,9 +3005,270 @@ drwxr-xr-x	root/root	usr/share/gstreamer-1.0/
 drwxr-xr-x	root/root	usr/share/gstreamer-1.0/presets/
 -rw-r--r--	root/root	usr/share/gstreamer-1.0/presets/GstIirEqualizer10Bands.prs
 -rw-r--r--	root/root	usr/share/gstreamer-1.0/presets/GstIirEqualizer3Bands.prs
+drwxr-xr-x	root/root	usr/share/gtk-doc/
+drwxr-xr-x	root/root	usr/share/gtk-doc/html/
+drwxr-xr-x	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/ch01.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/ch02.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/ch03.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/GstIirEqualizer.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-1.0.devhelp2
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-3gppmux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-aacparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-aasink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-ac3parse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-agingtv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-alawdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-alawenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-alphacolor.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-alpha.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-amrparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-apedemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-apev2mux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-aspectratiocrop.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audioamplify.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audiochebband.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audiocheblimit.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audiodynamic.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audioecho.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audiofirfilter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audioiirfilter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audioinvert.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audiokaraoke.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audiopanorama.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audiowsincband.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audiowsinclimit.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-auparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-autoaudiosink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-autoaudiosrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-autovideosink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-autovideosrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-avidemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-avimux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-avisubtitle.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-cacasink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-cairooverlay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-capssetter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-cutter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-dcaparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-deinterlace.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-deinterleave.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-dicetv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-directsoundsink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-dtmfsrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-dv1394src.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-dvdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-dvdemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-edgetv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-equalizer-10bands.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-equalizer-3bands.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-equalizer-nbands.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-flacdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-flacenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-flacparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-flactag.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-flvdemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-flvmux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-flxdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-gamma.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-gdkpixbufsink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-goom2k1.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-goom.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-GstVideoMixerPad.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-hdv1394src.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-icydemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-id3demux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-id3v2mux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-imagefreeze.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-interleave.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-ismlmux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-jackaudiosink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-jackaudiosrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-jpegdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-jpegenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-level.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-matroskademux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-matroskamux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-mj2mux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-monoscope.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-mp4mux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-mpegaudioparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-mulawdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-mulawenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-multifilesink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-multifilesrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-multipartdemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-multipartmux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-multiudpsink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-optv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-oss4sink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-oss4src.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-osssink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-osssrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-osxaudiosink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-osxaudiosrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-osxvideosink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-1394.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-aasink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-alaw.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-alphacolor.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-alpha.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-apetag.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-audiofx.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-auparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-autodetect.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-avi.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-cacasink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-cairo.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-cutter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-debug.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-deinterlace.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-directsound.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-dtmf.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-dv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-effectv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-equalizer.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-flac.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-flv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-flxdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-gdkpixbuf.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-goom2k1.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-goom.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-icydemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-id3demux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-imagefreeze.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-interleave.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-isomp4.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-jack.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-jpeg.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-level.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-matroska.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-monoscope.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-mulaw.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-multifile.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-multipart.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-navigationtest.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-oss4.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-ossaudio.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-osxaudio.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-osxvideo.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-png.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-pulseaudio.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-replaygain.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-rtp.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-rtpmanager.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-rtsp.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-shapewipe.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-shout2send.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-smpte.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-soup.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-spectrum.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-speex.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-taglib.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-udp.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-video4linux2.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-videobox.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-videocrop.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-videofilter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-videomixer.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-vpx.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-waveform.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-wavenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-wavpack.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-wavparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-ximagesrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-y4menc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-pngdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-pngenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-progressreport.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-pulsesink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-pulsesrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-qtdemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-qtmoovrecover.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-qtmux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-quarktv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-radioactv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-revtv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rganalysis.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rglimiter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rgvolume.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rippletv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpac3depay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpac3pay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpamrdepay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpamrpay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpbin.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpbvdepay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpbvpay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpdtmfmux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpdtmfsrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpj2kpay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpjitterbuffer.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpjpegpay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpL16depay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpL16pay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpmux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpptdemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtprtxreceive.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtprtxsend.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpsbcpay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpsession.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpssrcdemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtspsrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-sbcparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-scaletempo.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-shagadelictv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-shapewipe.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-shout2send.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-smptealpha.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-smpte.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-souphttpsrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-spectrum.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-speexdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-speexenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-splitfilesrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-streaktv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-taginject.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-udpsink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-udpsrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-v4l2radio.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-v4l2sink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-v4l2src.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-vertigotv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-videobalance.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-videobox.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-videocrop.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-videoflip.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-videomixer.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-vp8dec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-vp8enc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-warptv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-waveformsink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-wavenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-wavpackdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-wavpackenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-wavpackparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-wavparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-webmmux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-ximagesrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-y4menc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/home.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/index.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/index.sgml
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/left-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/left.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/right-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/right.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/style.css
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/up-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/up.png
 drwxr-xr-x	root/root	usr/share/info/
--rw-r--r--	root/root	usr/share/info/check.info
 -rw-r--r--	root/root	usr/share/info/dir
+-rw-r--r--	root/root	usr/share/info/tar.info
+-rw-r--r--	root/root	usr/share/info/tar.info-1
+-rw-r--r--	root/root	usr/share/info/tar.info-2
+-rw-r--r--	root/root	usr/share/info/tar.info-3
 drwxr-xr-x	root/root	usr/share/kbd/
 drwxr-xr-x	root/root	usr/share/kbd/consolefonts/
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/161.cp.gz
@@ -2945,6 +3315,7 @@ lrwxrwxrwx	root/root	usr/share/kbd/consolefonts/default.gz -> default8x9.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/drdos8x6.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/drdos8x8.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/ERRORS
+-rw-r--r--	root/root	usr/share/kbd/consolefonts/eurlatgr.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/Goha-12.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/Goha-14.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/Goha-16.psfu.gz
@@ -3077,6 +3448,7 @@ lrwxrwxrwx	root/root	usr/share/kbd/consolefonts/default.gz -> default8x9.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/LatGrkCyr-8x16.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/LatKaCyrHeb-14.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/Mik_8x16.gz
+-rw-r--r--	root/root	usr/share/kbd/consolefonts/pancyrillic.f16.psfu.gz
 drwxr-xr-x	root/root	usr/share/kbd/consolefonts/partialfonts/
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/partialfonts/8859-10.a0-ff.08.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/partialfonts/8859-10.a0-ff.14.gz
@@ -3263,8 +3635,6 @@ drwxr-xr-x	root/root	usr/share/kbd/keymaps/i386/qwerty/
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/es.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/et.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/et-nodeadkeys.map.gz
--rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/fi-latin1.map.gz
--rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/fi-latin9.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/fi.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/gr.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/gr-pc.map.gz
@@ -3286,6 +3656,8 @@ drwxr-xr-x	root/root	usr/share/kbd/keymaps/i386/qwerty/
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/lt.baltic.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/lt.l4.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/lt.map.gz
+-rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/lv.map.gz
+-rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/lv-tilde.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/mk0.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/mk-cp1251.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/mk.map.gz
@@ -3446,30 +3818,120 @@ drwxr-xr-x	root/root	usr/share/kbd/unimaps/
 -rw-r--r--	root/root	usr/share/kbd/unimaps/tcvn.uni
 -rw-r--r--	root/root	usr/share/kbd/unimaps/viscii.uni
 drwxr-xr-x	root/root	usr/share/locale/
+drwxr-xr-x	root/root	usr/share/locale/bg/
+drwxr-xr-x	root/root	usr/share/locale/bg/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/bg/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/ca/
+drwxr-xr-x	root/root	usr/share/locale/ca/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/ca/LC_MESSAGES/tar.mo
 drwxr-xr-x	root/root	usr/share/locale/cs/
 drwxr-xr-x	root/root	usr/share/locale/cs/LC_MESSAGES/
--rw-r--r--	root/root	usr/share/locale/cs/LC_MESSAGES/attr.mo
+-rw-r--r--	root/root	usr/share/locale/cs/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/da/
+drwxr-xr-x	root/root	usr/share/locale/da/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/da/LC_MESSAGES/tar.mo
 drwxr-xr-x	root/root	usr/share/locale/de/
 drwxr-xr-x	root/root	usr/share/locale/de/LC_MESSAGES/
--rw-r--r--	root/root	usr/share/locale/de/LC_MESSAGES/attr.mo
+-rw-r--r--	root/root	usr/share/locale/de/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/el/
+drwxr-xr-x	root/root	usr/share/locale/el/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/el/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/eo/
+drwxr-xr-x	root/root	usr/share/locale/eo/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/eo/LC_MESSAGES/tar.mo
 drwxr-xr-x	root/root	usr/share/locale/es/
 drwxr-xr-x	root/root	usr/share/locale/es/LC_MESSAGES/
--rw-r--r--	root/root	usr/share/locale/es/LC_MESSAGES/attr.mo
+-rw-r--r--	root/root	usr/share/locale/es/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/et/
+drwxr-xr-x	root/root	usr/share/locale/et/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/et/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/eu/
+drwxr-xr-x	root/root	usr/share/locale/eu/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/eu/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/fi/
+drwxr-xr-x	root/root	usr/share/locale/fi/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/fi/LC_MESSAGES/tar.mo
 drwxr-xr-x	root/root	usr/share/locale/fr/
 drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
--rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/attr.mo
+-rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/ga/
+drwxr-xr-x	root/root	usr/share/locale/ga/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/ga/LC_MESSAGES/tar.mo
 drwxr-xr-x	root/root	usr/share/locale/gl/
 drwxr-xr-x	root/root	usr/share/locale/gl/LC_MESSAGES/
--rw-r--r--	root/root	usr/share/locale/gl/LC_MESSAGES/attr.mo
+-rw-r--r--	root/root	usr/share/locale/gl/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/hr/
+drwxr-xr-x	root/root	usr/share/locale/hr/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/hr/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/hu/
+drwxr-xr-x	root/root	usr/share/locale/hu/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/hu/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/id/
+drwxr-xr-x	root/root	usr/share/locale/id/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/id/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/it/
+drwxr-xr-x	root/root	usr/share/locale/it/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/it/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/ja/
+drwxr-xr-x	root/root	usr/share/locale/ja/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/ja/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/ko/
+drwxr-xr-x	root/root	usr/share/locale/ko/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/ko/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/ky/
+drwxr-xr-x	root/root	usr/share/locale/ky/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/ky/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/ms/
+drwxr-xr-x	root/root	usr/share/locale/ms/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/ms/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/nb/
+drwxr-xr-x	root/root	usr/share/locale/nb/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/nb/LC_MESSAGES/tar.mo
 drwxr-xr-x	root/root	usr/share/locale/nl/
 drwxr-xr-x	root/root	usr/share/locale/nl/LC_MESSAGES/
--rw-r--r--	root/root	usr/share/locale/nl/LC_MESSAGES/attr.mo
+-rw-r--r--	root/root	usr/share/locale/nl/LC_MESSAGES/tar.mo
 drwxr-xr-x	root/root	usr/share/locale/pl/
 drwxr-xr-x	root/root	usr/share/locale/pl/LC_MESSAGES/
--rw-r--r--	root/root	usr/share/locale/pl/LC_MESSAGES/attr.mo
+-rw-r--r--	root/root	usr/share/locale/pl/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/pt/
+drwxr-xr-x	root/root	usr/share/locale/pt_BR/
+drwxr-xr-x	root/root	usr/share/locale/pt_BR/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/pt_BR/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/pt/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/pt/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/ro/
+drwxr-xr-x	root/root	usr/share/locale/ro/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/ro/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/ru/
+drwxr-xr-x	root/root	usr/share/locale/ru/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/ru/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/sk/
+drwxr-xr-x	root/root	usr/share/locale/sk/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/sk/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/sl/
+drwxr-xr-x	root/root	usr/share/locale/sl/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/sl/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/sr/
+drwxr-xr-x	root/root	usr/share/locale/sr/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/sr/LC_MESSAGES/tar.mo
 drwxr-xr-x	root/root	usr/share/locale/sv/
 drwxr-xr-x	root/root	usr/share/locale/sv/LC_MESSAGES/
--rw-r--r--	root/root	usr/share/locale/sv/LC_MESSAGES/attr.mo
+-rw-r--r--	root/root	usr/share/locale/sv/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/tr/
+drwxr-xr-x	root/root	usr/share/locale/tr/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/tr/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/uk/
+drwxr-xr-x	root/root	usr/share/locale/uk/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/uk/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/vi/
+drwxr-xr-x	root/root	usr/share/locale/vi/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/vi/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/zh_CN/
+drwxr-xr-x	root/root	usr/share/locale/zh_CN/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/zh_CN/LC_MESSAGES/tar.mo
+drwxr-xr-x	root/root	usr/share/locale/zh_TW/
+drwxr-xr-x	root/root	usr/share/locale/zh_TW/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/zh_TW/LC_MESSAGES/tar.mo
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/aconnect.1
@@ -3491,6 +3953,7 @@ lrwxrwxrwx	root/root	usr/share/man/man1/arecord.1 -> aplay.1
 -rw-r--r--	root/root	usr/share/man/man1/attr.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/bash.1
 -rw-r--r--	root/root	usr/share/man/man1/bashbug.1
+-rw-r--r--	root/root	usr/share/man/man1/busctl.1
 -rw-r--r--	root/root	usr/share/man/man1/ca.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/cal.1
 -rw-r--r--	root/root	usr/share/man/man1/CA.pl.1ssl
@@ -3512,6 +3975,7 @@ lrwxrwxrwx	root/root	usr/share/man/man1/arecord.1 -> aplay.1
 -rw-r--r--	root/root	usr/share/man/man1/colcrt.1
 -rw-r--r--	root/root	usr/share/man/man1/colrm.1
 -rw-r--r--	root/root	usr/share/man/man1/column.1
+-rw-r--r--	root/root	usr/share/man/man1/coredumpctl.1
 -rw-r--r--	root/root	usr/share/man/man1/crl.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/crl2pkcs7.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/deallocvt.1
@@ -3540,6 +4004,7 @@ lrwxrwxrwx	root/root	usr/share/man/man1/arecord.1 -> aplay.1
 -rw-r--r--	root/root	usr/share/man/man1/flock.1
 -rw-r--r--	root/root	usr/share/man/man1/free.1
 -rw-r--r--	root/root	usr/share/man/man1/fuser.1
+-rw-r--r--	root/root	usr/share/man/man1/gapplication.1
 -rw-r--r--	root/root	usr/share/man/man1/gawk.1
 -rw-r--r--	root/root	usr/share/man/man1/gdbus.1
 -rw-r--r--	root/root	usr/share/man/man1/gdbus-codegen.1
@@ -3576,6 +4041,7 @@ lrwxrwxrwx	root/root	usr/share/man/man1/arecord.1 -> aplay.1
 -rw-r--r--	root/root	usr/share/man/man1/grotty.1
 -rw-r--r--	root/root	usr/share/man/man1/groups.1
 -rw-r--r--	root/root	usr/share/man/man1/gsettings.1
+-rw-r--r--	root/root	usr/share/man/man1/gst-device-monitor-1.0.1
 -rw-r--r--	root/root	usr/share/man/man1/gst-discoverer-1.0.1
 -rw-r--r--	root/root	usr/share/man/man1/gst-inspect-1.0.1
 -rw-r--r--	root/root	usr/share/man/man1/gst-launch-1.0.1
@@ -3621,6 +4087,17 @@ lrwxrwxrwx	root/root	usr/share/man/man1/arecord.1 -> aplay.1
 -rw-r--r--	root/root	usr/share/man/man1/look.1
 -rw-r--r--	root/root	usr/share/man/man1/lookbib.1
 -rw-r--r--	root/root	usr/share/man/man1/lscpu.1
+lrwxrwxrwx	root/root	usr/share/man/man1/lzcat.1 -> xz.1
+lrwxrwxrwx	root/root	usr/share/man/man1/lzcmp.1 -> xzdiff.1
+lrwxrwxrwx	root/root	usr/share/man/man1/lzdiff.1 -> xzdiff.1
+lrwxrwxrwx	root/root	usr/share/man/man1/lzegrep.1 -> xzgrep.1
+lrwxrwxrwx	root/root	usr/share/man/man1/lzfgrep.1 -> xzgrep.1
+lrwxrwxrwx	root/root	usr/share/man/man1/lzgrep.1 -> xzgrep.1
+lrwxrwxrwx	root/root	usr/share/man/man1/lzless.1 -> xzless.1
+lrwxrwxrwx	root/root	usr/share/man/man1/lzma.1 -> xz.1
+lrwxrwxrwx	root/root	usr/share/man/man1/lzmadec.1 -> xzdec.1
+-rw-r--r--	root/root	usr/share/man/man1/lzmainfo.1
+lrwxrwxrwx	root/root	usr/share/man/man1/lzmore.1 -> xzmore.1
 -rw-r--r--	root/root	usr/share/man/man1/machinectl.1
 -rw-r--r--	root/root	usr/share/man/man1/man.1
 -rw-r--r--	root/root	usr/share/man/man1/man2html.1
@@ -3741,17 +4218,21 @@ lrwxrwxrwx	root/root	usr/share/man/man1/slogin.1 -> ./ssh.1
 -rw-r--r--	root/root	usr/share/man/man1/systemd-cat.1
 -rw-r--r--	root/root	usr/share/man/man1/systemd-cgls.1
 -rw-r--r--	root/root	usr/share/man/man1/systemd-cgtop.1
--rw-r--r--	root/root	usr/share/man/man1/systemd-coredumpctl.1
 -rw-r--r--	root/root	usr/share/man/man1/systemd-delta.1
 -rw-r--r--	root/root	usr/share/man/man1/systemd-detect-virt.1
+-rw-r--r--	root/root	usr/share/man/man1/systemd-escape.1
+-rw-r--r--	root/root	usr/share/man/man1/systemd-firstboot.1
+-rw-r--r--	root/root	usr/share/man/man1/systemd-firstboot.service.1
 -rw-r--r--	root/root	usr/share/man/man1/systemd-inhibit.1
 -rw-r--r--	root/root	usr/share/man/man1/systemd-machine-id-setup.1
 -rw-r--r--	root/root	usr/share/man/man1/systemd-notify.1
 -rw-r--r--	root/root	usr/share/man/man1/systemd-nspawn.1
+-rw-r--r--	root/root	usr/share/man/man1/systemd-path.1
 -rw-r--r--	root/root	usr/share/man/man1/systemd-run.1
 -rw-r--r--	root/root	usr/share/man/man1/systemd-tty-ask-password-agent.1
 -rw-r--r--	root/root	usr/share/man/man1/tabs.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/tailf.1
+-rw-r--r--	root/root	usr/share/man/man1/tar.1
 -rw-r--r--	root/root	usr/share/man/man1/taskset.1
 -rw-r--r--	root/root	usr/share/man/man1/tbl.1
 -rw-r--r--	root/root	usr/share/man/man1/tfmtodit.1
@@ -3769,7 +4250,9 @@ lrwxrwxrwx	root/root	usr/share/man/man1/slogin.1 -> ./ssh.1
 -rw-r--r--	root/root	usr/share/man/man1/ul.1
 -rw-r--r--	root/root	usr/share/man/man1/unicode_start.1
 -rw-r--r--	root/root	usr/share/man/man1/unicode_stop.1
+lrwxrwxrwx	root/root	usr/share/man/man1/unlzma.1 -> xz.1
 -rw-r--r--	root/root	usr/share/man/man1/unshare.1
+lrwxrwxrwx	root/root	usr/share/man/man1/unxz.1 -> xz.1
 -rw-r--r--	root/root	usr/share/man/man1/uptime.1
 -rw-r--r--	root/root	usr/share/man/man1/usb-devices.1
 -rw-r--r--	root/root	usr/share/man/man1/utmpdump.1
@@ -3787,6 +4270,16 @@ lrwxrwxrwx	root/root	usr/share/man/man1/slogin.1 -> ./ssh.1
 -rw-r--r--	root/root	usr/share/man/man1/x509.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/xargs.1
 -rw-r--r--	root/root	usr/share/man/man1/xmlwf.1
+-rw-r--r--	root/root	usr/share/man/man1/xz.1
+lrwxrwxrwx	root/root	usr/share/man/man1/xzcat.1 -> xz.1
+lrwxrwxrwx	root/root	usr/share/man/man1/xzcmp.1 -> xzdiff.1
+-rw-r--r--	root/root	usr/share/man/man1/xzdec.1
+-rw-r--r--	root/root	usr/share/man/man1/xzdiff.1
+lrwxrwxrwx	root/root	usr/share/man/man1/xzegrep.1 -> xzgrep.1
+lrwxrwxrwx	root/root	usr/share/man/man1/xzfgrep.1 -> xzgrep.1
+-rw-r--r--	root/root	usr/share/man/man1/xzgrep.1
+-rw-r--r--	root/root	usr/share/man/man1/xzless.1
+-rw-r--r--	root/root	usr/share/man/man1/xzmore.1
 -rw-r--r--	root/root	usr/share/man/man1/ypdomainname.1
 -rw-r--r--	root/root	usr/share/man/man1/zcat.1
 -rw-r--r--	root/root	usr/share/man/man1/zcmp.1
@@ -4805,6 +5298,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/getwin_sp.3ncurses.gz -> sp_funcs.3ncurs
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_credentials_set.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_db_check_entry.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_db_check_entry_time.3
+-rw-r--r--	root/root	usr/share/man/man3/gnutls_db_get_default_cache_expiration.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_db_get_ptr.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_db_remove_session.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_db_set_cache_expiration.3
@@ -5626,6 +6120,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/init_pair_sp.3ncurses.gz -> sp_funcs.3nc
 lrwxrwxrwx	root/root	usr/share/man/man3/innstr.3ncurses.gz -> instr.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/innwstr.3ncurses.gz -> inwstr.3ncurses.gz
 -rw-r--r--	root/root	usr/share/man/man3/inopts.3ncurses.gz
+-rw-r--r--	root/root	usr/share/man/man3/inplace.3am
 -rw-r--r--	root/root	usr/share/man/man3/insch.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/insdelln.3ncurses.gz -> deleteln.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/insertln.3ncurses.gz -> deleteln.3ncurses.gz
@@ -6290,6 +6785,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/scr_set_sp.3ncurses.gz -> sp_funcs.3ncur
 -rw-r--r--	root/root	usr/share/man/man3/sd_is_socket.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_is_socket_inet.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_is_socket_unix.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_is_special.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal.3
 -rw-r--r--	root/root	usr/share/man/man3/sd-journal.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_add_conjunction.3
@@ -6324,6 +6820,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/scr_set_sp.3ncurses.gz -> sp_funcs.3ncur
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_next_skip.3
 -rw-r--r--	root/root	usr/share/man/man3/SD_JOURNAL_NOP.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_open.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_journal_open_container.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_open_directory.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_open_files.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_perror.3
@@ -6358,6 +6855,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/scr_set_sp.3ncurses.gz -> sp_funcs.3ncur
 -rw-r--r--	root/root	usr/share/man/man3/sd_readahead.3
 -rw-r--r--	root/root	usr/share/man/man3/sd-readahead.3
 -rw-r--r--	root/root	usr/share/man/man3/SD_WARNING.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_watchdog_enabled.3
 lrwxrwxrwx	root/root	usr/share/man/man3/setcchar.3ncurses.gz -> getcchar.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/set_current_field.3form.gz -> page.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/set_current_item.3menu.gz -> menu_current.3menu.gz
@@ -6553,6 +7051,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set_psk_server_callback.3ssl -> 
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_session_id_context.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_ssl_version.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_timeout.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_tlsext_ticket_key_cb.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set_tmp_dh.3ssl -> SSL_CTX_set_tmp_dh_callback.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_tmp_dh_callback.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set_tmp_rsa.3ssl -> SSL_CTX_set_tmp_rsa_callback.3ssl
@@ -6991,6 +7490,7 @@ drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/bootchart.conf.5
 -rw-r--r--	root/root	usr/share/man/man5/config.5ssl
 -rw-r--r--	root/root	usr/share/man/man5/connman.conf.5
+-rw-r--r--	root/root	usr/share/man/man5/coredump.conf.5
 -rw-r--r--	root/root	usr/share/man/man5/depmod.d.5
 -rw-r--r--	root/root	usr/share/man/man5/ethers.5
 -rw-r--r--	root/root	usr/share/man/man5/faillog.5
@@ -7029,6 +7529,7 @@ lrwxrwxrwx	root/root	usr/share/man/man5/host.deny.5.gz -> hosts_access.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/passwd.5
 -rw-r--r--	root/root	usr/share/man/man5/png.5
 -rw-r--r--	root/root	usr/share/man/man5/porttime.5
+-rw-r--r--	root/root	usr/share/man/man5/resolved.conf.5
 -rw-r--r--	root/root	usr/share/man/man5/shadow.5
 -rw-r--r--	root/root	usr/share/man/man5/ssh_config.5
 -rw-r--r--	root/root	usr/share/man/man5/sshd_config.5
@@ -7039,6 +7540,7 @@ lrwxrwxrwx	root/root	usr/share/man/man5/host.deny.5.gz -> hosts_access.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/systemd.device.5
 -rw-r--r--	root/root	usr/share/man/man5/systemd.exec.5
 -rw-r--r--	root/root	usr/share/man/man5/systemd.kill.5
+-rw-r--r--	root/root	usr/share/man/man5/systemd.link.5
 -rw-r--r--	root/root	usr/share/man/man5/systemd.mount.5
 -rw-r--r--	root/root	usr/share/man/man5/systemd.path.5
 -rw-r--r--	root/root	usr/share/man/man5/systemd.preset.5
@@ -7055,9 +7557,12 @@ lrwxrwxrwx	root/root	usr/share/man/man5/host.deny.5.gz -> hosts_access.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/systemd.timer.5
 -rw-r--r--	root/root	usr/share/man/man5/systemd.unit.5
 -rw-r--r--	root/root	usr/share/man/man5/systemd-user.conf.5
+-rw-r--r--	root/root	usr/share/man/man5/sysusers.d.5
 -rw-r--r--	root/root	usr/share/man/man5/term.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/terminfo.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/timesyncd.conf.5
 -rw-r--r--	root/root	usr/share/man/man5/tmpfiles.d.5
+-rw-r--r--	root/root	usr/share/man/man5/udev.conf.5
 -rw-r--r--	root/root	usr/share/man/man5/vconsole.conf.5
 -rwxr-xr-x	root/root	usr/share/man/man5/wpa_supplicant.conf.5
 -rw-r--r--	root/root	usr/share/man/man5/x509v3_config.5ssl
@@ -7066,6 +7571,7 @@ drwxr-xr-x	root/root	usr/share/man/man7/
 -rw-r--r--	root/root	usr/share/man/man7/daemon.7
 -rw-r--r--	root/root	usr/share/man/man7/des_modes.7ssl
 -rw-r--r--	root/root	usr/share/man/man7/ditroff.7
+-rw-r--r--	root/root	usr/share/man/man7/file-hierarchy.7
 -rw-r--r--	root/root	usr/share/man/man7/groff.7
 -rw-r--r--	root/root	usr/share/man/man7/groff_char.7
 -rw-r--r--	root/root	usr/share/man/man7/groff_diff.7
@@ -7191,6 +7697,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/reboot.8
 -rw-r--r--	root/root	usr/share/man/man8/resizepart.8
 -rw-r--r--	root/root	usr/share/man/man8/rmmod.8
+-rw-r--r--	root/root	usr/share/man/man8/rmt.8
 -rw-r--r--	root/root	usr/share/man/man8/route.8
 -rw-r--r--	root/root	usr/share/man/man8/rtcwake.8
 -rw-r--r--	root/root	usr/share/man/man8/runlevel.8
@@ -7223,6 +7730,8 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/systemd-backlight@.service.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-binfmt.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-binfmt.service.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-coredump.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-debug-generator.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-efi-boot-generator.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-fsck.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-fsck-root.service.8
@@ -7239,6 +7748,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/systemd-initctl.service.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-initctl.socket.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-journald.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-journald-dev-log.socket.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-journald.service.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-journald.socket.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-kexec.service.8
@@ -7263,17 +7773,26 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/systemd-reboot.service.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-remount-fs.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-remount-fs.service.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-resolved.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-resolved.service.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-rfkill.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-rfkill@.service.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-shutdown.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-shutdownd.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-shutdownd.service.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-shutdownd.socket.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-sleep.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-socket-proxyd.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-suspend.service.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-sysctl.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-sysctl.service.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-system-update-generator.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-sysusers.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-sysusers.service.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-timedated.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-timedated.service.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-timesyncd.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-timesyncd.service.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-tmpfiles.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-tmpfiles-clean.service.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-tmpfiles-clean.timer.8
@@ -7283,6 +7802,8 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/systemd-udevd-control.socket.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-udevd-kernel.socket.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-udevd.service.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-update-done.8
+-rw-r--r--	root/root	usr/share/man/man8/systemd-update-done.service.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-update-utmp.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-update-utmp-runlevel.service.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-update-utmp.service.8
@@ -7356,18 +7877,6 @@ drwxr-xr-x	root/root	usr/share/polkit-1/actions/
 -rw-r--r--	root/root	usr/share/polkit-1/actions/org.freedesktop.login1.policy
 -rw-r--r--	root/root	usr/share/polkit-1/actions/org.freedesktop.systemd1.policy
 -rw-r--r--	root/root	usr/share/polkit-1/actions/org.freedesktop.timedate1.policy
-drwxr-xr-x	root/root	usr/share/readline/
--rw-r--r--	root/root	usr/share/readline/excallback.c
--rw-r--r--	root/root	usr/share/readline/fileman.c
--rw-r--r--	root/root	usr/share/readline/histexamp.c
--rw-r--r--	root/root	usr/share/readline/manexamp.c
--rw-r--r--	root/root	usr/share/readline/rl.c
--rw-r--r--	root/root	usr/share/readline/rlcat.c
--rw-r--r--	root/root	usr/share/readline/rlevent.c
--rw-r--r--	root/root	usr/share/readline/rl-fgets.c
--rw-r--r--	root/root	usr/share/readline/rlptytest.c
--rw-r--r--	root/root	usr/share/readline/rltest.c
--rw-r--r--	root/root	usr/share/readline/rlversion.c
 drwxr-xr-x	root/root	usr/share/sounds/
 drwxr-xr-x	root/root	usr/share/sounds/alsa/
 -rw-r--r--	root/root	usr/share/sounds/alsa/Front_Center.wav
@@ -11227,6 +11736,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/vimrc
 drwxr-xr-x	root/root	usr/share/zsh/
 drwxr-xr-x	root/root	usr/share/zsh/site-functions/
+-rw-r--r--	root/root	usr/share/zsh/site-functions/_coredumpctl
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_hostnamectl
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_journalctl
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_kernel-install
@@ -11234,13 +11744,16 @@ drwxr-xr-x	root/root	usr/share/zsh/site-functions/
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_loginctl
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_machinectl
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_sd_hosts_or_user_at_host
+-rw-r--r--	root/root	usr/share/zsh/site-functions/_sd_machines
+-rw-r--r--	root/root	usr/share/zsh/site-functions/_sd_outputmodes
+-rw-r--r--	root/root	usr/share/zsh/site-functions/_sd_unit_files
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_systemctl
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_systemd
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_systemd-analyze
--rw-r--r--	root/root	usr/share/zsh/site-functions/_systemd-coredumpctl
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_systemd-delta
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_systemd-inhibit
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_systemd-nspawn
+-rw-r--r--	root/root	usr/share/zsh/site-functions/_systemd-run
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_systemd-tmpfiles
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_timedatectl
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_udevadm

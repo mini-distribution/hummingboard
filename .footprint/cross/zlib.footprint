@@ -3,7 +3,6 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/zconf.h
 -rw-r--r--	root/root	usr/include/zlib.h
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libz.a
 -rwxr-xr-x	root/root	usr/lib/libz.so.1.2.8
 lrwxrwxrwx	root/root	usr/lib/libz.so.1 -> libz.so.1.2.8
 lrwxrwxrwx	root/root	usr/lib/libz.so -> libz.so.1.2.8

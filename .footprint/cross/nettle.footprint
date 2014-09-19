@@ -56,11 +56,9 @@ drwxr-xr-x	root/root	usr/include/nettle/
 -rw-r--r--	root/root	usr/include/nettle/umac.h
 -rw-r--r--	root/root	usr/include/nettle/yarrow.h
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libhogweed.a
 -rw-r--r--	root/root	usr/lib/libhogweed.so.2.5
 lrwxrwxrwx	root/root	usr/lib/libhogweed.so.2 -> libhogweed.so.2.5
 lrwxrwxrwx	root/root	usr/lib/libhogweed.so -> libhogweed.so.2.5
--rw-r--r--	root/root	usr/lib/libnettle.a
 -rw-r--r--	root/root	usr/lib/libnettle.so.4.7
 lrwxrwxrwx	root/root	usr/lib/libnettle.so.4 -> libnettle.so.4.7
 lrwxrwxrwx	root/root	usr/lib/libnettle.so -> libnettle.so.4.7

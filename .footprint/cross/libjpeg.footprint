@@ -11,7 +11,6 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/jmorecfg.h
 -rw-r--r--	root/root	usr/include/jpeglib.h
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libjpeg.a
 -rwxr-xr-x	root/root	usr/lib/libjpeg.la
 -rwxr-xr-x	root/root	usr/lib/libjpeg.so.9.1.0
 lrwxrwxrwx	root/root	usr/lib/libjpeg.so.9 -> libjpeg.so.9.1.0

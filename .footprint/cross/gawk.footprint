@@ -2,7 +2,7 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/awk -> gawk
 -rwxr-xr-x	root/root	usr/bin/gawk
-hrwxr-xr-x	root/root	usr/bin/gawk-4.1.0 link to usr/bin/gawk
+hrwxr-xr-x	root/root	usr/bin/gawk-4.1.1 link to usr/bin/gawk
 -rwxr-xr-x	root/root	usr/bin/igawk
 drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/gawkapi.h
@@ -53,6 +53,7 @@ drwxr-xr-x	root/root	usr/share/awk/
 -rw-r--r--	root/root	usr/share/awk/passwd.awk
 -rw-r--r--	root/root	usr/share/awk/quicksort.awk
 -rw-r--r--	root/root	usr/share/awk/readable.awk
+-rw-r--r--	root/root	usr/share/awk/readfile.awk
 -rw-r--r--	root/root	usr/share/awk/rewind.awk
 -rw-r--r--	root/root	usr/share/awk/round.awk
 -rw-r--r--	root/root	usr/share/awk/strtonum.awk
@@ -66,6 +67,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/filefuncs.3am
 -rw-r--r--	root/root	usr/share/man/man3/fnmatch.3am
 -rw-r--r--	root/root	usr/share/man/man3/fork.3am
+-rw-r--r--	root/root	usr/share/man/man3/inplace.3am
 -rw-r--r--	root/root	usr/share/man/man3/ordchr.3am
 -rw-r--r--	root/root	usr/share/man/man3/readdir.3am
 -rw-r--r--	root/root	usr/share/man/man3/readfile.3am

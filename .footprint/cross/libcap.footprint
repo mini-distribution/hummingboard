@@ -3,7 +3,6 @@ drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/sys/
 -rw-r--r--	root/root	usr/include/sys/capability.h
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libcap.a
 -rw-r--r--	root/root	usr/lib/libcap.so.2.24
 lrwxrwxrwx	root/root	usr/lib/libcap.so.2 -> libcap.so.2.24
 lrwxrwxrwx	root/root	usr/lib/libcap.so -> libcap.so.2

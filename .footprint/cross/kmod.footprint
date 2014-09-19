@@ -11,9 +11,9 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/libkmod.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libkmod.la
--rwxr-xr-x	root/root	usr/lib/libkmod.so.2.2.6
-lrwxrwxrwx	root/root	usr/lib/libkmod.so.2 -> libkmod.so.2.2.6
-lrwxrwxrwx	root/root	usr/lib/libkmod.so -> libkmod.so.2.2.6
+-rwxr-xr-x	root/root	usr/lib/libkmod.so.2.2.8
+lrwxrwxrwx	root/root	usr/lib/libkmod.so.2 -> libkmod.so.2.2.8
+lrwxrwxrwx	root/root	usr/lib/libkmod.so -> libkmod.so.2.2.8
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libkmod.pc
 drwxr-xr-x	root/root	usr/share/

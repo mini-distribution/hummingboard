@@ -33,7 +33,6 @@ drwxr-xr-x	root/root	usr/include/proc/
 -rw-r--r--	root/root	usr/include/proc/wchan.h
 -rw-r--r--	root/root	usr/include/proc/whattime.h
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libprocps.a
 -rwxr-xr-x	root/root	usr/lib/libprocps.la
 -rwxr-xr-x	root/root	usr/lib/libprocps.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/libprocps.so.3 -> libprocps.so.3.0.0

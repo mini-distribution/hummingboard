@@ -63,17 +63,14 @@ drwxr-xr-x	root/root	usr/include/libmount/
 drwxr-xr-x	root/root	usr/include/uuid/
 -rw-r--r--	root/root	usr/include/uuid/uuid.h
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libblkid.a
 -rwxr-xr-x	root/root	usr/lib/libblkid.la
 -rwxr-xr-x	root/root	usr/lib/libblkid.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libblkid.so.1 -> libblkid.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libblkid.so -> libblkid.so.1.1.0
--rw-r--r--	root/root	usr/lib/libmount.a
 -rwxr-xr-x	root/root	usr/lib/libmount.la
 -rwxr-xr-x	root/root	usr/lib/libmount.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libmount.so.1 -> libmount.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libmount.so -> libmount.so.1.1.0
--rw-r--r--	root/root	usr/lib/libuuid.a
 -rwxr-xr-x	root/root	usr/lib/libuuid.la
 -rwxr-xr-x	root/root	usr/lib/libuuid.so.1.3.0
 lrwxrwxrwx	root/root	usr/lib/libuuid.so.1 -> libuuid.so.1.3.0

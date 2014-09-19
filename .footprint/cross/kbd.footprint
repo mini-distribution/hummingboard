@@ -66,6 +66,7 @@ lrwxrwxrwx	root/root	usr/share/kbd/consolefonts/default.gz -> default8x9.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/drdos8x6.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/drdos8x8.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/ERRORS
+-rw-r--r--	root/root	usr/share/kbd/consolefonts/eurlatgr.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/Goha-12.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/Goha-14.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/Goha-16.psfu.gz
@@ -198,6 +199,7 @@ lrwxrwxrwx	root/root	usr/share/kbd/consolefonts/default.gz -> default8x9.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/LatGrkCyr-8x16.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/LatKaCyrHeb-14.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/Mik_8x16.gz
+-rw-r--r--	root/root	usr/share/kbd/consolefonts/pancyrillic.f16.psfu.gz
 drwxr-xr-x	root/root	usr/share/kbd/consolefonts/partialfonts/
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/partialfonts/8859-10.a0-ff.08.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/partialfonts/8859-10.a0-ff.14.gz
@@ -384,8 +386,6 @@ drwxr-xr-x	root/root	usr/share/kbd/keymaps/i386/qwerty/
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/es.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/et.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/et-nodeadkeys.map.gz
--rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/fi-latin1.map.gz
--rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/fi-latin9.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/fi.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/gr.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/gr-pc.map.gz
@@ -407,6 +407,8 @@ drwxr-xr-x	root/root	usr/share/kbd/keymaps/i386/qwerty/
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/lt.baltic.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/lt.l4.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/lt.map.gz
+-rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/lv.map.gz
+-rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/lv-tilde.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/mk0.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/mk-cp1251.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/mk.map.gz

@@ -1,5 +1,6 @@
 drwxr-xr-x	root/root	etc/
 -rw-r--r--	root/root	etc/profile
+drwxr-xr-x	root/root	etc/profile.d/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/bash
