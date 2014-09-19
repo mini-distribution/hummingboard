@@ -30,7 +30,7 @@ Quick build guide:
 
 Build system requirements:
 
-   Tested on Ubuntu 12.10 Minimal (64-bit x86) with the following additional
+   Tested on Ubuntu 14.04 Minimal (64-bit x86) with the following additional
    packages installed:
 
    $ sudo apt-get install unzip groff bison flex gperf texinfo xsltproc \
@@ -43,7 +43,7 @@ Build system requirements:
 
    $ sudo dpkg-reconfigure dash
 
-   Fact: many software distributions fail to build using the dash shell.
+   Fact: Many software distributions fail to build using the dash shell.
 
 Known issues:
 
