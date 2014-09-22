@@ -12,7 +12,7 @@ Main features:
    * Glibc based toolchain
    * Systemd init system
    * GNU/Linux system utilities (no busybox)
-   * Ethernet and wifi network support
+   * Ethernet network support
    * OpenSSH client/server
 
 Main builds:
