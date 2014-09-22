@@ -1,0 +1,20 @@
+# Description: U-boot - The universal bootloader
+# URL: https://github.com/SolidRun/u-boot-imx6
+
+name=u-boot
+version=gite4bc4c3
+release=1
+source=(http://buildgear.org/mirror/solidrun/solidrun-u-boot-imx6-gite4bc4c3.tar.xz)
+
+build(){
+    cd solidrun-u-boot-imx6-gite4bc4c3
+
+    # Change default configuration to ext4
+#    sed -i -e "s;ext3;ext4;g" include/configs/omap4_common.h
+
+    make ARCH=arm CROSS_COMPILE=$HOST- mx6_cubox-i_config
+    make -j $JOBS ARCH=arm CROSS_COMPILE=$HOST-
+
+    cp u-boot.img $OUTPUT/
+    cp SPL $OUTPUT/
+}

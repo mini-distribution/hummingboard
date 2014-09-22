@@ -1,0 +1,36 @@
+# Description: The Linux kernel
+# URL: https://github.com/SolidRun/linux-imx6-3.14
+# License: GPLv2
+
+name=linux
+version=$KERNEL_VERSION
+release=1
+depends=(native/linux-source)
+
+build() {
+   cd $NATIVE_SYSROOT/usr/src/linux
+
+   export ARCH=arm
+   export CROSS_COMPILE=$HOST-
+
+   make imx_v7_cbi_hb_defconfig
+   make -j $JOBS zImage \
+                 imx6q-cubox-i.dtb \
+                 imx6dl-cubox-i.dtb \
+                 imx6dl-hummingboard.dtb \
+                 imx6q-hummingboard.dtb
+   make -j $JOBS modules
+   make INSTALL_MOD_PATH=$PKG modules_install
+
+   # Cleanup
+   rm $PKG/lib/modules/$version/{build,source}
+
+   cp arch/arm/boot/zImage $OUTPUT/
+   cp arch/arm/boot/dts/imx6*.dtb $OUTPUT/
+}
+
+check() {
+   # Test for preinstalled tools
+   check_tool mkimage "Available in Ubuntu package u-boot-tools"
+   check_tool lzop "Available in Ubuntu package lzop"
+}

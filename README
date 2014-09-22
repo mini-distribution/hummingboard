@@ -1,10 +1,10 @@
 Name:
 
-   Pandaboard Mini Distribution
+   Hummingboard Mini Distribution
 
 About:
 
-   A basic GNU/Linux distribution for the Pandaboard
+   A basic GNU/Linux distribution for SolidRuns Hummingboard
 
 Main features:
 
@@ -23,8 +23,8 @@ Main builds:
 
 Quick build guide:
 
-   $ git clone --recursive git://github.com/mini-distribution/pandaboard.git
-   $ cd pandaboard
+   $ git clone --recursive git://github.com/mini-distribution/hummingboard.git
+   $ cd hummingboard
    $ buildgear build fs
    $ buildgear build u-boot
 

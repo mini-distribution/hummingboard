@@ -30,9 +30,9 @@ drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libgnutls-openssl.so.27.0.2
 lrwxrwxrwx	root/root	usr/lib/libgnutls-openssl.so.27 -> libgnutls-openssl.so.27.0.2
 lrwxrwxrwx	root/root	usr/lib/libgnutls-openssl.so -> libgnutls-openssl.so.27.0.2
--rwxr-xr-x	root/root	usr/lib/libgnutls.so.28.30.6
-lrwxrwxrwx	root/root	usr/lib/libgnutls.so.28 -> libgnutls.so.28.30.6
-lrwxrwxrwx	root/root	usr/lib/libgnutls.so -> libgnutls.so.28.30.6
+-rwxr-xr-x	root/root	usr/lib/libgnutls.so.28.30.9
+lrwxrwxrwx	root/root	usr/lib/libgnutls.so.28 -> libgnutls.so.28.30.9
+lrwxrwxrwx	root/root	usr/lib/libgnutls.so -> libgnutls.so.28.30.9
 -rwxr-xr-x	root/root	usr/lib/libgnutls-xssl.la
 -rwxr-xr-x	root/root	usr/lib/libgnutls-xssl.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libgnutls-xssl.so.0 -> libgnutls-xssl.so.0.0.0

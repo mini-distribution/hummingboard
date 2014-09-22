@@ -1,0 +1,14 @@
+# Description: The Linux kernel
+# URL: https://github.com/SolidRun/linux-imx6-3.14
+# License: GPLv2
+
+name=linux-source
+version=$KERNEL_VERSION
+release=1
+source=(http://buildgear.org/mirror/solidrun/solidrun-linux-imx6-3.14-gite85332f.tar.xz)
+options=(nostrip)
+
+build(){
+   mkdir -p $PKG/usr/src
+   mv solidrun-linux-imx6-3.14-gite85332f $PKG/usr/src/linux
+}

@@ -4,32 +4,24 @@
 name=fs
 version=1.0
 release=1
+options=(nostrip)
 depends=(core
          linux
          net-tools
          traceroute
          alsa-utils
-         gstreamer
-         gst-plugins-base
-         gst-plugins-good
-         wireless_tools
-         wpa_supplicant
-         wl1271-firmware
          connman
-         omapconf
-         ntp
          vim)
-options=(nostrip)
 
 build() {
    # Copy fully populated sysroot
    cp -a $SYSROOT/* $PKG
 
    # Set host name
-   echo "panda" > $PKG/etc/hostname
+   echo "hummingboard" > $PKG/etc/hostname
 
    # Set login issue
-   echo -e "Pandaboard Mini Distribution $version\n" > $PKG/etc/issue
+   echo -e "Hummingboard Mini Distribution $version\n" > $PKG/etc/issue
 
    # Cleanup
    cd $PKG/usr/include; rm -rf !(python|python?.?)

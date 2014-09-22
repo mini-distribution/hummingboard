@@ -63,3 +63,6 @@ check_exist()
       exit 1
    fi
 }
+
+# Include linux configuration
+source config/linux.cfg
