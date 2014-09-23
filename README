@@ -28,6 +28,18 @@ Quick build guide:
    $ buildgear build fs
    $ buildgear build u-boot
 
+Software installation:
+
+   To install on SD card simply create your primary (rootfs) EXT4 partion and
+   install SPL and u-boot.img as described in the steps found here:
+
+   http://www.solid-run.com/wiki/Building_the_kernel_and_u-boot_for_the_CuBox-i_and_the_HummingBoard
+   (See section "Flashing U-boot and the kernel - full example")
+
+   Copy the boot directory in build/output to your primary (roofts) partition.
+
+   Extract build/output/fs.tar.gz to your rootfs partition.
+
 Build system requirements:
 
    Tested on Ubuntu 14.04 Minimal (64-bit x86) with the following additional
