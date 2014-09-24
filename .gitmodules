@@ -14,3 +14,6 @@
 	path = buildfiles/cross/cross-extra
 	url = git://github.com/mini-distribution/cross-extra.git
 #	url = git@github.com:mini-distribution/cross-extra.git
+[submodule "buildfiles/native/native-freedesktop"]
+	path = buildfiles/native/native-freedesktop
+	url = git@github.com:mini-distribution/native-freedesktop.git

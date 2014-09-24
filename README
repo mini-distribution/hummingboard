@@ -36,7 +36,7 @@ Software installation:
    http://www.solid-run.com/wiki/Building_the_kernel_and_u-boot_for_the_CuBox-i_and_the_HummingBoard
    (See section "Flashing U-boot and the kernel - full example")
 
-   Copy the boot directory in build/output to your primary (roofts) partition.
+   Copy the boot directory in build/output to your primary (rootfs) partition.
 
    Extract build/output/fs.tar.gz to your rootfs partition.
 
