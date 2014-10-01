@@ -28,6 +28,11 @@ Quick build guide:
    $ buildgear build fs
    $ buildgear build u-boot
 
+Prebuilt images:
+
+   For demo purpose, prebuilt images are available here:
+   http://buildgear.org/prebuilds/hummingboard/mini-distribution
+
 Software installation:
 
    To install on SD card simply create your primary (rootfs) EXT4 partion and
