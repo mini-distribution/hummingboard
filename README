@@ -14,6 +14,7 @@ Main features:
    * GNU/Linux system utilities (no busybox)
    * Ethernet network support
    * OpenSSH client/server
+   * Gstreamer-1.4.x (including iMX HW enc/dec plugins)
 
 Main builds:
 
