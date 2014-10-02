@@ -1,0 +1,9 @@
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/firmware/
+drwxr-xr-x	root/root	lib/firmware/vpu/
+-rwxr-xr-x	root/root	lib/firmware/vpu/vpu_fw_imx27_TO1.bin
+-rwxr-xr-x	root/root	lib/firmware/vpu/vpu_fw_imx27_TO2.bin
+-rwxr-xr-x	root/root	lib/firmware/vpu/vpu_fw_imx51.bin
+-rwxr-xr-x	root/root	lib/firmware/vpu/vpu_fw_imx53.bin
+-rwxr-xr-x	root/root	lib/firmware/vpu/vpu_fw_imx6d.bin
+-rwxr-xr-x	root/root	lib/firmware/vpu/vpu_fw_imx6q.bin

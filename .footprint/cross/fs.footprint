@@ -189,6 +189,13 @@ drwxr-xr-x	root/root	lib/firmware/tehuti/
 -rw-r--r--	root/root	lib/firmware/ti_5052.fw
 drwxr-xr-x	root/root	lib/firmware/ttusb-budget/
 -rw-r--r--	root/root	lib/firmware/ttusb-budget/dspbootcode.bin
+drwxr-xr-x	root/root	lib/firmware/vpu/
+-rwxr-xr-x	root/root	lib/firmware/vpu/vpu_fw_imx27_TO1.bin
+-rwxr-xr-x	root/root	lib/firmware/vpu/vpu_fw_imx27_TO2.bin
+-rwxr-xr-x	root/root	lib/firmware/vpu/vpu_fw_imx51.bin
+-rwxr-xr-x	root/root	lib/firmware/vpu/vpu_fw_imx53.bin
+-rwxr-xr-x	root/root	lib/firmware/vpu/vpu_fw_imx6d.bin
+-rwxr-xr-x	root/root	lib/firmware/vpu/vpu_fw_imx6q.bin
 -rw-r--r--	root/root	lib/firmware/whiteheat.fw
 -rw-r--r--	root/root	lib/firmware/whiteheat_loader.fw
 drwxr-xr-x	root/root	lib/firmware/yam/
@@ -2994,6 +3001,7 @@ lrwxrwxrwx	root/root	usr/bin/captoinfo -> tic
 -rwxr-xr-x	root/root	usr/bin/chrt
 -rwsr-xr-x	root/root	usr/bin/chsh
 -rwxr-xr-x	root/root	usr/bin/chvt
+-rwxr-xr-x	root/root	usr/bin/cjpeg
 -rwxr-xr-x	root/root	usr/bin/cksum
 -rwxr-xr-x	root/root	usr/bin/clear
 -rwxr-xr-x	root/root	usr/bin/col
@@ -3024,6 +3032,7 @@ lrwxrwxrwx	root/root	usr/bin/depmod -> /usr/bin/kmod
 -rwxr-xr-x	root/root	usr/bin/dir
 -rwxr-xr-x	root/root	usr/bin/dircolors
 -rwxr-xr-x	root/root	usr/bin/dirname
+-rwxr-xr-x	root/root	usr/bin/djpeg
 -rwxr-xr-x	root/root	usr/bin/dmesg
 lrwxrwxrwx	root/root	usr/bin/dnsdomainname -> hostname
 lrwxrwxrwx	root/root	usr/bin/domainname -> hostname
@@ -3097,6 +3106,12 @@ lrwxrwxrwx	root/root	usr/bin/geqn -> eqn
 -rwxr-xr-x	root/root	usr/bin/grotty
 -rwxr-xr-x	root/root	usr/bin/groups
 -rwxr-xr-x	root/root	usr/bin/gsettings
+-rwxr-xr-x	root/root	usr/bin/gst-device-monitor-1.0
+-rwxr-xr-x	root/root	usr/bin/gst-discoverer-1.0
+-rwxr-xr-x	root/root	usr/bin/gst-inspect-1.0
+-rwxr-xr-x	root/root	usr/bin/gst-launch-1.0
+-rwxr-xr-x	root/root	usr/bin/gst-play-1.0
+-rwxr-xr-x	root/root	usr/bin/gst-typefind-1.0
 lrwxrwxrwx	root/root	usr/bin/gtbl -> tbl
 -rwxr-xr-x	root/root	usr/bin/gtester
 -rwxr-xr-x	root/root	usr/bin/gtester-report
@@ -3127,6 +3142,7 @@ lrwxrwxrwx	root/root	usr/bin/iptables-xml -> /usr/sbin/xtables-multi
 -rwxr-xr-x	root/root	usr/bin/isosize
 -rwxr-xr-x	root/root	usr/bin/join
 -rwxr-xr-x	root/root	usr/bin/journalctl
+-rwxr-xr-x	root/root	usr/bin/jpegtran
 -rwxr-xr-x	root/root	usr/bin/kbdinfo
 -rwxr-xr-x	root/root	usr/bin/kbd_mode
 -rwxr-xr-x	root/root	usr/bin/kbdrate
@@ -3142,6 +3158,8 @@ lrwxrwxrwx	root/root	usr/bin/lastb -> last
 -rwxr-xr-x	root/root	usr/bin/lessecho
 -rwxr-xr-x	root/root	usr/bin/lesskey
 -rwxr-xr-x	root/root	usr/bin/libgcrypt-config
+-rwxr-xr-x	root/root	usr/bin/libpng16-config
+lrwxrwxrwx	root/root	usr/bin/libpng-config -> libpng16-config
 -rwxr-xr-x	root/root	usr/bin/link
 lrwxrwxrwx	root/root	usr/bin/linux32 -> setarch
 lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
@@ -3218,6 +3236,8 @@ lrwxrwxrwx	root/root	usr/bin/nisdomainname -> hostname
 -rwxr-xr-x	root/root	usr/bin/oldfind
 -rwxr-xr-x	root/root	usr/bin/openssl
 -rwxr-xr-x	root/root	usr/bin/openvt
+-rwxr-xr-x	root/root	usr/bin/orc-bugreport
+-rwxr-xr-x	root/root	usr/bin/orcc
 -rwsr-xr-x	root/root	usr/bin/passwd
 -rwxr-xr-x	root/root	usr/bin/paste
 -rwxr-xr-x	root/root	usr/bin/pathchk
@@ -3241,6 +3261,8 @@ lrwxrwxrwx	root/root	usr/bin/nisdomainname -> hostname
 -rwxr-xr-x	root/root	usr/bin/pkill
 -rwxr-xr-x	root/root	usr/bin/pldd
 -rwxr-xr-x	root/root	usr/bin/pmap
+-rwxr-xr-x	root/root	usr/bin/pngfix
+-rwxr-xr-x	root/root	usr/bin/png-fix-itxt
 -rwxr-xr-x	root/root	usr/bin/post-grohtml
 -rwxr-xr-x	root/root	usr/bin/pr
 -rwxr-xr-x	root/root	usr/bin/preconv
@@ -3255,6 +3277,7 @@ lrwxrwxrwx	root/root	usr/bin/nisdomainname -> hostname
 -rwxr-xr-x	root/root	usr/bin/ptx
 -rwxr-xr-x	root/root	usr/bin/pwd
 -rwxr-xr-x	root/root	usr/bin/pwdx
+-rwxr-xr-x	root/root	usr/bin/rdjpgcom
 -rwxr-xr-x	root/root	usr/bin/readlink
 -rwxr-xr-x	root/root	usr/bin/realpath
 -rwxr-xr-x	root/root	usr/bin/refer
@@ -3409,6 +3432,7 @@ lrwxrwxrwx	root/root	usr/bin/vimdiff -> vim
 -rwxr-xr-x	root/root	usr/bin/who
 -rwxr-xr-x	root/root	usr/bin/whoami
 -rwxr-sr-x	root/tty	usr/bin/write
+-rwxr-xr-x	root/root	usr/bin/wrjpgcom
 -rwxr-xr-x	root/root	usr/bin/xargs
 -rwxr-xr-x	root/root	usr/bin/xmlwf
 -rwxr-xr-x	root/root	usr/bin/xtrace
@@ -3487,6 +3511,8 @@ hrwxr-xr-x	root/root	usr/libexec/getconf/POSIX_V7_ILP32_OFF32 link to usr/bin/ge
 hrwxr-xr-x	root/root	usr/libexec/getconf/POSIX_V7_ILP32_OFFBIG link to usr/bin/getconf
 hrwxr-xr-x	root/root	usr/libexec/getconf/XBS5_ILP32_OFF32 link to usr/bin/getconf
 hrwxr-xr-x	root/root	usr/libexec/getconf/XBS5_ILP32_OFFBIG link to usr/bin/getconf
+drwxr-xr-x	root/root	usr/libexec/gstreamer-1.0/
+-rwxr-xr-x	root/root	usr/libexec/gstreamer-1.0/gst-plugin-scanner
 -rwsr-xr-x	root/root	usr/libexec/pt_chown
 -rwxr-xr-x	root/root	usr/libexec/rmt
 -rwxr-xr-x	root/root	usr/libexec/sftp-server
@@ -3773,6 +3799,143 @@ drwxr-xr-x	root/root	usr/lib/groff/groffer/
 -rwxr-xr-x	root/root	usr/lib/groff/groffer/split_env.sh
 -rw-r--r--	root/root	usr/lib/groff/groffer/version.sh
 drwxr-xr-x	root/root	usr/lib/groff/site-tmac/
+drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstaccurip.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstadder.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstadpcmdec.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstadpcmenc.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstaiff.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstalaw.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstalphacolor.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstalpha.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstalsa.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstapetag.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstapp.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstasfmux.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstasf.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstaudioconvert.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstaudiofxbad.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstaudiofx.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstaudiomixer.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstaudioparsers.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstaudiorate.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstaudioresample.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstaudiotestsrc.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstaudiovisualizers.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstauparse.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstautoconvert.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstautodetect.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstavi.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstbayer.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstcamerabin2.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstcoloreffects.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstcompositor.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstcoreelements.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstcutter.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstdataurisrc.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstdebug.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstdebugutilsbad.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstdecklink.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstdeinterlace.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstdtmf.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstdvb.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstdvbsuboverlay.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstdvdlpcmdec.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstdvdspu.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstdvdsub.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgsteffectv.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstencodebin.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstequalizer.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstfbdevsink.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstfestival.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstfieldanalysis.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstflv.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstflxdec.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstfragmented.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstfreeverb.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstfrei0r.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstgaudieffects.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstgdp.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstgeometrictransform.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstgio.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstgoom2k1.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstgoom.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgsticydemux.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstid3demux.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstid3tag.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstimagefreeze.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstimxipu.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstimxv4l2src.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstimxvpu.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstinterlace.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstinterleave.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstinter.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstisomp4.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstivfparse.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstivtc.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstjp2kdecimator.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstjpegformat.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstjpeg.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstlevel.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstliveadder.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstmatroska.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstmidi.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstmpegpsdemux.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstmpegpsmux.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstmpegtsdemux.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstmpegtsmux.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstmulaw.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstmultifile.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstmultipart.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstmxf.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstnavigationtest.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstpcapparse.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstplayback.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstpng.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstpnm.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstrawparse.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstremovesilence.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstreplaygain.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstrfbsrc.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstrmdemux.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstrtpmanager.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstrtp.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstrtsp.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstsdpelem.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstsegmentclip.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstshapewipe.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstshm.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstsiren.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstsmooth.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstsmpte.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstspectrum.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstspeed.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgststereo.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstsubenc.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstsubparse.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgsttcp.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgsttypefindfunctions.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstudp.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstuvch264.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideobox.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideoconvert.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideocrop.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideofiltersbad.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideofilter.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideomixer.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideoparsersbad.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideorate.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideoscale.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideosignal.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideotestsrc.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvmnc.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvolume.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstwavenc.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstwavparse.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstxingmux.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgsty4mdec.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgsty4menc.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstyadif.so
 drwxr-xr-x	root/root	usr/lib/kernel/
 drwxr-xr-x	root/root	usr/lib/kernel/install.d/
 -rwxr-xr-x	root/root	usr/lib/kernel/install.d/50-depmod.install
@@ -3823,6 +3986,9 @@ lrwxrwxrwx	root/root	usr/lib/libffi.so -> libffi.so.6.0.2
 -rwxr-xr-x	root/root	usr/lib/libform.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libform.so.5 -> libform.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libform.so -> libform.so.5
+-rwxr-xr-x	root/root	usr/lib/libfslvpuwrap.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libfslvpuwrap.so.3 -> libfslvpuwrap.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libfslvpuwrap.so -> libfslvpuwrap.so.3.0.0
 -rwxr-xr-x	root/root	usr/lib/libgcrypt.so.20.0.2
 lrwxrwxrwx	root/root	usr/lib/libgcrypt.so.20 -> libgcrypt.so.20.0.2
 lrwxrwxrwx	root/root	usr/lib/libgcrypt.so -> libgcrypt.so.20.0.2
@@ -3859,6 +4025,81 @@ lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so -> libgobject-2.0.so.0.4001.0
 -rwxr-xr-x	root/root	usr/lib/libgpg-error.so.0.10.0
 lrwxrwxrwx	root/root	usr/lib/libgpg-error.so.0 -> libgpg-error.so.0.10.0
 lrwxrwxrwx	root/root	usr/lib/libgpg-error.so -> libgpg-error.so.0.10.0
+-rwxr-xr-x	root/root	usr/lib/libgstallocators-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstallocators-1.0.so.0 -> libgstallocators-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstallocators-1.0.so -> libgstallocators-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstapp-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstapp-1.0.so.0 -> libgstapp-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstapp-1.0.so -> libgstapp-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstaudio-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstaudio-1.0.so.0 -> libgstaudio-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstaudio-1.0.so -> libgstaudio-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstbadbase-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadbase-1.0.so.0 -> libgstbadbase-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadbase-1.0.so -> libgstbadbase-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstbadvideo-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadvideo-1.0.so.0 -> libgstbadvideo-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadvideo-1.0.so -> libgstbadvideo-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstbase-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstbase-1.0.so.0 -> libgstbase-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstbase-1.0.so -> libgstbase-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so.0 -> libgstbasecamerabinsrc-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so -> libgstbasecamerabinsrc-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstcheck-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstcheck-1.0.so.0 -> libgstcheck-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstcheck-1.0.so -> libgstcheck-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstcodecparsers-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstcodecparsers-1.0.so.0 -> libgstcodecparsers-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstcodecparsers-1.0.so -> libgstcodecparsers-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstcontroller-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstcontroller-1.0.so.0 -> libgstcontroller-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstcontroller-1.0.so -> libgstcontroller-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstfft-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstfft-1.0.so.0 -> libgstfft-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstfft-1.0.so -> libgstfft-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstimxcommon.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libgstimxcommon.so.0 -> libgstimxcommon.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libgstimxcommon.so -> libgstimxcommon.so.0.9.9
+-rwxr-xr-x	root/root	usr/lib/libgstinsertbin-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstinsertbin-1.0.so.0 -> libgstinsertbin-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstinsertbin-1.0.so -> libgstinsertbin-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstmpegts-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstmpegts-1.0.so.0 -> libgstmpegts-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstmpegts-1.0.so -> libgstmpegts-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstnet-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstnet-1.0.so.0 -> libgstnet-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstnet-1.0.so -> libgstnet-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstpbutils-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstpbutils-1.0.so.0 -> libgstpbutils-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstpbutils-1.0.so -> libgstpbutils-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstphotography-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstphotography-1.0.so.0 -> libgstphotography-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstphotography-1.0.so -> libgstphotography-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstreamer-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstreamer-1.0.so.0 -> libgstreamer-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstreamer-1.0.so -> libgstreamer-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstriff-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstriff-1.0.so.0 -> libgstriff-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstriff-1.0.so -> libgstriff-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstrtp-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstrtp-1.0.so.0 -> libgstrtp-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstrtp-1.0.so -> libgstrtp-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstrtsp-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstrtsp-1.0.so.0 -> libgstrtsp-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstrtsp-1.0.so -> libgstrtsp-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstsdp-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstsdp-1.0.so.0 -> libgstsdp-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstsdp-1.0.so -> libgstsdp-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgsttag-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgsttag-1.0.so.0 -> libgsttag-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgsttag-1.0.so -> libgsttag-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgsturidownloader-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgsturidownloader-1.0.so.0 -> libgsturidownloader-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgsturidownloader-1.0.so -> libgsturidownloader-1.0.so.0.402.0
+-rwxr-xr-x	root/root	usr/lib/libgstvideo-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstvideo-1.0.so.0 -> libgstvideo-1.0.so.0.402.0
+lrwxrwxrwx	root/root	usr/lib/libgstvideo-1.0.so -> libgstvideo-1.0.so.0.402.0
 -rwxr-xr-x	root/root	usr/lib/libgthread-2.0.so.0.4001.0
 lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so.0 -> libgthread-2.0.so.0.4001.0
 lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so -> libgthread-2.0.so.0.4001.0
@@ -3883,6 +4124,9 @@ lrwxrwxrwx	root/root	usr/lib/libipq.so -> libipq.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libiptc.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libiptc.so.0 -> libiptc.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libiptc.so -> libiptc.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libjpeg.so.9.1.0
+lrwxrwxrwx	root/root	usr/lib/libjpeg.so.9 -> libjpeg.so.9.1.0
+lrwxrwxrwx	root/root	usr/lib/libjpeg.so -> libjpeg.so.9.1.0
 -rwxr-xr-x	root/root	usr/lib/libkmod.so.2.2.8
 lrwxrwxrwx	root/root	usr/lib/libkmod.so.2 -> libkmod.so.2.2.8
 lrwxrwxrwx	root/root	usr/lib/libkmod.so -> libkmod.so.2.2.8
@@ -3944,6 +4188,12 @@ lrwxrwxrwx	root/root	usr/lib/libnss_hesiod.so -> ../../lib/libnss_hesiod.so.2
 lrwxrwxrwx	root/root	usr/lib/libnss_nisplus.so -> ../../lib/libnss_nisplus.so.2
 lrwxrwxrwx	root/root	usr/lib/libnss_nis.so -> ../../lib/libnss_nis.so.2
 -rwxr-xr-x	root/root	usr/lib/libnss_resolve.so.2
+-rwxr-xr-x	root/root	usr/lib/liborc-0.4.so.0.22.0
+lrwxrwxrwx	root/root	usr/lib/liborc-0.4.so.0 -> liborc-0.4.so.0.22.0
+lrwxrwxrwx	root/root	usr/lib/liborc-0.4.so -> liborc-0.4.so.0.22.0
+-rwxr-xr-x	root/root	usr/lib/liborc-test-0.4.so.0.22.0
+lrwxrwxrwx	root/root	usr/lib/liborc-test-0.4.so.0 -> liborc-test-0.4.so.0.22.0
+lrwxrwxrwx	root/root	usr/lib/liborc-test-0.4.so -> liborc-test-0.4.so.0.22.0
 -rwxr-xr-x	root/root	usr/lib/libpanel.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libpanel.so.5 -> libpanel.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libpanel.so -> libpanel.so.5
@@ -3963,6 +4213,10 @@ lrwxrwxrwx	root/root	usr/lib/libpcreposix.so -> libpcreposix.so.0.0.2
 -rwxr-xr-x	root/root	usr/lib/libpcre.so.1.2.3
 lrwxrwxrwx	root/root	usr/lib/libpcre.so.1 -> libpcre.so.1.2.3
 lrwxrwxrwx	root/root	usr/lib/libpcre.so -> libpcre.so.1.2.3
+-rwxr-xr-x	root/root	usr/lib/libpng16.so.16.9.0
+lrwxrwxrwx	root/root	usr/lib/libpng16.so.16 -> libpng16.so.16.9.0
+lrwxrwxrwx	root/root	usr/lib/libpng16.so -> libpng16.so.16.9.0
+lrwxrwxrwx	root/root	usr/lib/libpng.so -> libpng16.so
 -rwxr-xr-x	root/root	usr/lib/libprocps.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/libprocps.so.3 -> libprocps.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/libprocps.so -> libprocps.so.3.0.0
@@ -4009,6 +4263,8 @@ lrwxrwxrwx	root/root	usr/lib/libutil.so -> ../../lib/libutil.so.1
 -rwxr-xr-x	root/root	usr/lib/libuuid.so.1.3.0
 lrwxrwxrwx	root/root	usr/lib/libuuid.so.1 -> libuuid.so.1.3.0
 lrwxrwxrwx	root/root	usr/lib/libuuid.so -> libuuid.so.1.3.0
+-rwxr-xr-x	root/root	usr/lib/libvpu.so.4
+lrwxrwxrwx	root/root	usr/lib/libvpu.so -> libvpu.so.4
 -rwxr-xr-x	root/root	usr/lib/libwrap.so.0.7.6
 lrwxrwxrwx	root/root	usr/lib/libwrap.so.0 -> libwrap.so.0.7.6
 lrwxrwxrwx	root/root	usr/lib/libwrap.so -> libwrap.so.0.7.6
@@ -4035,11 +4291,33 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/gmodule-no-export-2.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gnutls.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gobject-2.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-allocators-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-app-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-audio-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-base-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-check-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-codecparsers-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-controller-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-fft-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-insertbin-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-mpegts-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-net-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-pbutils-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-plugins-bad-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-plugins-base-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-riff-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-rtp-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-rtsp-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-sdp-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-tag-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-video-1.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gthread-2.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gudev-1.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/hogweed.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libcrypto.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libffi.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/libfslvpuwrap.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libip4tc.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libip6tc.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libipq.pc
@@ -4057,6 +4335,8 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libpcrecpp.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libpcre.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libpcreposix.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/libpng16.pc
+lrwxrwxrwx	root/root	usr/lib/pkgconfig/libpng.pc -> libpng16.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libprocps.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libssl.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libsystemd-daemon.pc
@@ -4069,6 +4349,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/mount.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/nettle.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/openssl.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/orc-0.4.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/smartcols.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/usbutils.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/uuid.pc
@@ -4281,7 +4562,6 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/sys-kernel-conf
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/sys-kernel-debug.mount -> ../sys-kernel-debug.mount
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-ask-password-console.path -> ../systemd-ask-password-console.path
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-binfmt.service -> ../systemd-binfmt.service
-lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-firstboot.service -> ../systemd-firstboot.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-journal-catalog-update.service -> ../systemd-journal-catalog-update.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-journald.service -> ../systemd-journald.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-journal-flush.service -> ../systemd-journal-flush.service
@@ -4698,7 +4978,9 @@ drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/glib-gettext.m4
 -rw-r--r--	root/root	usr/share/aclocal/gpg-error.m4
 -rw-r--r--	root/root	usr/share/aclocal/gsettings.m4
+-rw-r--r--	root/root	usr/share/aclocal/gst-element-check-1.0.m4
 -rw-r--r--	root/root	usr/share/aclocal/libgcrypt.m4
+-rw-r--r--	root/root	usr/share/aclocal/orc.m4
 drwxr-xr-x	root/root	usr/share/alsa/
 -rw-r--r--	root/root	usr/share/alsa/alsa.conf
 drwxr-xr-x	root/root	usr/share/alsa/alsa.conf.d/
@@ -4975,6 +5257,10 @@ drwxr-xr-x	root/root	usr/share/dbus-1/system-services/
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/org.freedesktop.systemd1.service
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/org.freedesktop.timedate1.service
 drwxr-xr-x	root/root	usr/share/doc/
+drwxr-xr-x	root/root	usr/share/doc/libfslvpuwrap/
+drwxr-xr-x	root/root	usr/share/doc/libfslvpuwrap/imx-mm/
+drwxr-xr-x	root/root	usr/share/doc/libfslvpuwrap/imx-mm/vpu/
+-rw-r--r--	root/root	usr/share/doc/libfslvpuwrap/imx-mm/vpu/EULA.txt
 drwxr-xr-x	root/root	usr/share/doc/systemd/
 -rw-r--r--	root/root	usr/share/doc/systemd/DIFFERENCES
 -rw-r--r--	root/root	usr/share/doc/systemd/DISTRO_PORTING
@@ -5467,6 +5753,541 @@ drwxr-xr-x	root/root	usr/share/groff/site-font/
 drwxr-xr-x	root/root	usr/share/groff/site-tmac/
 -rw-r--r--	root/root	usr/share/groff/site-tmac/man.local
 -rw-r--r--	root/root	usr/share/groff/site-tmac/mdoc.local
+drwxr-xr-x	root/root	usr/share/gst-plugins-base/
+drwxr-xr-x	root/root	usr/share/gst-plugins-base/1.0/
+-rw-r--r--	root/root	usr/share/gst-plugins-base/1.0/license-translations.dict
+drwxr-xr-x	root/root	usr/share/gstreamer-1.0/
+drwxr-xr-x	root/root	usr/share/gstreamer-1.0/presets/
+-rw-r--r--	root/root	usr/share/gstreamer-1.0/presets/GstIirEqualizer10Bands.prs
+-rw-r--r--	root/root	usr/share/gstreamer-1.0/presets/GstIirEqualizer3Bands.prs
+drwxr-xr-x	root/root	usr/share/gtk-doc/
+drwxr-xr-x	root/root	usr/share/gtk-doc/html/
+drwxr-xr-x	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/annotation-glossary.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/api-index-deprecated.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/api-index-full.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/base.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/codecparsers.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/compiling.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gl.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/GstGLBufferPool.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/GstGLColorConvert.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/GstGLContext.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/GstGLDisplay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/GstGLDownload.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/GstGLFilter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/GstGLUpload.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/GstGLWindow.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-1.0.devhelp2
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-ATSC-variants-of-MPEG-TS-descriptors.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-ATSC-variants-of-MPEG-TS-sections.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-Base-MPEG-TS-descriptors.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-Base-MPEG-TS-sections.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-DVB-variants-of-MPEG-TS-descriptors.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-DVB-variants-of-MPEG-TS-sections.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-GstAggregator.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-GstAggregatorPad.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-GstEGLImageMemory.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-GstGLAPI.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-GstGLContextCocoa.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-GstGLContextEGL.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-GstGLContextGLX.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-GstGLContextWGL.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-GstGLFramebuffer.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-gstglmemory.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-gstglshader.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-GstGLUploadMeta.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-GstGLWindowAndroid.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-GstGLWindowCocoa.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-GstGLWindowDispmanx.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-GstGLWindowWayland.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-GstGLWindowWin32.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-GstGLWindowX11.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-GstInsertbin.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-gstmpegvideometa.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-GstVideoAggregator.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-GstVideoAggregatorPad.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-h264parser.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-ISDB-variants-of-MPEG-TS-descriptors.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-mpeg4parser.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-Mpeg-ts-helper-library.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-mpegvideoparser.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-Utilities.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gst-plugins-bad-libs-vc1parser.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gstreamer-libs-hierarchy.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/gstreamer-plugins-bad.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/home.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/index.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/index.sgml
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/left-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/left.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/mpegts.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/right-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/right.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/style.css
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/tools.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/up-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/up.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-libs-1.0/video.html
+drwxr-xr-x	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/camerabin.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/ch01.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/ch02.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/ch03.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/GstPhotography.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-1.0.devhelp2
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-accurip.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-assrender.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-autoconvert.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-bulge.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-burn.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-camerabin.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-chromium.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-circle.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-coloreffects.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-compositor.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-cvdilate.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-cvequalizehist.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-cverode.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-cvlaplace.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-cvsmooth.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-cvsobel.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-dataurisrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-diffuse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-dilate.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-dodge.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-dtmfdetect.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-dtsdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-dvbsrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-dvdspu.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-edgedetect.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-eglglessink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-exclusion.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-faac.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-faad.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-faceblur.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-facedetect.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-festival.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-fisheye.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-fpsdisplaysink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-gaussianblur.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-jpegparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-kaleidoscope.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-liveadder.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-marble.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-mimdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-mimenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-mirror.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-modplug.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-mpeg2enc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-mpg123audiodec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-mplex.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-neonhttpsrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-ofa.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-openalsink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-openalsrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-opencvtextoverlay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-pcapparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-pinch.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-assrender.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-audiovisualizers.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-autoconvert.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-bayer.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-bz2.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-camerabin.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-coloreffects.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-curl.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-dataurisrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-debugutilsbad.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-dtsdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-dvb.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-dvdspu.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-eglglessink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-faac.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-faad.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-festival.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-gaudieffects.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-geometrictransform.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-gsm.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-jpegformat.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-liveadder.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-mimic.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-mms.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-modplug.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-mpeg2enc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-mpegtsmux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-mplex.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-neon.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-ofa.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-openal.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-opencv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-pcapparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-rawparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-rfbsrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-rtmp.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-sdp.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-shm.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-soundtouch.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-speed.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-voaacenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-voamrwbenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-plugin-zbar.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-pyramidsegment.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-rfbsrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-rtmpsink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-rtmpsrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-sdpdemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-shmsink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-shmsrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-solarize.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-spacescope.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-spectrascope.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-speed.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-sphere.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-square.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-stretch.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-synaescope.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-templatematch.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-tunnel.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-twirl.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-videoparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-voaacenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-voamrwbenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-waterripple.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-wavescope.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/gst-plugins-bad-plugins-zbar.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/home.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/index.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/index.sgml
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/left-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/left.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/right-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/right.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/style.css
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/up-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-bad-plugins-1.0/up.png
+drwxr-xr-x	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/ch01.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/ch02.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/ch03.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/GstIirEqualizer.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-1.0.devhelp2
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-3gppmux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-aacparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-aasink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-ac3parse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-agingtv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-alawdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-alawenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-alphacolor.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-alpha.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-amrparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-apedemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-apev2mux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-aspectratiocrop.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audioamplify.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audiochebband.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audiocheblimit.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audiodynamic.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audioecho.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audiofirfilter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audioiirfilter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audioinvert.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audiokaraoke.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audiopanorama.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audiowsincband.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-audiowsinclimit.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-auparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-autoaudiosink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-autoaudiosrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-autovideosink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-autovideosrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-avidemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-avimux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-avisubtitle.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-cacasink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-cairooverlay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-capssetter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-cutter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-dcaparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-deinterlace.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-deinterleave.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-dicetv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-directsoundsink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-dtmfsrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-dv1394src.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-dvdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-dvdemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-edgetv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-equalizer-10bands.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-equalizer-3bands.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-equalizer-nbands.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-flacdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-flacenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-flacparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-flactag.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-flvdemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-flvmux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-flxdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-gamma.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-gdkpixbufsink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-goom2k1.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-goom.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-GstVideoMixerPad.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-hdv1394src.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-icydemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-id3demux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-id3v2mux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-imagefreeze.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-interleave.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-ismlmux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-jackaudiosink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-jackaudiosrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-jpegdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-jpegenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-level.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-matroskademux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-matroskamux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-mj2mux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-monoscope.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-mp4mux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-mpegaudioparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-mulawdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-mulawenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-multifilesink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-multifilesrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-multipartdemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-multipartmux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-multiudpsink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-optv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-oss4sink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-oss4src.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-osssink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-osssrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-osxaudiosink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-osxaudiosrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-osxvideosink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-1394.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-aasink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-alaw.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-alphacolor.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-alpha.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-apetag.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-audiofx.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-auparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-autodetect.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-avi.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-cacasink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-cairo.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-cutter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-debug.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-deinterlace.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-directsound.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-dtmf.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-dv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-effectv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-equalizer.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-flac.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-flv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-flxdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-gdkpixbuf.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-goom2k1.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-goom.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-icydemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-id3demux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-imagefreeze.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-interleave.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-isomp4.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-jack.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-jpeg.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-level.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-matroska.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-monoscope.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-mulaw.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-multifile.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-multipart.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-navigationtest.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-oss4.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-ossaudio.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-osxaudio.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-osxvideo.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-png.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-pulseaudio.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-replaygain.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-rtp.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-rtpmanager.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-rtsp.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-shapewipe.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-shout2send.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-smpte.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-soup.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-spectrum.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-speex.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-taglib.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-udp.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-video4linux2.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-videobox.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-videocrop.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-videofilter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-videomixer.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-vpx.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-waveform.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-wavenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-wavpack.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-wavparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-ximagesrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-plugin-y4menc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-pngdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-pngenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-progressreport.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-pulsesink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-pulsesrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-qtdemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-qtmoovrecover.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-qtmux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-quarktv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-radioactv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-revtv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rganalysis.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rglimiter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rgvolume.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rippletv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpac3depay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpac3pay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpamrdepay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpamrpay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpbin.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpbvdepay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpbvpay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpdtmfmux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpdtmfsrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpj2kpay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpjitterbuffer.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpjpegpay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpL16depay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpL16pay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpmux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpptdemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtprtxreceive.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtprtxsend.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpsbcpay.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpsession.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtpssrcdemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-rtspsrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-sbcparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-scaletempo.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-shagadelictv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-shapewipe.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-shout2send.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-smptealpha.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-smpte.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-souphttpsrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-spectrum.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-speexdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-speexenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-splitfilesrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-streaktv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-taginject.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-udpsink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-udpsrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-v4l2radio.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-v4l2sink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-v4l2src.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-vertigotv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-videobalance.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-videobox.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-videocrop.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-videoflip.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-videomixer.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-vp8dec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-vp8enc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-warptv.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-waveformsink.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-wavenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-wavpackdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-wavpackenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-wavpackparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-wavparse.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-webmmux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-ximagesrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/gst-plugins-good-plugins-y4menc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/home.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/index.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/index.sgml
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/left-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/left.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/right-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/right.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/style.css
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/up-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-good-plugins-1.0/up.png
+drwxr-xr-x	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/ch01.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/ch02.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-1.0.devhelp2
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-a52dec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-amrnbdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-amrnbenc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-amrwbdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-cdiocddasrc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-lamemp3enc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-mad.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-plugin-a52dec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-plugin-amrnb.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-plugin-amrwbdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-plugin-asf.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-plugin-cdio.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-plugin-dvdlpcmdec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-plugin-dvdread.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-plugin-dvdsub.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-plugin-lame.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-plugin-mad.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-plugin-mpeg2dec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-plugin-realmedia.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-plugin-siddec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-plugin-twolame.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-plugin-x264.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-rademux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-rdtmanager.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-rmdemux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-rtspreal.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-rtspwms.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-siddec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-twolame.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-x264enc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-xingmux.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/home.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/index.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/index.sgml
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/left-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/left.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/right-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/right.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/style.css
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/up-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/up.png
+drwxr-xr-x	root/root	usr/share/imx-mm/
+drwxr-xr-x	root/root	usr/share/imx-mm/video-codec/
+drwxr-xr-x	root/root	usr/share/imx-mm/video-codec/examples/
+drwxr-xr-x	root/root	usr/share/imx-mm/video-codec/examples/vpu/
+-rw-r--r--	root/root	usr/share/imx-mm/video-codec/examples/vpu/decode_stream.c
+-rw-r--r--	root/root	usr/share/imx-mm/video-codec/examples/vpu/decode_stream.h
+-rw-r--r--	root/root	usr/share/imx-mm/video-codec/examples/vpu/enc_auto_test.c
+-rw-r--r--	root/root	usr/share/imx-mm/video-codec/examples/vpu/encode_stream.c
+-rw-r--r--	root/root	usr/share/imx-mm/video-codec/examples/vpu/encode_stream.h
+-rw-r--r--	root/root	usr/share/imx-mm/video-codec/examples/vpu/fb_render.c
+-rw-r--r--	root/root	usr/share/imx-mm/video-codec/examples/vpu/fb_render.h
+-rw-r--r--	root/root	usr/share/imx-mm/video-codec/examples/vpu/Makefile.unit
+drwxr-xr-x	root/root	usr/share/imx-mm/video-codec/examples/vpu/sqlite/
+-rw-r--r--	root/root	usr/share/imx-mm/video-codec/examples/vpu/sqlite/libsqlite3.a
+-rw-r--r--	root/root	usr/share/imx-mm/video-codec/examples/vpu/sqlite/sqlite3.h
+-rw-r--r--	root/root	usr/share/imx-mm/video-codec/examples/vpu/sqlite_wrapper.c
+-rw-r--r--	root/root	usr/share/imx-mm/video-codec/examples/vpu/sqlite_wrapper.h
+-rw-r--r--	root/root	usr/share/imx-mm/video-codec/examples/vpu/test_dec_arm_elinux.c
+-rw-r--r--	root/root	usr/share/imx-mm/video-codec/examples/vpu/test_enc_arm_elinux.c
+-rw-r--r--	root/root	usr/share/imx-mm/video-codec/examples/vpu/vpu_wrapper_timer.c
+-rw-r--r--	root/root	usr/share/imx-mm/video-codec/examples/vpu/vpu_wrapper_timer.h
 drwxr-xr-x	root/root	usr/share/info/
 -rw-r--r--	root/root	usr/share/info/dir
 -rw-r--r--	root/root	usr/share/info/tar.info
@@ -6172,6 +6993,7 @@ lrwxrwxrwx	root/root	usr/share/man/man1/arecord.1 -> aplay.1
 -rw-r--r--	root/root	usr/share/man/man1/chsh.1
 -rw-r--r--	root/root	usr/share/man/man1/chvt.1
 -rw-r--r--	root/root	usr/share/man/man1/ciphers.1ssl
+-rw-r--r--	root/root	usr/share/man/man1/cjpeg.1
 -rw-r--r--	root/root	usr/share/man/man1/clear.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/cms.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/col.1
@@ -6185,6 +7007,7 @@ lrwxrwxrwx	root/root	usr/share/man/man1/arecord.1 -> aplay.1
 -rw-r--r--	root/root	usr/share/man/man1/dgst.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/dhparam.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/dialog.1
+-rw-r--r--	root/root	usr/share/man/man1/djpeg.1
 -rw-r--r--	root/root	usr/share/man/man1/dmesg.1
 -rw-r--r--	root/root	usr/share/man/man1/dnsdomainname.1
 -rw-r--r--	root/root	usr/share/man/man1/domainname.1
@@ -6243,6 +7066,12 @@ lrwxrwxrwx	root/root	usr/share/man/man1/arecord.1 -> aplay.1
 -rw-r--r--	root/root	usr/share/man/man1/grotty.1
 -rw-r--r--	root/root	usr/share/man/man1/groups.1
 -rw-r--r--	root/root	usr/share/man/man1/gsettings.1
+-rw-r--r--	root/root	usr/share/man/man1/gst-device-monitor-1.0.1
+-rw-r--r--	root/root	usr/share/man/man1/gst-discoverer-1.0.1
+-rw-r--r--	root/root	usr/share/man/man1/gst-inspect-1.0.1
+-rw-r--r--	root/root	usr/share/man/man1/gst-launch-1.0.1
+-rw-r--r--	root/root	usr/share/man/man1/gst-play-1.0.1
+-rw-r--r--	root/root	usr/share/man/man1/gst-typefind-1.0.1
 -rw-r--r--	root/root	usr/share/man/man1/gtester.1
 -rw-r--r--	root/root	usr/share/man/man1/gtester-report.1
 -rw-r--r--	root/root	usr/share/man/man1/gunzip.1
@@ -6265,6 +7094,7 @@ lrwxrwxrwx	root/root	usr/share/man/man1/arecord.1 -> aplay.1
 -rw-r--r--	root/root	usr/share/man/man1/ipcs.1
 -rw-r--r--	root/root	usr/share/man/man1/iptables-xml.1
 -rw-r--r--	root/root	usr/share/man/man1/journalctl.1
+-rw-r--r--	root/root	usr/share/man/man1/jpegtran.1
 -rw-r--r--	root/root	usr/share/man/man1/kbd_mode.1
 -rw-r--r--	root/root	usr/share/man/man1/kill.1
 -rw-r--r--	root/root	usr/share/man/man1/killall.1
@@ -6350,6 +7180,7 @@ lrwxrwxrwx	root/root	usr/share/man/man1/mdc2.1ssl -> dgst.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/pstree.1
 -rw-r--r--	root/root	usr/share/man/man1/pwdx.1
 -rw-r--r--	root/root	usr/share/man/man1/rand.1ssl
+-rw-r--r--	root/root	usr/share/man/man1/rdjpgcom.1
 -rw-r--r--	root/root	usr/share/man/man1/refer.1
 -rw-r--r--	root/root	usr/share/man/man1/rename.1
 -rw-r--r--	root/root	usr/share/man/man1/renice.1
@@ -6455,6 +7286,7 @@ lrwxrwxrwx	root/root	usr/share/man/man1/unxz.1 -> xz.1
 -rw-r--r--	root/root	usr/share/man/man1/whatis.1
 -rw-r--r--	root/root	usr/share/man/man1/whereis.1
 -rw-r--r--	root/root	usr/share/man/man1/write.1
+-rw-r--r--	root/root	usr/share/man/man1/wrjpgcom.1
 -rw-r--r--	root/root	usr/share/man/man1/x509.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/xargs.1
 -rw-r--r--	root/root	usr/share/man/man1/xmlwf.1
@@ -8399,6 +9231,8 @@ lrwxrwxrwx	root/root	usr/share/man/man3/lh_retrieve.3ssl -> lhash.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/lh_stats_bio.3ssl -> lh_stats.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/libblkid.3
 -rw-r--r--	root/root	usr/share/man/man3/libipq.3
+-rw-r--r--	root/root	usr/share/man/man3/libpng.3
+-rw-r--r--	root/root	usr/share/man/man3/libpngpf.3
 lrwxrwxrwx	root/root	usr/share/man/man3/LINES.3ncurses.gz -> curses_variables.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/link_field.3form.gz -> field_new.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/link_fieldtype.3form.gz -> fieldtype.3form.gz
@@ -9712,6 +10546,7 @@ lrwxrwxrwx	root/root	usr/share/man/man5/host.deny.5.gz -> hosts_access.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/nanorc.5
 -rw-r--r--	root/root	usr/share/man/man5/os-release.5
 -rw-r--r--	root/root	usr/share/man/man5/passwd.5
+-rw-r--r--	root/root	usr/share/man/man5/png.5
 -rw-r--r--	root/root	usr/share/man/man5/porttime.5
 -rw-r--r--	root/root	usr/share/man/man5/resolved.conf.5
 -rw-r--r--	root/root	usr/share/man/man5/shadow.5

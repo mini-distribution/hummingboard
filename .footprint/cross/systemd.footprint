@@ -342,7 +342,6 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/sys-kernel-conf
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/sys-kernel-debug.mount -> ../sys-kernel-debug.mount
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-ask-password-console.path -> ../systemd-ask-password-console.path
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-binfmt.service -> ../systemd-binfmt.service
-lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-firstboot.service -> ../systemd-firstboot.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-journal-catalog-update.service -> ../systemd-journal-catalog-update.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-journald.service -> ../systemd-journald.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-journal-flush.service -> ../systemd-journal-flush.service

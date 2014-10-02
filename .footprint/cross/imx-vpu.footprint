@@ -1,0 +1,8 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/vpu_io.h
+-rw-r--r--	root/root	usr/include/vpu_lib.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libvpu.a
+-rwxr-xr-x	root/root	usr/lib/libvpu.so.4
+lrwxrwxrwx	root/root	usr/lib/libvpu.so -> libvpu.so.4

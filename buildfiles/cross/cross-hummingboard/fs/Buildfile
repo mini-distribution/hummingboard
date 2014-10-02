@@ -11,7 +11,13 @@ depends=(core
          traceroute
          alsa-utils
          connman
-         vim)
+         vim
+         gstreamer
+         gst-plugins-base
+         gst-plugins-good
+         gst-plugins-bad
+         gst-plugins-ugly
+         gstreamer-imx)
 
 build() {
    # Copy fully populated sysroot
