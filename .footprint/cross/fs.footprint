@@ -3050,6 +3050,7 @@ lrwxrwxrwx	root/root	usr/bin/evim -> vim
 -rwsr-xr-x	root/root	usr/bin/expiry
 -rwxr-xr-x	root/root	usr/bin/expr
 lrwxrwxrwx	root/root	usr/bin/ex -> vim
+-rwxr-xr-x	root/root	usr/bin/faac
 -rwxr-xr-x	root/root	usr/bin/factor
 -rwxr-xr-x	root/root	usr/bin/faillog
 -rwxr-xr-x	root/root	usr/bin/false
@@ -3057,6 +3058,7 @@ lrwxrwxrwx	root/root	usr/bin/ex -> vim
 -rwxr-xr-x	root/root	usr/bin/fgrep
 -rwxr-xr-x	root/root	usr/bin/find
 -rwxr-xr-x	root/root	usr/bin/findmnt
+-rwxr-xr-x	root/root	usr/bin/flac
 -rwxr-xr-x	root/root	usr/bin/flock
 -rwxr-xr-x	root/root	usr/bin/fmt
 -rwxr-xr-x	root/root	usr/bin/fold
@@ -3127,6 +3129,10 @@ hrwxr-xr-x	root/root	usr/bin/gunzip link to usr/bin/uncompress
 -rwxr-xr-x	root/root	usr/bin/hpftodit
 -rwxr-xr-x	root/root	usr/bin/iconv
 -rwxr-xr-x	root/root	usr/bin/id
+-rwxr-xr-x	root/root	usr/bin/id3convert
+-rwxr-xr-x	root/root	usr/bin/id3cp
+-rwxr-xr-x	root/root	usr/bin/id3info
+-rwxr-xr-x	root/root	usr/bin/id3tag
 -rwxr-xr-x	root/root	usr/bin/iecset
 -rwxr-xr-x	root/root	usr/bin/igawk
 -rwxr-xr-x	root/root	usr/bin/indxbib
@@ -3202,6 +3208,7 @@ lrwxrwxrwx	root/root	usr/bin/lzmore -> xzmore
 -rwxr-xr-x	root/root	usr/bin/mcookie
 -rwxr-xr-x	root/root	usr/bin/md5sum
 -rwxr-xr-x	root/root	usr/bin/mesg
+-rwxr-xr-x	root/root	usr/bin/metaflac
 -rwxr-xr-x	root/root	usr/bin/mkdir
 -rwxr-xr-x	root/root	usr/bin/mkfifo
 -rwxr-xr-x	root/root	usr/bin/mknod
@@ -3212,6 +3219,15 @@ lrwxrwxrwx	root/root	usr/bin/modprobe -> /usr/bin/kmod
 -rwxr-xr-x	root/root	usr/bin/more
 -rwsr-xr-x	root/root	usr/bin/mount
 -rwxr-xr-x	root/root	usr/bin/mountpoint
+-rwxr-xr-x	root/root	usr/bin/mp4art
+-rwxr-xr-x	root/root	usr/bin/mp4chaps
+-rwxr-xr-x	root/root	usr/bin/mp4extract
+-rwxr-xr-x	root/root	usr/bin/mp4file
+-rwxr-xr-x	root/root	usr/bin/mp4info
+-rwxr-xr-x	root/root	usr/bin/mp4subtitle
+-rwxr-xr-x	root/root	usr/bin/mp4tags
+-rwxr-xr-x	root/root	usr/bin/mp4track
+-rwxr-xr-x	root/root	usr/bin/mp4trackdump
 -rwxr-xr-x	root/root	usr/bin/mpicalc
 -rwxr-xr-x	root/root	usr/bin/mtrace
 -rwxr-xr-x	root/root	usr/bin/mv
@@ -3329,6 +3345,17 @@ lrwxrwxrwx	root/root	usr/bin/sh -> bash
 -rwxr-xr-x	root/root	usr/bin/slabtop
 -rwxr-xr-x	root/root	usr/bin/sleep
 lrwxrwxrwx	root/root	usr/bin/slogin -> ./ssh
+-rwxr-xr-x	root/root	usr/bin/sndfile-cmp
+-rwxr-xr-x	root/root	usr/bin/sndfile-concat
+-rwxr-xr-x	root/root	usr/bin/sndfile-convert
+-rwxr-xr-x	root/root	usr/bin/sndfile-deinterleave
+-rwxr-xr-x	root/root	usr/bin/sndfile-info
+-rwxr-xr-x	root/root	usr/bin/sndfile-interleave
+-rwxr-xr-x	root/root	usr/bin/sndfile-metadata-get
+-rwxr-xr-x	root/root	usr/bin/sndfile-metadata-set
+-rwxr-xr-x	root/root	usr/bin/sndfile-play
+-rwxr-xr-x	root/root	usr/bin/sndfile-regtest
+-rwxr-xr-x	root/root	usr/bin/sndfile-salvage
 -rwxr-xr-x	root/root	usr/bin/soelim
 -rwxr-xr-x	root/root	usr/bin/sort
 -rwxr-xr-x	root/root	usr/bin/sotruss
@@ -3846,6 +3873,8 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgsteffectv.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstencodebin.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstequalizer.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstfaac.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstfaad.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstfbdevsink.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstfestival.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstfieldanalysis.so
@@ -3908,6 +3937,7 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstsiren.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstsmooth.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstsmpte.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstsndfile.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstspectrum.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstspeed.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgststereo.so
@@ -3916,7 +3946,6 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgsttcp.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgsttypefindfunctions.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstudp.so
--rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstuvch264.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideobox.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideoconvert.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideocrop.so
@@ -3976,6 +4005,12 @@ lrwxrwxrwx	root/root	usr/lib/libdl.so -> ../../lib/libdl.so.2
 -rwxr-xr-x	root/root	usr/lib/libexpat.so.1.6.0
 lrwxrwxrwx	root/root	usr/lib/libexpat.so.1 -> libexpat.so.1.6.0
 lrwxrwxrwx	root/root	usr/lib/libexpat.so -> libexpat.so.1.6.0
+-rwxr-xr-x	root/root	usr/lib/libfaac.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libfaac.so.0 -> libfaac.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libfaac.so -> libfaac.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libfaad.so.2.0.0
+lrwxrwxrwx	root/root	usr/lib/libfaad.so.2 -> libfaad.so.2.0.0
+lrwxrwxrwx	root/root	usr/lib/libfaad.so -> libfaad.so.2.0.0
 drwxr-xr-x	root/root	usr/lib/libffi-3.1/
 drwxr-xr-x	root/root	usr/lib/libffi-3.1/include/
 -rw-r--r--	root/root	usr/lib/libffi-3.1/include/ffi.h
@@ -3983,6 +4018,12 @@ drwxr-xr-x	root/root	usr/lib/libffi-3.1/include/
 -rwxr-xr-x	root/root	usr/lib/libffi.so.6.0.2
 lrwxrwxrwx	root/root	usr/lib/libffi.so.6 -> libffi.so.6.0.2
 lrwxrwxrwx	root/root	usr/lib/libffi.so -> libffi.so.6.0.2
+-rwxr-xr-x	root/root	usr/lib/libFLAC++.so.6.3.0
+lrwxrwxrwx	root/root	usr/lib/libFLAC++.so.6 -> libFLAC++.so.6.3.0
+-rwxr-xr-x	root/root	usr/lib/libFLAC.so.8.3.0
+lrwxrwxrwx	root/root	usr/lib/libFLAC.so.8 -> libFLAC.so.8.3.0
+lrwxrwxrwx	root/root	usr/lib/libFLAC++.so -> libFLAC++.so.6.3.0
+lrwxrwxrwx	root/root	usr/lib/libFLAC.so -> libFLAC.so.8.3.0
 -rwxr-xr-x	root/root	usr/lib/libform.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libform.so.5 -> libform.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libform.so -> libform.so.5
@@ -4112,6 +4153,9 @@ lrwxrwxrwx	root/root	usr/lib/libhistory.so -> libhistory.so.6
 -rw-r--r--	root/root	usr/lib/libhogweed.so.2.5
 lrwxrwxrwx	root/root	usr/lib/libhogweed.so.2 -> libhogweed.so.2.5
 lrwxrwxrwx	root/root	usr/lib/libhogweed.so -> libhogweed.so.2.5
+-rwxr-xr-x	root/root	usr/lib/libid3-3.8.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libid3-3.8.so.3 -> libid3-3.8.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libid3.so -> libid3-3.8.so.3.0.0
 -rwxr-xr-x	root/root	usr/lib/libip4tc.so.0.1.0
 lrwxrwxrwx	root/root	usr/lib/libip4tc.so.0 -> libip4tc.so.0.1.0
 lrwxrwxrwx	root/root	usr/lib/libip4tc.so -> libip4tc.so.0.1.0
@@ -4139,6 +4183,9 @@ lrwxrwxrwx	root/root	usr/lib/libmenu.so -> libmenu.so.5
 -rwxr-xr-x	root/root	usr/lib/libmount.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libmount.so.1 -> libmount.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libmount.so -> libmount.so.1.1.0
+-rwxr-xr-x	root/root	usr/lib/libmp4v2.so.2.0.0
+lrwxrwxrwx	root/root	usr/lib/libmp4v2.so.2 -> libmp4v2.so.2.0.0
+lrwxrwxrwx	root/root	usr/lib/libmp4v2.so -> libmp4v2.so.2.0.0
 lrwxrwxrwx	root/root	usr/lib/libm.so -> ../../lib/libm.so.6
 -rwxr-xr-x	root/root	usr/lib/libncurses.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libncurses.so.5 -> libncurses.so.5.9
@@ -4188,6 +4235,9 @@ lrwxrwxrwx	root/root	usr/lib/libnss_hesiod.so -> ../../lib/libnss_hesiod.so.2
 lrwxrwxrwx	root/root	usr/lib/libnss_nisplus.so -> ../../lib/libnss_nisplus.so.2
 lrwxrwxrwx	root/root	usr/lib/libnss_nis.so -> ../../lib/libnss_nis.so.2
 -rwxr-xr-x	root/root	usr/lib/libnss_resolve.so.2
+-rwxr-xr-x	root/root	usr/lib/libogg.so.0.8.2
+lrwxrwxrwx	root/root	usr/lib/libogg.so.0 -> libogg.so.0.8.2
+lrwxrwxrwx	root/root	usr/lib/libogg.so -> libogg.so.0.8.2
 -rwxr-xr-x	root/root	usr/lib/liborc-0.4.so.0.22.0
 lrwxrwxrwx	root/root	usr/lib/liborc-0.4.so.0 -> liborc-0.4.so.0.22.0
 lrwxrwxrwx	root/root	usr/lib/liborc-0.4.so -> liborc-0.4.so.0.22.0
@@ -4229,6 +4279,9 @@ lrwxrwxrwx	root/root	usr/lib/librt.so -> ../../lib/librt.so.1
 -rwxr-xr-x	root/root	usr/lib/libsmartcols.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libsmartcols.so.1 -> libsmartcols.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libsmartcols.so -> libsmartcols.so.1.1.0
+-rwxr-xr-x	root/root	usr/lib/libsndfile.so.1.0.25
+lrwxrwxrwx	root/root	usr/lib/libsndfile.so.1 -> libsndfile.so.1.0.25
+lrwxrwxrwx	root/root	usr/lib/libsndfile.so -> libsndfile.so.1.0.25
 -r-xr-xr-x	root/root	usr/lib/libssl.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libssl.so -> libssl.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libsysfs.so.2.0.1
@@ -4263,6 +4316,15 @@ lrwxrwxrwx	root/root	usr/lib/libutil.so -> ../../lib/libutil.so.1
 -rwxr-xr-x	root/root	usr/lib/libuuid.so.1.3.0
 lrwxrwxrwx	root/root	usr/lib/libuuid.so.1 -> libuuid.so.1.3.0
 lrwxrwxrwx	root/root	usr/lib/libuuid.so -> libuuid.so.1.3.0
+-rwxr-xr-x	root/root	usr/lib/libvorbisenc.so.2.0.10
+lrwxrwxrwx	root/root	usr/lib/libvorbisenc.so.2 -> libvorbisenc.so.2.0.10
+lrwxrwxrwx	root/root	usr/lib/libvorbisenc.so -> libvorbisenc.so.2.0.10
+-rwxr-xr-x	root/root	usr/lib/libvorbisfile.so.3.3.6
+lrwxrwxrwx	root/root	usr/lib/libvorbisfile.so.3 -> libvorbisfile.so.3.3.6
+lrwxrwxrwx	root/root	usr/lib/libvorbisfile.so -> libvorbisfile.so.3.3.6
+-rwxr-xr-x	root/root	usr/lib/libvorbis.so.0.4.7
+lrwxrwxrwx	root/root	usr/lib/libvorbis.so.0 -> libvorbis.so.0.4.7
+lrwxrwxrwx	root/root	usr/lib/libvorbis.so -> libvorbis.so.0.4.7
 -rwxr-xr-x	root/root	usr/lib/libvpu.so.4
 lrwxrwxrwx	root/root	usr/lib/libvpu.so -> libvpu.so.4
 -rwxr-xr-x	root/root	usr/lib/libwrap.so.0.7.6
@@ -4283,6 +4345,8 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/connman.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/dbus-1.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/expat.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/flac.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/flac++.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gio-2.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gio-unix-2.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/glib-2.0.pc
@@ -4348,11 +4412,16 @@ lrwxrwxrwx	root/root	usr/lib/pkgconfig/libpng.pc -> libpng16.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libusb-1.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/mount.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/nettle.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/ogg.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/openssl.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/orc-0.4.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/smartcols.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/sndfile.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/usbutils.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/uuid.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/vorbisenc.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/vorbisfile.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/vorbis.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xtables.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/zlib.pc
 drwxr-xr-x	root/root	usr/lib/rpm/
@@ -4979,8 +5048,12 @@ drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/gpg-error.m4
 -rw-r--r--	root/root	usr/share/aclocal/gsettings.m4
 -rw-r--r--	root/root	usr/share/aclocal/gst-element-check-1.0.m4
+-rw-r--r--	root/root	usr/share/aclocal/libFLAC.m4
+-rw-r--r--	root/root	usr/share/aclocal/libFLAC++.m4
 -rw-r--r--	root/root	usr/share/aclocal/libgcrypt.m4
+-rw-r--r--	root/root	usr/share/aclocal/ogg.m4
 -rw-r--r--	root/root	usr/share/aclocal/orc.m4
+-rw-r--r--	root/root	usr/share/aclocal/vorbis.m4
 drwxr-xr-x	root/root	usr/share/alsa/
 -rw-r--r--	root/root	usr/share/alsa/alsa.conf
 drwxr-xr-x	root/root	usr/share/alsa/alsa.conf.d/
@@ -6516,9 +6589,11 @@ lrwxrwxrwx	root/root	usr/share/man/man1/arecord.1 -> aplay.1
 -rw-r--r--	root/root	usr/share/man/man1/eqn2graph.1
 -rw-r--r--	root/root	usr/share/man/man1/errstr.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/expiry.1
+-rw-r--r--	root/root	usr/share/man/man1/faac.1
 -rw-r--r--	root/root	usr/share/man/man1/fgconsole.1
 -rw-r--r--	root/root	usr/share/man/man1/fgrep.1
 -rw-r--r--	root/root	usr/share/man/man1/find.1
+-rw-r--r--	root/root	usr/share/man/man1/flac.1
 -rw-r--r--	root/root	usr/share/man/man1/flock.1
 -rw-r--r--	root/root	usr/share/man/man1/free.1
 -rw-r--r--	root/root	usr/share/man/man1/fuser.1
@@ -6626,9 +6701,14 @@ lrwxrwxrwx	root/root	usr/share/man/man1/md4.1ssl -> dgst.1ssl
 lrwxrwxrwx	root/root	usr/share/man/man1/md5.1ssl -> dgst.1ssl
 lrwxrwxrwx	root/root	usr/share/man/man1/mdc2.1ssl -> dgst.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/mesg.1
+-rw-r--r--	root/root	usr/share/man/man1/metaflac.1
 -rw-r--r--	root/root	usr/share/man/man1/mmroff.1
 -rw-r--r--	root/root	usr/share/man/man1/more.1
 -rw-r--r--	root/root	usr/share/man/man1/mountpoint.1
+-rw-r--r--	root/root	usr/share/man/man1/mp4art.1
+-rw-r--r--	root/root	usr/share/man/man1/mp4file.1
+-rw-r--r--	root/root	usr/share/man/man1/mp4subtitle.1
+-rw-r--r--	root/root	usr/share/man/man1/mp4track.1
 -rw-r--r--	root/root	usr/share/man/man1/namei.1
 -rw-r--r--	root/root	usr/share/man/man1/nano.1
 -rw-r--r--	root/root	usr/share/man/man1/ncurses5-config.1.gz
@@ -6710,6 +6790,15 @@ lrwxrwxrwx	root/root	usr/share/man/man1/sha.1ssl -> dgst.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/slabtop.1
 lrwxrwxrwx	root/root	usr/share/man/man1/slogin.1 -> ./ssh.1
 -rw-r--r--	root/root	usr/share/man/man1/smime.1ssl
+-rw-r--r--	root/root	usr/share/man/man1/sndfile-cmp.1
+-rw-r--r--	root/root	usr/share/man/man1/sndfile-concat.1
+-rw-r--r--	root/root	usr/share/man/man1/sndfile-convert.1
+-rw-r--r--	root/root	usr/share/man/man1/sndfile-deinterleave.1
+-rw-r--r--	root/root	usr/share/man/man1/sndfile-info.1
+-rw-r--r--	root/root	usr/share/man/man1/sndfile-interleave.1
+-rw-r--r--	root/root	usr/share/man/man1/sndfile-metadata-get.1
+-rw-r--r--	root/root	usr/share/man/man1/sndfile-metadata-set.1
+-rw-r--r--	root/root	usr/share/man/man1/sndfile-play.1
 -rw-r--r--	root/root	usr/share/man/man1/soelim.1
 -rw-r--r--	root/root	usr/share/man/man1/speaker-test.1
 -rw-r--r--	root/root	usr/share/man/man1/speed.1ssl

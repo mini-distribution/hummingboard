@@ -1906,7 +1906,7 @@ drwxrwxr-x	lundmar/lundmar	usr/src/linux/arch/arm/kernel/
 -rw-rw-r--	lundmar/lundmar	usr/src/linux/arch/arm/kernel/perf_event_xscale.c
 -rw-rw-r--	lundmar/lundmar	usr/src/linux/arch/arm/kernel/perf_regs.c
 -rw-rw-r--	lundmar/lundmar	usr/src/linux/arch/arm/kernel/pj4-cp0.c
--rw-rw-r--	lundmar/lundmar	usr/src/linux/arch/arm/kernel/process.c
+-rw-r--r--	lundmar/lundmar	usr/src/linux/arch/arm/kernel/process.c
 -rw-rw-r--	lundmar/lundmar	usr/src/linux/arch/arm/kernel/psci.c
 -rw-rw-r--	lundmar/lundmar	usr/src/linux/arch/arm/kernel/psci_smp.c
 -rw-rw-r--	lundmar/lundmar	usr/src/linux/arch/arm/kernel/ptrace.c
@@ -2630,7 +2630,7 @@ drwxrwxr-x	lundmar/lundmar	usr/src/linux/arch/arm/mach-imx/devices/
 -rw-rw-r--	lundmar/lundmar	usr/src/linux/arch/arm/mach-imx/ssi-fiq.S
 -rw-rw-r--	lundmar/lundmar	usr/src/linux/arch/arm/mach-imx/suspend-imx6.S
 -rw-rw-r--	lundmar/lundmar	usr/src/linux/arch/arm/mach-imx/system.c
--rw-rw-r--	lundmar/lundmar	usr/src/linux/arch/arm/mach-imx/time.c
+-rw-r--r--	lundmar/lundmar	usr/src/linux/arch/arm/mach-imx/time.c
 -rw-rw-r--	lundmar/lundmar	usr/src/linux/arch/arm/mach-imx/tzic.c
 -rw-rw-r--	lundmar/lundmar	usr/src/linux/arch/arm/mach-imx/ulpi.h
 drwxrwxr-x	lundmar/lundmar	usr/src/linux/arch/arm/mach-integrator/
