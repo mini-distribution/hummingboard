@@ -5,10 +5,16 @@
 name=linux-source
 version=$KERNEL_VERSION
 release=1
-source=(http://buildgear.org/mirror/solidrun/solidrun-linux-imx6-3.14-gite85332f.tar.xz)
+source=(http://buildgear.org/mirror/solidrun/solidrun-linux-imx6-3.14-gite85332f.tar.xz
+        0001-ARM-Avoid-crash-on-power-off-and-reduce-power-consum.patch
+        0002-ARM-Disable-timer-events-before-entering-halt-state.patch)
 options=(nostrip)
 
 build(){
    mkdir -p $PKG/usr/src
    mv solidrun-linux-imx6-3.14-gite85332f $PKG/usr/src/linux
+
+   cd $PKG/usr/src/linux
+   patch -p1 < $SRC/0001-ARM-Avoid-crash-on-power-off-and-reduce-power-consum.patch
+   patch -p1 < $SRC/0002-ARM-Disable-timer-events-before-entering-halt-state.patch
 }
