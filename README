@@ -48,7 +48,7 @@ Software installation:
 
 Build system requirements:
 
-   Tested on Ubuntu 14.04 Minimal (64-bit x86) with the following additional
+   Tested on Ubuntu 14.10 Minimal (64-bit x86) with the following additional
    packages installed:
 
    $ sudo apt-get install unzip groff bison flex gperf texinfo xsltproc \
