@@ -6,6 +6,7 @@ version=1.19.0
 release=1
 source=(http://crosstool-ng.org/download/$name/$name-$version.tar.bz2
         disable-LD_LIBRARY_PATH-check.patch
+        crosstool-ng-fix-glibc-2.17-make4.patch
         $HOST.config)
 depends=(native/linux-source)
 options=(nostrip)
@@ -15,6 +16,7 @@ build() {
    cd $name-$version
 
    patch -p1 -i $SRC/disable-LD_LIBRARY_PATH-check.patch
+   patch -p1 -i $SRC/crosstool-ng-fix-glibc-2.17-make4.patch
 
    ./configure --enable-local
    make
