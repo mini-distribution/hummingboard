@@ -31,6 +31,8 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgsteffectv.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstequalizer.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstequalizer.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstflac.la
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstflac.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstflv.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstflv.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstflxdec.la

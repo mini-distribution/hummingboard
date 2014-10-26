@@ -151,6 +151,8 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgststereo.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstsubenc.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstsubenc.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstuvch264.la
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstuvch264.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideofiltersbad.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideofiltersbad.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideoparsersbad.la

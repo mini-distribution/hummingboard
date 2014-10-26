@@ -1,3 +1,9 @@
+drwxr-xr-x	root/root	boot/
+-rw-r--r--	root/root	boot/imx6dl-cubox-i.dtb
+-rw-r--r--	root/root	boot/imx6dl-hummingboard.dtb
+-rw-r--r--	root/root	boot/imx6q-cubox-i.dtb
+-rw-r--r--	root/root	boot/imx6q-hummingboard.dtb
+-rwxr-xr-x	root/root	boot/zImage
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/firmware/
 drwxr-xr-x	root/root	lib/firmware/3com/
