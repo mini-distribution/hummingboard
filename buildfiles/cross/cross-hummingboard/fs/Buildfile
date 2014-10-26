@@ -36,5 +36,9 @@ build() {
                      -name '*.la'   -delete
 
    # Create tarball
-   tar -C $PKG -acpf $OUTPUT/fs.tar.gz .
+   tar -C $PKG -Ipixz -cpf $OUTPUT/fs.tar.xz .
+}
+
+check() {
+   check_tool pixz "Available in Ubuntu package pixz"
 }
