@@ -25,9 +25,9 @@ build() {
    # Cleanup
    rm $PKG/lib/modules/$version/{build,source}
 
-   mkdir -p $OUTPUT/boot
-   cp arch/arm/boot/zImage $OUTPUT/boot
-   cp arch/arm/boot/dts/imx6*.dtb $OUTPUT/boot
+   mkdir -p $PKG/boot
+   cp arch/arm/boot/zImage $PKG/boot
+   cp arch/arm/boot/dts/imx6*.dtb $PKG/boot
 }
 
 check() {

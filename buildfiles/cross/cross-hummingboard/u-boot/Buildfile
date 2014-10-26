@@ -12,8 +12,8 @@ build(){
     make ARCH=arm CROSS_COMPILE=$HOST- mx6_cubox-i_config
     make -j $JOBS ARCH=arm CROSS_COMPILE=$HOST-
 
-    mkdir -p $OUTPUT/boot
-    cp $SRC/uEnv.txt $OUTPUT/boot
+    mkdir -p $PKG/boot
+    cp $SRC/uEnv.txt $PKG/boot
 
     cp u-boot.img $OUTPUT
     cp SPL $OUTPUT

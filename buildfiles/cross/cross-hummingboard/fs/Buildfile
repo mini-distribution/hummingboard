@@ -6,6 +6,7 @@ version=1.0
 release=1
 options=(nostrip)
 depends=(core
+         u-boot
          linux
          net-tools
          traceroute
