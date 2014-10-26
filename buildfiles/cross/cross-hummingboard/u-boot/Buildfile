@@ -1,5 +1,6 @@
 # Description: U-boot - The universal bootloader
 # URL: https://github.com/SolidRun/u-boot-imx6
+# License: GPLv2
 
 name=u-boot
 version=gite4bc4c3
