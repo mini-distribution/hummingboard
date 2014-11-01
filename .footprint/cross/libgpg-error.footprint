@@ -6,9 +6,9 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/gpg-error.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libgpg-error.la
--rwxr-xr-x	root/root	usr/lib/libgpg-error.so.0.10.0
-lrwxrwxrwx	root/root	usr/lib/libgpg-error.so.0 -> libgpg-error.so.0.10.0
-lrwxrwxrwx	root/root	usr/lib/libgpg-error.so -> libgpg-error.so.0.10.0
+-rwxr-xr-x	root/root	usr/lib/libgpg-error.so.0.13.0
+lrwxrwxrwx	root/root	usr/lib/libgpg-error.so.0 -> libgpg-error.so.0.13.0
+lrwxrwxrwx	root/root	usr/lib/libgpg-error.so -> libgpg-error.so.0.13.0
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/gpg-error.m4
@@ -19,3 +19,6 @@ drwxr-xr-x	root/root	usr/share/common-lisp/source/gpg-error/
 -rw-r--r--	root/root	usr/share/common-lisp/source/gpg-error/gpg-error-codes.lisp
 -rw-r--r--	root/root	usr/share/common-lisp/source/gpg-error/gpg-error.lisp
 -rw-r--r--	root/root	usr/share/common-lisp/source/gpg-error/gpg-error-package.lisp
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/gpg-error-config.1
