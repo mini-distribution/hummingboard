@@ -11,9 +11,6 @@ drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/binfmt.d/
 drwxr-xr-x	root/root	etc/connman/
 -rw-r--r--	root/root	etc/connman/main.conf
-drwxr-xr-x	root/root	etc/cron/
-drwxr-xr-x	root/root	etc/cron/daily/
--rwxr-xr-x	root/root	etc/cron/daily/makewhatis
 drwxr-xr-x	root/root	etc/dbus-1/
 -rw-r--r--	root/root	etc/dbus-1/session.conf
 drwxr-xr-x	root/root	etc/dbus-1/session.d/
@@ -45,12 +42,13 @@ drwxr-xr-x	root/root	etc/ld.so.conf.d/
 -rw-r--r--	root/root	etc/limits
 -rw-r--r--	root/root	etc/login.access
 -rw-r--r--	root/root	etc/login.defs
--rw-r--r--	root/root	etc/man.conf
+-rw-r--r--	root/root	etc/man_db.conf
 drwxr-xr-x	root/root	etc/modules-load.d/
 lrwxrwxrwx	root/root	etc/mtab -> /proc/self/mounts
 -rw-r--r--	root/root	etc/passwd
 -rw-r--r--	root/root	etc/profile
 drwxr-xr-x	root/root	etc/profile.d/
+-rw-r--r--	root/root	etc/profile.d/man
 -rw-r--r--	root/root	etc/profile.d/systemd
 -rw-r--r--	root/root	etc/shadow
 drwxr-xr-x	root/root	etc/ssh/
@@ -2982,7 +2980,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/amixer
 -rwxr-xr-x	root/root	usr/bin/aplay
 -rwxr-xr-x	root/root	usr/bin/aplaymidi
--rwxr-xr-x	root/root	usr/bin/apropos
+lrwxrwxrwx	root/root	usr/bin/apropos -> whatis
 lrwxrwxrwx	root/root	usr/bin/arecord -> aplay
 -rwxr-xr-x	root/root	usr/bin/arecordmidi
 -rwxr-xr-x	root/root	usr/bin/aseqdump
@@ -2999,6 +2997,7 @@ lrwxrwxrwx	root/root	usr/bin/awk -> gawk
 lrwxrwxrwx	root/root	usr/bin/captoinfo -> tic
 -rwxr-xr-x	root/root	usr/bin/cat
 -rwxr-xr-x	root/root	usr/bin/catchsegv
+-rwxr-xr-x	root/root	usr/bin/catman
 -rwxr-xr-x	root/root	usr/bin/certtool
 -rwxr-xr-x	root/root	usr/bin/chacl
 -rwxr-xr-x	root/root	usr/bin/chage
@@ -3079,6 +3078,9 @@ lrwxrwxrwx	root/root	usr/bin/ex -> vim
 -rwxr-xr-x	root/root	usr/bin/gapplication
 -rwxr-xr-x	root/root	usr/bin/gawk
 hrwxr-xr-x	root/root	usr/bin/gawk-4.1.1 link to usr/bin/gawk
+-rwxr-xr-x	root/root	usr/bin/gdbm_dump
+-rwxr-xr-x	root/root	usr/bin/gdbm_load
+-rwxr-xr-x	root/root	usr/bin/gdbmtool
 -rwxr-xr-x	root/root	usr/bin/gdbus
 -rwxr-xr-x	root/root	usr/bin/gdbus-codegen
 -rwxr-xr-x	root/root	usr/bin/gdiffmk
@@ -3176,6 +3178,7 @@ lrwxrwxrwx	root/root	usr/bin/lastb -> last
 -rwxr-xr-x	root/root	usr/bin/less
 -rwxr-xr-x	root/root	usr/bin/lessecho
 -rwxr-xr-x	root/root	usr/bin/lesskey
+-rwxr-xr-x	root/root	usr/bin/lexgrog
 -rwxr-xr-x	root/root	usr/bin/libgcrypt-config
 -rwxr-xr-x	root/root	usr/bin/libpng16-config
 lrwxrwxrwx	root/root	usr/bin/libpng-config -> libpng16-config
@@ -3216,8 +3219,8 @@ lrwxrwxrwx	root/root	usr/bin/lzmore -> xzmore
 -rwxr-xr-x	root/root	usr/bin/machinectl
 -rwxr-xr-x	root/root	usr/bin/makedb
 -rwxr-xr-x	root/root	usr/bin/man
--rwxr-xr-x	root/root	usr/bin/man2dvi
--rwxr-xr-x	root/root	usr/bin/man2html
+-rwxr-xr-x	root/root	usr/bin/mandb
+-rwxr-xr-x	root/root	usr/bin/manpath
 -rwxr-xr-x	root/root	usr/bin/mcookie
 -rwxr-xr-x	root/root	usr/bin/md5sum
 -rwxr-xr-x	root/root	usr/bin/mesg
@@ -4048,6 +4051,12 @@ lrwxrwxrwx	root/root	usr/lib/libfslvpuwrap.so -> libfslvpuwrap.so.3.0.0
 -rwxr-xr-x	root/root	usr/lib/libgcrypt.so.20.0.2
 lrwxrwxrwx	root/root	usr/lib/libgcrypt.so.20 -> libgcrypt.so.20.0.2
 lrwxrwxrwx	root/root	usr/lib/libgcrypt.so -> libgcrypt.so.20.0.2
+-rwxr-xr-x	root/root	usr/lib/libgdbm_compat.so.4.0.0
+lrwxrwxrwx	root/root	usr/lib/libgdbm_compat.so.4 -> libgdbm_compat.so.4.0.0
+lrwxrwxrwx	root/root	usr/lib/libgdbm_compat.so -> libgdbm_compat.so.4.0.0
+-rwxr-xr-x	root/root	usr/lib/libgdbm.so.4.0.0
+lrwxrwxrwx	root/root	usr/lib/libgdbm.so.4 -> libgdbm.so.4.0.0
+lrwxrwxrwx	root/root	usr/lib/libgdbm.so -> libgdbm.so.4.0.0
 -rwxr-xr-x	root/root	usr/lib/libgio-2.0.so.0.4200.0
 lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so.0 -> libgio-2.0.so.0.4200.0
 lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so -> libgio-2.0.so.0.4200.0
@@ -4278,6 +4287,9 @@ lrwxrwxrwx	root/root	usr/lib/libpcreposix.so -> libpcreposix.so.0.0.3
 -rwxr-xr-x	root/root	usr/lib/libpcre.so.1.2.4
 lrwxrwxrwx	root/root	usr/lib/libpcre.so.1 -> libpcre.so.1.2.4
 lrwxrwxrwx	root/root	usr/lib/libpcre.so -> libpcre.so.1.2.4
+-rwxr-xr-x	root/root	usr/lib/libpipeline.so.1.4.0
+lrwxrwxrwx	root/root	usr/lib/libpipeline.so.1 -> libpipeline.so.1.4.0
+lrwxrwxrwx	root/root	usr/lib/libpipeline.so -> libpipeline.so.1.4.0
 -rwxr-xr-x	root/root	usr/lib/libpng16.so.16.9.0
 lrwxrwxrwx	root/root	usr/lib/libpng16.so.16 -> libpng16.so.16.9.0
 lrwxrwxrwx	root/root	usr/lib/libpng16.so -> libpng16.so.16.9.0
@@ -4351,6 +4363,15 @@ lrwxrwxrwx	root/root	usr/lib/libxtables.so -> libxtables.so.10.0.0
 -rwxr-xr-x	root/root	usr/lib/libz.so.1.2.8
 lrwxrwxrwx	root/root	usr/lib/libz.so.1 -> libz.so.1.2.8
 lrwxrwxrwx	root/root	usr/lib/libz.so -> libz.so.1.2.8
+drwxr-xr-x	root/root	usr/lib/man-db/
+-rwxr-xr-x	root/root	usr/lib/man-db/libman-2.7.0.2.so
+-rwxr-xr-x	root/root	usr/lib/man-db/libmandb-2.7.0.2.so
+lrwxrwxrwx	root/root	usr/lib/man-db/libmandb.so -> libmandb-2.7.0.2.so
+lrwxrwxrwx	root/root	usr/lib/man-db/libman.so -> libman-2.7.0.2.so
+drwxr-xr-x	root/root	usr/lib/man-db/man-db/
+-rwxr-xr-x	root/root	usr/lib/man-db/man-db/globbing
+-rwxr-xr-x	root/root	usr/lib/man-db/man-db/manconv
+-rwxr-xr-x	root/root	usr/lib/man-db/man-db/zsoelim
 -rw-r--r--	root/root	usr/lib/Mcrt1.o
 drwxr-xr-x	root/root	usr/lib/modules-load.d/
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
@@ -4414,6 +4435,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libpcrecpp.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libpcre.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libpcreposix.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/libpipeline.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libpng16.pc
 lrwxrwxrwx	root/root	usr/lib/pkgconfig/libpng.pc -> libpng16.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libprocps.pc
@@ -4914,6 +4936,7 @@ lrwxrwxrwx	root/root	usr/man/man1/view.1.gz -> vim.1.gz
 -rw-r--r--	root/root	usr/man/man1/vim.1
 -rw-r--r--	root/root	usr/man/man1/vimdiff.1
 drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/accessdb
 -rwxr-xr-x	root/root	usr/sbin/addpart
 -rwxr-xr-x	root/root	usr/sbin/agetty
 -rwxr-xr-x	root/root	usr/sbin/alsactl
@@ -4967,7 +4990,6 @@ lrwxrwxrwx	root/root	usr/sbin/iptables -> xtables-multi
 -rwxr-xr-x	root/root	usr/sbin/ldconfig
 -rwxr-xr-x	root/root	usr/sbin/losetup
 -rwxr-xr-x	root/root	usr/sbin/lspci
--rwxr-xr--	root/root	usr/sbin/makewhatis
 -rwxr-xr-x	root/root	usr/sbin/mii-tool
 -rwxr-xr-x	root/root	usr/sbin/mkfs
 -rwxr-xr-x	root/root	usr/sbin/mkfs.bfs
@@ -5823,6 +5845,7 @@ drwxr-xr-x	root/root	usr/share/imx-mm/video-codec/examples/vpu/sqlite/
 -rw-r--r--	root/root	usr/share/imx-mm/video-codec/examples/vpu/vpu_wrapper_timer.h
 drwxr-xr-x	root/root	usr/share/info/
 -rw-r--r--	root/root	usr/share/info/dir
+-rw-r--r--	root/root	usr/share/info/gdbm.info
 -rw-r--r--	root/root	usr/share/info/tar.info
 -rw-r--r--	root/root	usr/share/info/tar.info-1
 -rw-r--r--	root/root	usr/share/info/tar.info-2
@@ -6453,6 +6476,9 @@ lrwxrwxrwx	root/root	usr/share/man/man1/dss1.1ssl -> dgst.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/fuser.1
 -rw-r--r--	root/root	usr/share/man/man1/gapplication.1
 -rw-r--r--	root/root	usr/share/man/man1/gawk.1
+-rw-r--r--	root/root	usr/share/man/man1/gdbm_dump.1
+-rw-r--r--	root/root	usr/share/man/man1/gdbm_load.1
+-rw-r--r--	root/root	usr/share/man/man1/gdbmtool.1
 -rw-r--r--	root/root	usr/share/man/man1/gdbus.1
 -rw-r--r--	root/root	usr/share/man/man1/gdbus-codegen.1
 -rw-r--r--	root/root	usr/share/man/man1/gdiffmk.1
@@ -6526,6 +6552,7 @@ lrwxrwxrwx	root/root	usr/share/man/man1/dss1.1ssl -> dgst.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/less.1
 -rw-r--r--	root/root	usr/share/man/man1/lessecho.1
 -rw-r--r--	root/root	usr/share/man/man1/lesskey.1
+-rw-r--r--	root/root	usr/share/man/man1/lexgrog.1
 -rw-r--r--	root/root	usr/share/man/man1/lkbib.1
 -rw-r--r--	root/root	usr/share/man/man1/loadkeys.1
 -rw-r--r--	root/root	usr/share/man/man1/localectl.1
@@ -6549,7 +6576,8 @@ lrwxrwxrwx	root/root	usr/share/man/man1/lzmadec.1 -> xzdec.1
 lrwxrwxrwx	root/root	usr/share/man/man1/lzmore.1 -> xzmore.1
 -rw-r--r--	root/root	usr/share/man/man1/machinectl.1
 -rw-r--r--	root/root	usr/share/man/man1/man.1
--rw-r--r--	root/root	usr/share/man/man1/man2html.1
+-rw-r--r--	root/root	usr/share/man/man1/manconv.1
+-rw-r--r--	root/root	usr/share/man/man1/manpath.1
 -rw-r--r--	root/root	usr/share/man/man1/mcookie.1
 lrwxrwxrwx	root/root	usr/share/man/man1/md2.1ssl -> dgst.1ssl
 lrwxrwxrwx	root/root	usr/share/man/man1/md4.1ssl -> dgst.1ssl
@@ -6750,6 +6778,7 @@ lrwxrwxrwx	root/root	usr/share/man/man1/xzfgrep.1 -> xzgrep.1
 -rw-r--r--	root/root	usr/share/man/man1/zless.1
 -rw-r--r--	root/root	usr/share/man/man1/zmore.1
 -rw-r--r--	root/root	usr/share/man/man1/znew.1
+-rw-r--r--	root/root	usr/share/man/man1/zsoelim.1
 drwxr-xr-x	root/root	usr/share/man/man2/
 lrwxrwxrwx	root/root	usr/share/man/man2/fgetxattr.2.gz -> getxattr.2.gz
 lrwxrwxrwx	root/root	usr/share/man/man2/flistxattr.2.gz -> listxattr.2.gz
@@ -7622,6 +7651,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/free_fieldtype.3form.gz -> fieldtype.3fo
 lrwxrwxrwx	root/root	usr/share/man/man3/free_form.3form.gz -> new.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/free_item.3menu.gz -> menu_new.3menu.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/free_menu.3menu.gz -> new.3menu.gz
+-rw-r--r--	root/root	usr/share/man/man3/gdbm.3
 lrwxrwxrwx	root/root	usr/share/man/man3/getattrs.3ncurses.gz -> legacy.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/getbegx.3ncurses.gz -> legacy.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/getbegy.3ncurses.gz -> legacy.3ncurses.gz
@@ -9984,7 +10014,7 @@ lrwxrwxrwx	root/root	usr/share/man/man5/host.deny.5.gz -> hosts_access.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/login.defs.5
 -rw-r--r--	root/root	usr/share/man/man5/machine-id.5
 -rw-r--r--	root/root	usr/share/man/man5/machine-info.5
--rw-r--r--	root/root	usr/share/man/man5/man.conf.5
+-rw-r--r--	root/root	usr/share/man/man5/manpath.5
 -rw-r--r--	root/root	usr/share/man/man5/modprobe.d.5
 -rw-r--r--	root/root	usr/share/man/man5/modules.dep.5
 -rw-r--r--	root/root	usr/share/man/man5/modules.dep.bin.5
@@ -10061,6 +10091,7 @@ drwxr-xr-x	root/root	usr/share/man/man7/
 -rw-r--r--	root/root	usr/share/man/man7/term.7.gz
 -rw-r--r--	root/root	usr/share/man/man7/udev.7
 drwxr-xr-x	root/root	usr/share/man/man8/
+-rw-r--r--	root/root	usr/share/man/man8/accessdb.8
 -rw-r--r--	root/root	usr/share/man/man8/addpart.8
 -rw-r--r--	root/root	usr/share/man/man8/agetty.8
 -rw-r--r--	root/root	usr/share/man/man8/arp.8
@@ -10069,6 +10100,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/blkid.8
 -rw-r--r--	root/root	usr/share/man/man8/blockdev.8
 -rw-r--r--	root/root	usr/share/man/man8/bootlogd.8
+-rw-r--r--	root/root	usr/share/man/man8/catman.8
 -rw-r--r--	root/root	usr/share/man/man8/cfdisk.8
 -rw-r--r--	root/root	usr/share/man/man8/chcpu.8
 -rw-r--r--	root/root	usr/share/man/man8/chgpasswd.8
@@ -10125,7 +10157,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/lsmod.8
 -rw-r--r--	root/root	usr/share/man/man8/lspci.8
 -rw-r--r--	root/root	usr/share/man/man8/lsusb.8
--rw-r--r--	root/root	usr/share/man/man8/makewhatis.8
+-rw-r--r--	root/root	usr/share/man/man8/mandb.8
 -rw-r--r--	root/root	usr/share/man/man8/mii-tool.8
 -rw-r--r--	root/root	usr/share/man/man8/mkfs.8
 -rw-r--r--	root/root	usr/share/man/man8/mkfs.bfs.8
@@ -14227,6 +14259,8 @@ drwxr-xr-x	root/root	usr/usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/usr/lib/pkgconfig/libcap.pc
 lrwxrwxrwx	root/root	usr/var -> ../var
 drwxr-xr-x	root/root	var/
+drwxr-xr-x	root/root	var/cache/
+drwxr-xr-x	root/root	var/cache/man/
 drwxr-xr-x	root/root	var/db/
 -rw-r--r--	root/root	var/db/Makefile
 drwxr-xr-x	root/root	var/empty/
