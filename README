@@ -32,9 +32,9 @@ Quick build guide:
 Prebuilt images:
 
    For demo purpose, prebuilt images are available here:
-   http://buildgear.io/prebuilds/hummingboard/mini-distribution
+   http://mini-distribution.io/prebuilds/hummingboard
 
-Software installation:
+Installation:
 
    To install on SD card simply create your primary (rootfs) EXT4 partion and
    install SPL and u-boot.img as described in the steps found here:
