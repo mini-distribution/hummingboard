@@ -2,21 +2,20 @@
 # URL: http://www.crosstool-ng.org
 
 name=crosstool-ng
-version=1.19.0
+version=1.20.0
 release=1
-source=(http://crosstool-ng.org/download/$name/$name-$version.tar.bz2
+source=(http://crosstool-ng.org/download/$name/$name-$version.tar.xz
         disable-LD_LIBRARY_PATH-check.patch
-        crosstool-ng-fix-glibc-2.17-make4.patch
+        cc-gcc-add-gcc-4.9.2.patch
         $HOST.config)
 depends=(native/linux-source)
 options=(nostrip)
 
 build() {
-
    cd $name-$version
 
    patch -p1 -i $SRC/disable-LD_LIBRARY_PATH-check.patch
-   patch -p1 -i $SRC/crosstool-ng-fix-glibc-2.17-make4.patch
+   patch -p1 -i $SRC/cc-gcc-add-gcc-4.9.2.patch
 
    ./configure --enable-local
    make
@@ -46,7 +45,9 @@ build() {
    # Fix .la files
    sed -i -e "/libdir/s:=.*:='$CROSS_SYSROOT/lib':" \
        $PKG/$HOST/sysroot/lib/libstdc++.la \
-       $PKG/$HOST/sysroot/lib/libsupc++.la
+       $PKG/$HOST/sysroot/lib/libsupc++.la \
+       $PKG/$HOST/sysroot/lib/libitm.la \
+       $PKG/$HOST/sysroot/lib/libatomic.la
 }
 
 check() {
