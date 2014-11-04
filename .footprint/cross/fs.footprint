@@ -215,51 +215,26 @@ drwxr-xr-x	root/root	lib/firmware/yamaha/
 -rw-r--r--	root/root	lib/firmware/yamaha/ds1_ctrl.fw
 -rw-r--r--	root/root	lib/firmware/yamaha/ds1_dsp.fw
 -rw-r--r--	root/root	lib/firmware/yamaha/ds1e_ctrl.fw
--rwxr-xr-x	root/root	lib/ld-2.17.so
-lrwxrwxrwx	root/root	lib/ld-linux-armhf.so.3 -> ld-2.17.so
+-rwxr-xr-x	root/root	lib/ld-2.19.so
+lrwxrwxrwx	root/root	lib/ld-linux-armhf.so.3 -> ld-2.19.so
 lrwxrwxrwx	root/root	lib/ld-linux.so.3 -> ld-linux-armhf.so.3
-drwxr-xr-x	root/root	lib/ldscripts/
--rw-r--r--	root/root	lib/ldscripts/armelfb_linux_eabi.x
--rw-r--r--	root/root	lib/ldscripts/armelfb_linux_eabi.xbn
--rw-r--r--	root/root	lib/ldscripts/armelfb_linux_eabi.xc
--rw-r--r--	root/root	lib/ldscripts/armelfb_linux_eabi.xd
--rw-r--r--	root/root	lib/ldscripts/armelfb_linux_eabi.xdc
--rw-r--r--	root/root	lib/ldscripts/armelfb_linux_eabi.xdw
--rw-r--r--	root/root	lib/ldscripts/armelfb_linux_eabi.xn
--rw-r--r--	root/root	lib/ldscripts/armelfb_linux_eabi.xr
--rw-r--r--	root/root	lib/ldscripts/armelfb_linux_eabi.xs
--rw-r--r--	root/root	lib/ldscripts/armelfb_linux_eabi.xsc
--rw-r--r--	root/root	lib/ldscripts/armelfb_linux_eabi.xsw
--rw-r--r--	root/root	lib/ldscripts/armelfb_linux_eabi.xu
--rw-r--r--	root/root	lib/ldscripts/armelfb_linux_eabi.xw
--rw-r--r--	root/root	lib/ldscripts/armelf_linux_eabi.x
--rw-r--r--	root/root	lib/ldscripts/armelf_linux_eabi.xbn
--rw-r--r--	root/root	lib/ldscripts/armelf_linux_eabi.xc
--rw-r--r--	root/root	lib/ldscripts/armelf_linux_eabi.xd
--rw-r--r--	root/root	lib/ldscripts/armelf_linux_eabi.xdc
--rw-r--r--	root/root	lib/ldscripts/armelf_linux_eabi.xdw
--rw-r--r--	root/root	lib/ldscripts/armelf_linux_eabi.xn
--rw-r--r--	root/root	lib/ldscripts/armelf_linux_eabi.xr
--rw-r--r--	root/root	lib/ldscripts/armelf_linux_eabi.xs
--rw-r--r--	root/root	lib/ldscripts/armelf_linux_eabi.xsc
--rw-r--r--	root/root	lib/ldscripts/armelf_linux_eabi.xsw
--rw-r--r--	root/root	lib/ldscripts/armelf_linux_eabi.xu
--rw-r--r--	root/root	lib/ldscripts/armelf_linux_eabi.xw
--rwxr-xr-x	root/root	lib/libanl-2.17.so
-lrwxrwxrwx	root/root	lib/libanl.so.1 -> libanl-2.17.so
+-rwxr-xr-x	root/root	lib/libanl-2.19.so
+lrwxrwxrwx	root/root	lib/libanl.so.1 -> libanl-2.19.so
 -rw-r--r--	root/root	lib/libatomic.a
 -rwxr-xr-x	root/root	lib/libatomic.la
--rwxr-xr-x	root/root	lib/libatomic.so.1.0.0
-lrwxrwxrwx	root/root	lib/libatomic.so.1 -> libatomic.so.1.0.0
-lrwxrwxrwx	root/root	lib/libatomic.so -> libatomic.so.1.0.0
--rwxr-xr-x	root/root	lib/libBrokenLocale-2.17.so
-lrwxrwxrwx	root/root	lib/libBrokenLocale.so.1 -> libBrokenLocale-2.17.so
--rwxr-xr-x	root/root	lib/libc-2.17.so
--rwxr-xr-x	root/root	lib/libcrypt-2.17.so
-lrwxrwxrwx	root/root	lib/libcrypt.so.1 -> libcrypt-2.17.so
-lrwxrwxrwx	root/root	lib/libc.so.6 -> libc-2.17.so
--rwxr-xr-x	root/root	lib/libdl-2.17.so
-lrwxrwxrwx	root/root	lib/libdl.so.2 -> libdl-2.17.so
+-rwxr-xr-x	root/root	lib/libatomic.so.1.1.0
+lrwxrwxrwx	root/root	lib/libatomic.so.1 -> libatomic.so.1.1.0
+lrwxrwxrwx	root/root	lib/libatomic.so -> libatomic.so.1.1.0
+-rwxr-xr-x	root/root	lib/libBrokenLocale-2.19.so
+lrwxrwxrwx	root/root	lib/libBrokenLocale.so.1 -> libBrokenLocale-2.19.so
+-rwxr-xr-x	root/root	lib/libc-2.19.so
+-rwxr-xr-x	root/root	lib/libcidn-2.19.so
+lrwxrwxrwx	root/root	lib/libcidn.so.1 -> libcidn-2.19.so
+-rwxr-xr-x	root/root	lib/libcrypt-2.19.so
+lrwxrwxrwx	root/root	lib/libcrypt.so.1 -> libcrypt-2.19.so
+lrwxrwxrwx	root/root	lib/libc.so.6 -> libc-2.19.so
+-rwxr-xr-x	root/root	lib/libdl-2.19.so
+lrwxrwxrwx	root/root	lib/libdl.so.2 -> libdl-2.19.so
 -rw-r--r--	root/root	lib/libgcc_s.so
 -rw-r--r--	root/root	lib/libgcc_s.so.1
 -rw-r--r--	root/root	lib/libitm.a
@@ -268,45 +243,45 @@ lrwxrwxrwx	root/root	lib/libdl.so.2 -> libdl-2.17.so
 lrwxrwxrwx	root/root	lib/libitm.so.1 -> libitm.so.1.0.0
 lrwxrwxrwx	root/root	lib/libitm.so -> libitm.so.1.0.0
 -rw-r--r--	root/root	lib/libitm.spec
--rwxr-xr-x	root/root	lib/libm-2.17.so
+-rwxr-xr-x	root/root	lib/libm-2.19.so
 -rwxr-xr-x	root/root	lib/libmemusage.so
-lrwxrwxrwx	root/root	lib/libm.so.6 -> libm-2.17.so
--rwxr-xr-x	root/root	lib/libnsl-2.17.so
-lrwxrwxrwx	root/root	lib/libnsl.so.1 -> libnsl-2.17.so
--rwxr-xr-x	root/root	lib/libnss_compat-2.17.so
-lrwxrwxrwx	root/root	lib/libnss_compat.so.2 -> libnss_compat-2.17.so
--rwxr-xr-x	root/root	lib/libnss_db-2.17.so
-lrwxrwxrwx	root/root	lib/libnss_db.so.2 -> libnss_db-2.17.so
--rwxr-xr-x	root/root	lib/libnss_dns-2.17.so
-lrwxrwxrwx	root/root	lib/libnss_dns.so.2 -> libnss_dns-2.17.so
--rwxr-xr-x	root/root	lib/libnss_files-2.17.so
-lrwxrwxrwx	root/root	lib/libnss_files.so.2 -> libnss_files-2.17.so
--rwxr-xr-x	root/root	lib/libnss_hesiod-2.17.so
-lrwxrwxrwx	root/root	lib/libnss_hesiod.so.2 -> libnss_hesiod-2.17.so
--rwxr-xr-x	root/root	lib/libnss_nis-2.17.so
--rwxr-xr-x	root/root	lib/libnss_nisplus-2.17.so
-lrwxrwxrwx	root/root	lib/libnss_nisplus.so.2 -> libnss_nisplus-2.17.so
-lrwxrwxrwx	root/root	lib/libnss_nis.so.2 -> libnss_nis-2.17.so
+lrwxrwxrwx	root/root	lib/libm.so.6 -> libm-2.19.so
+-rwxr-xr-x	root/root	lib/libnsl-2.19.so
+lrwxrwxrwx	root/root	lib/libnsl.so.1 -> libnsl-2.19.so
+-rwxr-xr-x	root/root	lib/libnss_compat-2.19.so
+lrwxrwxrwx	root/root	lib/libnss_compat.so.2 -> libnss_compat-2.19.so
+-rwxr-xr-x	root/root	lib/libnss_db-2.19.so
+lrwxrwxrwx	root/root	lib/libnss_db.so.2 -> libnss_db-2.19.so
+-rwxr-xr-x	root/root	lib/libnss_dns-2.19.so
+lrwxrwxrwx	root/root	lib/libnss_dns.so.2 -> libnss_dns-2.19.so
+-rwxr-xr-x	root/root	lib/libnss_files-2.19.so
+lrwxrwxrwx	root/root	lib/libnss_files.so.2 -> libnss_files-2.19.so
+-rwxr-xr-x	root/root	lib/libnss_hesiod-2.19.so
+lrwxrwxrwx	root/root	lib/libnss_hesiod.so.2 -> libnss_hesiod-2.19.so
+-rwxr-xr-x	root/root	lib/libnss_nis-2.19.so
+-rwxr-xr-x	root/root	lib/libnss_nisplus-2.19.so
+lrwxrwxrwx	root/root	lib/libnss_nisplus.so.2 -> libnss_nisplus-2.19.so
+lrwxrwxrwx	root/root	lib/libnss_nis.so.2 -> libnss_nis-2.19.so
 -rwxr-xr-x	root/root	lib/libpcprofile.so
--rwxr-xr-x	root/root	lib/libpthread-2.17.so
-lrwxrwxrwx	root/root	lib/libpthread.so.0 -> libpthread-2.17.so
--rwxr-xr-x	root/root	lib/libresolv-2.17.so
-lrwxrwxrwx	root/root	lib/libresolv.so.2 -> libresolv-2.17.so
--rwxr-xr-x	root/root	lib/librt-2.17.so
-lrwxrwxrwx	root/root	lib/librt.so.1 -> librt-2.17.so
+-rwxr-xr-x	root/root	lib/libpthread-2.19.so
+lrwxrwxrwx	root/root	lib/libpthread.so.0 -> libpthread-2.19.so
+-rwxr-xr-x	root/root	lib/libresolv-2.19.so
+lrwxrwxrwx	root/root	lib/libresolv.so.2 -> libresolv-2.19.so
+-rwxr-xr-x	root/root	lib/librt-2.19.so
+lrwxrwxrwx	root/root	lib/librt.so.1 -> librt-2.19.so
 -rwxr-xr-x	root/root	lib/libSegFault.so
 -rw-r--r--	root/root	lib/libstdc++.a
 -rwxr-xr-x	root/root	lib/libstdc++.la
--rwxr-xr-x	root/root	lib/libstdc++.so.6.0.18
--rw-r--r--	root/root	lib/libstdc++.so.6.0.18-gdb.py
-lrwxrwxrwx	root/root	lib/libstdc++.so.6 -> libstdc++.so.6.0.18
-lrwxrwxrwx	root/root	lib/libstdc++.so -> libstdc++.so.6.0.18
+-rwxr-xr-x	root/root	lib/libstdc++.so.6.0.20
+-rw-r--r--	root/root	lib/libstdc++.so.6.0.20-gdb.py
+lrwxrwxrwx	root/root	lib/libstdc++.so.6 -> libstdc++.so.6.0.20
+lrwxrwxrwx	root/root	lib/libstdc++.so -> libstdc++.so.6.0.20
 -rw-r--r--	root/root	lib/libsupc++.a
 -rwxr-xr-x	root/root	lib/libsupc++.la
 -rwxr-xr-x	root/root	lib/libthread_db-1.0.so
 lrwxrwxrwx	root/root	lib/libthread_db.so.1 -> libthread_db-1.0.so
--rwxr-xr-x	root/root	lib/libutil-2.17.so
-lrwxrwxrwx	root/root	lib/libutil.so.1 -> libutil-2.17.so
+-rwxr-xr-x	root/root	lib/libutil-2.19.so
+lrwxrwxrwx	root/root	lib/libutil.so.1 -> libutil-2.19.so
 drwxr-xr-x	root/root	lib/modules/
 drwxr-xr-x	root/root	lib/modules/3.14.14/
 drwxr-xr-x	root/root	lib/modules/3.14.14/kernel/
@@ -3556,7 +3531,6 @@ hrwxr-xr-x	root/root	usr/libexec/getconf/XBS5_ILP32_OFF32 link to usr/bin/getcon
 hrwxr-xr-x	root/root	usr/libexec/getconf/XBS5_ILP32_OFFBIG link to usr/bin/getconf
 drwxr-xr-x	root/root	usr/libexec/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/libexec/gstreamer-1.0/gst-plugin-scanner
--rwsr-xr-x	root/root	usr/libexec/pt_chown
 -rwxr-xr-x	root/root	usr/libexec/rmt
 -rwxr-xr-x	root/root	usr/libexec/sftp-server
 -rws--x--x	root/root	usr/libexec/ssh-keysign
@@ -3999,8 +3973,8 @@ lrwxrwxrwx	root/root	usr/lib/libasound.so -> libasound.so.2.0.0
 -rw-r--r--	root/root	usr/lib/libattr.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libattr.so.1 -> libattr.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libattr.so -> libattr.so.1
--rwxr-xr-x	root/root	usr/lib/libbfd-2.23.1.so
-lrwxrwxrwx	root/root	usr/lib/libbfd.so -> libbfd-2.23.1.so
+-rwxr-xr-x	root/root	usr/lib/libbfd-2.24.so
+lrwxrwxrwx	root/root	usr/lib/libbfd.so -> libbfd-2.24.so
 -rwxr-xr-x	root/root	usr/lib/libblkid.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libblkid.so.1 -> libblkid.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libblkid.so -> libblkid.so.1.1.0
@@ -4011,6 +3985,7 @@ lrwxrwxrwx	root/root	usr/lib/libcap.so -> libcap.so.2
 -rwxr-xr-x	root/root	usr/lib/libcheck.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libcheck.so.0 -> libcheck.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libcheck.so -> libcheck.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libcidn.so -> ../../lib/libcidn.so.1
 -r-xr-xr-x	root/root	usr/lib/libcrypto.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libcrypto.so -> libcrypto.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libcrypt.so -> ../../lib/libcrypt.so.1

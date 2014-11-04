@@ -1,4 +1,4 @@
-a7db837bdbb71735142c106349d89e75ecb6ee45a6d439ac65d9caadbc077fbc  arm-cortex_a9-linux-gnueabi.config
-cd54f20bb8190533b21c9cf7f93c9073c22d59541f52774c3f3053264ba53a93  crosstool-ng-1.19.0.tar.bz2
-92e37187361e8b4aa1bc5b9430be952edfa881415f40af8c01c5181df2db4fad  crosstool-ng-fix-glibc-2.17-make4.patch
+27bda0b96c9e8b254065f78754e9883d2c105ce3b2f1a9d9e8b89aa86e602fd7  arm-cortex_a9-linux-gnueabi.config
+131f64078969cd88847b9896e8eff5983bee802b98694b940346e5c5cee9a02c  cc-gcc-add-gcc-4.9.2.patch
+ee6e51f409ccf92cba3caccc386483794763ee0ffcea7509199727042a4224ca  crosstool-ng-1.20.0.tar.xz
 7862c7d6c313260ab45ada988053eedc89d3945bf91735b7d467d2eedbf5b91e  disable-LD_LIBRARY_PATH-check.patch
