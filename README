@@ -4,7 +4,7 @@ Name:
 
 About:
 
-   A basic GNU/Linux distribution for SolidRuns Hummingboard
+   A basic GNU/Linux distribution for the Hummingboard from solid-run.com
 
 Main features:
 
@@ -54,8 +54,8 @@ Installation:
 
    5. Install root filesystem (includes kernel in /boot directory):
       <mount your new rootfs partition>
-      cd <your rootfs mount point>
-      sudo tar xf fs.tar.xz
+      $ cd <your rootfs mount point>
+      $ sudo tar xf fs.tar.xz
 
 Build system requirements:
 
