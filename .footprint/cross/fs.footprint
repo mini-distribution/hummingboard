@@ -4290,9 +4290,9 @@ lrwxrwxrwx	root/root	usr/lib/libpcre.so -> libpcre.so.1.2.4
 -rwxr-xr-x	root/root	usr/lib/libpipeline.so.1.4.0
 lrwxrwxrwx	root/root	usr/lib/libpipeline.so.1 -> libpipeline.so.1.4.0
 lrwxrwxrwx	root/root	usr/lib/libpipeline.so -> libpipeline.so.1.4.0
--rwxr-xr-x	root/root	usr/lib/libpng16.so.16.9.0
-lrwxrwxrwx	root/root	usr/lib/libpng16.so.16 -> libpng16.so.16.9.0
-lrwxrwxrwx	root/root	usr/lib/libpng16.so -> libpng16.so.16.9.0
+-rwxr-xr-x	root/root	usr/lib/libpng16.so.16.13.0
+lrwxrwxrwx	root/root	usr/lib/libpng16.so.16 -> libpng16.so.16.13.0
+lrwxrwxrwx	root/root	usr/lib/libpng16.so -> libpng16.so.16.13.0
 lrwxrwxrwx	root/root	usr/lib/libpng.so -> libpng16.so
 -rwxr-xr-x	root/root	usr/lib/libprocps.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libprocps.so.4 -> libprocps.so.4.0.0
