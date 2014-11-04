@@ -8,8 +8,8 @@ About:
 
 Main features:
 
-   * Arm Cortex A9 optimized
-   * Glibc based toolchain
+   * Arm Cortex A9, Neon, FPU optimized toolchain
+   * Glibc C library
    * Systemd init system
    * GNU/Linux system utilities (no busybox)
    * Ethernet network support
@@ -36,20 +36,31 @@ Prebuilt images:
 
 Installation:
 
-   To install on SD card simply create your primary (rootfs) EXT4 partion and
-   install SPL and u-boot.img as described in the steps found here:
+   To install on SD card simply follow the steps below:
 
-   http://www.solid-run.com/wiki/Building_the_kernel_and_u-boot_for_the_CuBox-i_and_the_HummingBoard
-   (See section "Flashing U-boot and the kernel - full example")
+   (replace X with the device number of your SD card)
 
-   Copy the boot directory in build/output to your primary (rootfs) partition.
+   1. Install 1st stage bootloader:
+      $ sudo dd if=SPL of=/dev/sdX bs=1K seek=1
 
-   Extract build/output/fs.tar.gz to your rootfs partition.
+   2. Install 2nd stage bootloader:
+      $ sudo dd if=u-boot.img of=/dev/sdX bs=1K seek=42
+
+   3. Create a single primary partition (default to 2048 start sector):
+      $ echo -e "n\np\n1\n\n\nw\n" | sudo fdisk /dev/sdX
+
+   4. Install ext4 type filesystem:
+      $ sudo mkfs.ext4 -L rootfs /dev/sdX1
+
+   5. Install root filesystem (includes kernel in /boot directory):
+      <mount your new rootfs partition>
+      cd <your rootfs mount point>
+      sudo tar xf fs.tar.xz
 
 Build system requirements:
 
-   Tested on Ubuntu 14.10 Minimal (64-bit x86) with the following additional
-   packages installed:
+   Tested on Ubuntu 14.10 (64-bit x86) with the following additional packages
+   installed:
 
    $ sudo apt-get install unzip groff bison flex gperf texinfo xsltproc \
                           libtool libncurses5-dev gawk libexpat1-dev \
