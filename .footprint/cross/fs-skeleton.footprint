@@ -1,4 +1,4 @@
-lrwxrwxrwx	root/root	bin -> /usr/bin
+lrwxrwxrwx	root/root	bin -> usr/bin
 drwxr-xr-x	root/root	dev/
 drwxr-xr-x	root/root	etc/
 -rw-r--r--	root/root	etc/group
@@ -14,7 +14,7 @@ drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	proc/
 drwxr-xr-x	root/root	root/
 drwxr-xr-x	root/root	run/
-lrwxrwxrwx	root/root	sbin -> /usr/sbin
+lrwxrwxrwx	root/root	sbin -> usr/sbin
 drwxr-xr-x	root/root	srv/
 drwxr-xr-x	root/root	sys/
 drwxr-xr-x	root/root	tmp/
