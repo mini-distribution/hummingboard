@@ -16,7 +16,8 @@
 #	url = git@github.com:mini-distribution/cross-extra.git
 [submodule "buildfiles/native/native-freedesktop"]
 	path = buildfiles/native/native-freedesktop
-	url = git@github.com:mini-distribution/native-freedesktop.git
+	url = git://github.com/mini-distribution/native-freedesktop.git
+#	url = git@github.com:mini-distribution/native-freedesktop.git
 [submodule "buildfiles/cross/cross-freescale"]
 	path = buildfiles/cross/cross-freescale
 	url = git://github.com/mini-distribution/cross-freescale.git
