@@ -2935,6 +2935,506 @@ drwxr-xr-x	root/root	lib/modules/3.14.14/kernel/sound/usb/misc/
 drwxr-xr-x	root/root	media/
 drwxr-xr-x	root/root	mnt/
 drwxr-xr-x	root/root	opt/
+drwxr-xr-x	root/root	opt/viv_samples/
+drwxr-xr-x	root/root	opt/viv_samples/cl11/
+drwxr-xr-x	root/root	opt/viv_samples/cl11/fft/
+-rwxr-xr-x	root/root	opt/viv_samples/cl11/fft/fft
+-rw-r--r--	root/root	opt/viv_samples/cl11/fft/fft.cl
+drwxr-xr-x	root/root	opt/viv_samples/cl11/UnitTest/
+-rwxr-xr-x	root/root	opt/viv_samples/cl11/UnitTest/clinfo
+-rwxr-xr-x	root/root	opt/viv_samples/cl11/UnitTest/loadstore
+-rwxr-xr-x	root/root	opt/viv_samples/cl11/UnitTest/math
+drwxr-xr-x	root/root	opt/viv_samples/cl11/UnitTest/test_vivante/
+-rwxr-xr-x	root/root	opt/viv_samples/cl11/UnitTest/test_vivante/functions_and_kernels
+-rwxr-xr-x	root/root	opt/viv_samples/cl11/UnitTest/test_vivante/illegal_vector_sizes
+-rwxr-xr-x	root/root	opt/viv_samples/cl11/UnitTest/test_vivante/initializers
+-rwxr-xr-x	root/root	opt/viv_samples/cl11/UnitTest/test_vivante/multi_dimensional_arrays
+-rwxr-xr-x	root/root	opt/viv_samples/cl11/UnitTest/test_vivante/reserved_data_types
+-rwxr-xr-x	root/root	opt/viv_samples/cl11/UnitTest/test_vivante/structs_and_enums
+-rwxr-xr-x	root/root	opt/viv_samples/cl11/UnitTest/test_vivante/unions
+-rwxr-xr-x	root/root	opt/viv_samples/cl11/UnitTest/test_vivante/unsupported_extensions
+-rwxr-xr-x	root/root	opt/viv_samples/cl11/UnitTest/threadwalker
+drwxr-xr-x	root/root	opt/viv_samples/es20/
+drwxr-xr-x	root/root	opt/viv_samples/es20/vv_launcher/
+-rw-r--r--	root/root	opt/viv_samples/es20/vv_launcher/cover_flow.sh
+-rwxr-xr-x	root/root	opt/viv_samples/es20/vv_launcher/vv_launcher
+drwxr-xr-x	root/root	opt/viv_samples/hal/
+-rwxr-xr-x	root/root	opt/viv_samples/hal/clear
+drwxr-xr-x	root/root	opt/viv_samples/hal/images/
+-rw-r--r--	root/root	opt/viv_samples/hal/images/105.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/130.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/131.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/150.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/162.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/200.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/Background.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/Buttons.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/frame00.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/frame01.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/frame02.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/frame03.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/frame04.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/frame05.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/frame06.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/frame07.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/frame08.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/frame09.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/pip00.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/pip01.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/pip02.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/pip03.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/pip04.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/pip05.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/pip06.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/pip07.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/pip08.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/images/pip09.bmp
+-rwxr-xr-x	root/root	opt/viv_samples/hal/tvui
+drwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/320_240_A1R5G5B5_VIRTUAL.ini
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/320_240_A4R4G4B4_VIRTUAL.ini
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/320_240_A8R8G8B8_DEFAULT.ini
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/320_240_A8R8G8B8_VIRTUAL.ini
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/320_240_R5G6B5_SYSTEM.ini
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/600_400_B4G4R4A4_DEFAULT.ini
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/640_480_A4B4G4R4_VIRTUAL.ini
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/640_480_A8R8G8B8_DEFAULT.ini
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/640_480_B5G6R5_VIRTUAL.ini
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/640_480_B8G8R8A8_VIRTUAL.ini
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/640_480_R5G5B5A1_VIRTUAL.ini
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/640_480_R8G8B8A8_VIRTUAL.ini
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/galRunTest2
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/galTestCommon.cfg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/galTestCommon.ini
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphablendFilterBlit001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphablendFilterBlit002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphablendFilterBlit003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphablendFilterBlit004.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphablendFilterBlit005.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphablendFilterBlit006.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphablendFilterBlit011.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphablendFilterBlit012.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphablendFilterBlit013.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphablendFilterBlit014.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphablendFilterBlit015.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphablendFilterBlit016.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphablendFilterBlit017.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphablendFilterBlit018.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphaBlending001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphaBlending002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphaBlending003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphaBlending004.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphaBlending005.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphaBlending006.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphaBlending007.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphaBlendingYUV001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAlphaBlendingYUV002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAntiFlicker001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAntiFlicker002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DAntiFlicker003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DBitBlit001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DBitBlit002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DBitBlit003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DBitBlit004.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DBlendFactors_001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DBlendFactors_002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DBlendFactors_003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DBlitFullRotate.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DClear001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DClear002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DClear003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DClear004.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DColorBrush001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DColorBrush002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DColorBrush003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DColorBrush004.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DColorKey.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DColorSource001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DColorSource002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DColorSource003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DColorSource004.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DColorSource005.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DColorSource006.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DColorSource007.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DColorSource008.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DColorSource009.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DDestColorKeyDFBMode.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DDestination001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DDestination002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DDestination003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DDestination004.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DDestination005.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DDestination006.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DDither001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DDither002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFilterBlit001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFilterBlit002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFilterBlit003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFilterBlit004.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFilterBlit005.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFilterBlit006.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFilterBlit007.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFilterBlit008.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFilterBlit009.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFilterBlit010.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFilterBlit011.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFilterBlit012.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFilterRotateDither002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFilterRotateDither.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatA8_001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatA8_002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatA8_003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatA8_004.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatARGB001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatARGB002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatCompressed2D001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatCompressed2D002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatCompressed2D003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatCompressed2D005.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatCompressed2D006.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatCompressed2D007.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatCompressed2D008.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatCompressed2D009.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatCompressed2D010.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatTileStatus001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatTileStatus002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatTileStatus004.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatTileStatus005.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatTiling001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatTiling002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatTiling003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatTiling004.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatTiling005.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatTiling006.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatTiling007.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatTiling008.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatTiling009.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatYUV001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatYUV002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatYUV003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatYUV004.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatYUV005.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatYUV006.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatYUV007.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatYUV008.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatYUV009.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatYUV010.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatYUV011.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatYUV012.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DFormatYUV013.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DGamma001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DGamma002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DLine001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DLine002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DLine003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DLine004.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DLine005.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DLine006.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DLine007.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DLine008.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DLine009.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DLine010.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DLine011.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMaskedBlit.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMaskedSource001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMaskedSource.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMaskedString.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMonoBlit001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMonoBlit002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMonoBlit003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMonoBlit004.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMonochromeBrush001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMonochromeBrush002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMonochromeBrush003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMonochromeBrush004.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMonochromeBrush005.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMonochromeSource001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMonochromeSource002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMonochromeSource003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMonochromeSource004.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMonochromeSource005.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMonochromeSource006.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMonochromeSource007.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMonoSource.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiply001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlit001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlit002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlit010.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlit011.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlit012.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlit013.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlit014.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlit015.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlitRotation101.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlitRotation102.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlitRotation103.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlitRotation104.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlitRotation105.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlitRotation106.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlitRotation107.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlitRotation201.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlitRotation202.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlitRotation203.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlitRotation204.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlitRotation205.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlitRotation206.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DMultiSourceBlitRotation207.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DRotation001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DRotation002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DRotation003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DRotation004.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DRotation005.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DRotation006.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DRotation007.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DRotation008.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DRotation009.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DRotation010.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DRotation011.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DRotation012.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DRotation013.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DRotation014.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DScaleBlit.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DSingleColorBrush001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DSingleColorBrush002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DSingleColorBrush003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DSourceColorKeyDFBMode.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DStretchBlit001.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DStretchBlit002.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DStretchBlit003.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DStretchBlit004.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DStretchBlit005.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DStretchBlit006.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DStretchBlit007.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DStretchBlit008.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DStretchBlit009.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DStretchBlit010.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DStretchBlit011.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DStretchBlit012.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DString.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgal2DYUV2RGB.so
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/libgalUtil.so
+drwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/resource/
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/alphablendDst.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/alphablendSrc.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/android_1440x1280_backgroud.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/android_720x1280_icons.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/android_720x50_titlebar.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/background.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/Boston_640x480_vga.yv12
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/Boston_YV12_640x480_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/chessboard_60x60.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/chessboard.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/Crew_1280x720_720p_1fxNV12.yuv
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/Crew_1280x720_720p_1fxNV16.yuv
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/Crew_1280x720_720p_1fxNV21.yuv
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/Crew_1280x720_720p_1fxNV61.yuv
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/Crew_NV12_1280x720_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/Crew_NV16_1280x720_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/Crew_NV21_1280x720_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/Crew_NV61_1280x720_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/FilterBlit_1920x1920_A8R8G8B8.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/FilterBlit_1920x1920_R5G6B5.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/FilterBlit_YV12_1920x1920_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/FilterEdge.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/font_A8_2048x100.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/Font.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/foreground.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/GoneFishing1.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/GoneFishing2.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/img_texture2_multisupertile.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/img_texture2_multitile.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/img_texture2_supertile.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/index8_A8.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/index8.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/mono2.bmp
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/resource/mono.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/performance_A8R8G8B8.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/rects_640x640_A8R8G8B8.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/rects_A8R8G8B8_640x640_Multi_SuperTileV1.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/rects_A8R8G8B8_640x640_Multi_SuperTileV2.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/rects_A8R8G8B8_640x640_Multi_SuperTileV3.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/rects_A8R8G8B8_640x640_Multi_Tile.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/rects_A8R8G8B8_640x640_SuperTileV1.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/rects_A8R8G8B8_640x640_SuperTileV2.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/rects_A8R8G8B8_640x640_SuperTileV3.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/rects_A8R8G8B8_640x640_Tile.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/relative.bmp
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/resource/rotate.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/scaleBlt.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/smooth_720p.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/smooth.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/smooth.yuy2
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/smooth_YUY2_592X400_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/softkb.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_104x104.yuv420
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_120x120.yuv420
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_136x136.yuv420
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_152x152.yuv420
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_168x168.yuv420
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_184x184.yuv420
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_216x216.yuv420
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_232x232.yuv420
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_264x264.yuv420
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_400x400.yuv420
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_88x88.yuv420
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_YUV420_104x104_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_YUV420_120x120_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_YUV420_136x136_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_YUV420_152x152_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_YUV420_168x168_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_YUV420_184x184_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_YUV420_216x216_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_YUV420_232x232_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_YUV420_264x264_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_YUV420_400x400_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/source_YUV420_88x88_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/SuperTileV1_640x320_X8R8G8B8.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/SuperTileV2_640x320_X8R8G8B8.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/SuperTileV3_640x320_X8R8G8B8.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/Test_1920_1440.i420
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/Test_I420_1920x1440_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/texture2_cc0_A4R4G4B4.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/texture2_cc0_A8R8G8B8.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/texture2_cc0_R5G6B5.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/texture2_cc0_X8R8G8B8.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/texture2_cc1_A4R4G4B4.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/texture2_cc1_A8R8G8B8.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/texture2_cc1_R5G6B5.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/texture2_cc1_X8R8G8B8.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/texture5_cc0_A8R8G8B8.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/texture5_cc0_R5G6B5.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/texture5_cc1_A8R8G8B8.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/texture5_cc1_R5G6B5.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/tux.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/tux_mask.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/VV_Background.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero1920x1080_A8R8G8B8.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero1920x1080_R5G6B5.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero1.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_1920x1080.nv12
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_1920x1080.uyvy
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_A1R5G5B5.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_ARGB4.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_ARGB8.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_B4G4R4X4.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_B5G5R5X1.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_B8G8R8X8.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_NV12_1920x1080_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_R4G4B4X4.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_R5G5B5X1.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_R5G6B5.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_R8G8B8X8.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2.uyvy
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_UYVY_1920x1080_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_UYVY_640X480_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_X1B5G5R5.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_X4B4G4R4.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_X8B8G8R8.bmp
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2.yuv420
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_YUV420_640X480_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2.yuy2
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/resource/zero2_YUY2_640X480_Linear.vimg
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/Runall.bat
+-rw-r--r--	root/root	opt/viv_samples/hal/unit_test/run.bat
+-rwxr-xr-x	root/root	opt/viv_samples/hal/unit_test/runtest.sh
+-rwxr-xr-x	root/root	opt/viv_samples/hal/virtual
+drwxr-xr-x	root/root	opt/viv_samples/tiger/
+-rwxr-xr-x	root/root	opt/viv_samples/tiger/tiger
+drwxr-xr-x	root/root	opt/viv_samples/vdk/
+-rw-r--r--	root/root	opt/viv_samples/vdk/background.tga
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/cover_flow
+-rw-r--r--	root/root	opt/viv_samples/vdk/door.tga
+-rw-r--r--	root/root	opt/viv_samples/vdk/f430_160x120xNV21.yuv
+-rw-r--r--	root/root	opt/viv_samples/vdk/fire.tga
+-rw-r--r--	root/root	opt/viv_samples/vdk/floor.tga
+-rw-r--r--	root/root	opt/viv_samples/vdk/font.tga
+-rw-r--r--	root/root	opt/viv_samples/vdk/image1.pkm
+-rw-r--r--	root/root	opt/viv_samples/vdk/image1.tga
+-rw-r--r--	root/root	opt/viv_samples/vdk/image2.pkm
+-rw-r--r--	root/root	opt/viv_samples/vdk/image2.tga
+-rw-r--r--	root/root	opt/viv_samples/vdk/image3.pkm
+-rw-r--r--	root/root	opt/viv_samples/vdk/image3.tga
+-rw-r--r--	root/root	opt/viv_samples/vdk/image4.pkm
+-rw-r--r--	root/root	opt/viv_samples/vdk/image4.tga
+-rw-r--r--	root/root	opt/viv_samples/vdk/image5.pkm
+-rw-r--r--	root/root	opt/viv_samples/vdk/image5.tga
+-rw-r--r--	root/root	opt/viv_samples/vdk/image6.pkm
+-rw-r--r--	root/root	opt/viv_samples/vdk/image6.tga
+-rw-r--r--	root/root	opt/viv_samples/vdk/image7.pkm
+-rw-r--r--	root/root	opt/viv_samples/vdk/image7.tga
+-rw-r--r--	root/root	opt/viv_samples/vdk/image8.pkm
+-rw-r--r--	root/root	opt/viv_samples/vdk/image8.tga
+-rw-r--r--	root/root	opt/viv_samples/vdk/image9.pkm
+-rw-r--r--	root/root	opt/viv_samples/vdk/image9.tga
+-rw-r--r--	root/root	opt/viv_samples/vdk/knot.gsd
+-rw-r--r--	root/root	opt/viv_samples/vdk/plane.gsd
+-rw-r--r--	root/root	opt/viv_samples/vdk/ps_es20t1.frag
+-rw-r--r--	root/root	opt/viv_samples/vdk/ps_es20t2.frag
+-rw-r--r--	root/root	opt/viv_samples/vdk/ps_es20t3_bgrnd.frag
+-rw-r--r--	root/root	opt/viv_samples/vdk/ps_es20t3_glass.frag
+-rw-r--r--	root/root	opt/viv_samples/vdk/ps_es20t4_bgrnd.frag
+-rw-r--r--	root/root	opt/viv_samples/vdk/ps_es20t4_glass.frag
+-rw-r--r--	root/root	opt/viv_samples/vdk/ps_es20t5.frag
+-rw-r--r--	root/root	opt/viv_samples/vdk/ps_es20t6.frag
+-rw-r--r--	root/root	opt/viv_samples/vdk/ps_es20t7a.frag
+-rw-r--r--	root/root	opt/viv_samples/vdk/ps_es20t7b.frag
+drwxr-xr-x	root/root	opt/viv_samples/vdk/samples_es20/
+-rw-r--r--	root/root	opt/viv_samples/vdk/samples_es20/BackBack.frag
+-rw-r--r--	root/root	opt/viv_samples/vdk/samples_es20/BackBack.vert
+-rw-r--r--	root/root	opt/viv_samples/vdk/samples_es20/BackFront.frag
+-rw-r--r--	root/root	opt/viv_samples/vdk/samples_es20/BackFront.vert
+-rw-r--r--	root/root	opt/viv_samples/vdk/samples_es20/Blend.frag
+-rw-r--r--	root/root	opt/viv_samples/vdk/samples_es20/Blend.vert
+-rw-r--r--	root/root	opt/viv_samples/vdk/samples_es20/Env.frag
+-rw-r--r--	root/root	opt/viv_samples/vdk/samples_es20/Env.vert
+-rw-r--r--	root/root	opt/viv_samples/vdk/samples_es20/FrontBack.frag
+-rw-r--r--	root/root	opt/viv_samples/vdk/samples_es20/FrontBack.vert
+-rw-r--r--	root/root	opt/viv_samples/vdk/samples_es20/FrontFront.frag
+-rw-r--r--	root/root	opt/viv_samples/vdk/samples_es20/FrontFront.vert
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/samples_es20/Hex_MIPMAP_LEVEL_0.bmp
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/samples_es20/Mars_NEGATIVE_X_MIPMAP_LEVEL_0.bmp
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/samples_es20/Mars_NEGATIVE_Y_MIPMAP_LEVEL_0.bmp
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/samples_es20/Mars_NEGATIVE_Z_MIPMAP_LEVEL_0.bmp
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/samples_es20/Mars_POSITIVE_X_MIPMAP_LEVEL_0.bmp
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/samples_es20/Mars_POSITIVE_Y_MIPMAP_LEVEL_0.bmp
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/samples_es20/Mars_POSITIVE_Z_MIPMAP_LEVEL_0.bmp
+-rw-r--r--	root/root	opt/viv_samples/vdk/samples_es20/sphere_position.txt
+-rw-r--r--	root/root	opt/viv_samples/vdk/samples_es20/sphere_triangles.txt
+-rw-r--r--	root/root	opt/viv_samples/vdk/samples_es20/teapot.frag
+-rw-r--r--	root/root	opt/viv_samples/vdk/samples_es20/teapot_position.txt
+-rw-r--r--	root/root	opt/viv_samples/vdk/samples_es20/teapot_texcoord_0.txt
+-rw-r--r--	root/root	opt/viv_samples/vdk/samples_es20/teapot_triangles.txt
+-rw-r--r--	root/root	opt/viv_samples/vdk/samples_es20/teapot.vert
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/samples_es20/vdksample1_es20
+-rw-r--r--	root/root	opt/viv_samples/vdk/scene.gsd
+-rw-r--r--	root/root	opt/viv_samples/vdk/spot.raw
+-rw-r--r--	root/root	opt/viv_samples/vdk/stpeters_cross_mipmap_256.dds
+-rw-r--r--	root/root	opt/viv_samples/vdk/tex1.bmp
+-rw-r--r--	root/root	opt/viv_samples/vdk/tex2.bmp
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/tutorial1
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/tutorial1_es20
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/tutorial2
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/tutorial2_es20
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/tutorial3
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/tutorial3_es20
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/tutorial4
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/tutorial4_es20
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/tutorial5
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/tutorial5_es20
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/tutorial6
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/tutorial6_es20
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/tutorial7
+-rwxr-xr-x	root/root	opt/viv_samples/vdk/tutorial7_es20
+-rw-r--r--	root/root	opt/viv_samples/vdk/vs_es20t1.vert
+-rw-r--r--	root/root	opt/viv_samples/vdk/vs_es20t2.vert
+-rw-r--r--	root/root	opt/viv_samples/vdk/vs_es20t3.vert
+-rw-r--r--	root/root	opt/viv_samples/vdk/vs_es20t4.vert
+-rw-r--r--	root/root	opt/viv_samples/vdk/vs_es20t5.vert
+-rw-r--r--	root/root	opt/viv_samples/vdk/vs_es20t6.vert
+-rw-r--r--	root/root	opt/viv_samples/vdk/vs_es20t7a.vert
+-rw-r--r--	root/root	opt/viv_samples/vdk/vs_es20t7b.vert
 drwxr-xr-x	root/root	proc/
 drwxr-xr-x	root/root	root/
 drwxr-xr-x	root/root	run/
@@ -3076,13 +3576,16 @@ lrwxrwxrwx	root/root	usr/bin/geqn -> eqn
 -rwxr-xr-x	root/root	usr/bin/glib-genmarshal
 -rwxr-xr-x	root/root	usr/bin/glib-gettextize
 -rwxr-xr-x	root/root	usr/bin/glib-mkenums
+-rwxr-xr-x	root/root	usr/bin/glilypond
 -rwxr-xr-x	root/root	usr/bin/gnutls-cli
 -rwxr-xr-x	root/root	usr/bin/gnutls-cli-debug
 -rwxr-xr-x	root/root	usr/bin/gnutls-serv
 -rwxr-xr-x	root/root	usr/bin/gobject-query
 -rwxr-xr-x	root/root	usr/bin/gpasswd
+-rwxr-xr-x	root/root	usr/bin/gperl
 -rwxr-xr-x	root/root	usr/bin/gpg-error
 -rwxr-xr-x	root/root	usr/bin/gpg-error-config
+-rwxr-xr-x	root/root	usr/bin/gpinyin
 -rwxr-xr-x	root/root	usr/bin/grap2graph
 -rwxr-xr-x	root/root	usr/bin/grep
 -rwxr-xr-x	root/root	usr/bin/gresource
@@ -3508,6 +4011,11 @@ drwxr-xr-x	root/root	usr/lib/dbus-1.0/
 drwxr-xr-x	root/root	usr/lib/dbus-1.0/include/
 drwxr-xr-x	root/root	usr/lib/dbus-1.0/include/dbus/
 -rw-r--r--	root/root	usr/lib/dbus-1.0/include/dbus/dbus-arch-deps.h
+drwxr-xr-x	root/root	usr/lib/directfb-1.6-0/
+drwxr-xr-x	root/root	usr/lib/directfb-1.6-0/gfxdrivers/
+-rwxr-xr-x	root/root	usr/lib/directfb-1.6-0/gfxdrivers/libdirectfb_gal.so
+drwxr-xr-x	root/root	usr/lib/dri/
+-rwxr-xr-x	root/root	usr/lib/dri/vivante_dri.so
 drwxr-xr-x	root/root	usr/lib/engines/
 -r-xr-xr-x	root/root	usr/lib/engines/lib4758cca.so
 -r-xr-xr-x	root/root	usr/lib/engines/libaep.so
@@ -3809,12 +4317,23 @@ drwxr-xr-x	root/root	usr/lib/glib-2.0/
 drwxr-xr-x	root/root	usr/lib/glib-2.0/include/
 -rw-r--r--	root/root	usr/lib/glib-2.0/include/glibconfig.h
 drwxr-xr-x	root/root	usr/lib/groff/
+drwxr-xr-x	root/root	usr/lib/groff/glilypond/
+-rwxr-xr-x	root/root	usr/lib/groff/glilypond/args.pl
+-rwxr-xr-x	root/root	usr/lib/groff/glilypond/oop_fh.pl
+-rwxr-xr-x	root/root	usr/lib/groff/glilypond/subs.pl
+drwxr-xr-x	root/root	usr/lib/groff/gpinyin/
+-rwxr-xr-x	root/root	usr/lib/groff/gpinyin/subs.pl
 drwxr-xr-x	root/root	usr/lib/groff/groffer/
--rwxr-xr-x	root/root	usr/lib/groff/groffer/func.pl
+-rwxr-xr-x	root/root	usr/lib/groff/groffer/main_subs.pl
 -rwxr-xr-x	root/root	usr/lib/groff/groffer/man.pl
--rwxr-xr-x	root/root	usr/lib/groff/groffer/perl_test.pl
 -rwxr-xr-x	root/root	usr/lib/groff/groffer/split_env.sh
+-rwxr-xr-x	root/root	usr/lib/groff/groffer/subs.pl
 -rw-r--r--	root/root	usr/lib/groff/groffer/version.sh
+-rwxr-xr-x	root/root	usr/lib/groff/groff_opts_no_arg.txt
+-rwxr-xr-x	root/root	usr/lib/groff/groff_opts_with_arg.txt
+drwxr-xr-x	root/root	usr/lib/groff/grog/
+-rwxr-xr-x	root/root	usr/lib/groff/grog/subs.pl
+drwxr-xr-x	root/root	usr/lib/groff/refer/
 drwxr-xr-x	root/root	usr/lib/groff/site-tmac/
 drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstaccurip.so
@@ -3986,15 +4505,23 @@ lrwxrwxrwx	root/root	usr/lib/libcap.so -> libcap.so.2
 lrwxrwxrwx	root/root	usr/lib/libcheck.so.0 -> libcheck.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libcheck.so -> libcheck.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libcidn.so -> ../../lib/libcidn.so.1
+-rwxr-xr-x	root/root	usr/lib/libCLC.so
 -r-xr-xr-x	root/root	usr/lib/libcrypto.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libcrypto.so -> libcrypto.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libcrypt.so -> ../../lib/libcrypt.so.1
 -rw-r--r--	root/root	usr/lib/libc.so
 lrwxrwxrwx	root/root	usr/lib/libcurses.so -> libncurses.so.5.9
--rwxr-xr-x	root/root	usr/lib/libdbus-1.so.3.8.7
-lrwxrwxrwx	root/root	usr/lib/libdbus-1.so.3 -> libdbus-1.so.3.8.7
-lrwxrwxrwx	root/root	usr/lib/libdbus-1.so -> libdbus-1.so.3.8.7
+-rwxr-xr-x	root/root	usr/lib/libdbus-1.so.3.8.10
+lrwxrwxrwx	root/root	usr/lib/libdbus-1.so.3 -> libdbus-1.so.3.8.10
+lrwxrwxrwx	root/root	usr/lib/libdbus-1.so -> libdbus-1.so.3.8.10
 lrwxrwxrwx	root/root	usr/lib/libdl.so -> ../../lib/libdl.so.2
+-rwxr-xr-x	root/root	usr/lib/libEGL-dfb.so
+-rwxr-xr-x	root/root	usr/lib/libEGL.so.1.0
+lrwxrwxrwx	root/root	usr/lib/libEGL.so.1 -> libEGL.so.1.0
+lrwxrwxrwx	root/root	usr/lib/libEGL.so.2.0.0 -> libGLESv2.so
+lrwxrwxrwx	root/root	usr/lib/libEGL.so.2 -> libGLESv2.so
+lrwxrwxrwx	root/root	usr/lib/libEGL.so -> libEGL.so.1.0
+-rwxr-xr-x	root/root	usr/lib/libEGL-wl.so
 -rwxr-xr-x	root/root	usr/lib/libexpat.so.1.6.0
 lrwxrwxrwx	root/root	usr/lib/libexpat.so.1 -> libexpat.so.1.6.0
 lrwxrwxrwx	root/root	usr/lib/libexpat.so -> libexpat.so.1.6.0
@@ -4004,13 +4531,13 @@ lrwxrwxrwx	root/root	usr/lib/libfaac.so -> libfaac.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libfaad.so.2.0.0
 lrwxrwxrwx	root/root	usr/lib/libfaad.so.2 -> libfaad.so.2.0.0
 lrwxrwxrwx	root/root	usr/lib/libfaad.so -> libfaad.so.2.0.0
-drwxr-xr-x	root/root	usr/lib/libffi-3.1/
-drwxr-xr-x	root/root	usr/lib/libffi-3.1/include/
--rw-r--r--	root/root	usr/lib/libffi-3.1/include/ffi.h
--rw-r--r--	root/root	usr/lib/libffi-3.1/include/ffitarget.h
--rwxr-xr-x	root/root	usr/lib/libffi.so.6.0.2
-lrwxrwxrwx	root/root	usr/lib/libffi.so.6 -> libffi.so.6.0.2
-lrwxrwxrwx	root/root	usr/lib/libffi.so -> libffi.so.6.0.2
+drwxr-xr-x	root/root	usr/lib/libffi-3.2.1/
+drwxr-xr-x	root/root	usr/lib/libffi-3.2.1/include/
+-rw-r--r--	root/root	usr/lib/libffi-3.2.1/include/ffi.h
+-rw-r--r--	root/root	usr/lib/libffi-3.2.1/include/ffitarget.h
+-rwxr-xr-x	root/root	usr/lib/libffi.so.6.0.4
+lrwxrwxrwx	root/root	usr/lib/libffi.so.6 -> libffi.so.6.0.4
+lrwxrwxrwx	root/root	usr/lib/libffi.so -> libffi.so.6.0.4
 -rwxr-xr-x	root/root	usr/lib/libFLAC++.so.6.3.0
 lrwxrwxrwx	root/root	usr/lib/libFLAC++.so.6 -> libFLAC++.so.6.3.0
 -rwxr-xr-x	root/root	usr/lib/libFLAC.so.8.3.0
@@ -4023,24 +4550,47 @@ lrwxrwxrwx	root/root	usr/lib/libform.so -> libform.so.5
 -rwxr-xr-x	root/root	usr/lib/libfslvpuwrap.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/libfslvpuwrap.so.3 -> libfslvpuwrap.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/libfslvpuwrap.so -> libfslvpuwrap.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libGAL-dfb.so
+-rwxr-xr-x	root/root	usr/lib/libGAL.so
+-rwxr-xr-x	root/root	usr/lib/libGAL-wl.so
 -rwxr-xr-x	root/root	usr/lib/libgcrypt.so.20.0.2
 lrwxrwxrwx	root/root	usr/lib/libgcrypt.so.20 -> libgcrypt.so.20.0.2
 lrwxrwxrwx	root/root	usr/lib/libgcrypt.so -> libgcrypt.so.20.0.2
+-rwxr-xr-x	root/root	usr/lib/libgc_wayland_protocol.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libgc_wayland_protocol.so.0 -> libgc_wayland_protocol.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libgc_wayland_protocol.so -> libgc_wayland_protocol.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libgdbm_compat.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libgdbm_compat.so.4 -> libgdbm_compat.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libgdbm_compat.so -> libgdbm_compat.so.4.0.0
 -rwxr-xr-x	root/root	usr/lib/libgdbm.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libgdbm.so.4 -> libgdbm.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libgdbm.so -> libgdbm.so.4.0.0
--rwxr-xr-x	root/root	usr/lib/libgio-2.0.so.0.4200.0
-lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so.0 -> libgio-2.0.so.0.4200.0
-lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so -> libgio-2.0.so.0.4200.0
--rwxr-xr-x	root/root	usr/lib/libglib-2.0.so.0.4200.0
-lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so.0 -> libglib-2.0.so.0.4200.0
-lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so -> libglib-2.0.so.0.4200.0
--rwxr-xr-x	root/root	usr/lib/libgmodule-2.0.so.0.4200.0
-lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so.0 -> libgmodule-2.0.so.0.4200.0
-lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so -> libgmodule-2.0.so.0.4200.0
+-rwxr-xr-x	root/root	usr/lib/libgio-2.0.so.0.4200.1
+lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so.0 -> libgio-2.0.so.0.4200.1
+lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so -> libgio-2.0.so.0.4200.1
+-rwxr-xr-x	root/root	usr/lib/libGLES_CL.so
+-rwxr-xr-x	root/root	usr/lib/libGLES_CM.so
+-rwxr-xr-x	root/root	usr/lib/libGLESv1_CL.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libGLESv1_CL.so.1 -> libGLESv1_CL.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libGLESv1_CL.so -> libGLESv1_CL.so.1.1.0
+-rwxr-xr-x	root/root	usr/lib/libGLESv1_CM.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libGLESv1_CM.so.1 -> libGLESv1_CM.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libGLESv1_CM.so -> libGLESv1_CM.so.1.1.0
+-rwxr-xr-x	root/root	usr/lib/libGLESv2-dfb.so
+-rwxr-xr-x	root/root	usr/lib/libGLESv2.so
+lrwxrwxrwx	root/root	usr/lib/libGLESv2.so.2.0.0 -> libGLESv2-fb.so
+lrwxrwxrwx	root/root	usr/lib/libGLESv2.so.2 -> libGLESv2-fb.so
+-rwxr-xr-x	root/root	usr/lib/libGLESv2-wl.so
+-rwxr-xr-x	root/root	usr/lib/libglib-2.0.so.0.4200.1
+lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so.0 -> libglib-2.0.so.0.4200.1
+lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so -> libglib-2.0.so.0.4200.1
+-rwxr-xr-x	root/root	usr/lib/libGLSLC.so
+-rwxr-xr-x	root/root	usr/lib/libGL.so.1.2
+lrwxrwxrwx	root/root	usr/lib/libGL.so.1 -> libGL.so.1.2
+lrwxrwxrwx	root/root	usr/lib/libGL.so -> libGL.so.1.2
+-rwxr-xr-x	root/root	usr/lib/libgmodule-2.0.so.0.4200.1
+lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so.0 -> libgmodule-2.0.so.0.4200.1
+lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so -> libgmodule-2.0.so.0.4200.1
 -rwxr-xr-x	root/root	usr/lib/libgmp.so.10.2.0
 lrwxrwxrwx	root/root	usr/lib/libgmp.so.10 -> libgmp.so.10.2.0
 lrwxrwxrwx	root/root	usr/lib/libgmp.so -> libgmp.so.10.2.0
@@ -4050,99 +4600,99 @@ lrwxrwxrwx	root/root	usr/lib/libgmpxx.so -> libgmpxx.so.4.4.0
 -rwxr-xr-x	root/root	usr/lib/libgnutls-openssl.so.27.0.2
 lrwxrwxrwx	root/root	usr/lib/libgnutls-openssl.so.27 -> libgnutls-openssl.so.27.0.2
 lrwxrwxrwx	root/root	usr/lib/libgnutls-openssl.so -> libgnutls-openssl.so.27.0.2
--rwxr-xr-x	root/root	usr/lib/libgnutls.so.28.30.11
-lrwxrwxrwx	root/root	usr/lib/libgnutls.so.28 -> libgnutls.so.28.30.11
-lrwxrwxrwx	root/root	usr/lib/libgnutls.so -> libgnutls.so.28.30.11
+-rwxr-xr-x	root/root	usr/lib/libgnutls.so.28.30.12
+lrwxrwxrwx	root/root	usr/lib/libgnutls.so.28 -> libgnutls.so.28.30.12
+lrwxrwxrwx	root/root	usr/lib/libgnutls.so -> libgnutls.so.28.30.12
 -rwxr-xr-x	root/root	usr/lib/libgnutls-xssl.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libgnutls-xssl.so.0 -> libgnutls-xssl.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libgnutls-xssl.so -> libgnutls-xssl.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libgnutlsxx.so.28.1.0
 lrwxrwxrwx	root/root	usr/lib/libgnutlsxx.so.28 -> libgnutlsxx.so.28.1.0
 lrwxrwxrwx	root/root	usr/lib/libgnutlsxx.so -> libgnutlsxx.so.28.1.0
--rwxr-xr-x	root/root	usr/lib/libgobject-2.0.so.0.4200.0
-lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so.0 -> libgobject-2.0.so.0.4200.0
-lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so -> libgobject-2.0.so.0.4200.0
--rwxr-xr-x	root/root	usr/lib/libgpg-error.so.0.13.0
-lrwxrwxrwx	root/root	usr/lib/libgpg-error.so.0 -> libgpg-error.so.0.13.0
-lrwxrwxrwx	root/root	usr/lib/libgpg-error.so -> libgpg-error.so.0.13.0
--rwxr-xr-x	root/root	usr/lib/libgstallocators-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstallocators-1.0.so.0 -> libgstallocators-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstallocators-1.0.so -> libgstallocators-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstapp-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstapp-1.0.so.0 -> libgstapp-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstapp-1.0.so -> libgstapp-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstaudio-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstaudio-1.0.so.0 -> libgstaudio-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstaudio-1.0.so -> libgstaudio-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstbadbase-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstbadbase-1.0.so.0 -> libgstbadbase-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstbadbase-1.0.so -> libgstbadbase-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstbadvideo-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstbadvideo-1.0.so.0 -> libgstbadvideo-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstbadvideo-1.0.so -> libgstbadvideo-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstbase-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstbase-1.0.so.0 -> libgstbase-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstbase-1.0.so -> libgstbase-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so.0 -> libgstbasecamerabinsrc-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so -> libgstbasecamerabinsrc-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstcheck-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstcheck-1.0.so.0 -> libgstcheck-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstcheck-1.0.so -> libgstcheck-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstcodecparsers-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstcodecparsers-1.0.so.0 -> libgstcodecparsers-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstcodecparsers-1.0.so -> libgstcodecparsers-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstcontroller-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstcontroller-1.0.so.0 -> libgstcontroller-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstcontroller-1.0.so -> libgstcontroller-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstfft-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstfft-1.0.so.0 -> libgstfft-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstfft-1.0.so -> libgstfft-1.0.so.0.404.0
+-rwxr-xr-x	root/root	usr/lib/libgobject-2.0.so.0.4200.1
+lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so.0 -> libgobject-2.0.so.0.4200.1
+lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so -> libgobject-2.0.so.0.4200.1
+-rwxr-xr-x	root/root	usr/lib/libgpg-error.so.0.14.0
+lrwxrwxrwx	root/root	usr/lib/libgpg-error.so.0 -> libgpg-error.so.0.14.0
+lrwxrwxrwx	root/root	usr/lib/libgpg-error.so -> libgpg-error.so.0.14.0
+-rwxr-xr-x	root/root	usr/lib/libgstallocators-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstallocators-1.0.so.0 -> libgstallocators-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstallocators-1.0.so -> libgstallocators-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstapp-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstapp-1.0.so.0 -> libgstapp-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstapp-1.0.so -> libgstapp-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstaudio-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstaudio-1.0.so.0 -> libgstaudio-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstaudio-1.0.so -> libgstaudio-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstbadbase-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadbase-1.0.so.0 -> libgstbadbase-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadbase-1.0.so -> libgstbadbase-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstbadvideo-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadvideo-1.0.so.0 -> libgstbadvideo-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadvideo-1.0.so -> libgstbadvideo-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstbase-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstbase-1.0.so.0 -> libgstbase-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstbase-1.0.so -> libgstbase-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so.0 -> libgstbasecamerabinsrc-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so -> libgstbasecamerabinsrc-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstcheck-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstcheck-1.0.so.0 -> libgstcheck-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstcheck-1.0.so -> libgstcheck-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstcodecparsers-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstcodecparsers-1.0.so.0 -> libgstcodecparsers-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstcodecparsers-1.0.so -> libgstcodecparsers-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstcontroller-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstcontroller-1.0.so.0 -> libgstcontroller-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstcontroller-1.0.so -> libgstcontroller-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstfft-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstfft-1.0.so.0 -> libgstfft-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstfft-1.0.so -> libgstfft-1.0.so.0.405.0
 -rwxr-xr-x	root/root	usr/lib/libgstimxcommon.so.0.9.9
 lrwxrwxrwx	root/root	usr/lib/libgstimxcommon.so.0 -> libgstimxcommon.so.0.9.9
 lrwxrwxrwx	root/root	usr/lib/libgstimxcommon.so -> libgstimxcommon.so.0.9.9
--rwxr-xr-x	root/root	usr/lib/libgstinsertbin-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstinsertbin-1.0.so.0 -> libgstinsertbin-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstinsertbin-1.0.so -> libgstinsertbin-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstmpegts-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstmpegts-1.0.so.0 -> libgstmpegts-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstmpegts-1.0.so -> libgstmpegts-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstnet-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstnet-1.0.so.0 -> libgstnet-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstnet-1.0.so -> libgstnet-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstpbutils-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstpbutils-1.0.so.0 -> libgstpbutils-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstpbutils-1.0.so -> libgstpbutils-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstphotography-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstphotography-1.0.so.0 -> libgstphotography-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstphotography-1.0.so -> libgstphotography-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstreamer-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstreamer-1.0.so.0 -> libgstreamer-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstreamer-1.0.so -> libgstreamer-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstriff-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstriff-1.0.so.0 -> libgstriff-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstriff-1.0.so -> libgstriff-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstrtp-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstrtp-1.0.so.0 -> libgstrtp-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstrtp-1.0.so -> libgstrtp-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstrtsp-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstrtsp-1.0.so.0 -> libgstrtsp-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstrtsp-1.0.so -> libgstrtsp-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstsdp-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstsdp-1.0.so.0 -> libgstsdp-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstsdp-1.0.so -> libgstsdp-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgsttag-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgsttag-1.0.so.0 -> libgsttag-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgsttag-1.0.so -> libgsttag-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgsturidownloader-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgsturidownloader-1.0.so.0 -> libgsturidownloader-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgsturidownloader-1.0.so -> libgsturidownloader-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgstvideo-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstvideo-1.0.so.0 -> libgstvideo-1.0.so.0.404.0
-lrwxrwxrwx	root/root	usr/lib/libgstvideo-1.0.so -> libgstvideo-1.0.so.0.404.0
--rwxr-xr-x	root/root	usr/lib/libgthread-2.0.so.0.4200.0
-lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so.0 -> libgthread-2.0.so.0.4200.0
-lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so -> libgthread-2.0.so.0.4200.0
+-rwxr-xr-x	root/root	usr/lib/libgstinsertbin-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstinsertbin-1.0.so.0 -> libgstinsertbin-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstinsertbin-1.0.so -> libgstinsertbin-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstmpegts-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstmpegts-1.0.so.0 -> libgstmpegts-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstmpegts-1.0.so -> libgstmpegts-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstnet-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstnet-1.0.so.0 -> libgstnet-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstnet-1.0.so -> libgstnet-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstpbutils-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstpbutils-1.0.so.0 -> libgstpbutils-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstpbutils-1.0.so -> libgstpbutils-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstphotography-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstphotography-1.0.so.0 -> libgstphotography-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstphotography-1.0.so -> libgstphotography-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstreamer-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstreamer-1.0.so.0 -> libgstreamer-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstreamer-1.0.so -> libgstreamer-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstriff-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstriff-1.0.so.0 -> libgstriff-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstriff-1.0.so -> libgstriff-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstrtp-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstrtp-1.0.so.0 -> libgstrtp-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstrtp-1.0.so -> libgstrtp-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstrtsp-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstrtsp-1.0.so.0 -> libgstrtsp-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstrtsp-1.0.so -> libgstrtsp-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstsdp-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstsdp-1.0.so.0 -> libgstsdp-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstsdp-1.0.so -> libgstsdp-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgsttag-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgsttag-1.0.so.0 -> libgsttag-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgsttag-1.0.so -> libgsttag-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgsturidownloader-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgsturidownloader-1.0.so.0 -> libgsturidownloader-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgsturidownloader-1.0.so -> libgsturidownloader-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgstvideo-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstvideo-1.0.so.0 -> libgstvideo-1.0.so.0.405.0
+lrwxrwxrwx	root/root	usr/lib/libgstvideo-1.0.so -> libgstvideo-1.0.so.0.405.0
+-rwxr-xr-x	root/root	usr/lib/libgthread-2.0.so.0.4200.1
+lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so.0 -> libgthread-2.0.so.0.4200.1
+lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so -> libgthread-2.0.so.0.4200.1
 -rwxr-xr-x	root/root	usr/lib/libgudev-1.0.so.0.2.0
 lrwxrwxrwx	root/root	usr/lib/libgudev-1.0.so.0 -> libgudev-1.0.so.0.2.0
 lrwxrwxrwx	root/root	usr/lib/libgudev-1.0.so -> libgudev-1.0.so.0.2.0
@@ -4170,12 +4720,12 @@ lrwxrwxrwx	root/root	usr/lib/libiptc.so -> libiptc.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libjpeg.so.9.1.0
 lrwxrwxrwx	root/root	usr/lib/libjpeg.so.9 -> libjpeg.so.9.1.0
 lrwxrwxrwx	root/root	usr/lib/libjpeg.so -> libjpeg.so.9.1.0
--rwxr-xr-x	root/root	usr/lib/libkmod.so.2.2.8
-lrwxrwxrwx	root/root	usr/lib/libkmod.so.2 -> libkmod.so.2.2.8
-lrwxrwxrwx	root/root	usr/lib/libkmod.so -> libkmod.so.2.2.8
--rwxr-xr-x	root/root	usr/lib/liblzma.so.5.0.7
-lrwxrwxrwx	root/root	usr/lib/liblzma.so.5 -> liblzma.so.5.0.7
-lrwxrwxrwx	root/root	usr/lib/liblzma.so -> liblzma.so.5.0.7
+-rwxr-xr-x	root/root	usr/lib/libkmod.so.2.2.9
+lrwxrwxrwx	root/root	usr/lib/libkmod.so.2 -> libkmod.so.2.2.9
+lrwxrwxrwx	root/root	usr/lib/libkmod.so -> libkmod.so.2.2.9
+-rwxr-xr-x	root/root	usr/lib/liblzma.so.5.2.0
+lrwxrwxrwx	root/root	usr/lib/liblzma.so.5 -> liblzma.so.5.2.0
+lrwxrwxrwx	root/root	usr/lib/liblzma.so -> liblzma.so.5.2.0
 -rwxr-xr-x	root/root	usr/lib/libmenu.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libmenu.so.5 -> libmenu.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libmenu.so -> libmenu.so.5
@@ -4193,13 +4743,13 @@ lrwxrwxrwx	root/root	usr/lib/libncurses.so -> libncurses.so.5
 lrwxrwxrwx	root/root	usr/lib/libnettle.so.4 -> libnettle.so.4.7
 lrwxrwxrwx	root/root	usr/lib/libnettle.so -> libnettle.so.4.7
 drwxr-xr-x	root/root	usr/lib/libnl/
--rwxr-xr-x	root/root	usr/lib/libnl-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-3.so.200 -> libnl-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-3.so -> libnl-3.so.200.19.0
+-rwxr-xr-x	root/root	usr/lib/libnl-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-3.so.200 -> libnl-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-3.so -> libnl-3.so.200.20.0
 drwxr-xr-x	root/root	usr/lib/libnl/cli/
--rwxr-xr-x	root/root	usr/lib/libnl-cli-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-cli-3.so.200 -> libnl-cli-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-cli-3.so -> libnl-cli-3.so.200.19.0
+-rwxr-xr-x	root/root	usr/lib/libnl-cli-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-cli-3.so.200 -> libnl-cli-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-cli-3.so -> libnl-cli-3.so.200.20.0
 drwxr-xr-x	root/root	usr/lib/libnl/cli/cls/
 -rwxr-xr-x	root/root	usr/lib/libnl/cli/cls/basic.so
 -rwxr-xr-x	root/root	usr/lib/libnl/cli/cls/cgroup.so
@@ -4211,18 +4761,18 @@ drwxr-xr-x	root/root	usr/lib/libnl/cli/qdisc/
 -rwxr-xr-x	root/root	usr/lib/libnl/cli/qdisc/ingress.so
 -rwxr-xr-x	root/root	usr/lib/libnl/cli/qdisc/pfifo.so
 -rwxr-xr-x	root/root	usr/lib/libnl/cli/qdisc/plug.so
--rwxr-xr-x	root/root	usr/lib/libnl-genl-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-genl-3.so.200 -> libnl-genl-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-genl-3.so -> libnl-genl-3.so.200.19.0
--rwxr-xr-x	root/root	usr/lib/libnl-idiag-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-idiag-3.so.200 -> libnl-idiag-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-idiag-3.so -> libnl-idiag-3.so.200.19.0
--rwxr-xr-x	root/root	usr/lib/libnl-nf-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-nf-3.so.200 -> libnl-nf-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-nf-3.so -> libnl-nf-3.so.200.19.0
--rwxr-xr-x	root/root	usr/lib/libnl-route-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-route-3.so.200 -> libnl-route-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-route-3.so -> libnl-route-3.so.200.19.0
+-rwxr-xr-x	root/root	usr/lib/libnl-genl-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-genl-3.so.200 -> libnl-genl-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-genl-3.so -> libnl-genl-3.so.200.20.0
+-rwxr-xr-x	root/root	usr/lib/libnl-idiag-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-idiag-3.so.200 -> libnl-idiag-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-idiag-3.so -> libnl-idiag-3.so.200.20.0
+-rwxr-xr-x	root/root	usr/lib/libnl-nf-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-nf-3.so.200 -> libnl-nf-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-nf-3.so -> libnl-nf-3.so.200.20.0
+-rwxr-xr-x	root/root	usr/lib/libnl-route-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-route-3.so.200 -> libnl-route-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-route-3.so -> libnl-route-3.so.200.20.0
 lrwxrwxrwx	root/root	usr/lib/libnsl.so -> ../../lib/libnsl.so.1
 lrwxrwxrwx	root/root	usr/lib/libnss_compat.so -> ../../lib/libnss_compat.so.2
 lrwxrwxrwx	root/root	usr/lib/libnss_db.so -> ../../lib/libnss_db.so.2
@@ -4237,16 +4787,20 @@ lrwxrwxrwx	root/root	usr/lib/libnss_nis.so -> ../../lib/libnss_nis.so.2
 -rwxr-xr-x	root/root	usr/lib/libogg.so.0.8.2
 lrwxrwxrwx	root/root	usr/lib/libogg.so.0 -> libogg.so.0.8.2
 lrwxrwxrwx	root/root	usr/lib/libogg.so -> libogg.so.0.8.2
--rwxr-xr-x	root/root	usr/lib/liborc-0.4.so.0.22.0
-lrwxrwxrwx	root/root	usr/lib/liborc-0.4.so.0 -> liborc-0.4.so.0.22.0
-lrwxrwxrwx	root/root	usr/lib/liborc-0.4.so -> liborc-0.4.so.0.22.0
--rwxr-xr-x	root/root	usr/lib/liborc-test-0.4.so.0.22.0
-lrwxrwxrwx	root/root	usr/lib/liborc-test-0.4.so.0 -> liborc-test-0.4.so.0.22.0
-lrwxrwxrwx	root/root	usr/lib/liborc-test-0.4.so -> liborc-test-0.4.so.0.22.0
+-rwxr-xr-x	root/root	usr/lib/libOpenCL.so
+-rwxr-xr-x	root/root	usr/lib/libOpenVG_355.so
+-rwxr-xr-x	root/root	usr/lib/libOpenVG_3D.so
+-rwxr-xr-x	root/root	usr/lib/libOpenVG.so
+-rwxr-xr-x	root/root	usr/lib/liborc-0.4.so.0.23.0
+lrwxrwxrwx	root/root	usr/lib/liborc-0.4.so.0 -> liborc-0.4.so.0.23.0
+lrwxrwxrwx	root/root	usr/lib/liborc-0.4.so -> liborc-0.4.so.0.23.0
+-rwxr-xr-x	root/root	usr/lib/liborc-test-0.4.so.0.23.0
+lrwxrwxrwx	root/root	usr/lib/liborc-test-0.4.so.0 -> liborc-test-0.4.so.0.23.0
+lrwxrwxrwx	root/root	usr/lib/liborc-test-0.4.so -> liborc-test-0.4.so.0.23.0
 -rwxr-xr-x	root/root	usr/lib/libpanel.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libpanel.so.5 -> libpanel.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libpanel.so -> libpanel.so.5
--rw-r--r--	root/root	usr/lib/libpci.so.3.2.1
+-rw-r--r--	root/root	usr/lib/libpci.so.3.3.0
 -rwxr-xr-x	root/root	usr/lib/libpcre16.so.0.2.4
 lrwxrwxrwx	root/root	usr/lib/libpcre16.so.0 -> libpcre16.so.0.2.4
 lrwxrwxrwx	root/root	usr/lib/libpcre16.so -> libpcre16.so.0.2.4
@@ -4265,9 +4819,9 @@ lrwxrwxrwx	root/root	usr/lib/libpcre.so -> libpcre.so.1.2.4
 -rwxr-xr-x	root/root	usr/lib/libpipeline.so.1.4.0
 lrwxrwxrwx	root/root	usr/lib/libpipeline.so.1 -> libpipeline.so.1.4.0
 lrwxrwxrwx	root/root	usr/lib/libpipeline.so -> libpipeline.so.1.4.0
--rwxr-xr-x	root/root	usr/lib/libpng16.so.16.13.0
-lrwxrwxrwx	root/root	usr/lib/libpng16.so.16 -> libpng16.so.16.13.0
-lrwxrwxrwx	root/root	usr/lib/libpng16.so -> libpng16.so.16.13.0
+-rwxr-xr-x	root/root	usr/lib/libpng16.so.16.15.0
+lrwxrwxrwx	root/root	usr/lib/libpng16.so.16 -> libpng16.so.16.15.0
+lrwxrwxrwx	root/root	usr/lib/libpng16.so -> libpng16.so.16.15.0
 lrwxrwxrwx	root/root	usr/lib/libpng.so -> libpng16.so
 -rwxr-xr-x	root/root	usr/lib/libprocps.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libprocps.so.4 -> libprocps.so.4.0.0
@@ -4318,6 +4872,10 @@ lrwxrwxrwx	root/root	usr/lib/libutil.so -> ../../lib/libutil.so.1
 -rwxr-xr-x	root/root	usr/lib/libuuid.so.1.3.0
 lrwxrwxrwx	root/root	usr/lib/libuuid.so.1 -> libuuid.so.1.3.0
 lrwxrwxrwx	root/root	usr/lib/libuuid.so -> libuuid.so.1.3.0
+-rwxr-xr-x	root/root	usr/lib/libVDK.so
+-rwxr-xr-x	root/root	usr/lib/libVIVANTE-dfb.so
+-rwxr-xr-x	root/root	usr/lib/libVIVANTE.so
+-rwxr-xr-x	root/root	usr/lib/libVIVANTE-wl.so
 -rwxr-xr-x	root/root	usr/lib/libvorbisenc.so.2.0.10
 lrwxrwxrwx	root/root	usr/lib/libvorbisenc.so.2 -> libvorbisenc.so.2.0.10
 lrwxrwxrwx	root/root	usr/lib/libvorbisenc.so -> libvorbisenc.so.2.0.10
@@ -4329,6 +4887,9 @@ lrwxrwxrwx	root/root	usr/lib/libvorbis.so.0 -> libvorbis.so.0.4.7
 lrwxrwxrwx	root/root	usr/lib/libvorbis.so -> libvorbis.so.0.4.7
 -rwxr-xr-x	root/root	usr/lib/libvpu.so.4
 lrwxrwxrwx	root/root	usr/lib/libvpu.so -> libvpu.so.4
+-rwxr-xr-x	root/root	usr/lib/libwayland-viv.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libwayland-viv.so.0 -> libwayland-viv.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libwayland-viv.so -> libwayland-viv.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libwrap.so.0.7.6
 lrwxrwxrwx	root/root	usr/lib/libwrap.so.0 -> libwrap.so.0.7.6
 lrwxrwxrwx	root/root	usr/lib/libwrap.so -> libwrap.so.0.7.6
@@ -4339,10 +4900,10 @@ lrwxrwxrwx	root/root	usr/lib/libxtables.so -> libxtables.so.10.0.0
 lrwxrwxrwx	root/root	usr/lib/libz.so.1 -> libz.so.1.2.8
 lrwxrwxrwx	root/root	usr/lib/libz.so -> libz.so.1.2.8
 drwxr-xr-x	root/root	usr/lib/man-db/
--rwxr-xr-x	root/root	usr/lib/man-db/libman-2.7.0.2.so
--rwxr-xr-x	root/root	usr/lib/man-db/libmandb-2.7.0.2.so
-lrwxrwxrwx	root/root	usr/lib/man-db/libmandb.so -> libmandb-2.7.0.2.so
-lrwxrwxrwx	root/root	usr/lib/man-db/libman.so -> libman-2.7.0.2.so
+-rwxr-xr-x	root/root	usr/lib/man-db/libman-2.7.1.so
+-rwxr-xr-x	root/root	usr/lib/man-db/libmandb-2.7.1.so
+lrwxrwxrwx	root/root	usr/lib/man-db/libmandb.so -> libmandb-2.7.1.so
+lrwxrwxrwx	root/root	usr/lib/man-db/libman.so -> libman-2.7.1.so
 drwxr-xr-x	root/root	usr/lib/man-db/man-db/
 -rwxr-xr-x	root/root	usr/lib/man-db/man-db/globbing
 -rwxr-xr-x	root/root	usr/lib/man-db/man-db/manconv
@@ -4355,11 +4916,15 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/check.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/connman.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/dbus-1.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/egl.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/expat.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/flac.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/flac++.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gc_wayland_protocol.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gio-2.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gio-unix-2.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/glesv1_cm.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/glesv2.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/glib-2.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gmodule-2.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gmodule-export-2.0.pc
@@ -4431,9 +4996,12 @@ lrwxrwxrwx	root/root	usr/lib/pkgconfig/libpng.pc -> libpng16.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/sndfile.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/usbutils.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/uuid.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/vg.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/vorbisenc.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/vorbisfile.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/vorbis.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/wayland-egl.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/wayland-viv.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xtables.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/zlib.pc
 drwxr-xr-x	root/root	usr/lib/rpm/
@@ -4795,7 +5363,6 @@ drwxr-xr-x	root/root	usr/lib/udev/rules.d/
 -rw-r--r--	root/root	usr/lib/udev/rules.d/99-systemd.rules
 -rwxr-xr-x	root/root	usr/lib/udev/scsi_id
 -rwxr-xr-x	root/root	usr/lib/udev/v4l_id
--rw-r--r--	root/root	usr/lib/usb.ids
 drwxr-xr-x	root/root	usr/lib/xtables/
 -rwxr-xr-x	root/root	usr/lib/xtables/libip6t_ah.so
 -rwxr-xr-x	root/root	usr/lib/xtables/libip6t_DNAT.so
@@ -5033,7 +5600,6 @@ lrwxrwxrwx	root/root	usr/sbin/telinit -> init
 -rwsr-xr-x	root/root	usr/sbin/traceroute6
 -rwxr-xr-x	root/root	usr/sbin/try-from
 -rwxr-xr-x	root/root	usr/sbin/update-pciids
--rwxr-xr-x	root/root	usr/sbin/update-usbids.sh
 -rwxr-xr-x	root/root	usr/sbin/useradd
 -rwxr-xr-x	root/root	usr/sbin/userdel
 -rwxr-xr-x	root/root	usr/sbin/usermod
@@ -5367,432 +5933,434 @@ drwxr-xr-x	root/root	usr/share/glib-2.0/gettext/po/
 drwxr-xr-x	root/root	usr/share/glib-2.0/schemas/
 -rw-r--r--	root/root	usr/share/glib-2.0/schemas/gschema.dtd
 drwxr-xr-x	root/root	usr/share/groff/
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/
--rw-r--r--	root/root	usr/share/groff/1.22.2/eign
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/font/
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/font/devascii/
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devascii/B
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devascii/BI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devascii/DESC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devascii/I
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devascii/R
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/font/devdvi/
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/CW
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/CWEC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/CWI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/CWIEC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/CWITC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/CWTC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/DESC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/EX
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/font/devdvi/generate/
--rwxr-xr-x	root/root	usr/share/groff/1.22.2/font/devdvi/generate/CompileFonts
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/generate/ec.map
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/generate/Makefile
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/generate/msam.map
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/generate/msbm.map
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/generate/tc.map
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/generate/texb.map
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/generate/texex.map
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/generate/texi.map
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/generate/texmi.map
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/generate/texr.map
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/generate/texsy.map
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/generate/textex.map
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/generate/textt.map
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/HB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/HBEC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/HBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/HBIEC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/HBITC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/HBTC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/HI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/HIEC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/HITC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/HR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/HREC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/HRTC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/MI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/S
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/SA
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/SB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/SC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/TB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/TBEC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/TBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/TBIEC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/TBITC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/TBTC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/TI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/TIEC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/TITC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/TR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/TREC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devdvi/TRTC
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/font/devhtml/
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devhtml/B
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devhtml/BI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devhtml/CB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devhtml/CBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devhtml/CI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devhtml/CR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devhtml/DESC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devhtml/I
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devhtml/R
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devhtml/S
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/font/devlatin1/
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlatin1/B
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlatin1/BI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlatin1/DESC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlatin1/I
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlatin1/R
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/font/devlbp/
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlbp/CB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlbp/CI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlbp/CR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlbp/DESC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlbp/EB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlbp/EI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlbp/ER
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlbp/HB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlbp/HBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlbp/HI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlbp/HNB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlbp/HNBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlbp/HNI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlbp/HNR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlbp/HR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlbp/TB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlbp/TBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlbp/TI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlbp/TR
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/font/devlj4/
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/AB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/ABI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/AI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/ALBB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/ALBR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/AOB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/AOI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/AOR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/AR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/CB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/CBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/CI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/CLARENDON
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/CORONET
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/CR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/DESC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/GB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/GBI
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/font/devlj4/generate/
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/generate/Makefile
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/generate/special.awk
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/generate/special.map
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/generate/symbol.map
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/generate/text.map
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/generate/wingdings.map
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/GI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/GR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/LGB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/LGI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/LGR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/MARIGOLD
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/OB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/OBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/OI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/OR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/S
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/SYMBOL
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/TB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/TBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/TI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/TNRB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/TNRBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/TNRI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/TNRR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/TR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/UB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/UBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/UCB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/UCBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/UCI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/UCR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/UI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/UR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devlj4/WINGDINGS
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/font/devpdf/
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/AB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/ABI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/AI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/AR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/BMB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/BMBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/BMI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/BMR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/CB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/CBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/CI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/CR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/DESC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/download
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/font/devpdf/enc/
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/enc/text.enc
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/EURO
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/Foundry
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/HB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/HBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/HI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/HNB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/HNBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/HNI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/HNR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/HR
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/font/devpdf/map/
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/map/dingbats.map
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/map/symbolchars
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/map/symbolmap
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/map/textmap
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/NB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/NBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/NI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/NR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/PB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/PBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/PI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/PR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/S
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/TB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/TBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/TI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/TR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-AB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-ABI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-AI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-AR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-BMB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-BMBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-BMI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-BMR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-CB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-CBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-CI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-CR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-HB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-HBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-HI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-HNB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-HNBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-HNI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-HNR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-HR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-NB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-NBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-NI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-NR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-PB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-PBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-PI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-PR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-S
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-TB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-TBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-TI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-TR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-ZCMI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/U-ZD
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/ZCMI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devpdf/ZD
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/font/devps/
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/AB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/ABI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/AI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/AR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/BMB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/BMBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/BMI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/BMR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/CB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/CBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/CI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/CR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/DESC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/download
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/EURO
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/freeeuro.afm
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/freeeuro.pfa
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/font/devps/generate/
--rwxr-xr-x	root/root	usr/share/groff/1.22.2/font/devps/generate/afmname
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/generate/dingbats.map
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/generate/dingbats.rmap
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/generate/lgreekmap
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/generate/Makefile
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/generate/symbolchars
--rwxr-xr-x	root/root	usr/share/groff/1.22.2/font/devps/generate/symbol.sed
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/generate/symbolsl.afm
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/generate/textmap
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/HB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/HBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/HI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/HNB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/HNBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/HNI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/HNR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/HR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/NB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/NBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/NI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/NR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/PB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/PBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/PI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/PR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/prologue
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/S
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/SS
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/symbolsl.pfa
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/TB
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/TBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/text.enc
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/TI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/TR
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/zapfdr.pfa
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/ZCMI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/ZD
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devps/ZDR
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/font/devutf8/
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devutf8/B
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devutf8/BI
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devutf8/DESC
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devutf8/I
--rw-r--r--	root/root	usr/share/groff/1.22.2/font/devutf8/R
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/oldfont/
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/oldfont/devps/
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/CB
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/CBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/CI
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/CR
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/HB
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/HBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/HI
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/HNB
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/HNBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/HNI
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/HNR
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/HR
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/NB
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/NBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/NI
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/NR
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/PB
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/PBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/PI
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/PR
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/S
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/SS
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/symbol.afm
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/symbolsl.afm
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/TB
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/TBI
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/TI
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/TR
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/zapfdr.afm
--rw-r--r--	root/root	usr/share/groff/1.22.2/oldfont/devps/zapfdr.ps
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/pic/
--rw-r--r--	root/root	usr/share/groff/1.22.2/pic/chem.pic
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/tmac/
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/62bit.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/a4.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/andoc.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/an-ext.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/an-old.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/an.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/composite.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/cp1047.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/cs.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/den.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/de.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/devtag.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/doc-old.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/doc.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/dvi.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/ec.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/eqnrc
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/e.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/europs.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/fallbacks.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/fr.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/hdmisc.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/hdtbl.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/html-end.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/html.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/hyphen.cs
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/hyphen.den
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/hyphen.det
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/hyphenex.cs
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/hyphenex.det
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/hyphenex.us
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/hyphen.fr
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/hyphen.sv
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/hyphen.us
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/ja.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/latin1.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/latin2.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/latin5.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/latin9.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/lbp.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/lj4.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/mandoc.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/man.tmac
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/tmac/mdoc/
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/mdoc/doc-common
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/mdoc/doc-ditroff
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/mdoc/doc-nroff
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/mdoc/doc-syms
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/mdoc.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/me.tmac
-drwxr-xr-x	root/root	usr/share/groff/1.22.2/tmac/mm/
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/mm/0.MT
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/mm/4.MT
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/mm/5.MT
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/mm/locale
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/mm/ms.cov
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/mm/se_locale
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/mm/se_ms.cov
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/mmse.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/mm.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/mom.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/mse.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/ms.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/m.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/om.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/papersize.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/pdfmark.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/pdf.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/pic.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/psatk.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/psold.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/pspic.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/ps.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/refer-me.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/refer-mm.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/refer-ms.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/refer.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/safer.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/spdf.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/s.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/sv.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/trace.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/trans.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/troffrc
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/troffrc-end
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/tty-char.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/tty.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/unicode.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/www.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/Xps.tmac
--rw-r--r--	root/root	usr/share/groff/1.22.2/tmac/X.tmac
-lrwxrwxrwx	root/root	usr/share/groff/current -> 1.22.2
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/
+-rw-r--r--	root/root	usr/share/groff/1.22.3/eign
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/font/
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/font/devascii/
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devascii/B
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devascii/BI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devascii/DESC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devascii/I
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devascii/R
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/font/devdvi/
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/CW
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/CWEC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/CWI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/CWIEC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/CWITC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/CWTC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/DESC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/EX
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/font/devdvi/generate/
+-rwxr-xr-x	root/root	usr/share/groff/1.22.3/font/devdvi/generate/CompileFonts
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/generate/ec.map
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/generate/Makefile
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/generate/msam.map
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/generate/msbm.map
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/generate/tc.map
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/generate/texb.map
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/generate/texex.map
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/generate/texi.map
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/generate/texmi.map
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/generate/texr.map
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/generate/texsy.map
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/generate/textex.map
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/generate/textt.map
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/HB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/HBEC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/HBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/HBIEC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/HBITC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/HBTC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/HI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/HIEC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/HITC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/HR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/HREC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/HRTC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/MI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/S
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/SA
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/SB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/SC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/TB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/TBEC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/TBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/TBIEC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/TBITC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/TBTC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/TI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/TIEC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/TITC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/TR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/TREC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devdvi/TRTC
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/font/devhtml/
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devhtml/B
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devhtml/BI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devhtml/CB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devhtml/CBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devhtml/CI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devhtml/CR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devhtml/DESC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devhtml/I
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devhtml/R
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devhtml/S
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/font/devlatin1/
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlatin1/B
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlatin1/BI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlatin1/DESC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlatin1/I
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlatin1/R
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/font/devlbp/
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlbp/CB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlbp/CI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlbp/CR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlbp/DESC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlbp/EB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlbp/EI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlbp/ER
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlbp/HB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlbp/HBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlbp/HI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlbp/HNB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlbp/HNBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlbp/HNI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlbp/HNR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlbp/HR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlbp/TB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlbp/TBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlbp/TI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlbp/TR
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/font/devlj4/
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/AB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/ABI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/AI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/ALBB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/ALBR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/AOB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/AOI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/AOR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/AR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/CB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/CBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/CI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/CLARENDON
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/CORONET
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/CR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/DESC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/GB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/GBI
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/font/devlj4/generate/
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/generate/Makefile
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/generate/special.awk
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/generate/special.map
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/generate/symbol.map
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/generate/text.map
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/generate/wingdings.map
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/GI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/GR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/LGB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/LGI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/LGR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/MARIGOLD
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/OB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/OBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/OI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/OR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/S
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/SYMBOL
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/TB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/TBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/TI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/TNRB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/TNRBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/TNRI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/TNRR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/TR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/UB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/UBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/UCB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/UCBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/UCI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/UCR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/UI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/UR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devlj4/WINGDINGS
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/font/devpdf/
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/AB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/ABI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/AI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/AR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/BMB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/BMBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/BMI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/BMR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/CB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/CBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/CI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/CR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/DESC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/download
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/font/devpdf/enc/
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/enc/text.enc
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/EURO
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/Foundry
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/HB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/HBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/HI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/HNB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/HNBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/HNI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/HNR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/HR
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/font/devpdf/map/
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/map/dingbats.map
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/map/symbolchars
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/map/symbolmap
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/map/textmap
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/NB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/NBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/NI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/NR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/PB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/PBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/PI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/PR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/S
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/TB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/TBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/TI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/TR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-AB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-ABI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-AI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-AR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-BMB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-BMBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-BMI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-BMR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-CB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-CBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-CI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-CR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-HB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-HBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-HI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-HNB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-HNBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-HNI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-HNR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-HR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-NB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-NBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-NI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-NR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-PB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-PBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-PI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-PR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-S
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-TB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-TBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-TI
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/font/devpdf/util/
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/util/BuildFoundries
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-TR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-ZCMI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/U-ZD
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/ZCMI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devpdf/ZD
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/font/devps/
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/AB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/ABI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/AI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/AR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/BMB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/BMBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/BMI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/BMR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/CB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/CBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/CI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/CR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/DESC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/download
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/EURO
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/freeeuro.afm
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/freeeuro.pfa
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/font/devps/generate/
+-rwxr-xr-x	root/root	usr/share/groff/1.22.3/font/devps/generate/afmname
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/generate/dingbats.map
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/generate/dingbats.rmap
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/generate/lgreekmap
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/generate/Makefile
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/generate/symbolchars
+-rwxr-xr-x	root/root	usr/share/groff/1.22.3/font/devps/generate/symbol.sed
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/generate/symbolsl.afm
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/generate/textmap
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/HB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/HBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/HI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/HNB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/HNBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/HNI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/HNR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/HR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/NB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/NBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/NI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/NR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/PB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/PBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/PI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/PR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/prologue
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/S
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/SS
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/symbolsl.pfa
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/TB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/TBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/text.enc
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/TI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/TR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/zapfdr.pfa
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/ZCMI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/ZD
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devps/ZDR
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/font/devutf8/
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devutf8/B
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devutf8/BI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devutf8/DESC
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devutf8/I
+-rw-r--r--	root/root	usr/share/groff/1.22.3/font/devutf8/R
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/oldfont/
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/oldfont/devps/
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/CB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/CBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/CI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/CR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/HB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/HBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/HI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/HNB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/HNBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/HNI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/HNR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/HR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/NB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/NBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/NI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/NR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/PB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/PBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/PI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/PR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/S
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/SS
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/symbol.afm
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/symbolsl.afm
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/TB
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/TBI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/TI
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/TR
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/zapfdr.afm
+-rw-r--r--	root/root	usr/share/groff/1.22.3/oldfont/devps/zapfdr.ps
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/pic/
+-rw-r--r--	root/root	usr/share/groff/1.22.3/pic/chem.pic
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/tmac/
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/62bit.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/a4.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/andoc.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/an-ext.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/an-old.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/an.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/composite.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/cp1047.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/cs.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/den.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/de.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/devtag.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/doc-old.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/doc.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/dvi.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/ec.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/eqnrc
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/e.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/europs.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/fallbacks.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/fr.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/hdmisc.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/hdtbl.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/html-end.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/html.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/hyphen.cs
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/hyphen.den
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/hyphen.det
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/hyphenex.cs
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/hyphenex.det
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/hyphenex.us
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/hyphen.fr
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/hyphen.sv
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/hyphen.us
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/ja.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/latin1.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/latin2.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/latin5.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/latin9.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/lbp.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/lj4.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/mandoc.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/man.tmac
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/tmac/mdoc/
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/mdoc/doc-common
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/mdoc/doc-ditroff
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/mdoc/doc-nroff
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/mdoc/doc-syms
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/mdoc.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/me.tmac
+drwxr-xr-x	root/root	usr/share/groff/1.22.3/tmac/mm/
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/mm/0.MT
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/mm/4.MT
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/mm/5.MT
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/mm/locale
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/mm/ms.cov
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/mm/se_locale
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/mm/se_ms.cov
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/mmse.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/mm.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/mom.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/mse.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/ms.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/m.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/om.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/papersize.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/pdfmark.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/pdf.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/pic.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/psatk.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/psold.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/pspic.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/ps.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/refer-me.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/refer-mm.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/refer-ms.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/refer.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/safer.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/spdf.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/s.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/sv.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/trace.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/trans.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/troffrc
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/troffrc-end
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/tty-char.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/tty.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/unicode.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/www.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/Xps.tmac
+-rw-r--r--	root/root	usr/share/groff/1.22.3/tmac/X.tmac
+lrwxrwxrwx	root/root	usr/share/groff/current -> 1.22.3
 drwxr-xr-x	root/root	usr/share/groff/site-font/
 drwxr-xr-x	root/root	usr/share/groff/site-tmac/
 -rw-r--r--	root/root	usr/share/groff/site-tmac/man.local
@@ -6476,12 +7044,15 @@ lrwxrwxrwx	root/root	usr/share/man/man1/dss1.1ssl -> dgst.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/glib-genmarshal.1
 -rw-r--r--	root/root	usr/share/man/man1/glib-gettextize.1
 -rw-r--r--	root/root	usr/share/man/man1/glib-mkenums.1
+-rw-r--r--	root/root	usr/share/man/man1/glilypond.1
 -rw-r--r--	root/root	usr/share/man/man1/gnutls-cli.1
 -rw-r--r--	root/root	usr/share/man/man1/gnutls-cli-debug.1
 -rw-r--r--	root/root	usr/share/man/man1/gnutls-serv.1
 -rw-r--r--	root/root	usr/share/man/man1/gobject-query.1
 -rw-r--r--	root/root	usr/share/man/man1/gpasswd.1
+-rw-r--r--	root/root	usr/share/man/man1/gperl.1
 -rw-r--r--	root/root	usr/share/man/man1/gpg-error-config.1
+-rw-r--r--	root/root	usr/share/man/man1/gpinyin.1
 -rw-r--r--	root/root	usr/share/man/man1/grap2graph.1
 -rw-r--r--	root/root	usr/share/man/man1/grep.1
 -rw-r--r--	root/root	usr/share/man/man1/gresource.1
@@ -6776,6 +7347,7 @@ lrwxrwxrwx	root/root	usr/share/man/man2/lsetxattr.2.gz -> setxattr.2.gz
 -rw-r--r--	root/root	usr/share/man/man2/removexattr.2.gz
 -rw-r--r--	root/root	usr/share/man/man2/setxattr.2.gz
 drwxr-xr-x	root/root	usr/share/man/man3/
+lrwxrwxrwx	root/root	usr/share/man/man3/.3ssl -> SSL_CTX_use_serverinfo.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/acl_add_perm.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/acl_calc_mask.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/acl_check.3.gz
@@ -6826,6 +7398,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/addnwstr.3ncurses.gz -> addwstr.3ncurses
 lrwxrwxrwx	root/root	usr/share/man/man3/add_wchnstr.3ncurses.gz -> add_wchstr.3ncurses.gz
 -rw-r--r--	root/root	usr/share/man/man3/add_wchstr.3ncurses.gz
 -rw-r--r--	root/root	usr/share/man/man3/addwstr.3ncurses.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_add_oid_module.3ssl -> OPENSSL_load_builtin_modules.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/ASN1_generate_nconf.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_generate_v3.3ssl -> ASN1_generate_nconf.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_OBJECT_free.3ssl -> ASN1_OBJECT_new.3ssl
@@ -6837,9 +7410,11 @@ lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_STRING_free.3ssl -> ASN1_STRING_new
 -rw-r--r--	root/root	usr/share/man/man3/ASN1_STRING_length.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_STRING_length_set.3ssl -> ASN1_STRING_length.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/ASN1_STRING_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_STRING_print.3ssl -> ASN1_STRING_print_ex.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/ASN1_STRING_print_ex.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_STRING_print_ex_fp.3ssl -> ASN1_STRING_print_ex.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_STRING_set.3ssl -> ASN1_STRING_length.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_STRING_to_UTF8.3ssl -> ASN1_STRING_length.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_STRING_type.3ssl -> ASN1_STRING_length.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_STRING_type_new.3ssl -> ASN1_STRING_new.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/assume_default_colors.3ncurses.gz -> default_colors.3ncurses.gz
@@ -6928,10 +7503,13 @@ lrwxrwxrwx	root/root	usr/share/man/man3/BIO_get_write_buf_size.3ssl -> BIO_s_bio
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_get_write_guarantee.3ssl -> BIO_s_bio.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_int_ctrl.3ssl -> BIO_ctrl.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_make_bio_pair.3ssl -> BIO_s_bio.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/BIO_method_type.3ssl -> BIO_find_type.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/BIO_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/BIO_new_accept.3ssl -> BIO_s_accept.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_new_bio_pair.3ssl -> BIO_s_bio.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_new_buffer_ssl_connect.3ssl -> BIO_f_ssl.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/BIO_new_CMS.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/BIO_new_connect.3ssl -> BIO_s_connect.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_new_fd.3ssl -> BIO_s_fd.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_new_file.3ssl -> BIO_s_file.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_new_fp.3ssl -> BIO_s_file.3ssl
@@ -7017,6 +7595,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/BN_BLINDING_invert_ex.3ssl -> BN_BLINDIN
 -rw-r--r--	root/root	usr/share/man/man3/BN_BLINDING_new.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_BLINDING_set_flags.3ssl -> BN_BLINDING_new.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_BLINDING_set_thread_id.3ssl -> BN_BLINDING_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/BN_BLINDING_thread_id.3ssl -> BN_BLINDING_new.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_BLINDING_update.3ssl -> BN_BLINDING_new.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/BN_bn2bin.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_bn2dec.3ssl -> BN_bn2bin.3ssl
@@ -7049,7 +7628,11 @@ lrwxrwxrwx	root/root	usr/share/man/man3/bn_fix_top.3ssl -> bn_internal.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_free.3ssl -> BN_new.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_from_montgomery.3ssl -> BN_mod_mul_montgomery.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_gcd.3ssl -> BN_add.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/BN_GENCB_call.3ssl -> BN_generate_prime.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/BN_GENCB_set.3ssl -> BN_generate_prime.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/BN_GENCB_set_old.3ssl -> BN_generate_prime.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/BN_generate_prime.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/BN_generate_prime_ex.3ssl -> BN_generate_prime.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_get_word.3ssl -> BN_zero.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_hex2bn.3ssl -> BN_bn2bin.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_init.3ssl -> BN_new.3ssl
@@ -7058,7 +7641,9 @@ lrwxrwxrwx	root/root	usr/share/man/man3/BN_is_bit_set.3ssl -> BN_set_bit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_is_odd.3ssl -> BN_cmp.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_is_one.3ssl -> BN_cmp.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_is_prime.3ssl -> BN_generate_prime.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/BN_is_prime_ex.3ssl -> BN_generate_prime.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_is_prime_fasttest.3ssl -> BN_generate_prime.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/BN_is_prime_fasttest_ex.3ssl -> BN_generate_prime.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_is_word.3ssl -> BN_cmp.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_is_zero.3ssl -> BN_cmp.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_lshift1.3ssl -> BN_set_bit.3ssl
@@ -7102,7 +7687,9 @@ lrwxrwxrwx	root/root	usr/share/man/man3/BN_print.3ssl -> BN_bn2bin.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/bn_print.3ssl -> bn_internal.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_print_fp.3ssl -> BN_bn2bin.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_pseudo_rand.3ssl -> BN_rand.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/BN_pseudo_rand_range.3ssl -> BN_rand.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/BN_rand.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/BN_rand_range.3ssl -> BN_rand.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_RECP_CTX_free.3ssl -> BN_mod_mul_reciprocal.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_RECP_CTX_init.3ssl -> BN_mod_mul_reciprocal.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/BN_RECP_CTX_new.3ssl -> BN_mod_mul_reciprocal.3ssl
@@ -7156,6 +7743,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/clrtoeol.3ncurses.gz -> clear.3ncurses.g
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_add0_crl.3ssl -> CMS_add0_cert.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_add0_recipient_key.3ssl -> CMS_add1_recipient_cert.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_add1_cert.3ssl -> CMS_add0_cert.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/CMS_add1_crl.3ssl -> CMS_add0_cert.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_add1_ReceiptRequest.3ssl -> CMS_get1_ReceiptRequest.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/CMS_add1_recipient_cert.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/CMS_add1_signer.3ssl
@@ -7166,6 +7754,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/CMS_add1_ReceiptRequest.3ssl -> CMS_get1
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_get0_eContentType.3ssl -> CMS_get0_type.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/CMS_get0_RecipientInfos.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/CMS_get0_SignerInfos.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/CMS_get0_signers.3ssl -> CMS_verify.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/CMS_get0_type.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_get1_certs.3ssl -> CMS_add0_cert.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_get1_crls.3ssl -> CMS_add0_cert.3ssl
@@ -7173,6 +7762,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/CMS_get1_crls.3ssl -> CMS_add0_cert.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_ReceiptRequest_create0.3ssl -> CMS_get1_ReceiptRequest.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_ReceiptRequest_get0_values.3ssl -> CMS_get1_ReceiptRequest.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_RecipientInfo_decrypt.3ssl -> CMS_get0_RecipientInfos.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/CMS_RecipientInfo_encrypt.3ssl -> CMS_get0_RecipientInfos.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_RecipientInfo_kekri_get0_id.3ssl -> CMS_get0_RecipientInfos.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_RecipientInfo_kekri_id_cmp.3ssl -> CMS_get0_RecipientInfos.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_RecipientInfo_ktri_cert_cmp.3ssl -> CMS_get0_RecipientInfos.3ssl
@@ -7181,9 +7771,10 @@ lrwxrwxrwx	root/root	usr/share/man/man3/CMS_RecipientInfo_set0_key.3ssl -> CMS_g
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_RecipientInfo_set0_pkey.3ssl -> CMS_get0_RecipientInfos.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_RecipientInfo_type.3ssl -> CMS_get0_RecipientInfos.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_set1_eContentType.3ssl -> CMS_get0_type.3ssl
-lrwxrwxrwx	root/root	usr/share/man/man3/CMS_set1_signer_certs.3ssl -> CMS_get0_SignerInfos.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/CMS_set1_signer_cert.3ssl -> CMS_get0_SignerInfos.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/CMS_sign.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_SignerInfo_cert_cmp.3ssl -> CMS_get0_SignerInfos.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/CMS_SignerInfo_get0_signature.3ssl -> CMS_get0_SignerInfos.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_SignerInfo_get0_signer_id.3ssl -> CMS_get0_SignerInfos.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_SignerInfo_sign.3ssl -> CMS_add1_signer.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/CMS_sign_receipt.3ssl
@@ -7231,13 +7822,17 @@ lrwxrwxrwx	root/root	usr/share/man/man3/curses_version.3ncurses.gz -> extensions
 lrwxrwxrwx	root/root	usr/share/man/man3/curs_set.3ncurses.gz -> kernel.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/curs_set_sp.3ncurses.gz -> sp_funcs.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/cur_term.3ncurses.gz -> terminfo_variables.3ncurses.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/d2i_509_CRL_fp.3ssl -> d2i_X509_CRL.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/d2i_ASN1_OBJECT.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/d2i_DHparams.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/d2i_DSAparams.3ssl -> d2i_DSAPublicKey.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_DSAPrivateKey.3ssl -> d2i_DSAPublicKey.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_DSA_PUBKEY.3ssl -> d2i_DSAPublicKey.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/d2i_DSAPublicKey.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_DSA_SIG.3ssl -> d2i_DSAPublicKey.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/d2i_ECDSA_SIG.3ssl -> ecdsa.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/d2i_ECPKParameters.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/d2i_ECPKParameters_bio.3ssl -> d2i_ECPKParameters.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/d2i_ECPKParameters_fp.3ssl -> d2i_ECPKParameters.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_Netscape_RSA.3ssl -> d2i_RSAPublicKey.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/d2i_PKCS8PrivateKey.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_PKCS8PrivateKey_bio.3ssl -> d2i_PKCS8PrivateKey.3ssl
@@ -7251,6 +7846,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/d2i_RSA_PUBKEY.3ssl -> d2i_RSAPublicKey.
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_X509_bio.3ssl -> d2i_X509.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/d2i_X509_CRL.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_X509_CRL_bio.3ssl -> d2i_X509_CRL.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/d2i_X509_CRL_fp.3ssl -> d2i_X509_CRL.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_X509_fp.3ssl -> d2i_X509.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/d2i_X509_NAME.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/d2i_X509_REQ.3ssl
@@ -7320,6 +7916,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/DH_compute_key.3ssl -> DH_generate_key.3
 lrwxrwxrwx	root/root	usr/share/man/man3/DH_free.3ssl -> DH_new.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/DH_generate_key.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/DH_generate_parameters.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/DH_generate_parameters_ex.3ssl -> DH_generate_parameters.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/DH_get_default_method.3ssl -> DH_set_method.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/DH_get_ex_data.3ssl -> DH_get_ex_new_index.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/DH_get_ex_new_index.3ssl
@@ -7343,6 +7940,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/DSA_do_verify.3ssl -> DSA_do_sign.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/DSA_free.3ssl -> DSA_new.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/DSA_generate_key.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/DSA_generate_parameters.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/DSA_generate_parameters_ex.3ssl -> DSA_generate_parameters.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/DSA_get_default_method.3ssl -> DSA_set_method.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/DSA_get_ex_data.3ssl -> DSA_get_ex_new_index.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/DSA_get_ex_new_index.3ssl
@@ -7365,14 +7963,129 @@ lrwxrwxrwx	root/root	usr/share/man/man3/DSA_verify.3ssl -> DSA_sign.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/dup_field.3form.gz -> field_new.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/dupwin.3ncurses.gz -> window.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/dynamic_field_info.3form.gz -> field_info.3form.gz
+-rw-r--r--	root/root	usr/share/man/man3/ec.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/ecdsa.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/ECDSA_do_sign.3ssl -> ecdsa.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/ECDSA_do_sign_ex.3ssl -> ecdsa.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/ECDSA_do_verify.3ssl -> ecdsa.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/ECDSA_SIG_free.3ssl -> ecdsa.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/ECDSA_sign.3ssl -> ecdsa.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/ECDSA_SIG_new.3ssl -> ecdsa.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/ECDSA_sign_ex.3ssl -> ecdsa.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/ECDSA_sign_setup.3ssl -> ecdsa.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/ECDSA_size.3ssl -> ecdsa.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/ECDSA_verify.3ssl -> ecdsa.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_get_builtin_curves.3ssl -> EC_GROUP_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GF2m_simple_method.3ssl -> EC_GFp_simple_method.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GFp_mont_method.3ssl -> EC_GFp_simple_method.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GFp_nist_method.3ssl -> EC_GFp_simple_method.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GFp_nistp224_method.3ssl -> EC_GFp_simple_method.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GFp_nistp256_method.3ssl -> EC_GFp_simple_method.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GFp_nistp521_method.3ssl -> EC_GFp_simple_method.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/EC_GFp_simple_method.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_check.3ssl -> EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_check_discriminant.3ssl -> EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_clear_free.3ssl -> EC_GROUP_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_cmp.3ssl -> EC_GROUP_copy.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_dup.3ssl -> EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_free.3ssl -> EC_GROUP_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_get0_generator.3ssl -> EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_get0_seed.3ssl -> EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_get_asn1_flag.3ssl -> EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_get_basis_type.3ssl -> EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_get_cofactor.3ssl -> EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_get_curve_GF2m.3ssl -> EC_GROUP_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_get_curve_GFp.3ssl -> EC_GROUP_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_get_curve_name.3ssl -> EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_get_degree.3ssl -> EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_get_order.3ssl -> EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_get_pentanomial_basis.3ssl -> EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_get_point_conversion_form.3ssl -> EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_get_seed_len.3ssl -> EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_get_trinomial_basis.3ssl -> EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_have_precompute_mult.3ssl -> EC_POINT_add.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_method_of.3ssl -> EC_GROUP_copy.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/EC_GROUP_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_new_by_curve_name.3ssl -> EC_GROUP_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_new_curve_GF2m.3ssl -> EC_GROUP_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_new_curve_GFp.3ssl -> EC_GROUP_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_precompute_mult.3ssl -> EC_POINT_add.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_set_asn1_flag.3ssl -> EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_set_curve_GF2m.3ssl -> EC_GROUP_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_set_curve_GFp.3ssl -> EC_GROUP_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_set_curve_name.3ssl -> EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_set_generator.3ssl -> EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_set_point_conversion_form.3ssl -> EC_GROUP_copy.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_GROUP_set_seed.3ssl -> EC_GROUP_copy.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/echo.3ncurses.gz -> inopts.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/echochar.3ncurses.gz -> addch.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/echo_sp.3ncurses.gz -> sp_funcs.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/echo_wchar.3ncurses.gz -> add_wch.3ncurses.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_check_key.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_clear_flags.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_copy.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_dup.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_free.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_generate_key.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_get0_group.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_get0_private_key.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_get0_public_key.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_get_conv_form.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_get_enc_flags.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_get_flags.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_get_key_method_data.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_insert_key_method_data.3ssl -> EC_KEY_new.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_new_by_curve_name.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_precompute_mult.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_set_asn1_flag.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_set_conv_form.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_set_enc_flags.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_set_flags.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_set_group.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_set_private_key.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_set_public_key.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_set_public_key_affine_coordinates.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_KEY_up_ref.3ssl -> EC_KEY_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_METHOD_get_field_type.3ssl -> EC_GFp_simple_method.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/ECPKParameters_print.3ssl -> d2i_ECPKParameters.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/ECPKParameters_print_fp.3ssl -> d2i_ECPKParameters.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/EC_POINT_add.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_bn2point.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_clear_free.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_cmp.3ssl -> EC_POINT_add.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_copy.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_dbl.3ssl -> EC_POINT_add.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_dup.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_free.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_get_affine_coordinates_GF2m.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_get_affine_coordinates_GFp.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_get_Jprojective_coordinates_GFp.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_hex2point.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_invert.3ssl -> EC_POINT_add.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_is_at_infinity.3ssl -> EC_POINT_add.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_is_on_curve.3ssl -> EC_POINT_add.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_make_affine.3ssl -> EC_POINT_add.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_method_of.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_mul.3ssl -> EC_POINT_add.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_oct2point.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_point2bn.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_point2hex.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_point2oct.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_set_affine_coordinates_GF2m.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_set_affine_coordinates_GFp.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_set_compressed_coordinates_GF2m.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_set_compressed_coordinates_GFp.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_set_Jprojective_coordinates.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINT_set_to_infinity.3ssl -> EC_POINT_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINTs_make_affine.3ssl -> EC_POINT_add.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EC_POINTs_mul.3ssl -> EC_POINT_add.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/endwin.3ncurses.gz -> initscr.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/endwin_sp.3ncurses.gz -> sp_funcs.3ncurses.gz
 -rw-r--r--	root/root	usr/share/man/man3/engine.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/ENGINE_add_conf_module.3ssl -> OPENSSL_load_builtin_modules.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/erase.3ncurses.gz -> clear.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/erasechar.3ncurses.gz -> termattrs.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/erasechar_sp.3ncurses.gz -> sp_funcs.3ncurses.gz
@@ -7408,10 +8121,25 @@ lrwxrwxrwx	root/root	usr/share/man/man3/ERR_print_errors_fp.3ssl -> ERR_print_er
 -rw-r--r--	root/root	usr/share/man/man3/ERR_put_error.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/ERR_reason_error_string.3ssl -> ERR_error_string.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/ERR_remove_state.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/ERR_remove_thread_state.3ssl -> ERR_remove_state.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/ERR_set_mark.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/ESCDELAY.3ncurses.gz -> curses_variables.3ncurses.gz
 -rw-r--r--	root/root	usr/share/man/man3/evp.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_aes_128_ccm.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_aes_128_gcm.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_aes_192_ccm.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_aes_192_gcm.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_aes_256_ccm.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_aes_256_gcm.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_bf_cbc.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_bf_cfb.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_bf_ecb.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_bf_ofb.3ssl -> EVP_EncryptInit.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/EVP_BytesToKey.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_cast5_cbc.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_cast5_cfb.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_cast5_ecb.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_cast5_ofb.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_asn1_to_param.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_block_size.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_CTX_block_size.3ssl -> EVP_EncryptInit.3ssl
@@ -7441,11 +8169,26 @@ lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_nid.3ssl -> EVP_EncryptInit.3
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_param_to_asn1.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_type.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CipherUpdate.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_cleanup.3ssl -> OpenSSL_add_all_algorithms.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_DecryptFinal.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_DecryptFinal_ex.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_DecryptInit.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_DecryptInit_ex.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_DecryptUpdate.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_des_cbc.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_des_cfb.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_des_ecb.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_des_ede3.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_des_ede3_cbc.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_des_ede3_cfb.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_des_ede3_ofb.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_des_ede.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_des_ede_cbc.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_des_ede_cfb.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_des_ede_ofb.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_des_ofb.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_desx_cbc.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_DigestFinal.3ssl -> EVP_DigestInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_DigestFinal_ex.3ssl -> EVP_DigestInit.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/EVP_DigestInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_DigestInit_ex.3ssl -> EVP_DigestInit.3ssl
@@ -7458,6 +8201,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/EVP_DigestVerifyFinal.3ssl -> EVP_Digest
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_DigestVerifyUpdate.3ssl -> EVP_DigestVerifyInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_dss1.3ssl -> EVP_DigestInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_dss.3ssl -> EVP_DigestInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_enc_null.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_EncryptFinal.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_EncryptFinal_ex.3ssl -> EVP_EncryptInit.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/EVP_EncryptInit.3ssl
@@ -7469,6 +8213,10 @@ lrwxrwxrwx	root/root	usr/share/man/man3/EVP_get_cipherbyobj.3ssl -> EVP_EncryptI
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_get_digestbyname.3ssl -> EVP_DigestInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_get_digestbynid.3ssl -> EVP_DigestInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_get_digestbyobj.3ssl -> EVP_DigestInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_idea_cbc.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_idea_cfb.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_idea_ecb.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_idea_ofb.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_MAX_MD_SIZE.3ssl -> EVP_DigestInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_md2.3ssl -> EVP_DigestInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_md5.3ssl -> EVP_DigestInit.3ssl
@@ -7499,9 +8247,8 @@ lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_assign_RSA.3ssl -> EVP_PKEY_set
 -rw-r--r--	root/root	usr/share/man/man3/EVP_PKEY_cmp.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_cmp_parameters.3ssl -> EVP_PKEY_cmp.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_copy_parameters.3ssl -> EVP_PKEY_cmp.3ssl
-lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_ctrl.3ssl -> EVP_PKEY_CTX_ctrl.3ssl
-lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_ctrl_str.3ssl -> EVP_PKEY_CTX_ctrl.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/EVP_PKEY_CTX_ctrl.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_CTX_ctrl_str.3ssl -> EVP_PKEY_CTX_ctrl.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_CTX_dup.3ssl -> EVP_PKEY_CTX_new.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_CTX_free.3ssl -> EVP_PKEY_CTX_new.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_CTX_get_app_data.3ssl -> EVP_PKEY_keygen.3ssl
@@ -7510,6 +8257,15 @@ lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_CTX_get_keygen_info.3ssl -> EVP
 -rw-r--r--	root/root	usr/share/man/man3/EVP_PKEY_CTX_new.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_CTX_new_id.3ssl -> EVP_PKEY_CTX_new.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_CTX_set_cb.3ssl -> EVP_PKEY_keygen.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_CTX_set_dh_paramgen_generator.3ssl -> EVP_PKEY_CTX_ctrl.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_CTX_set_dh_paramgen_prime_len.3ssl -> EVP_PKEY_CTX_ctrl.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_CTX_set_dsa_paramgen_bits.3ssl -> EVP_PKEY_CTX_ctrl.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_CTX_set_ec_paramgen_curve_nid.3ssl -> EVP_PKEY_CTX_ctrl.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_CTX_set_rsa_keygen_pubexp.3ssl -> EVP_PKEY_CTX_ctrl.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_CTX_set_rsa_padding.3ssl -> EVP_PKEY_CTX_ctrl.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_CTX_set_rsa_pss_saltlen.3ssl -> EVP_PKEY_CTX_ctrl.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_CTX_set_rsa_rsa_keygen_bits.3ssl -> EVP_PKEY_CTX_ctrl.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_CTX_set_signature_md.3ssl -> EVP_PKEY_CTX_ctrl.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/EVP_PKEY_decrypt.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_decrypt_init.3ssl -> EVP_PKEY_decrypt.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/EVP_PKEY_derive.3ssl
@@ -7544,6 +8300,18 @@ lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_type.3ssl -> EVP_PKEY_set1_RSA.
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_verify_init.3ssl -> EVP_PKEY_verify.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/EVP_PKEY_verify_recover.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_PKEY_verify_recover_init.3ssl -> EVP_PKEY_verify_recover.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc2_40_cbc.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc2_64_cbc.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc2_cbc.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc2_cfb.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc2_ecb.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc2_ofb.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc4.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc4_40.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc5_32_12_16_cbc.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc5_32_12_16_cfb.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc5_32_12_16_ecb.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc5_32_12_16_ofb.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_ripemd160.3ssl -> EVP_DigestInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SealFinal.3ssl -> EVP_SealInit.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/EVP_SealInit.3ssl
@@ -8545,8 +9313,11 @@ lrwxrwxrwx	root/root	usr/share/man/man3/hline_set.3ncurses.gz -> border_set.3ncu
 -rw-r--r--	root/root	usr/share/man/man3/hmac.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/HMAC.3ssl -> hmac.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/HMAC_cleanup.3ssl -> hmac.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/HMAC_CTX_cleanup.3ssl -> hmac.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/HMAC_CTX_init.3ssl -> hmac.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/HMAC_Final.3ssl -> hmac.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/HMAC_Init.3ssl -> hmac.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/HMAC_Init_ex.3ssl -> hmac.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/HMAC_Update.3ssl -> hmac.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/hook.3form.gz
 -rw-r--r--	root/root	usr/share/man/man3/hook.3menu.gz
@@ -8555,10 +9326,15 @@ lrwxrwxrwx	root/root	usr/share/man/man3/hosts_ctl.3.gz -> hosts_access.3.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_ASN1_OBJECT.3ssl -> d2i_ASN1_OBJECT.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/i2d_CMS_bio_stream.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_DHparams.3ssl -> d2i_DHparams.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/i2d_DSAparams.3ssl -> d2i_DSAPublicKey.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_DSAPrivateKey.3ssl -> d2i_DSAPublicKey.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_DSA_PUBKEY.3ssl -> d2i_DSAPublicKey.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_DSAPublicKey.3ssl -> d2i_DSAPublicKey.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_DSA_SIG.3ssl -> d2i_DSAPublicKey.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/i2d_ECDSA_SIG.3ssl -> ecdsa.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/i2d_ECPKParameters.3ssl -> d2i_ECPKParameters.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/i2d_ECPKParameters_bio.3ssl -> d2i_ECPKParameters.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/i2d_ECPKParameters_fp(fp.3ssl -> d2i_ECPKParameters.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_Netscape_RSA.3ssl -> d2i_RSAPublicKey.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/i2d_PKCS7_bio_stream.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_PKCS8PrivateKey_bio.3ssl -> d2i_PKCS8PrivateKey.3ssl
@@ -8912,6 +9688,9 @@ lrwxrwxrwx	root/root	usr/share/man/man3/OpenSSL_add_ssl_algorithms.3ssl -> SSL_l
 -rw-r--r--	root/root	usr/share/man/man3/OPENSSL_Applink.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/OPENSSL_config.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/OPENSSL_ia32cap.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/OPENSSL_ia32cap_loc.3ssl -> OPENSSL_ia32cap.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/OPENSSL_instrument_bus2.3ssl -> OPENSSL_instrument_bus.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/OPENSSL_instrument_bus.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/OPENSSL_load_builtin_modules.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/OPENSSL_no_config.3ssl -> OPENSSL_config.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/OPENSSL_VERSION_NUMBER.3ssl
@@ -9111,6 +9890,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_X509_REQ_NEW.3ssl -> pem.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/PKCS12_parse.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/PKCS7_decrypt.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/PKCS7_encrypt.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/PKCS7_get0_signers.3ssl -> PKCS7_verify.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/PKCS7_sign.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/PKCS7_sign_add_signer.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/PKCS7_verify.3ssl
@@ -9134,11 +9914,13 @@ lrwxrwxrwx	root/root	usr/share/man/man3/qiflush_sp.3ncurses.gz -> sp_funcs.3ncur
 -rw-r--r--	root/root	usr/share/man/man3/RAND_bytes.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/RAND_cleanup.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/RAND_egd.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/RAND_egd_bytes.3ssl -> RAND_egd.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/RAND_event.3ssl -> RAND_add.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/RAND_file_name.3ssl -> RAND_load_file.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/RAND_get_rand_method.3ssl -> RAND_set_rand_method.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/RAND_load_file.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/RAND_pseudo_bytes.3ssl -> RAND_bytes.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/RAND_query_egd_bytes.3ssl -> RAND_egd.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/RAND_screen.3ssl -> RAND_add.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/RAND_seed.3ssl -> RAND_add.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/RAND_set_rand_method.3ssl
@@ -9190,6 +9972,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/RSA_blinding_off.3ssl -> RSA_blinding_on
 lrwxrwxrwx	root/root	usr/share/man/man3/RSA_flags.3ssl -> RSA_set_method.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/RSA_free.3ssl -> RSA_new.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/RSA_generate_key.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/RSA_generate_key_ex.3ssl -> RSA_generate_key.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/RSA_get_default_method.3ssl -> RSA_set_method.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/RSA_get_ex_data.3ssl -> RSA_get_ex_new_index.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/RSA_get_ex_new_index.3ssl
@@ -9442,12 +10225,15 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SP.3ncurses.gz -> terminfo_variables.3nc
 -rw-r--r--	root/root	usr/share/man/man3/ssl.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL.3ssl -> ssl.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_accept.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_add0_chain_cert.3ssl -> SSL_CTX_add1_chain_cert.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_add1_chain_cert.3ssl -> SSL_CTX_add1_chain_cert.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_add_client_CA.3ssl -> SSL_CTX_set_client_CA_list.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_add_session.3ssl -> SSL_CTX_add_session.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_alert_desc_string.3ssl -> SSL_alert_type_string.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_alert_desc_string_long.3ssl -> SSL_alert_type_string.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_alert_type_string.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_alert_type_string_long.3ssl -> SSL_alert_type_string.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_build_cert_chain.3ssl -> SSL_CTX_add1_chain_cert.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_callback_ctrl.3ssl -> SSL_CTX_ctrl.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_check_private_key.3ssl -> SSL_CTX_use_certificate.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CIPHER_description.3ssl -> SSL_CIPHER_get_name.3ssl
@@ -9455,19 +10241,36 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CIPHER_get_bits.3ssl -> SSL_CIPHER_g
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CIPHER_get_name.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CIPHER_get_version.3ssl -> SSL_CIPHER_get_name.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_clear.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_clear_chain_certs.3ssl -> SSL_CTX_add1_chain_cert.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_clear_options.3ssl -> SSL_CTX_set_options.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_COMP_add_compression_method.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/SSL_CONF_cmd.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/SSL_CONF_cmd_argv.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CONF_CTX_clear_flags.3ssl -> SSL_CONF_CTX_set_flags.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CONF_CTX_free.3ssl -> SSL_CONF_CTX_new.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/SSL_CONF_CTX_new.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/SSL_CONF_CTX_set1_prefix.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/SSL_CONF_CTX_set_flags.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CONF_CTX_set_ssl.3ssl -> SSL_CONF_CTX_set_ssl_ctx.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/SSL_CONF_CTX_set_ssl_ctx.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_connect.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_ctrl.3ssl -> SSL_CTX_ctrl.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_add0_chain_cert.3ssl -> SSL_CTX_add1_chain_cert.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_add1_chain_cert.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_add_client_CA.3ssl -> SSL_CTX_set_client_CA_list.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_add_client_custom_ext.3ssl -> SSL_CTX_set_custom_cli_ext.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_add_extra_chain_cert.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_add_server_custom_ext.3ssl -> SSL_CTX_set_custom_cli_ext.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_add_session.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_build_cert_chain.3ssl -> SSL_CTX_add1_chain_cert.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_callback_ctrl.3ssl -> SSL_CTX_ctrl.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_check_private_key.3ssl -> SSL_CTX_use_certificate.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_clear_chain_certs.3ssl -> SSL_CTX_add1_chain_cert.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_clear_options.3ssl -> SSL_CTX_set_options.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_ctrl.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_flush_sessions.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_free.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_get0_chain_certs.3ssl -> SSL_CTX_add1_chain_cert.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_get_cert_store.3ssl -> SSL_CTX_set_cert_store.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_get_client_CA_list.3ssl -> SSL_get_client_CA_list.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_get_client_cert_cb.3ssl -> SSL_CTX_set_client_cert_cb.3ssl
@@ -9487,6 +10290,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_get_verify_depth.3ssl -> SSL_CTX
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_need_tmp_rsa.3ssl -> SSL_CTX_set_tmp_rsa_callback.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_new.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_remove_session.3ssl -> SSL_CTX_add_session.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_select_current_cert.3ssl -> SSL_CTX_add1_chain_cert.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_sess_accept.3ssl -> SSL_CTX_sess_number.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_sess_accept_good.3ssl -> SSL_CTX_sess_number.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_sess_accept_renegotiate.3ssl -> SSL_CTX_sess_number.3ssl
@@ -9508,13 +10312,25 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_sess_misses.3ssl -> SSL_CTX_sess
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_sess_set_new_cb.3ssl -> SSL_CTX_sess_set_get_cb.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_sess_set_remove_cb.3ssl -> SSL_CTX_sess_set_get_cb.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_sess_timeouts.3ssl -> SSL_CTX_sess_number.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set0_chain.3ssl -> SSL_CTX_add1_chain_cert.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set0_chain_cert_store.3ssl -> SSL_CTX_set1_verify_cert_store.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set0_verify_cert_store.3ssl -> SSL_CTX_set1_verify_cert_store.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set1_chain.3ssl -> SSL_CTX_add1_chain_cert.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set1_chain_cert_store.3ssl -> SSL_CTX_set1_verify_cert_store.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set1_curves.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set1_curves_list.3ssl -> SSL_CTX_set1_curves.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set1_verify_cert_store.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_cert_cb.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_cert_store.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_cert_verify_callback.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_cipher_list.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_client_CA_list.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_client_cert_cb.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set_current_cert.3ssl -> SSL_CTX_add1_chain_cert.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_custom_cli_ext.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_default_passwd_cb.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set_default_passwd_cb_userdata.3ssl -> SSL_CTX_set_default_passwd_cb.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set_ecdh_auto.3ssl -> SSL_CTX_set1_curves.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set_ex_data.3ssl -> SSL_CTX_get_ex_new_index.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_generate_session_id.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_info_callback.3ssl
@@ -9548,12 +10364,15 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_use_PrivateKey_file.3ssl -> SSL_
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_use_RSAPrivateKey.3ssl -> SSL_CTX_use_certificate.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_use_RSAPrivateKey_ASN1.3ssl -> SSL_CTX_use_certificate.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_use_RSAPrivateKey_file.3ssl -> SSL_CTX_use_certificate.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_use_serverinfo.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_do_handshake.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSLeay.3ssl -> OPENSSL_VERSION_NUMBER.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSLeay_add_ssl_algorithms.3ssl -> SSL_library_init.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSLeay_version.3ssl -> OPENSSL_VERSION_NUMBER.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_flush_sessions.3ssl -> SSL_CTX_flush_sessions.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_free.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get0_chain_certs.3ssl -> SSL_CTX_add1_chain_cert.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get1_curves.3ssl -> SSL_CTX_set1_curves.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get_accept_state.3ssl -> SSL_set_connect_state.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get_cipher.3ssl -> SSL_get_current_cipher.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get_cipher_bits.3ssl -> SSL_get_current_cipher.3ssl
@@ -9582,6 +10401,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get_quiet_shutdown.3ssl -> SSL_CTX_s
 -rw-r--r--	root/root	usr/share/man/man3/SSL_get_rbio.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get_secure_renegotiation_support.3ssl -> SSL_CTX_set_options.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_get_session.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get_shared_curve.3ssl -> SSL_CTX_set1_curves.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get_shutdown.3ssl -> SSL_set_shutdown.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_get_SSL_CTX.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get_ssl_method.3ssl -> SSL_CTX_set_ssl_version.3ssl
@@ -9601,6 +10421,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_need_tmp_rsa.3ssl -> SSL_CTX_set_tmp
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_remove_session.3ssl -> SSL_CTX_add_session.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_rstate_string.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_rstate_string_long.3ssl -> SSL_rstate_string.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_select_current_cert.3ssl -> SSL_CTX_add1_chain_cert.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_SESSION_free.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_SESSION_get_ex_data.3ssl -> SSL_SESSION_get_ex_new_index.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_SESSION_get_ex_new_index.3ssl
@@ -9610,10 +10431,21 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_SESSION_get_timeout.3ssl -> SSL_SESS
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_SESSION_set_ex_data.3ssl -> SSL_SESSION_get_ex_new_index.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_SESSION_set_time.3ssl -> SSL_SESSION_get_time.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_SESSION_set_timeout.3ssl -> SSL_SESSION_get_time.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set0_chain.3ssl -> SSL_CTX_add1_chain_cert.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set0_chain_cert_store.3ssl -> SSL_CTX_set1_verify_cert_store.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set0_verify_cert_store.3ssl -> SSL_CTX_set1_verify_cert_store.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set1_chain.3ssl -> SSL_CTX_add1_chain_cert.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set1_chain_cert_store.3ssl -> SSL_CTX_set1_verify_cert_store.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set1_curves.3ssl -> SSL_CTX_set1_curves.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set1_curves_list.3ssl -> SSL_CTX_set1_curves.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set1_verify_cert_store.3ssl -> SSL_CTX_set1_verify_cert_store.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_set_bio.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set_cert_cb.3ssl -> SSL_CTX_set_cert_cb.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set_cipher_list.3ssl -> SSL_CTX_set_cipher_list.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set_client_CA_list.3ssl -> SSL_CTX_set_client_CA_list.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_set_connect_state.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set_current_cert.3ssl -> SSL_CTX_add1_chain_cert.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set_ecdh_auto.3ssl -> SSL_CTX_set1_curves.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set_ex_data.3ssl -> SSL_get_ex_new_index.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_set_fd.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set_generate_session_id.3ssl -> SSL_CTX_set_generate_session_id.3ssl
@@ -9890,7 +10722,12 @@ lrwxrwxrwx	root/root	usr/share/man/man3/wunctrl.3ncurses.gz -> util.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/wunctrl_sp.3ncurses.gz -> sp_funcs.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/wvline.3ncurses.gz -> border.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/wvline_set.3ncurses.gz -> border_set.3ncurses.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/x).3ssl -> d2i_ECPKParameters.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/x509.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/X509_check_email.3ssl -> X509_check_host.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/X509_check_host.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/X509_check_ip.3ssl -> X509_check_host.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/X509_check_ip_asc.3ssl -> X509_check_host.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/X509_free.3ssl -> X509_new.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/X509_NAME_add_entry.3ssl -> X509_NAME_add_entry_by_txt.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/X509_NAME_add_entry_by_NID.3ssl -> X509_NAME_add_entry_by_txt.3ssl
@@ -9940,12 +10777,19 @@ lrwxrwxrwx	root/root	usr/share/man/man3/X509_STORE_set_verify_cb.3ssl -> X509_ST
 -rw-r--r--	root/root	usr/share/man/man3/X509_verify_cert.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/X509_verify_cert_error_string.3ssl -> X509_STORE_CTX_get_error.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/X509_VERIFY_PARAM_add0_policy.3ssl -> X509_VERIFY_PARAM_set_flags.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/X509_VERIFY_PARAM_add1_host.3ssl -> X509_VERIFY_PARAM_set_flags.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/X509_VERIFY_PARAM_clear_flags.3ssl -> X509_VERIFY_PARAM_set_flags.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/X509_VERIFY_PARAM_get0_peername.3ssl -> X509_VERIFY_PARAM_set_flags.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/X509_VERIFY_PARAM_get_depth.3ssl -> X509_VERIFY_PARAM_set_flags.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/X509_VERIFY_PARAM_get_flags.3ssl -> X509_VERIFY_PARAM_set_flags.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/X509_VERIFY_PARAM_set1_email.3ssl -> X509_VERIFY_PARAM_set_flags.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/X509_VERIFY_PARAM_set1_host.3ssl -> X509_VERIFY_PARAM_set_flags.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/X509_VERIFY_PARAM_set1_ip.3ssl -> X509_VERIFY_PARAM_set_flags.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/X509_VERIFY_PARAM_set1_ip_asc.3ssl -> X509_VERIFY_PARAM_set_flags.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/X509_VERIFY_PARAM_set1_policies.3ssl -> X509_VERIFY_PARAM_set_flags.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/X509_VERIFY_PARAM_set_depth.3ssl -> X509_VERIFY_PARAM_set_flags.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/X509_VERIFY_PARAM_set_flags.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/X509_VERIFY_PARAM_set_hostflags.3ssl -> X509_VERIFY_PARAM_set_flags.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/X509_VERIFY_PARAM_set_purpose.3ssl -> X509_VERIFY_PARAM_set_flags.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/X509_VERIFY_PARAM_set_time.3ssl -> X509_VERIFY_PARAM_set_flags.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/X509_VERIFY_PARAM_set_trust.3ssl -> X509_VERIFY_PARAM_set_flags.3ssl
@@ -10064,6 +10908,7 @@ drwxr-xr-x	root/root	usr/share/man/man7/
 -rw-r--r--	root/root	usr/share/man/man7/groff.7
 -rw-r--r--	root/root	usr/share/man/man7/groff_char.7
 -rw-r--r--	root/root	usr/share/man/man7/groff_diff.7
+-rw-r--r--	root/root	usr/share/man/man7/groff_filenames.7
 -rw-r--r--	root/root	usr/share/man/man7/groff_hdtbl.7
 -rw-r--r--	root/root	usr/share/man/man7/groff_man.7
 -rw-r--r--	root/root	usr/share/man/man7/groff_mdoc.7
@@ -10138,6 +10983,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/kbdrate.8
 -rw-r--r--	root/root	usr/share/man/man8/kernel-install.8
 -rw-r--r--	root/root	usr/share/man/man8/killall5.8
+-rw-r--r--	root/root	usr/share/man/man8/kmod.8
 -rw-r--r--	root/root	usr/share/man/man8/lastlog.8
 -rw-r--r--	root/root	usr/share/man/man8/ldattach.8
 -rw-r--r--	root/root	usr/share/man/man8/linux32.8

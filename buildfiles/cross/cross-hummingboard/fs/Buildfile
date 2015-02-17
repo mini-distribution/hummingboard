@@ -18,7 +18,8 @@ depends=(core
          gst-plugins-good
          gst-plugins-bad
          gst-plugins-ugly
-         gstreamer-imx)
+         gstreamer-imx
+         gpu-viv-bin-mx6q)
 
 build() {
    # Copy fully populated sysroot

@@ -85,7 +85,12 @@ drwxr-xr-x	root/root	usr/include/libnl3/netlink/route/link/
 -rw-r--r--	root/root	usr/include/libnl3/netlink/route/link.h
 -rw-r--r--	root/root	usr/include/libnl3/netlink/route/link/inet.h
 -rw-r--r--	root/root	usr/include/libnl3/netlink/route/link/info-api.h
+-rw-r--r--	root/root	usr/include/libnl3/netlink/route/link/ip6tnl.h
+-rw-r--r--	root/root	usr/include/libnl3/netlink/route/link/ipgre.h
+-rw-r--r--	root/root	usr/include/libnl3/netlink/route/link/ipip.h
+-rw-r--r--	root/root	usr/include/libnl3/netlink/route/link/ipvti.h
 -rw-r--r--	root/root	usr/include/libnl3/netlink/route/link/macvlan.h
+-rw-r--r--	root/root	usr/include/libnl3/netlink/route/link/sit.h
 -rw-r--r--	root/root	usr/include/libnl3/netlink/route/link/veth.h
 -rw-r--r--	root/root	usr/include/libnl3/netlink/route/link/vlan.h
 -rw-r--r--	root/root	usr/include/libnl3/netlink/route/link/vxlan.h
@@ -118,14 +123,14 @@ drwxr-xr-x	root/root	usr/include/libnl3/netlink/route/qdisc/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/libnl/
 -rwxr-xr-x	root/root	usr/lib/libnl-3.la
--rwxr-xr-x	root/root	usr/lib/libnl-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-3.so.200 -> libnl-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-3.so -> libnl-3.so.200.19.0
+-rwxr-xr-x	root/root	usr/lib/libnl-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-3.so.200 -> libnl-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-3.so -> libnl-3.so.200.20.0
 drwxr-xr-x	root/root	usr/lib/libnl/cli/
 -rwxr-xr-x	root/root	usr/lib/libnl-cli-3.la
--rwxr-xr-x	root/root	usr/lib/libnl-cli-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-cli-3.so.200 -> libnl-cli-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-cli-3.so -> libnl-cli-3.so.200.19.0
+-rwxr-xr-x	root/root	usr/lib/libnl-cli-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-cli-3.so.200 -> libnl-cli-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-cli-3.so -> libnl-cli-3.so.200.20.0
 drwxr-xr-x	root/root	usr/lib/libnl/cli/cls/
 -rwxr-xr-x	root/root	usr/lib/libnl/cli/cls/basic.la
 -rwxr-xr-x	root/root	usr/lib/libnl/cli/cls/basic.so
@@ -147,21 +152,21 @@ drwxr-xr-x	root/root	usr/lib/libnl/cli/qdisc/
 -rwxr-xr-x	root/root	usr/lib/libnl/cli/qdisc/plug.la
 -rwxr-xr-x	root/root	usr/lib/libnl/cli/qdisc/plug.so
 -rwxr-xr-x	root/root	usr/lib/libnl-genl-3.la
--rwxr-xr-x	root/root	usr/lib/libnl-genl-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-genl-3.so.200 -> libnl-genl-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-genl-3.so -> libnl-genl-3.so.200.19.0
+-rwxr-xr-x	root/root	usr/lib/libnl-genl-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-genl-3.so.200 -> libnl-genl-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-genl-3.so -> libnl-genl-3.so.200.20.0
 -rwxr-xr-x	root/root	usr/lib/libnl-idiag-3.la
--rwxr-xr-x	root/root	usr/lib/libnl-idiag-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-idiag-3.so.200 -> libnl-idiag-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-idiag-3.so -> libnl-idiag-3.so.200.19.0
+-rwxr-xr-x	root/root	usr/lib/libnl-idiag-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-idiag-3.so.200 -> libnl-idiag-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-idiag-3.so -> libnl-idiag-3.so.200.20.0
 -rwxr-xr-x	root/root	usr/lib/libnl-nf-3.la
--rwxr-xr-x	root/root	usr/lib/libnl-nf-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-nf-3.so.200 -> libnl-nf-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-nf-3.so -> libnl-nf-3.so.200.19.0
+-rwxr-xr-x	root/root	usr/lib/libnl-nf-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-nf-3.so.200 -> libnl-nf-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-nf-3.so -> libnl-nf-3.so.200.20.0
 -rwxr-xr-x	root/root	usr/lib/libnl-route-3.la
--rwxr-xr-x	root/root	usr/lib/libnl-route-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-route-3.so.200 -> libnl-route-3.so.200.19.0
-lrwxrwxrwx	root/root	usr/lib/libnl-route-3.so -> libnl-route-3.so.200.19.0
+-rwxr-xr-x	root/root	usr/lib/libnl-route-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-route-3.so.200 -> libnl-route-3.so.200.20.0
+lrwxrwxrwx	root/root	usr/lib/libnl-route-3.so -> libnl-route-3.so.200.20.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libnl-3.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libnl-cli-3.0.pc
