@@ -19,7 +19,9 @@ depends=(core
          gst-plugins-bad
          gst-plugins-ugly
          gstreamer-imx
-         gpu-viv-bin-mx6q)
+         gpu-viv-bin-mx6q
+         qtwebkit
+         qtwebkit-examples)
 
 build() {
    # Copy fully populated sysroot
