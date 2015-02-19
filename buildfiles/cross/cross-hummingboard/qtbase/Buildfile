@@ -1,0 +1,52 @@
+# Description: QT5 Base - Core non-graphical classes used by other modules.
+# URL: http://qt-project.org/doc/qt-5.0/qtcore/qtcore-index.html
+
+name=qtbase
+version=5.4.0
+release=1
+source=(http://download.qt-project.org/official_releases/qt/${version%.*}/$version/submodules/$name-opensource-src-$version.tar.xz
+        qmake.conf qplatformdefs.h qeglfshooks_imx6.cpp)
+depends=(zlib libpng libjpeg harfbuzz freetype glib libpcre sqlite icu openssl
+         gst-plugins-good gpu-viv-bin-mx6q)
+
+build() {
+   cd qtbase-opensource-src-$version
+
+   mkdir -p mkspecs/devices/linux-buildgear-g++
+   cp $SRC/{qmake.conf,qplatformdefs.h,qeglfshooks_imx6.cpp} mkspecs/devices/linux-buildgear-g++
+
+   ./configure -prefix /opt/qt5 \
+               -hostprefix /opt/qt5-native \
+               -xplatform linux-g++ \
+               -device linux-buildgear-g++ \
+               -device-option DISTRO_OPTS=hard-float \
+               -device-option CROSS_COMPILE=$HOST- \
+               -release \
+               -opensource \
+               -confirm-license \
+               -optimized-qmake \
+               -no-xcb \
+               -no-pch \
+               -icu \
+               -system-sqlite \
+               -nomake tests \
+               -verbose \
+               -no-directfb \
+               -no-opengl \
+               -opengl es2 \
+               -eglfs \
+               -openssl-linked
+#               -nomake examples \
+
+   make -j $JOBS
+   make INSTALL_ROOT=$PKG install
+
+   echo -e "[Paths]\nPrefix=$SYSROOT/opt/qt5\nHostPrefix=$SYSROOT/opt/qt5-native" > bin/qt.conf
+
+   install -Dm644 bin/qt.conf $PKG/opt/qt5-native/bin/qt.conf
+
+   # Fix libtool files
+   fix_la_files $PKG
+}
+
+nostrip=(opt/qt5-native libQt5Bootstrap.a)
