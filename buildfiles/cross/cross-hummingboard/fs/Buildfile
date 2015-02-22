@@ -21,7 +21,8 @@ depends=(core
          gstreamer-imx
          gpu-viv-bin-mx6q
          qtwebkit
-         qtwebkit-examples)
+         qtwebkit-examples
+         CinematicExperience)
 
 build() {
    # Copy fully populated sysroot
