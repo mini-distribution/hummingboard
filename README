@@ -16,6 +16,7 @@ Main features:
    * OpenSSH client/server
    * Gstreamer-1.4.x (including iMX HW enc/dec plugins)
    * Vivante GPU drivers (including samples)
+   * QT5 (including examples)
 
 Main builds:
 
