@@ -36,6 +36,25 @@ Prebuilt images:
    For demo purpose, prebuilt images are available here:
    http://mini-distribution.io/prebuilds/hummingboard
 
+Example feature tests:
+
+   * Gstreamer video output test:
+
+       $ gst-launch-1.0 videotestsrc ! imxipuvideosink
+
+   * Gstreamer H264/AAC decoding:
+   
+       $ echo 0 > /sys/class/graphics/fbcon/cursor_blink
+       $ wget http://mirrorblender.top-ix.org/peach/bigbuckbunny_movies/big_buck_bunny_1080p_h264.mov
+       $ gst-launch-1.0 playbin uri=file:///root/big_buck_bunny_1080p_h264.mov video-sink=imxipuvideosink
+
+   * QT5 CinematicExeperience technology demo (QML/GLESv2):
+
+       $ cd /opt/qt5/CinematicExperience
+       $ ./Qt5_CinematicExperience
+
+   * QT5 demos are available in /opt/qt5/examples/*
+
 Installation:
 
    To install on SD card simply follow the steps below:
