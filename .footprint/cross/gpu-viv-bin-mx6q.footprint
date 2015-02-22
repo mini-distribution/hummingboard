@@ -600,8 +600,8 @@ lrwxrwxrwx	root/root	usr/lib/libGLESv1_CM.so.1 -> libGLESv1_CM.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libGLESv1_CM.so -> libGLESv1_CM.so.1.1.0
 -rwxr-xr-x	root/root	usr/lib/libGLESv2-dfb.so
 -rwxr-xr-x	root/root	usr/lib/libGLESv2.so
-lrwxrwxrwx	root/root	usr/lib/libGLESv2.so.2.0.0 -> libGLESv2-fb.so
-lrwxrwxrwx	root/root	usr/lib/libGLESv2.so.2 -> libGLESv2-fb.so
+lrwxrwxrwx	root/root	usr/lib/libGLESv2.so.2.0.0 -> libGLESv2.so
+lrwxrwxrwx	root/root	usr/lib/libGLESv2.so.2 -> libGLESv2.so
 -rwxr-xr-x	root/root	usr/lib/libGLESv2-wl.so
 -rwxr-xr-x	root/root	usr/lib/libGLSLC.so
 -rwxr-xr-x	root/root	usr/lib/libGL.so.1.2
