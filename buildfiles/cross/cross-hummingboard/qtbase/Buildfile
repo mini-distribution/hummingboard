@@ -34,8 +34,7 @@ build() {
                -no-directfb \
                -no-opengl \
                -opengl es2 \
-               -eglfs \
-               -openssl-linked
+               -eglfs
 #               -nomake examples \
 
    make -j $JOBS
