@@ -25,17 +25,18 @@ build() {
                -opensource \
                -confirm-license \
                -optimized-qmake \
+               -no-use-gold-linker \
                -no-xcb \
                -no-pch \
                -icu \
                -system-sqlite \
+               -openssl-linked \
                -nomake tests \
                -verbose \
                -no-directfb \
                -no-opengl \
                -opengl es2 \
                -eglfs
-#               -nomake examples \
 
    make -j $JOBS
    make INSTALL_ROOT=$PKG install
