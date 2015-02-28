@@ -73,6 +73,8 @@ drwxr-xr-x	root/root	opt/qt5/examples/quick/demos/maroon/
 -rwxr-xr-x	root/root	opt/qt5/examples/quick/demos/maroon/maroon
 drwxr-xr-x	root/root	opt/qt5/examples/quick/demos/photosurface/
 -rwxr-xr-x	root/root	opt/qt5/examples/quick/demos/photosurface/photosurface
+drwxr-xr-x	root/root	opt/qt5/examples/quick/demos/rssnews/
+-rwxr-xr-x	root/root	opt/qt5/examples/quick/demos/rssnews/rssnews
 drwxr-xr-x	root/root	opt/qt5/examples/quick/demos/samegame/
 -rwxr-xr-x	root/root	opt/qt5/examples/quick/demos/samegame/samegame
 drwxr-xr-x	root/root	opt/qt5/examples/quick/demos/stocqt/
@@ -857,6 +859,10 @@ drwxr-xr-x	root/root	opt/qt5/qml/QtQuick/Window.2/
 -rwxr-xr-x	root/root	opt/qt5/qml/QtQuick/Window.2/libwindowplugin.so
 -rw-r--r--	root/root	opt/qt5/qml/QtQuick/Window.2/plugins.qmltypes
 -rw-r--r--	root/root	opt/qt5/qml/QtQuick/Window.2/qmldir
+drwxr-xr-x	root/root	opt/qt5/qml/QtQuick/XmlListModel/
+-rwxr-xr-x	root/root	opt/qt5/qml/QtQuick/XmlListModel/libqmlxmllistmodelplugin.so
+-rw-r--r--	root/root	opt/qt5/qml/QtQuick/XmlListModel/plugins.qmltypes
+-rw-r--r--	root/root	opt/qt5/qml/QtQuick/XmlListModel/qmldir
 drwxr-xr-x	root/root	opt/qt5/qml/QtTest/
 -rwxr-xr-x	root/root	opt/qt5/qml/QtTest/libqmltestplugin.so
 -rw-r--r--	root/root	opt/qt5/qml/QtTest/plugins.qmltypes
