@@ -30,6 +30,7 @@ drwxr-xr-x	root/root	usr/lib/udev/rules.d/
 -rw-r--r--	root/root	usr/lib/udev/rules.d/90-alsa-restore.rules
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/alsactl
+-rwxr-xr-x	root/root	usr/sbin/alsa-info.sh
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/alsa/
 drwxr-xr-x	root/root	usr/share/alsa/init/

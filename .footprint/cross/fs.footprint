@@ -12381,6 +12381,8 @@ lrwxrwxrwx	root/root	usr/bin/captoinfo -> tic
 -rwxr-xr-x	root/root	usr/bin/dbus-monitor
 -rwxr-xr-x	root/root	usr/bin/dbus-run-session
 -rwxr-xr-x	root/root	usr/bin/dbus-send
+-rwxr-xr-x	root/root	usr/bin/dbus-test-tool
+-rwxr-xr-x	root/root	usr/bin/dbus-update-activation-environment
 -rwxr-xr-x	root/root	usr/bin/dbus-uuidgen
 -rwxr-xr-x	root/root	usr/bin/dd
 -rwxr-xr-x	root/root	usr/bin/deallocvt
@@ -13426,6 +13428,9 @@ lrwxrwxrwx	root/root	usr/lib/libfaac.so -> libfaac.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libfaad.so.2.0.0
 lrwxrwxrwx	root/root	usr/lib/libfaad.so.2 -> libfaad.so.2.0.0
 lrwxrwxrwx	root/root	usr/lib/libfaad.so -> libfaad.so.2.0.0
+-rwxr-xr-x	root/root	usr/lib/libfdisk.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libfdisk.so.1 -> libfdisk.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libfdisk.so -> libfdisk.so.1.1.0
 drwxr-xr-x	root/root	usr/lib/libffi-3.2.1/
 drwxr-xr-x	root/root	usr/lib/libffi-3.2.1/include/
 -rw-r--r--	root/root	usr/lib/libffi-3.2.1/include/ffi.h
@@ -13451,9 +13456,9 @@ lrwxrwxrwx	root/root	usr/lib/libfslvpuwrap.so -> libfslvpuwrap.so.3.0.0
 -rwxr-xr-x	root/root	usr/lib/libGAL-dfb.so
 -rwxr-xr-x	root/root	usr/lib/libGAL.so
 -rwxr-xr-x	root/root	usr/lib/libGAL-wl.so
--rwxr-xr-x	root/root	usr/lib/libgcrypt.so.20.0.2
-lrwxrwxrwx	root/root	usr/lib/libgcrypt.so.20 -> libgcrypt.so.20.0.2
-lrwxrwxrwx	root/root	usr/lib/libgcrypt.so -> libgcrypt.so.20.0.2
+-rwxr-xr-x	root/root	usr/lib/libgcrypt.so.20.0.3
+lrwxrwxrwx	root/root	usr/lib/libgcrypt.so.20 -> libgcrypt.so.20.0.3
+lrwxrwxrwx	root/root	usr/lib/libgcrypt.so -> libgcrypt.so.20.0.3
 -rwxr-xr-x	root/root	usr/lib/libgc_wayland_protocol.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libgc_wayland_protocol.so.0 -> libgc_wayland_protocol.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libgc_wayland_protocol.so -> libgc_wayland_protocol.so.0.0.0
@@ -13463,9 +13468,9 @@ lrwxrwxrwx	root/root	usr/lib/libgdbm_compat.so -> libgdbm_compat.so.4.0.0
 -rwxr-xr-x	root/root	usr/lib/libgdbm.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libgdbm.so.4 -> libgdbm.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libgdbm.so -> libgdbm.so.4.0.0
--rwxr-xr-x	root/root	usr/lib/libgio-2.0.so.0.4200.1
-lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so.0 -> libgio-2.0.so.0.4200.1
-lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so -> libgio-2.0.so.0.4200.1
+-rwxr-xr-x	root/root	usr/lib/libgio-2.0.so.0.4400.0
+lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so.0 -> libgio-2.0.so.0.4400.0
+lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so -> libgio-2.0.so.0.4400.0
 -rwxr-xr-x	root/root	usr/lib/libGLES_CL.so
 -rwxr-xr-x	root/root	usr/lib/libGLES_CM.so
 -rwxr-xr-x	root/root	usr/lib/libGLESv1_CL.so.1.1.0
@@ -13479,16 +13484,16 @@ lrwxrwxrwx	root/root	usr/lib/libGLESv1_CM.so -> libGLESv1_CM.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libGLESv2.so.2.0.0 -> libGLESv2.so
 lrwxrwxrwx	root/root	usr/lib/libGLESv2.so.2 -> libGLESv2.so
 -rwxr-xr-x	root/root	usr/lib/libGLESv2-wl.so
--rwxr-xr-x	root/root	usr/lib/libglib-2.0.so.0.4200.1
-lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so.0 -> libglib-2.0.so.0.4200.1
-lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so -> libglib-2.0.so.0.4200.1
+-rwxr-xr-x	root/root	usr/lib/libglib-2.0.so.0.4400.0
+lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so.0 -> libglib-2.0.so.0.4400.0
+lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so -> libglib-2.0.so.0.4400.0
 -rwxr-xr-x	root/root	usr/lib/libGLSLC.so
 -rwxr-xr-x	root/root	usr/lib/libGL.so.1.2
 lrwxrwxrwx	root/root	usr/lib/libGL.so.1 -> libGL.so.1.2
 lrwxrwxrwx	root/root	usr/lib/libGL.so -> libGL.so.1.2
--rwxr-xr-x	root/root	usr/lib/libgmodule-2.0.so.0.4200.1
-lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so.0 -> libgmodule-2.0.so.0.4200.1
-lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so -> libgmodule-2.0.so.0.4200.1
+-rwxr-xr-x	root/root	usr/lib/libgmodule-2.0.so.0.4400.0
+lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so.0 -> libgmodule-2.0.so.0.4400.0
+lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so -> libgmodule-2.0.so.0.4400.0
 -rwxr-xr-x	root/root	usr/lib/libgmp.so.10.2.0
 lrwxrwxrwx	root/root	usr/lib/libgmp.so.10 -> libgmp.so.10.2.0
 lrwxrwxrwx	root/root	usr/lib/libgmp.so -> libgmp.so.10.2.0
@@ -13507,9 +13512,9 @@ lrwxrwxrwx	root/root	usr/lib/libgnutls-xssl.so -> libgnutls-xssl.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libgnutlsxx.so.28.1.0
 lrwxrwxrwx	root/root	usr/lib/libgnutlsxx.so.28 -> libgnutlsxx.so.28.1.0
 lrwxrwxrwx	root/root	usr/lib/libgnutlsxx.so -> libgnutlsxx.so.28.1.0
--rwxr-xr-x	root/root	usr/lib/libgobject-2.0.so.0.4200.1
-lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so.0 -> libgobject-2.0.so.0.4200.1
-lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so -> libgobject-2.0.so.0.4200.1
+-rwxr-xr-x	root/root	usr/lib/libgobject-2.0.so.0.4400.0
+lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so.0 -> libgobject-2.0.so.0.4400.0
+lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so -> libgobject-2.0.so.0.4400.0
 -rwxr-xr-x	root/root	usr/lib/libgpg-error.so.0.14.0
 lrwxrwxrwx	root/root	usr/lib/libgpg-error.so.0 -> libgpg-error.so.0.14.0
 lrwxrwxrwx	root/root	usr/lib/libgpg-error.so -> libgpg-error.so.0.14.0
@@ -13588,18 +13593,18 @@ lrwxrwxrwx	root/root	usr/lib/libgsturidownloader-1.0.so -> libgsturidownloader-1
 -rwxr-xr-x	root/root	usr/lib/libgstvideo-1.0.so.0.405.0
 lrwxrwxrwx	root/root	usr/lib/libgstvideo-1.0.so.0 -> libgstvideo-1.0.so.0.405.0
 lrwxrwxrwx	root/root	usr/lib/libgstvideo-1.0.so -> libgstvideo-1.0.so.0.405.0
--rwxr-xr-x	root/root	usr/lib/libgthread-2.0.so.0.4200.1
-lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so.0 -> libgthread-2.0.so.0.4200.1
-lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so -> libgthread-2.0.so.0.4200.1
+-rwxr-xr-x	root/root	usr/lib/libgthread-2.0.so.0.4400.0
+lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so.0 -> libgthread-2.0.so.0.4400.0
+lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so -> libgthread-2.0.so.0.4400.0
 -rwxr-xr-x	root/root	usr/lib/libgudev-1.0.so.0.2.0
 lrwxrwxrwx	root/root	usr/lib/libgudev-1.0.so.0 -> libgudev-1.0.so.0.2.0
 lrwxrwxrwx	root/root	usr/lib/libgudev-1.0.so -> libgudev-1.0.so.0.2.0
--rwxr-xr-x	root/root	usr/lib/libharfbuzz-icu.so.0.938.0
-lrwxrwxrwx	root/root	usr/lib/libharfbuzz-icu.so.0 -> libharfbuzz-icu.so.0.938.0
-lrwxrwxrwx	root/root	usr/lib/libharfbuzz-icu.so -> libharfbuzz-icu.so.0.938.0
--rwxr-xr-x	root/root	usr/lib/libharfbuzz.so.0.938.0
-lrwxrwxrwx	root/root	usr/lib/libharfbuzz.so.0 -> libharfbuzz.so.0.938.0
-lrwxrwxrwx	root/root	usr/lib/libharfbuzz.so -> libharfbuzz.so.0.938.0
+-rwxr-xr-x	root/root	usr/lib/libharfbuzz-icu.so.0.940.0
+lrwxrwxrwx	root/root	usr/lib/libharfbuzz-icu.so.0 -> libharfbuzz-icu.so.0.940.0
+lrwxrwxrwx	root/root	usr/lib/libharfbuzz-icu.so -> libharfbuzz-icu.so.0.940.0
+-rwxr-xr-x	root/root	usr/lib/libharfbuzz.so.0.940.0
+lrwxrwxrwx	root/root	usr/lib/libharfbuzz.so.0 -> libharfbuzz.so.0.940.0
+lrwxrwxrwx	root/root	usr/lib/libharfbuzz.so -> libharfbuzz.so.0.940.0
 -r-xr-xr-x	root/root	usr/lib/libhistory.so.6.3
 lrwxrwxrwx	root/root	usr/lib/libhistory.so.6 -> libhistory.so.6.3
 lrwxrwxrwx	root/root	usr/lib/libhistory.so -> libhistory.so.6
@@ -13648,12 +13653,12 @@ lrwxrwxrwx	root/root	usr/lib/libiptc.so -> libiptc.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libjpeg.so.9.1.0
 lrwxrwxrwx	root/root	usr/lib/libjpeg.so.9 -> libjpeg.so.9.1.0
 lrwxrwxrwx	root/root	usr/lib/libjpeg.so -> libjpeg.so.9.1.0
--rwxr-xr-x	root/root	usr/lib/libkmod.so.2.2.9
-lrwxrwxrwx	root/root	usr/lib/libkmod.so.2 -> libkmod.so.2.2.9
-lrwxrwxrwx	root/root	usr/lib/libkmod.so -> libkmod.so.2.2.9
--rwxr-xr-x	root/root	usr/lib/liblzma.so.5.2.0
-lrwxrwxrwx	root/root	usr/lib/liblzma.so.5 -> liblzma.so.5.2.0
-lrwxrwxrwx	root/root	usr/lib/liblzma.so -> liblzma.so.5.2.0
+-rwxr-xr-x	root/root	usr/lib/libkmod.so.2.2.10
+lrwxrwxrwx	root/root	usr/lib/libkmod.so.2 -> libkmod.so.2.2.10
+lrwxrwxrwx	root/root	usr/lib/libkmod.so -> libkmod.so.2.2.10
+-rwxr-xr-x	root/root	usr/lib/liblzma.so.5.2.1
+lrwxrwxrwx	root/root	usr/lib/liblzma.so.5 -> liblzma.so.5.2.1
+lrwxrwxrwx	root/root	usr/lib/liblzma.so -> liblzma.so.5.2.1
 -rwxr-xr-x	root/root	usr/lib/libmenu.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libmenu.so.5 -> libmenu.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libmenu.so -> libmenu.so.5
@@ -13728,7 +13733,7 @@ lrwxrwxrwx	root/root	usr/lib/liborc-test-0.4.so -> liborc-test-0.4.so.0.23.0
 -rwxr-xr-x	root/root	usr/lib/libpanel.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libpanel.so.5 -> libpanel.so.5.9
 lrwxrwxrwx	root/root	usr/lib/libpanel.so -> libpanel.so.5
--rw-r--r--	root/root	usr/lib/libpci.so.3.3.0
+-rw-r--r--	root/root	usr/lib/libpci.so.3.3.1
 -rwxr-xr-x	root/root	usr/lib/libpcre16.so.0.2.4
 lrwxrwxrwx	root/root	usr/lib/libpcre16.so.0 -> libpcre16.so.0.2.4
 lrwxrwxrwx	root/root	usr/lib/libpcre16.so -> libpcre16.so.0.2.4
@@ -13747,9 +13752,9 @@ lrwxrwxrwx	root/root	usr/lib/libpcre.so -> libpcre.so.1.2.4
 -rwxr-xr-x	root/root	usr/lib/libpipeline.so.1.4.0
 lrwxrwxrwx	root/root	usr/lib/libpipeline.so.1 -> libpipeline.so.1.4.0
 lrwxrwxrwx	root/root	usr/lib/libpipeline.so -> libpipeline.so.1.4.0
--rwxr-xr-x	root/root	usr/lib/libpng16.so.16.15.0
-lrwxrwxrwx	root/root	usr/lib/libpng16.so.16 -> libpng16.so.16.15.0
-lrwxrwxrwx	root/root	usr/lib/libpng16.so -> libpng16.so.16.15.0
+-rwxr-xr-x	root/root	usr/lib/libpng16.so.16.17.0
+lrwxrwxrwx	root/root	usr/lib/libpng16.so.16 -> libpng16.so.16.17.0
+lrwxrwxrwx	root/root	usr/lib/libpng16.so -> libpng16.so.16.17.0
 lrwxrwxrwx	root/root	usr/lib/libpng.so -> libpng16.so
 -rwxr-xr-x	root/root	usr/lib/libprocps.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libprocps.so.4 -> libprocps.so.4.0.0
@@ -13849,6 +13854,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/dbus-1.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/egl.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/expat.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/fdisk.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/flac.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/flac++.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/freetype2.pc
@@ -14434,6 +14440,7 @@ drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/addpart
 -rwxr-xr-x	root/root	usr/sbin/agetty
 -rwxr-xr-x	root/root	usr/sbin/alsactl
+-rwxr-xr-x	root/root	usr/sbin/alsa-info.sh
 -rwxr-xr-x	root/root	usr/sbin/arp
 -rwxr-xr-x	root/root	usr/sbin/arping
 -rwxr-xr-x	root/root	usr/sbin/blkdiscard
@@ -14563,6 +14570,7 @@ lrwxrwxrwx	root/root	usr/sbin/vigr -> vipw
 -rwxr-xr-x	root/root	usr/sbin/xtables-multi
 -rwxr-xr-x	root/root	usr/sbin/zdump
 -rwxr-xr-x	root/root	usr/sbin/zic
+-rwxr-xr-x	root/root	usr/sbin/zramctl
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/alsa.m4
@@ -14678,6 +14686,9 @@ drwxr-xr-x	root/root	usr/share/alsa/ucm/
 drwxr-xr-x	root/root	usr/share/alsa/ucm/DAISY-I2S/
 -rw-r--r--	root/root	usr/share/alsa/ucm/DAISY-I2S/DAISY-I2S.conf
 -rw-r--r--	root/root	usr/share/alsa/ucm/DAISY-I2S/HiFi.conf
+drwxr-xr-x	root/root	usr/share/alsa/ucm/GoogleNyan/
+-rw-r--r--	root/root	usr/share/alsa/ucm/GoogleNyan/GoogleNyan.conf
+-rw-r--r--	root/root	usr/share/alsa/ucm/GoogleNyan/HiFi.conf
 drwxr-xr-x	root/root	usr/share/alsa/ucm/PandaBoard/
 drwxr-xr-x	root/root	usr/share/alsa/ucm/PandaBoardES/
 -rw-r--r--	root/root	usr/share/alsa/ucm/PandaBoardES/FMAnalog
@@ -14694,6 +14705,10 @@ drwxr-xr-x	root/root	usr/share/alsa/ucm/PandaBoardES/
 -rw-r--r--	root/root	usr/share/alsa/ucm/PandaBoard/record
 -rw-r--r--	root/root	usr/share/alsa/ucm/PandaBoard/voice
 -rw-r--r--	root/root	usr/share/alsa/ucm/PandaBoard/voiceCall
+drwxr-xr-x	root/root	usr/share/alsa/ucm/PAZ00/
+-rw-r--r--	root/root	usr/share/alsa/ucm/PAZ00/HiFi.conf
+-rw-r--r--	root/root	usr/share/alsa/ucm/PAZ00/PAZ00.conf
+-rw-r--r--	root/root	usr/share/alsa/ucm/PAZ00/Record.conf
 drwxr-xr-x	root/root	usr/share/alsa/ucm/SDP4430/
 -rw-r--r--	root/root	usr/share/alsa/ucm/SDP4430/FMAnalog
 -rw-r--r--	root/root	usr/share/alsa/ucm/SDP4430/hifi
@@ -14834,6 +14849,7 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/whereis
 -rw-r--r--	root/root	usr/share/bash-completion/completions/wipefs
 -rw-r--r--	root/root	usr/share/bash-completion/completions/write
+-rw-r--r--	root/root	usr/share/bash-completion/completions/zramctl
 drwxr-xr-x	root/root	usr/share/common-lisp/
 drwxr-xr-x	root/root	usr/share/common-lisp/source/
 drwxr-xr-x	root/root	usr/share/common-lisp/source/gpg-error/
@@ -14859,6 +14875,11 @@ drwxr-xr-x	root/root	usr/share/doc/libfslvpuwrap/
 drwxr-xr-x	root/root	usr/share/doc/libfslvpuwrap/imx-mm/
 drwxr-xr-x	root/root	usr/share/doc/libfslvpuwrap/imx-mm/vpu/
 -rw-r--r--	root/root	usr/share/doc/libfslvpuwrap/imx-mm/vpu/EULA.txt
+drwxr-xr-x	root/root	usr/share/doc/nano/
+-rw-r--r--	root/root	usr/share/doc/nano/faq.html
+-rw-r--r--	root/root	usr/share/doc/nano/nano.1.html
+-rw-r--r--	root/root	usr/share/doc/nano/nanorc.5.html
+-rw-r--r--	root/root	usr/share/doc/nano/rnano.1.html
 drwxr-xr-x	root/root	usr/share/doc/systemd/
 -rw-r--r--	root/root	usr/share/doc/systemd/DIFFERENCES
 -rw-r--r--	root/root	usr/share/doc/systemd/DISTRO_PORTING
@@ -20194,23 +20215,26 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rwxr-xr-x	root/root	usr/share/man/man8/wpa_cli.8
 -rwxr-xr-x	root/root	usr/share/man/man8/wpa_passphrase.8
 -rwxr-xr-x	root/root	usr/share/man/man8/wpa_supplicant.8
+-rw-r--r--	root/root	usr/share/man/man8/zramctl.8
 drwxr-xr-x	root/root	usr/share/nano/
 -rw-r--r--	root/root	usr/share/nano/asm.nanorc
 -rw-r--r--	root/root	usr/share/nano/awk.nanorc
+-rw-r--r--	root/root	usr/share/nano/changelog.nanorc
 -rw-r--r--	root/root	usr/share/nano/cmake.nanorc
 -rw-r--r--	root/root	usr/share/nano/c.nanorc
 -rw-r--r--	root/root	usr/share/nano/css.nanorc
 -rw-r--r--	root/root	usr/share/nano/debian.nanorc
+-rw-r--r--	root/root	usr/share/nano/default.nanorc
 -rw-r--r--	root/root	usr/share/nano/fortran.nanorc
 -rw-r--r--	root/root	usr/share/nano/gentoo.nanorc
+-rw-r--r--	root/root	usr/share/nano/go.nanorc
 -rw-r--r--	root/root	usr/share/nano/groff.nanorc
 -rw-r--r--	root/root	usr/share/nano/html.nanorc
 -rw-r--r--	root/root	usr/share/nano/java.nanorc
+-rw-r--r--	root/root	usr/share/nano/javascript.nanorc
+-rw-r--r--	root/root	usr/share/nano/json.nanorc
+-rw-r--r--	root/root	usr/share/nano/lua.nanorc
 -rw-r--r--	root/root	usr/share/nano/makefile.nanorc
-drwxr-xr-x	root/root	usr/share/nano/man-html/
--rw-r--r--	root/root	usr/share/nano/man-html/nano.1.html
--rw-r--r--	root/root	usr/share/nano/man-html/nanorc.5.html
--rw-r--r--	root/root	usr/share/nano/man-html/rnano.1.html
 -rw-r--r--	root/root	usr/share/nano/man.nanorc
 -rw-r--r--	root/root	usr/share/nano/mgp.nanorc
 -rw-r--r--	root/root	usr/share/nano/mutt.nanorc
@@ -20220,11 +20244,14 @@ drwxr-xr-x	root/root	usr/share/nano/man-html/
 -rw-r--r--	root/root	usr/share/nano/patch.nanorc
 -rw-r--r--	root/root	usr/share/nano/perl.nanorc
 -rw-r--r--	root/root	usr/share/nano/php.nanorc
+-rw-r--r--	root/root	usr/share/nano/po.nanorc
 -rw-r--r--	root/root	usr/share/nano/pov.nanorc
 -rw-r--r--	root/root	usr/share/nano/python.nanorc
 -rw-r--r--	root/root	usr/share/nano/ruby.nanorc
 -rw-r--r--	root/root	usr/share/nano/sh.nanorc
+-rw-r--r--	root/root	usr/share/nano/spec.nanorc
 -rw-r--r--	root/root	usr/share/nano/tcl.nanorc
+-rw-r--r--	root/root	usr/share/nano/texinfo.nanorc
 -rw-r--r--	root/root	usr/share/nano/tex.nanorc
 -rw-r--r--	root/root	usr/share/nano/xml.nanorc
 -rw-r--r--	root/root	usr/share/pci.ids

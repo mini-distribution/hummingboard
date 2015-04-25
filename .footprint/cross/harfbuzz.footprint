@@ -26,13 +26,13 @@ drwxr-xr-x	root/root	usr/include/harfbuzz/
 -rw-r--r--	root/root	usr/include/harfbuzz/hb-version.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libharfbuzz-icu.la
--rwxr-xr-x	root/root	usr/lib/libharfbuzz-icu.so.0.938.0
-lrwxrwxrwx	root/root	usr/lib/libharfbuzz-icu.so.0 -> libharfbuzz-icu.so.0.938.0
-lrwxrwxrwx	root/root	usr/lib/libharfbuzz-icu.so -> libharfbuzz-icu.so.0.938.0
+-rwxr-xr-x	root/root	usr/lib/libharfbuzz-icu.so.0.940.0
+lrwxrwxrwx	root/root	usr/lib/libharfbuzz-icu.so.0 -> libharfbuzz-icu.so.0.940.0
+lrwxrwxrwx	root/root	usr/lib/libharfbuzz-icu.so -> libharfbuzz-icu.so.0.940.0
 -rwxr-xr-x	root/root	usr/lib/libharfbuzz.la
--rwxr-xr-x	root/root	usr/lib/libharfbuzz.so.0.938.0
-lrwxrwxrwx	root/root	usr/lib/libharfbuzz.so.0 -> libharfbuzz.so.0.938.0
-lrwxrwxrwx	root/root	usr/lib/libharfbuzz.so -> libharfbuzz.so.0.938.0
+-rwxr-xr-x	root/root	usr/lib/libharfbuzz.so.0.940.0
+lrwxrwxrwx	root/root	usr/lib/libharfbuzz.so.0 -> libharfbuzz.so.0.940.0
+lrwxrwxrwx	root/root	usr/lib/libharfbuzz.so -> libharfbuzz.so.0.940.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/harfbuzz-icu.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/harfbuzz.pc

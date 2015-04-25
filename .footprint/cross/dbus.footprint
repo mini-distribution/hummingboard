@@ -22,6 +22,8 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/dbus-monitor
 -rwxr-xr-x	root/root	usr/bin/dbus-run-session
 -rwxr-xr-x	root/root	usr/bin/dbus-send
+-rwxr-xr-x	root/root	usr/bin/dbus-test-tool
+-rwxr-xr-x	root/root	usr/bin/dbus-update-activation-environment
 -rwxr-xr-x	root/root	usr/bin/dbus-uuidgen
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/dbus-1/

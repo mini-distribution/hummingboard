@@ -149,6 +149,9 @@ drwxr-xr-x	root/root	usr/share/alsa/ucm/
 drwxr-xr-x	root/root	usr/share/alsa/ucm/DAISY-I2S/
 -rw-r--r--	root/root	usr/share/alsa/ucm/DAISY-I2S/DAISY-I2S.conf
 -rw-r--r--	root/root	usr/share/alsa/ucm/DAISY-I2S/HiFi.conf
+drwxr-xr-x	root/root	usr/share/alsa/ucm/GoogleNyan/
+-rw-r--r--	root/root	usr/share/alsa/ucm/GoogleNyan/GoogleNyan.conf
+-rw-r--r--	root/root	usr/share/alsa/ucm/GoogleNyan/HiFi.conf
 drwxr-xr-x	root/root	usr/share/alsa/ucm/PandaBoard/
 drwxr-xr-x	root/root	usr/share/alsa/ucm/PandaBoardES/
 -rw-r--r--	root/root	usr/share/alsa/ucm/PandaBoardES/FMAnalog
@@ -165,6 +168,10 @@ drwxr-xr-x	root/root	usr/share/alsa/ucm/PandaBoardES/
 -rw-r--r--	root/root	usr/share/alsa/ucm/PandaBoard/record
 -rw-r--r--	root/root	usr/share/alsa/ucm/PandaBoard/voice
 -rw-r--r--	root/root	usr/share/alsa/ucm/PandaBoard/voiceCall
+drwxr-xr-x	root/root	usr/share/alsa/ucm/PAZ00/
+-rw-r--r--	root/root	usr/share/alsa/ucm/PAZ00/HiFi.conf
+-rw-r--r--	root/root	usr/share/alsa/ucm/PAZ00/PAZ00.conf
+-rw-r--r--	root/root	usr/share/alsa/ucm/PAZ00/Record.conf
 drwxr-xr-x	root/root	usr/share/alsa/ucm/SDP4430/
 -rw-r--r--	root/root	usr/share/alsa/ucm/SDP4430/FMAnalog
 -rw-r--r--	root/root	usr/share/alsa/ucm/SDP4430/hifi
