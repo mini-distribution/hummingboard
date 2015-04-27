@@ -1297,7 +1297,6 @@ drwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/hsi/
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/ipmi.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/ipmi_msgdefs.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/ipsec.h
--rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/ipu.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/ipv6.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/ipv6_route.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/ip_vs.h
@@ -1355,9 +1354,6 @@ drwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/mmc/
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/msdos_fs.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/msg.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/mtio.h
--rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/mxc_asrc.h
--rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/mxcfb.h
--rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/mxc_v4l2.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/nbd.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/ncp_fs.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/ncp.h
@@ -1566,8 +1562,6 @@ drwxr-xr-x	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/nfsd/
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/prctl.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/ptp_clock.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/ptrace.h
--rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/pxp_device.h
--rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/pxp_dma.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/qnx4_fs.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/qnxtypes.h
 -rw-r--r--	root/root	arm-cortex_a9-linux-gnueabi/sysroot/usr/include/linux/quota.h
