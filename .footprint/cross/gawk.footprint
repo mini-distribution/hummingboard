@@ -2,7 +2,7 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/awk -> gawk
 -rwxr-xr-x	root/root	usr/bin/gawk
-hrwxr-xr-x	root/root	usr/bin/gawk-4.1.1 link to usr/bin/gawk
+hrwxr-xr-x	root/root	usr/bin/gawk-4.1.2 link to usr/bin/gawk
 -rwxr-xr-x	root/root	usr/bin/igawk
 drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/gawkapi.h
@@ -11,29 +11,17 @@ drwxr-xr-x	root/root	usr/lib/awk/
 -rwxr-xr-x	root/root	usr/lib/awk/grcat
 -rwxr-xr-x	root/root	usr/lib/awk/pwcat
 drwxr-xr-x	root/root	usr/lib/gawk/
--rwxr-xr-x	root/root	usr/lib/gawk/filefuncs.la
 -rwxr-xr-x	root/root	usr/lib/gawk/filefuncs.so
--rwxr-xr-x	root/root	usr/lib/gawk/fnmatch.la
 -rwxr-xr-x	root/root	usr/lib/gawk/fnmatch.so
--rwxr-xr-x	root/root	usr/lib/gawk/fork.la
 -rwxr-xr-x	root/root	usr/lib/gawk/fork.so
--rwxr-xr-x	root/root	usr/lib/gawk/inplace.la
 -rwxr-xr-x	root/root	usr/lib/gawk/inplace.so
--rwxr-xr-x	root/root	usr/lib/gawk/ordchr.la
 -rwxr-xr-x	root/root	usr/lib/gawk/ordchr.so
--rwxr-xr-x	root/root	usr/lib/gawk/readdir.la
 -rwxr-xr-x	root/root	usr/lib/gawk/readdir.so
--rwxr-xr-x	root/root	usr/lib/gawk/readfile.la
 -rwxr-xr-x	root/root	usr/lib/gawk/readfile.so
--rwxr-xr-x	root/root	usr/lib/gawk/revoutput.la
 -rwxr-xr-x	root/root	usr/lib/gawk/revoutput.so
--rwxr-xr-x	root/root	usr/lib/gawk/revtwoway.la
 -rwxr-xr-x	root/root	usr/lib/gawk/revtwoway.so
--rwxr-xr-x	root/root	usr/lib/gawk/rwarray.la
 -rwxr-xr-x	root/root	usr/lib/gawk/rwarray.so
--rwxr-xr-x	root/root	usr/lib/gawk/testext.la
 -rwxr-xr-x	root/root	usr/lib/gawk/testext.so
--rwxr-xr-x	root/root	usr/lib/gawk/time.la
 -rwxr-xr-x	root/root	usr/lib/gawk/time.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/awk/
@@ -51,11 +39,13 @@ drwxr-xr-x	root/root	usr/share/awk/
 -rw-r--r--	root/root	usr/share/awk/noassign.awk
 -rw-r--r--	root/root	usr/share/awk/ord.awk
 -rw-r--r--	root/root	usr/share/awk/passwd.awk
+-rw-r--r--	root/root	usr/share/awk/processarray.awk
 -rw-r--r--	root/root	usr/share/awk/quicksort.awk
 -rw-r--r--	root/root	usr/share/awk/readable.awk
 -rw-r--r--	root/root	usr/share/awk/readfile.awk
 -rw-r--r--	root/root	usr/share/awk/rewind.awk
 -rw-r--r--	root/root	usr/share/awk/round.awk
+-rw-r--r--	root/root	usr/share/awk/shellquote.awk
 -rw-r--r--	root/root	usr/share/awk/strtonum.awk
 -rw-r--r--	root/root	usr/share/awk/walkarray.awk
 -rw-r--r--	root/root	usr/share/awk/zerofile.awk

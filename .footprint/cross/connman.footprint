@@ -39,6 +39,8 @@ drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/connmand
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/connmanctl.1
 drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/connman.conf.5
 drwxr-xr-x	root/root	usr/share/man/man8/
