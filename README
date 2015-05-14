@@ -36,6 +36,11 @@ Prebuilt images:
    For demo purpose, prebuilt images are available here:
    http://mini-distribution.io/prebuilds/hummingboard
 
+Login details:
+
+    Username: root
+    Password: root
+
 Example feature tests:
 
    * Gstreamer video output test:
