@@ -2,42 +2,42 @@ drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	opt/qt5/
 drwxr-xr-x	root/root	opt/qt5/include/
 drwxr-xr-x	root/root	opt/qt5/include/QtWebKit/
-drwxr-xr-x	root/root	opt/qt5/include/QtWebKit/5.4.1/
-drwxr-xr-x	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/
-drwxr-xr-x	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/bytearraytestdata.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qhttpheader_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qquicknetworkreply_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qquicknetworkrequest_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qquickurlschemedelegate_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qquickwebpage_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qquickwebpage_p_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qquickwebview_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qquickwebview_p_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qrawwebview_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qrawwebview_p_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qtwebsecurityorigin_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qwebchannelwebkittransport_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qwebdatabase_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qwebdownloaditem_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qwebdownloaditem_p_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qwebelement_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qwebhistory_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qwebiconimageprovider_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qwebkittest_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qwebloadrequest_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qwebnavigationhistory_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qwebnavigationhistory_p_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qwebnavigationrequest_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qwebpermissionrequest_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qwebplugindatabase_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qwebpreferences_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qwebpreferences_p_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qwebscriptworld.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qwebscriptworld_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/qwebsecurityorigin_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/testwindow.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/util.h
+drwxr-xr-x	root/root	opt/qt5/include/QtWebKit/5.5.0/
+drwxr-xr-x	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/
+drwxr-xr-x	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/bytearraytestdata.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qhttpheader_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qquicknetworkreply_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qquicknetworkrequest_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qquickurlschemedelegate_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qquickwebpage_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qquickwebpage_p_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qquickwebview_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qquickwebview_p_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qrawwebview_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qrawwebview_p_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qtwebsecurityorigin_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qwebchannelwebkittransport_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qwebdatabase_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qwebdownloaditem_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qwebdownloaditem_p_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qwebelement_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qwebhistory_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qwebiconimageprovider_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qwebkittest_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qwebloadrequest_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qwebnavigationhistory_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qwebnavigationhistory_p_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qwebnavigationrequest_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qwebpermissionrequest_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qwebplugindatabase_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qwebpreferences_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qwebpreferences_p_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qwebscriptworld.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qwebscriptworld_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/qwebsecurityorigin_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/testwindow.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKit/5.5.0/QtWebKit/private/util.h
 -rw-r--r--	root/root	opt/qt5/include/QtWebKit/QtWebKit
 -rw-r--r--	root/root	opt/qt5/include/QtWebKit/QtWebKitDepends
 -rw-r--r--	root/root	opt/qt5/include/QtWebKit/QtWebKitVersion
@@ -70,13 +70,13 @@ drwxr-xr-x	root/root	opt/qt5/include/QtWebKit/5.4.1/QtWebKit/private/
 -rw-r--r--	root/root	opt/qt5/include/QtWebKit/QWebSpellChecker
 -rw-r--r--	root/root	opt/qt5/include/QtWebKit/QWebTouchModifier
 drwxr-xr-x	root/root	opt/qt5/include/QtWebKitWidgets/
-drwxr-xr-x	root/root	opt/qt5/include/QtWebKitWidgets/5.4.1/
-drwxr-xr-x	root/root	opt/qt5/include/QtWebKitWidgets/5.4.1/QtWebKitWidgets/
-drwxr-xr-x	root/root	opt/qt5/include/QtWebKitWidgets/5.4.1/QtWebKitWidgets/private/
--rw-r--r--	root/root	opt/qt5/include/QtWebKitWidgets/5.4.1/QtWebKitWidgets/private/qwebframe_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKitWidgets/5.4.1/QtWebKitWidgets/private/qwebinspector_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKitWidgets/5.4.1/QtWebKitWidgets/private/qwebpage_p.h
--rw-r--r--	root/root	opt/qt5/include/QtWebKitWidgets/5.4.1/QtWebKitWidgets/private/qwebviewaccessible_p.h
+drwxr-xr-x	root/root	opt/qt5/include/QtWebKitWidgets/5.5.0/
+drwxr-xr-x	root/root	opt/qt5/include/QtWebKitWidgets/5.5.0/QtWebKitWidgets/
+drwxr-xr-x	root/root	opt/qt5/include/QtWebKitWidgets/5.5.0/QtWebKitWidgets/private/
+-rw-r--r--	root/root	opt/qt5/include/QtWebKitWidgets/5.5.0/QtWebKitWidgets/private/qwebframe_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKitWidgets/5.5.0/QtWebKitWidgets/private/qwebinspector_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKitWidgets/5.5.0/QtWebKitWidgets/private/qwebpage_p.h
+-rw-r--r--	root/root	opt/qt5/include/QtWebKitWidgets/5.5.0/QtWebKitWidgets/private/qwebviewaccessible_p.h
 -rw-r--r--	root/root	opt/qt5/include/QtWebKitWidgets/QGraphicsWebView
 -rw-r--r--	root/root	opt/qt5/include/QtWebKitWidgets/qgraphicswebview.h
 -rw-r--r--	root/root	opt/qt5/include/QtWebKitWidgets/QtWebKitWidgets
@@ -104,16 +104,16 @@ drwxr-xr-x	root/root	opt/qt5/libexec/
 -rwxr-xr-x	root/root	opt/qt5/libexec/QtWebProcess
 -rw-r--r--	root/root	opt/qt5/lib/libQt5WebKit.la
 -rw-r--r--	root/root	opt/qt5/lib/libQt5WebKit.prl
--rwxr-xr-x	root/root	opt/qt5/lib/libQt5WebKit.so.5.4.1
-lrwxrwxrwx	root/root	opt/qt5/lib/libQt5WebKit.so.5.4 -> libQt5WebKit.so.5.4.1
-lrwxrwxrwx	root/root	opt/qt5/lib/libQt5WebKit.so.5 -> libQt5WebKit.so.5.4.1
-lrwxrwxrwx	root/root	opt/qt5/lib/libQt5WebKit.so -> libQt5WebKit.so.5.4.1
+-rwxr-xr-x	root/root	opt/qt5/lib/libQt5WebKit.so.5.5.0
+lrwxrwxrwx	root/root	opt/qt5/lib/libQt5WebKit.so.5.5 -> libQt5WebKit.so.5.5.0
+lrwxrwxrwx	root/root	opt/qt5/lib/libQt5WebKit.so.5 -> libQt5WebKit.so.5.5.0
+lrwxrwxrwx	root/root	opt/qt5/lib/libQt5WebKit.so -> libQt5WebKit.so.5.5.0
 -rw-r--r--	root/root	opt/qt5/lib/libQt5WebKitWidgets.la
 -rw-r--r--	root/root	opt/qt5/lib/libQt5WebKitWidgets.prl
--rwxr-xr-x	root/root	opt/qt5/lib/libQt5WebKitWidgets.so.5.4.1
-lrwxrwxrwx	root/root	opt/qt5/lib/libQt5WebKitWidgets.so.5.4 -> libQt5WebKitWidgets.so.5.4.1
-lrwxrwxrwx	root/root	opt/qt5/lib/libQt5WebKitWidgets.so.5 -> libQt5WebKitWidgets.so.5.4.1
-lrwxrwxrwx	root/root	opt/qt5/lib/libQt5WebKitWidgets.so -> libQt5WebKitWidgets.so.5.4.1
+-rwxr-xr-x	root/root	opt/qt5/lib/libQt5WebKitWidgets.so.5.5.0
+lrwxrwxrwx	root/root	opt/qt5/lib/libQt5WebKitWidgets.so.5.5 -> libQt5WebKitWidgets.so.5.5.0
+lrwxrwxrwx	root/root	opt/qt5/lib/libQt5WebKitWidgets.so.5 -> libQt5WebKitWidgets.so.5.5.0
+lrwxrwxrwx	root/root	opt/qt5/lib/libQt5WebKitWidgets.so -> libQt5WebKitWidgets.so.5.5.0
 drwxr-xr-x	root/root	opt/qt5/lib/pkgconfig/
 -rw-r--r--	root/root	opt/qt5/lib/pkgconfig/Qt5WebKit.pc
 -rw-r--r--	root/root	opt/qt5/lib/pkgconfig/Qt5WebKitWidgets.pc
