@@ -35,6 +35,7 @@ build() {
    echo -e "Hummingboard Mini Distribution $version\n" > $PKG/etc/issue
 
    # Cleanup
+   rm -r $PKG/opt/qt5-native
    cd $PKG/usr/include; rm -rf !(python|python?.?)
    find $PKG/usr/lib -name '*.a'    -delete -o \
                      -name '*.la'   -delete
