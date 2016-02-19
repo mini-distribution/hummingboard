@@ -1,0 +1,7 @@
+run findfdt
+setenv loadfdt ext2load mmc ${mmcdev}:${distro_bootpart} ${fdt_addr} /boot/${fdtfile}
+setenv loadzimage ext2load mmc ${mmcdev}:${distro_bootpart} ${loadaddr} /boot/zImage
+run loadfdt
+run loadzimage
+setenv bootargs root=/dev/mmcblk0p1 rw rootfstype=ext4 console=ttymxc0,115200 rootwait video=mxcfb0:dev=hdmi consoleblank=0
+bootz ${loadaddr} - ${fdt_addr}
