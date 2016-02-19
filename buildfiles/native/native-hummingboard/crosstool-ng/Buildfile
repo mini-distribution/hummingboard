@@ -2,19 +2,17 @@
 # URL: http://www.crosstool-ng.org
 
 name=crosstool-ng
-version=1.20.0
+version=1.22.0
 release=1
 source=(http://crosstool-ng.org/download/$name/$name-$version.tar.xz
         disable-LD_LIBRARY_PATH-check.patch
-        cc-gcc-add-gcc-4.9.2.patch
         $HOST.config)
 options=(nostrip)
 
 build() {
-   cd $name-$version
+   cd $name
 
    patch -p1 -i $SRC/disable-LD_LIBRARY_PATH-check.patch
-   patch -p1 -i $SRC/cc-gcc-add-gcc-4.9.2.patch
 
    ./configure --enable-local
    make -j $JOBS
@@ -42,11 +40,8 @@ build() {
    ln -s stubs-hard.h $PKG/$HOST/sysroot/usr/include/gnu/stubs.h
 
    # Fix .la files
-   sed -i -e "/libdir/s:=.*:='$CROSS_SYSROOT/lib':" \
-       $PKG/$HOST/sysroot/lib/libstdc++.la \
-       $PKG/$HOST/sysroot/lib/libsupc++.la \
-       $PKG/$HOST/sysroot/lib/libitm.la \
-       $PKG/$HOST/sysroot/lib/libatomic.la
+   find $PKG/$HOST/sysroot/lib -name "*.la" -exec sed -i -e "/libdir/s;'/lib;'`readlink -f $CROSS_SYSROOT`/lib;g" {} \;
+   find $PKG/$HOST/sysroot/usr/lib -name "*.la" -exec sed -i -e "/libdir/s;'/usr/lib;'`readlink -f $CROSS_SYSROOT`/usr/lib;g" {} \;
 }
 
 check() {
@@ -57,6 +52,7 @@ check() {
    check_tool gperf
    check_tool makeinfo
    check_tool libtool
+   check_tool help2man
    check_exist /usr/include/curses.h
    check_exist /usr/include/expat.h
 }
