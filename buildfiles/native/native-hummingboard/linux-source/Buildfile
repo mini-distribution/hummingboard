@@ -1,20 +1,20 @@
 # Description: The Linux kernel
-# URL: https://github.com/SolidRun/linux-imx6-3.14
+# URL: https://github.com/SolidRun/linux-fslc
 # License: GPLv2
 
 name=linux-source
 version=$KERNEL_VERSION
 release=1
-source=(http://buildgear.org/mirror/solidrun/solidrun-linux-imx6-3.14-gite85332f.tar.xz
+source=(http://mirror.mini-distribution.io/solidrun-linux-fslc-3.14-git4386797.tar.xz
         0001-ARM-Avoid-crash-on-power-off-and-reduce-power-consum.patch
         0002-ARM-Disable-timer-events-before-entering-halt-state.patch)
 options=(nostrip)
 
 build(){
    mkdir -p $PKG/usr/src
-   mv solidrun-linux-imx6-3.14-gite85332f $PKG/usr/src/linux
+   mv solidrun-linux-fslc-3.14-git4386797 $PKG/usr/src/linux
 
    cd $PKG/usr/src/linux
-   patch -p1 < $SRC/0001-ARM-Avoid-crash-on-power-off-and-reduce-power-consum.patch
-   patch -p1 < $SRC/0002-ARM-Disable-timer-events-before-entering-halt-state.patch
+   patch -p1 -i $SRC/0001-ARM-Avoid-crash-on-power-off-and-reduce-power-consum.patch
+   patch -p1 -i $SRC/0002-ARM-Disable-timer-events-before-entering-halt-state.patch
 }
