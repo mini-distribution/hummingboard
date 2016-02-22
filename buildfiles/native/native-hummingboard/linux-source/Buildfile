@@ -7,12 +7,14 @@ version=$KERNEL_VERSION
 release=1
 source=(http://mirror.mini-distribution.io/solidrun-linux-fslc-3.14-git4386797.tar.xz
         0001-ARM-Avoid-crash-on-power-off-and-reduce-power-consum.patch
-        0002-ARM-Disable-timer-events-before-entering-halt-state.patch)
+        0002-ARM-Disable-timer-events-before-entering-halt-state.patch
+        imx_v7_cbi_hb_defconfig)
 options=(nostrip)
 
 build(){
    mkdir -p $PKG/usr/src
    mv solidrun-linux-fslc-3.14-git4386797 $PKG/usr/src/linux
+   cp $SRC/imx_v7_cbi_hb_defconfig $PKG/usr/src/linux/arch/arm/configs
 
    cd $PKG/usr/src/linux
    patch -p1 -i $SRC/0001-ARM-Avoid-crash-on-power-off-and-reduce-power-consum.patch
