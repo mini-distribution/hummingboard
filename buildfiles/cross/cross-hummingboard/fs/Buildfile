@@ -5,6 +5,7 @@ name=fs
 version=1.0
 release=1
 options=(nostrip)
+source=(asound.conf)
 depends=(core
          u-boot
          linux
@@ -19,7 +20,7 @@ depends=(core
          gst-plugins-bad
          gst-plugins-ugly
          gstreamer-imx
-         gpu-viv-bin-mx6q
+         imx-gpu-viv
          qtwebkit
          qtwebkit-examples
          CinematicExperience)
@@ -33,6 +34,9 @@ build() {
 
    # Set login issue
    echo -e "Hummingboard Mini Distribution $version\n" > $PKG/etc/issue
+
+   # Add ALSA configuration (use onboard audio by default)
+   install -m 0644 $SRC/asound.conf $PKG/etc
 
    # Cleanup
    rm -r $PKG/opt/qt5-native
