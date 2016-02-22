@@ -34,9 +34,9 @@ drwxr-xr-x	root/root	usr/include/proc/
 -rw-r--r--	root/root	usr/include/proc/whattime.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libprocps.la
--rwxr-xr-x	root/root	usr/lib/libprocps.so.4.0.0
-lrwxrwxrwx	root/root	usr/lib/libprocps.so.4 -> libprocps.so.4.0.0
-lrwxrwxrwx	root/root	usr/lib/libprocps.so -> libprocps.so.4.0.0
+-rwxr-xr-x	root/root	usr/lib/libprocps.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib/libprocps.so.5 -> libprocps.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib/libprocps.so -> libprocps.so.5.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libprocps.pc
 drwxr-xr-x	root/root	usr/sbin/

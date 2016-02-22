@@ -8,18 +8,18 @@ drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libvorbis.a
 -rw-r--r--	root/root	usr/lib/libvorbisenc.a
 -rwxr-xr-x	root/root	usr/lib/libvorbisenc.la
--rwxr-xr-x	root/root	usr/lib/libvorbisenc.so.2.0.10
-lrwxrwxrwx	root/root	usr/lib/libvorbisenc.so.2 -> libvorbisenc.so.2.0.10
-lrwxrwxrwx	root/root	usr/lib/libvorbisenc.so -> libvorbisenc.so.2.0.10
+-rwxr-xr-x	root/root	usr/lib/libvorbisenc.so.2.0.11
+lrwxrwxrwx	root/root	usr/lib/libvorbisenc.so.2 -> libvorbisenc.so.2.0.11
+lrwxrwxrwx	root/root	usr/lib/libvorbisenc.so -> libvorbisenc.so.2.0.11
 -rw-r--r--	root/root	usr/lib/libvorbisfile.a
 -rwxr-xr-x	root/root	usr/lib/libvorbisfile.la
--rwxr-xr-x	root/root	usr/lib/libvorbisfile.so.3.3.6
-lrwxrwxrwx	root/root	usr/lib/libvorbisfile.so.3 -> libvorbisfile.so.3.3.6
-lrwxrwxrwx	root/root	usr/lib/libvorbisfile.so -> libvorbisfile.so.3.3.6
+-rwxr-xr-x	root/root	usr/lib/libvorbisfile.so.3.3.7
+lrwxrwxrwx	root/root	usr/lib/libvorbisfile.so.3 -> libvorbisfile.so.3.3.7
+lrwxrwxrwx	root/root	usr/lib/libvorbisfile.so -> libvorbisfile.so.3.3.7
 -rwxr-xr-x	root/root	usr/lib/libvorbis.la
--rwxr-xr-x	root/root	usr/lib/libvorbis.so.0.4.7
-lrwxrwxrwx	root/root	usr/lib/libvorbis.so.0 -> libvorbis.so.0.4.7
-lrwxrwxrwx	root/root	usr/lib/libvorbis.so -> libvorbis.so.0.4.7
+-rwxr-xr-x	root/root	usr/lib/libvorbis.so.0.4.8
+lrwxrwxrwx	root/root	usr/lib/libvorbis.so.0 -> libvorbis.so.0.4.8
+lrwxrwxrwx	root/root	usr/lib/libvorbis.so -> libvorbis.so.0.4.8
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/vorbisenc.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/vorbisfile.pc

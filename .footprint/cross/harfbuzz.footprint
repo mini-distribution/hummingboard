@@ -26,13 +26,13 @@ drwxr-xr-x	root/root	usr/include/harfbuzz/
 -rw-r--r--	root/root	usr/include/harfbuzz/hb-version.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libharfbuzz-icu.la
--rwxr-xr-x	root/root	usr/lib/libharfbuzz-icu.so.0.940.0
-lrwxrwxrwx	root/root	usr/lib/libharfbuzz-icu.so.0 -> libharfbuzz-icu.so.0.940.0
-lrwxrwxrwx	root/root	usr/lib/libharfbuzz-icu.so -> libharfbuzz-icu.so.0.940.0
+-rwxr-xr-x	root/root	usr/lib/libharfbuzz-icu.so.0.941.0
+lrwxrwxrwx	root/root	usr/lib/libharfbuzz-icu.so.0 -> libharfbuzz-icu.so.0.941.0
+lrwxrwxrwx	root/root	usr/lib/libharfbuzz-icu.so -> libharfbuzz-icu.so.0.941.0
 -rwxr-xr-x	root/root	usr/lib/libharfbuzz.la
--rwxr-xr-x	root/root	usr/lib/libharfbuzz.so.0.940.0
-lrwxrwxrwx	root/root	usr/lib/libharfbuzz.so.0 -> libharfbuzz.so.0.940.0
-lrwxrwxrwx	root/root	usr/lib/libharfbuzz.so -> libharfbuzz.so.0.940.0
+-rwxr-xr-x	root/root	usr/lib/libharfbuzz.so.0.941.0
+lrwxrwxrwx	root/root	usr/lib/libharfbuzz.so.0 -> libharfbuzz.so.0.941.0
+lrwxrwxrwx	root/root	usr/lib/libharfbuzz.so -> libharfbuzz.so.0.941.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/harfbuzz-icu.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/harfbuzz.pc
@@ -62,11 +62,11 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/harfbuzz/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-ot-layout.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-ot-tag.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-set.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-shape.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-shape-plan.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-unicode.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-uniscribe.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-version.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-Shaping.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/home.png
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/index.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/index.sgml

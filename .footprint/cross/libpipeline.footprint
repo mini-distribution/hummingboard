@@ -3,8 +3,8 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/pipeline.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libpipeline.la
--rwxr-xr-x	root/root	usr/lib/libpipeline.so.1.4.0
-lrwxrwxrwx	root/root	usr/lib/libpipeline.so.1 -> libpipeline.so.1.4.0
-lrwxrwxrwx	root/root	usr/lib/libpipeline.so -> libpipeline.so.1.4.0
+-rwxr-xr-x	root/root	usr/lib/libpipeline.so.1.4.1
+lrwxrwxrwx	root/root	usr/lib/libpipeline.so.1 -> libpipeline.so.1.4.1
+lrwxrwxrwx	root/root	usr/lib/libpipeline.so -> libpipeline.so.1.4.1
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libpipeline.pc

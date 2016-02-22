@@ -26,6 +26,7 @@ lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
 -rwxr-xr-x	root/root	usr/bin/look
 -rwxr-xr-x	root/root	usr/bin/lsblk
 -rwxr-xr-x	root/root	usr/bin/lscpu
+-rwxr-xr-x	root/root	usr/bin/lsipc
 -rwxr-xr-x	root/root	usr/bin/lslocks
 -rwxr-xr-x	root/root	usr/bin/lslogins
 -rwxr-xr-x	root/root	usr/bin/mcookie
@@ -178,6 +179,7 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/losetup
 -rw-r--r--	root/root	usr/share/bash-completion/completions/lsblk
 -rw-r--r--	root/root	usr/share/bash-completion/completions/lscpu
+-rw-r--r--	root/root	usr/share/bash-completion/completions/lsipc
 -rw-r--r--	root/root	usr/share/bash-completion/completions/lslocks
 -rw-r--r--	root/root	usr/share/bash-completion/completions/mcookie
 -rw-r--r--	root/root	usr/share/bash-completion/completions/mesg
@@ -249,6 +251,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/logger.1
 -rw-r--r--	root/root	usr/share/man/man1/look.1
 -rw-r--r--	root/root	usr/share/man/man1/lscpu.1
+-rw-r--r--	root/root	usr/share/man/man1/lsipc.1
 -rw-r--r--	root/root	usr/share/man/man1/lslogins.1
 -rw-r--r--	root/root	usr/share/man/man1/mcookie.1
 -rw-r--r--	root/root	usr/share/man/man1/mesg.1

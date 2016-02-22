@@ -4,7 +4,7 @@ lrwxrwxrwx	root/root	usr/bin/captoinfo -> tic
 -rwxr-xr-x	root/root	usr/bin/clear
 -rwxr-xr-x	root/root	usr/bin/infocmp
 lrwxrwxrwx	root/root	usr/bin/infotocap -> tic
--rwxr-xr-x	root/root	usr/bin/ncurses5-config
+-rwxr-xr-x	root/root	usr/bin/ncurses6-config
 lrwxrwxrwx	root/root	usr/bin/reset -> tset
 -rwxr-xr-x	root/root	usr/bin/tabs
 -rwxr-xr-x	root/root	usr/bin/tic
@@ -33,23 +33,23 @@ lrwxrwxrwx	root/root	usr/include/ncurses.h -> curses.h
 -rw-r--r--	root/root	usr/include/tic.h
 -rw-r--r--	root/root	usr/include/unctrl.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libcurses.so -> libncurses.so.5.9
--rwxr-xr-x	root/root	usr/lib/libform.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libform.so.5 -> libform.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libform.so -> libform.so.5
--rwxr-xr-x	root/root	usr/lib/libmenu.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libmenu.so.5 -> libmenu.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libmenu.so -> libmenu.so.5
+lrwxrwxrwx	root/root	usr/lib/libcurses.so -> libncurses.so.6.0
+-rwxr-xr-x	root/root	usr/lib/libform.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libform.so.6 -> libform.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libform.so -> libform.so.6
+-rwxr-xr-x	root/root	usr/lib/libmenu.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libmenu.so.6 -> libmenu.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libmenu.so -> libmenu.so.6
 -rw-r--r--	root/root	usr/lib/libncurses++.a
--rwxr-xr-x	root/root	usr/lib/libncurses.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libncurses.so.5 -> libncurses.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libncurses.so -> libncurses.so.5
--rwxr-xr-x	root/root	usr/lib/libpanel.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libpanel.so.5 -> libpanel.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libpanel.so -> libpanel.so.5
--rwxr-xr-x	root/root	usr/lib/libtinfo.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libtinfo.so.5 -> libtinfo.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libtinfo.so -> libtinfo.so.5
+-rwxr-xr-x	root/root	usr/lib/libncurses.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libncurses.so.6 -> libncurses.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libncurses.so -> libncurses.so.6
+-rwxr-xr-x	root/root	usr/lib/libpanel.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libpanel.so.6 -> libpanel.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libpanel.so -> libpanel.so.6
+-rwxr-xr-x	root/root	usr/lib/libtinfo.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libtinfo.so.6 -> libtinfo.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libtinfo.so -> libtinfo.so.6
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/form.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/menu.pc
@@ -65,7 +65,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/clear.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/infocmp.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/infotocap.1.gz
--rw-r--r--	root/root	usr/share/man/man1/ncurses5-config.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/ncurses6-config.1.gz
 lrwxrwxrwx	root/root	usr/share/man/man1/reset.1.gz -> tset.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/tabs.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/tic.1.gz
@@ -137,10 +137,13 @@ lrwxrwxrwx	root/root	usr/share/man/man3/curscr.3ncurses.gz -> curses_variables.3
 lrwxrwxrwx	root/root	usr/share/man/man3/curses.3ncurses.gz -> ncurses.3ncurses.gz
 -rw-r--r--	root/root	usr/share/man/man3/curses_variables.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/curses_version.3ncurses.gz -> extensions.3ncurses.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/curs_legacy.3ncurses.gz -> legacy.3ncurses.gz
 -rw-r--r--	root/root	usr/share/man/man3/cursor.3form.gz
 -rw-r--r--	root/root	usr/share/man/man3/cursor.3menu.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/curs_set.3ncurses.gz -> kernel.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/curs_set_sp.3ncurses.gz -> sp_funcs.3ncurses.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/curs_sp_funcs.3ncurses.gz -> sp_funcs.3ncurses.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/curs_threads.3ncurses.gz -> threads.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/cur_term.3ncurses.gz -> terminfo_variables.3ncurses.gz
 -rw-r--r--	root/root	usr/share/man/man3/data.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/data_ahead.3form.gz -> data.3form.gz
@@ -211,32 +214,22 @@ lrwxrwxrwx	root/root	usr/share/man/man3/flushinp.3ncurses.gz -> util.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/flushinp_sp.3ncurses.gz -> sp_funcs.3ncurses.gz
 -rw-r--r--	root/root	usr/share/man/man3/form.3form.gz
 -rw-r--r--	root/root	usr/share/man/man3/format.3menu.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/form_cursor.3form.gz -> cursor.3form.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/form_data.3form.gz -> data.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_driver.3form.gz -> driver.3form.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/form_driver_w.3form.gz -> driver.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_field.3form.gz -> field.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_field_attributes.3form.gz -> field_attributes.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_field_buffer.3form.gz -> field_buffer.3form.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/form_field_info.3form.gz -> field_info.3form.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/form_field_just.3form.gz -> field_just.3form.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/form_field_new.3form.gz -> field_new.3form.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/form_field_opts.3form.gz -> field_opts.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_fields.3form.gz -> field.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_fieldtype.3form.gz -> fieldtype.3form.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/form_field_userptr.3form.gz -> field_userptr.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_field_validation.3form.gz -> field_validation.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_hook.3form.gz -> hook.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_init.3form.gz -> hook.3form.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/form_new.3form.gz -> new.3form.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/form_new_page.3form.gz -> new_page.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_opts.3form.gz -> opts.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_opts_off.3form.gz -> opts.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_opts_on.3form.gz -> opts.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_page.3form.gz -> page.3form.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/form_post.3form.gz -> post.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_request_by_name.3form.gz -> requestname.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_request_name.3form.gz -> requestname.3form.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/form_requestname.3form.gz -> requestname.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_sub.3form.gz -> win.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_term.3form.gz -> hook.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_userptr.3form.gz -> userptr.3form.gz
@@ -380,10 +373,8 @@ lrwxrwxrwx	root/root	usr/share/man/man3/mcprint.3ncurses.gz -> print.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/mcprint_sp.3ncurses.gz -> sp_funcs.3ncurses.gz
 -rw-r--r--	root/root	usr/share/man/man3/memleaks.3ncurses.gz
 -rw-r--r--	root/root	usr/share/man/man3/menu.3menu.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/menu_attributes.3menu.gz -> attributes.3menu.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/menu_back.3menu.gz -> attributes.3menu.gz
 -rw-r--r--	root/root	usr/share/man/man3/menu_current.3menu.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/menu_cursor.3menu.gz -> cursor.3menu.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/menu_driver.3menu.gz -> driver.3menu.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/menu_fore.3menu.gz -> attributes.3menu.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/menu_format.3menu.gz -> format.3menu.gz
@@ -399,10 +390,8 @@ lrwxrwxrwx	root/root	usr/share/man/man3/menu_opts_off.3menu.gz -> opts.3menu.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/menu_opts_on.3menu.gz -> opts.3menu.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/menu_pad.3menu.gz -> attributes.3menu.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/menu_pattern.3menu.gz -> pattern.3menu.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/menu_post.3menu.gz -> post.3menu.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/menu_request_by_name.3menu.gz -> requestname.3menu.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/menu_request_name.3menu.gz -> requestname.3menu.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/menu_requestname.3menu.gz -> requestname.3menu.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/menu_spacing.3menu.gz -> spacing.3menu.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/menu_sub.3menu.gz -> win.3menu.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/menu_term.3menu.gz -> hook.3menu.gz
@@ -412,11 +401,6 @@ lrwxrwxrwx	root/root	usr/share/man/man3/menu_term.3menu.gz -> hook.3menu.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/menu_win.3menu.gz -> win.3menu.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/meta.3ncurses.gz -> inopts.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/mitem_current.3menu.gz -> menu_current.3menu.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/mitem_name.3menu.gz -> menu_name.3menu.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/mitem_new.3menu.gz -> menu_new.3menu.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/mitem_opts.3menu.gz -> menu_opts.3menu.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/mitem_userptr.3menu.gz -> menu_userptr.3menu.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/mitem_value.3menu.gz -> menu_value.3menu.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/mitem_visible.3menu.gz -> menu_visible.3menu.gz
 -rw-r--r--	root/root	usr/share/man/man3/mouse.3ncurses.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/mouseinterval.3ncurses.gz -> mouse.3ncurses.gz
@@ -2218,6 +2202,7 @@ lrwxrwxrwx	root/root	usr/share/terminfo/m/mimei -> mime
 -rw-r--r--	root/root	usr/share/terminfo/m/minitel1
 -rw-r--r--	root/root	usr/share/terminfo/m/minitel1b
 -rw-r--r--	root/root	usr/share/terminfo/m/minitel1b-80
+-rw-r--r--	root/root	usr/share/terminfo/m/minitel1b-nb
 lrwxrwxrwx	root/root	usr/share/terminfo/m/minitel-2 -> m2-nam
 lrwxrwxrwx	root/root	usr/share/terminfo/m/minitel-2-nam -> m2-nam
 lrwxrwxrwx	root/root	usr/share/terminfo/m/minitel -> m2-nam
@@ -2393,6 +2378,9 @@ lrwxrwxrwx	root/root	usr/share/terminfo/n/nsterm-acs-m -> nsterm-m-acs
 lrwxrwxrwx	root/root	usr/share/terminfo/n/nsterm-acs-m-s -> nsterm-m-s-acs
 lrwxrwxrwx	root/root	usr/share/terminfo/n/nsterm-acs-s -> nsterm-s-acs
 -rw-r--r--	root/root	usr/share/terminfo/n/nsterm-bce
+-rw-r--r--	root/root	usr/share/terminfo/n/nsterm-build326
+-rw-r--r--	root/root	usr/share/terminfo/n/nsterm-build343
+-rw-r--r--	root/root	usr/share/terminfo/n/nsterm-build361
 -rw-r--r--	root/root	usr/share/terminfo/n/nsterm-c
 -rw-r--r--	root/root	usr/share/terminfo/n/nsterm+c
 -rw-r--r--	root/root	usr/share/terminfo/n/nsterm+c41
@@ -2650,6 +2638,14 @@ lrwxrwxrwx	root/root	usr/share/terminfo/p/pt505 -> ../a/att505
 -rw-r--r--	root/root	usr/share/terminfo/p/pty
 -rw-r--r--	root/root	usr/share/terminfo/p/putty
 -rw-r--r--	root/root	usr/share/terminfo/p/putty-256color
+-rw-r--r--	root/root	usr/share/terminfo/p/putty+fnkeys
+-rw-r--r--	root/root	usr/share/terminfo/p/putty+fnkeys+esc
+-rw-r--r--	root/root	usr/share/terminfo/p/putty+fnkeys+linux
+-rw-r--r--	root/root	usr/share/terminfo/p/putty+fnkeys+sco
+-rw-r--r--	root/root	usr/share/terminfo/p/putty+fnkeys+vt100
+-rw-r--r--	root/root	usr/share/terminfo/p/putty+fnkeys+vt400
+-rw-r--r--	root/root	usr/share/terminfo/p/putty+fnkeys+xterm
+-rw-r--r--	root/root	usr/share/terminfo/p/putty-noapp
 -rw-r--r--	root/root	usr/share/terminfo/p/putty-sco
 -rw-r--r--	root/root	usr/share/terminfo/p/putty-vt100
 drwxr-xr-x	root/root	usr/share/terminfo/q/
@@ -2759,7 +2755,6 @@ lrwxrwxrwx	root/root	usr/share/terminfo/s/sc415 -> scanset
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-bce.gnome
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-bce.konsole
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-bce.linux
--rw-r--r--	root/root	usr/share/terminfo/s/screen-bce.mlterm
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-bce.mrxvt
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-bce.rxvt
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-bce.xterm-new
@@ -2768,14 +2763,20 @@ lrwxrwxrwx	root/root	usr/share/terminfo/s/sc415 -> scanset
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.gnome
 -rw-r--r--	root/root	usr/share/terminfo/s/screen+italics
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.konsole
+-rw-r--r--	root/root	usr/share/terminfo/s/screen.konsole-256color
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.linux
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.mlterm
+-rw-r--r--	root/root	usr/share/terminfo/s/screen.mlterm-256color
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.mrxvt
+-rw-r--r--	root/root	usr/share/terminfo/s/screen.putty
+-rw-r--r--	root/root	usr/share/terminfo/s/screen.putty-256color
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.rxvt
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-s
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.teraterm
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.vte
+-rw-r--r--	root/root	usr/share/terminfo/s/screen.vte-256color
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-w
+-rw-r--r--	root/root	usr/share/terminfo/s/screen.xterm-256color
 lrwxrwxrwx	root/root	usr/share/terminfo/s/screen.xterm-new -> screen.xterm-xfree86
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.xterm-r6
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.xterm-xfree86
@@ -2921,6 +2922,8 @@ lrwxrwxrwx	root/root	usr/share/terminfo/t/ti916-220-8 -> ti916-8
 -rw-r--r--	root/root	usr/share/terminfo/t/ti931
 -rw-r--r--	root/root	usr/share/terminfo/t/ti_ansi
 lrwxrwxrwx	root/root	usr/share/terminfo/t/tkterm -> tt
+-rw-r--r--	root/root	usr/share/terminfo/t/tmux
+-rw-r--r--	root/root	usr/share/terminfo/t/tmux-256color
 lrwxrwxrwx	root/root	usr/share/terminfo/t/tn1200 -> terminet1200
 lrwxrwxrwx	root/root	usr/share/terminfo/t/tn300 -> terminet1200
 -rw-r--r--	root/root	usr/share/terminfo/t/trs16
@@ -3121,6 +3124,8 @@ lrwxrwxrwx	root/root	usr/share/terminfo/v/venix -> ../p/pc-venix
 -rw-r--r--	root/root	usr/share/terminfo/v/vi55
 -rw-r--r--	root/root	usr/share/terminfo/v/vi550
 -rw-r--r--	root/root	usr/share/terminfo/v/vi603
+-rw-r--r--	root/root	usr/share/terminfo/v/viewdata
+-rw-r--r--	root/root	usr/share/terminfo/v/viewdata-rv
 -rw-r--r--	root/root	usr/share/terminfo/v/viewpoint
 lrwxrwxrwx	root/root	usr/share/terminfo/v/viewpoint3a+ -> vp3a+
 lrwxrwxrwx	root/root	usr/share/terminfo/v/viewpoint60 -> vp60
@@ -3225,6 +3230,7 @@ lrwxrwxrwx	root/root	usr/share/terminfo/v/vt-61 -> vt61
 -rw-r--r--	root/root	usr/share/terminfo/v/vte-2007
 -rw-r--r--	root/root	usr/share/terminfo/v/vte-2008
 -rw-r--r--	root/root	usr/share/terminfo/v/vte-2012
+-rw-r--r--	root/root	usr/share/terminfo/v/vte-2014
 -rw-r--r--	root/root	usr/share/terminfo/v/vte-256color
 -rw-r--r--	root/root	usr/share/terminfo/v/vte+pcfkeys
 lrwxrwxrwx	root/root	usr/share/terminfo/v/vtnt -> ../m/ms-vt100-color

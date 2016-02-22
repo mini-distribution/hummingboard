@@ -1,9 +1,17 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstimxg2d.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstimxipu.so
--rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstimxv4l2src.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstimxpxp.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstimxv4l2videosrc.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstimxvpu.so
--rwxr-xr-x	root/root	usr/lib/libgstimxcommon.so.0.9.9
-lrwxrwxrwx	root/root	usr/lib/libgstimxcommon.so.0 -> libgstimxcommon.so.0.9.9
-lrwxrwxrwx	root/root	usr/lib/libgstimxcommon.so -> libgstimxcommon.so.0.9.9
+-rwxr-xr-x	root/root	usr/lib/libgstimxblitter.so.0.12.0
+lrwxrwxrwx	root/root	usr/lib/libgstimxblitter.so.0 -> libgstimxblitter.so.0.12.0
+lrwxrwxrwx	root/root	usr/lib/libgstimxblitter.so -> libgstimxblitter.so.0.12.0
+-rwxr-xr-x	root/root	usr/lib/libgstimxcommon.so.0.12.0
+lrwxrwxrwx	root/root	usr/lib/libgstimxcommon.so.0 -> libgstimxcommon.so.0.12.0
+lrwxrwxrwx	root/root	usr/lib/libgstimxcommon.so -> libgstimxcommon.so.0.12.0
+-rwxr-xr-x	root/root	usr/lib/libgstimxcompositor.so.0.12.0
+lrwxrwxrwx	root/root	usr/lib/libgstimxcompositor.so.0 -> libgstimxcompositor.so.0.12.0
+lrwxrwxrwx	root/root	usr/lib/libgstimxcompositor.so -> libgstimxcompositor.so.0.12.0

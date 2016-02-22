@@ -1,4 +1,3 @@
-a3abf75801f02199ff48c316a7b6598860e6ca20ce2fe79b0bec873905e5c8a4  0001-P2P-Validate-SSID-element-length-before-copying-it-C.patch
-058dc832c096139a059e6df814080f50251a8d313c21b13364c54a1e70109122  wpa_supplicant-2.4.tar.gz
+cce55bae483b364eae55c35ba567c279be442ed8bab5b80a3c7fb0d057b9b316  wpa_supplicant-2.5.tar.gz
 31e703dd6354e46d77fd8a180bf56368d5a87db9a5acbc4cbd53847127161a7f  wpa_supplicant.conf
 a65d9dd3bfed02286abbe639ef01c1e4ae637fe86bbfdbdd454b0aeb272c656d  wpa_supplicant.service

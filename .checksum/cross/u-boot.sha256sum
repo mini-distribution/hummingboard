@@ -1,2 +1,4 @@
-3a9bcafc1f45da5837c990d9c9e11113e9416618194cb1d1d0e7237ce90acc58  solidrun-u-boot-imx6-gite4bc4c3.tar.xz
+2ef66560c314b748e0e28c223ab17061e4b2552888573f55b3e05f2f24898419  0001-Add-linux-compiler-gcc5.h-to-fix-builds-with-gcc5.patch
+1abc0738d95f13d2318b04f2d388b5e6fdeb7579e9d7fbde90dc9a0f1303067d  0002-u-boot-gcc5-use_gcc_inline_version_instead_c99.patch
+4336deb7aab5a84a03c1786f9351de4331f8c9fdf93b1d139402369220c624db  solidrun-u-boot-imx6-git408544d6.tar.xz
 674e3026141610f1e843a8714df3397e1348dd525aaf5a557c65084ea8389a51  uEnv.txt
