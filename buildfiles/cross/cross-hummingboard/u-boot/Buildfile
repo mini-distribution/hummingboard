@@ -1,24 +1,21 @@
 # Description: U-boot - The universal bootloader
-# URL: http://www.denx.de/wiki/U-Boot/WebHome
+# URL: https://github.com/SolidRun/u-boot-imx6
 # License: GPLv2
 
 name=u-boot
-version=2016.01
+version=git408544d6
 release=1
-source=(ftp://ftp.denx.de/pub/u-boot/u-boot-$version.tar.bz2 boot.txt)
+source=(http://mirror.mini-distribution.io/solidrun/solidrun-u-boot-imx6-$version.tar.xz uEnv.txt)
 
 build(){
-    cd $name-$version
+    cd solidrun-u-boot-imx6-$version
 
-    make ARCH=arm CROSS_COMPILE=$HOST- mx6cuboxi_defconfig
+    make ARCH=arm CROSS_COMPILE=$HOST- mx6_cubox-i_config
     make -j $JOBS ARCH=arm CROSS_COMPILE=$HOST-
 
-    mkimage -A arm -T script -O linux -d $SRC/boot.txt $OUTPUT/boot.scr
+    mkdir -p $PKG/boot
+    cp $SRC/uEnv.txt $PKG/boot
 
     cp u-boot.img $OUTPUT
     cp SPL $OUTPUT
-}
-
-check(){
-    check_tool mkimage "Available in Ubuntu package u-boot-tools"
 }
