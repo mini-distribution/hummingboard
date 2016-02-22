@@ -5,10 +5,15 @@
 name=u-boot
 version=git408544d6
 release=1
-source=(http://mirror.mini-distribution.io/solidrun/solidrun-u-boot-imx6-$version.tar.xz uEnv.txt)
+source=(http://mirror.mini-distribution.io/solidrun/solidrun-u-boot-imx6-$version.tar.xz
+        0001-Add-linux-compiler-gcc5.h-to-fix-builds-with-gcc5.patch uEnv.txt
+        0002-u-boot-gcc5-use_gcc_inline_version_instead_c99.patch)
 
 build(){
     cd solidrun-u-boot-imx6-$version
+
+    patch -p1 -i $SRC/0001-Add-linux-compiler-gcc5.h-to-fix-builds-with-gcc5.patch
+    patch -p1 -i $SRC/0002-u-boot-gcc5-use_gcc_inline_version_instead_c99.patch
 
     make ARCH=arm CROSS_COMPILE=$HOST- mx6_cubox-i_config
     make -j $JOBS ARCH=arm CROSS_COMPILE=$HOST-
