@@ -7,7 +7,7 @@ release=1
 source=(http://download.qt-project.org/official_releases/qt/${version%.*}/$version/submodules/$name-opensource-src-$version.tar.xz
         qmake.conf qplatformdefs.h qeglfshooks_imx6.cpp)
 depends=(zlib libpng libjpeg harfbuzz freetype glib libpcre sqlite icu openssl
-         gst-plugins-good gpu-viv-bin-mx6q)
+         gst-plugins-good imx-gpu-viv)
 
 build() {
    cd qtbase-opensource-src-$version
