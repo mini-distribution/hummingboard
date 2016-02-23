@@ -1,0 +1,4 @@
+2b042ccec755fb823a52e2833589be1ab71b1e4c5d3a1c431c77e28c6362892d  0001-ARM-Avoid-crash-on-power-off-and-reduce-power-consum.patch
+5398f77591687e6dc0f962204a30438b57652976d7e0e192f79c26838b758ada  0002-ARM-Disable-timer-events-before-entering-halt-state.patch
+1c6025ec893f4819bf394ef01152c5b6a8bdf1e63a471020a5db7f7845d6f280  imx_v7_cbi_hb_defconfig
+61e883a443bc33b05d1f67d7b59d188e8152f363a1ad80d345e8c3f12bfc5df3  solidrun-linux-fslc-3.14-git4386797.tar.xz
