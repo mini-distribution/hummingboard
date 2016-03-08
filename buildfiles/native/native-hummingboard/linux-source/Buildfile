@@ -5,7 +5,7 @@
 name=linux-source
 version=$KERNEL_VERSION
 release=1
-source=(http://mirror.mini-distribution.io/solidrun-linux-fslc-3.14-git4386797.tar.xz
+source=(http://mirror.mini-distribution.io/solidrun/solidrun-linux-fslc-3.14-git4386797.tar.xz
         0001-ARM-Avoid-crash-on-power-off-and-reduce-power-consum.patch
         0002-ARM-Disable-timer-events-before-entering-halt-state.patch
         imx_v7_cbi_hb_defconfig)
