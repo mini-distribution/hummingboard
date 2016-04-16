@@ -21,9 +21,7 @@ depends=(core
          gst-plugins-ugly
          gstreamer-imx
          imx-gpu-viv
-         qtwebkit
-         qtwebkit-examples
-         CinematicExperience)
+         qtbase)
 
 build() {
    # Copy fully populated sysroot

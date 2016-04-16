@@ -53,11 +53,6 @@ Example feature tests:
        $ wget https://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_1080p_h264.mov
        $ gst-launch-1.0 playbin uri=file:///root/big_buck_bunny_1080p_h264.mov video-sink=imxipuvideosink
 
-   * QT5 CinematicExeperience technology demo (QML/GLESv2):
-
-       $ cd /opt/qt5/CinematicExperience
-       $ ./Qt5_CinematicExperience
-
    * QT5 demos are available in /opt/qt5/examples/*
 
 Installation:
