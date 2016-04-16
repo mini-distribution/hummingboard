@@ -29,6 +29,7 @@ lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
 -rwxr-xr-x	root/root	usr/bin/lsipc
 -rwxr-xr-x	root/root	usr/bin/lslocks
 -rwxr-xr-x	root/root	usr/bin/lslogins
+-rwxr-xr-x	root/root	usr/bin/lsns
 -rwxr-xr-x	root/root	usr/bin/mcookie
 -rwxr-xr-x	root/root	usr/bin/mesg
 -rwxr-xr-x	root/root	usr/bin/more
@@ -169,6 +170,7 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/hexdump
 -rw-r--r--	root/root	usr/share/bash-completion/completions/hwclock
 -rw-r--r--	root/root	usr/share/bash-completion/completions/ionice
+-rw-r--r--	root/root	usr/share/bash-completion/completions/ipcmk
 -rw-r--r--	root/root	usr/share/bash-completion/completions/ipcrm
 -rw-r--r--	root/root	usr/share/bash-completion/completions/ipcs
 -rw-r--r--	root/root	usr/share/bash-completion/completions/isosize
@@ -181,6 +183,8 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/lscpu
 -rw-r--r--	root/root	usr/share/bash-completion/completions/lsipc
 -rw-r--r--	root/root	usr/share/bash-completion/completions/lslocks
+-rw-r--r--	root/root	usr/share/bash-completion/completions/lslogins
+-rw-r--r--	root/root	usr/share/bash-completion/completions/lsns
 -rw-r--r--	root/root	usr/share/bash-completion/completions/mcookie
 -rw-r--r--	root/root	usr/share/bash-completion/completions/mesg
 -rw-r--r--	root/root	usr/share/bash-completion/completions/mkfs
@@ -189,6 +193,7 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/mkfs.minix
 -rw-r--r--	root/root	usr/share/bash-completion/completions/mkswap
 -rw-r--r--	root/root	usr/share/bash-completion/completions/more
+-rw-r--r--	root/root	usr/share/bash-completion/completions/mount
 -rw-r--r--	root/root	usr/share/bash-completion/completions/mountpoint
 -rw-r--r--	root/root	usr/share/bash-completion/completions/namei
 -rw-r--r--	root/root	usr/share/bash-completion/completions/nsenter
@@ -210,10 +215,12 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/setterm
 -rw-r--r--	root/root	usr/share/bash-completion/completions/sfdisk
 -rw-r--r--	root/root	usr/share/bash-completion/completions/swaplabel
+-rw-r--r--	root/root	usr/share/bash-completion/completions/swapoff
 -rw-r--r--	root/root	usr/share/bash-completion/completions/swapon
 -rw-r--r--	root/root	usr/share/bash-completion/completions/tailf
 -rw-r--r--	root/root	usr/share/bash-completion/completions/taskset
 -rw-r--r--	root/root	usr/share/bash-completion/completions/ul
+-rw-r--r--	root/root	usr/share/bash-completion/completions/umount
 -rw-r--r--	root/root	usr/share/bash-completion/completions/unshare
 -rw-r--r--	root/root	usr/share/bash-completion/completions/utmpdump
 -rw-r--r--	root/root	usr/share/bash-completion/completions/uuidd
@@ -320,6 +327,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/losetup.8
 -rw-r--r--	root/root	usr/share/man/man8/lsblk.8
 -rw-r--r--	root/root	usr/share/man/man8/lslocks.8
+-rw-r--r--	root/root	usr/share/man/man8/lsns.8
 -rw-r--r--	root/root	usr/share/man/man8/mkfs.8
 -rw-r--r--	root/root	usr/share/man/man8/mkfs.bfs.8
 -rw-r--r--	root/root	usr/share/man/man8/mkfs.cramfs.8

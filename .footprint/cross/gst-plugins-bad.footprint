@@ -2,10 +2,14 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/gstreamer-1.0/
 drwxr-xr-x	root/root	usr/include/gstreamer-1.0/gst/
+drwxr-xr-x	root/root	usr/include/gstreamer-1.0/gst/audio/
+-rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/audio/gstaudioaggregator.h
+drwxr-xr-x	root/root	usr/include/gstreamer-1.0/gst/base/
 drwxr-xr-x	root/root	usr/include/gstreamer-1.0/gst/basecamerabinsrc/
 -rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/basecamerabinsrc/gstbasecamerasrc.h
 -rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/basecamerabinsrc/gstcamerabin-enum.h
 -rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/basecamerabinsrc/gstcamerabinpreview.h
+-rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/base/gstaggregator.h
 drwxr-xr-x	root/root	usr/include/gstreamer-1.0/gst/codecparsers/
 -rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/codecparsers/gsth264parser.h
 -rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/codecparsers/gsth265parser.h
@@ -16,6 +20,7 @@ drwxr-xr-x	root/root	usr/include/gstreamer-1.0/gst/codecparsers/
 -rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/codecparsers/gstvc1parser.h
 -rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/codecparsers/gstvp8parser.h
 -rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/codecparsers/gstvp8rangedecoder.h
+-rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/codecparsers/gstvp9parser.h
 drwxr-xr-x	root/root	usr/include/gstreamer-1.0/gst/insertbin/
 -rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/insertbin/gstinsertbin.h
 drwxr-xr-x	root/root	usr/include/gstreamer-1.0/gst/interfaces/
@@ -30,10 +35,23 @@ drwxr-xr-x	root/root	usr/include/gstreamer-1.0/gst/mpegts/
 -rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/mpegts/gstmpegtssection.h
 -rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/mpegts/gst-scte-section.h
 -rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/mpegts/mpegts.h
+drwxr-xr-x	root/root	usr/include/gstreamer-1.0/gst/player/
+-rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/player/gstplayer-g-main-context-signal-dispatcher.h
+-rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/player/gstplayer.h
+-rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/player/gstplayer-media-info.h
+-rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/player/gstplayer-signal-dispatcher.h
+-rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/player/gstplayer-types.h
+-rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/player/gstplayer-video-overlay-video-renderer.h
+-rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/player/gstplayer-video-renderer.h
+-rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/player/gstplayer-visualization.h
+-rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/player/player.h
 drwxr-xr-x	root/root	usr/include/gstreamer-1.0/gst/uridownloader/
 -rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/uridownloader/gstfragment.h
 -rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/uridownloader/gsturidownloader_debug.h
 -rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/uridownloader/gsturidownloader.h
+drwxr-xr-x	root/root	usr/include/gstreamer-1.0/gst/video/
+-rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/video/gstvideoaggregator.h
+-rw-r--r--	root/root	usr/include/gstreamer-1.0/gst/video/gstvideoaggregatorpad.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstaccurip.la
@@ -86,8 +104,6 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstfestival.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstfieldanalysis.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstfieldanalysis.so
--rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstfragmented.la
--rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstfragmented.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstfreeverb.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstfreeverb.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstfrei0r.la
@@ -98,6 +114,8 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstgdp.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstgeometrictransform.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstgeometrictransform.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgsthls.la
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgsthls.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstid3tag.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstid3tag.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstinter.la
@@ -112,8 +130,6 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstjp2kdecimator.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstjpegformat.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstjpegformat.so
--rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstliveadder.la
--rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstliveadder.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstmidi.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstmidi.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstmpegpsdemux.la
@@ -126,6 +142,8 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstmpegtsmux.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstmxf.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstmxf.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstnetsim.la
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstnetsim.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstpcapparse.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstpcapparse.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstpnm.la
@@ -136,8 +154,6 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstremovesilence.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstrfbsrc.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstrfbsrc.so
--rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstrtpbad.la
--rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstrtpbad.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstrtponvif.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstrtponvif.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstsdpelem.la
@@ -162,6 +178,8 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvcdsrc.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideofiltersbad.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideofiltersbad.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideoframe_audiolevel.la
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideoframe_audiolevel.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideoparsersbad.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideoparsersbad.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvideosignal.la
@@ -173,45 +191,57 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstyadif.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstyadif.so
 -rwxr-xr-x	root/root	usr/lib/libgstadaptivedemux-1.0.la
--rwxr-xr-x	root/root	usr/lib/libgstadaptivedemux-1.0.so.0.603.0
-lrwxrwxrwx	root/root	usr/lib/libgstadaptivedemux-1.0.so.0 -> libgstadaptivedemux-1.0.so.0.603.0
-lrwxrwxrwx	root/root	usr/lib/libgstadaptivedemux-1.0.so -> libgstadaptivedemux-1.0.so.0.603.0
+-rwxr-xr-x	root/root	usr/lib/libgstadaptivedemux-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstadaptivedemux-1.0.so.0 -> libgstadaptivedemux-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstadaptivedemux-1.0.so -> libgstadaptivedemux-1.0.so.0.800.0
+-rwxr-xr-x	root/root	usr/lib/libgstbadaudio-1.0.la
+-rwxr-xr-x	root/root	usr/lib/libgstbadaudio-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadaudio-1.0.so.0 -> libgstbadaudio-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadaudio-1.0.so -> libgstbadaudio-1.0.so.0.800.0
 -rwxr-xr-x	root/root	usr/lib/libgstbadbase-1.0.la
--rwxr-xr-x	root/root	usr/lib/libgstbadbase-1.0.so.0.603.0
-lrwxrwxrwx	root/root	usr/lib/libgstbadbase-1.0.so.0 -> libgstbadbase-1.0.so.0.603.0
-lrwxrwxrwx	root/root	usr/lib/libgstbadbase-1.0.so -> libgstbadbase-1.0.so.0.603.0
+-rwxr-xr-x	root/root	usr/lib/libgstbadbase-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadbase-1.0.so.0 -> libgstbadbase-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadbase-1.0.so -> libgstbadbase-1.0.so.0.800.0
 -rwxr-xr-x	root/root	usr/lib/libgstbadvideo-1.0.la
--rwxr-xr-x	root/root	usr/lib/libgstbadvideo-1.0.so.0.603.0
-lrwxrwxrwx	root/root	usr/lib/libgstbadvideo-1.0.so.0 -> libgstbadvideo-1.0.so.0.603.0
-lrwxrwxrwx	root/root	usr/lib/libgstbadvideo-1.0.so -> libgstbadvideo-1.0.so.0.603.0
+-rwxr-xr-x	root/root	usr/lib/libgstbadvideo-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadvideo-1.0.so.0 -> libgstbadvideo-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadvideo-1.0.so -> libgstbadvideo-1.0.so.0.800.0
 -rwxr-xr-x	root/root	usr/lib/libgstbasecamerabinsrc-1.0.la
--rwxr-xr-x	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so.0.603.0
-lrwxrwxrwx	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so.0 -> libgstbasecamerabinsrc-1.0.so.0.603.0
-lrwxrwxrwx	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so -> libgstbasecamerabinsrc-1.0.so.0.603.0
+-rwxr-xr-x	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so.0 -> libgstbasecamerabinsrc-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so -> libgstbasecamerabinsrc-1.0.so.0.800.0
 -rwxr-xr-x	root/root	usr/lib/libgstcodecparsers-1.0.la
--rwxr-xr-x	root/root	usr/lib/libgstcodecparsers-1.0.so.0.603.0
-lrwxrwxrwx	root/root	usr/lib/libgstcodecparsers-1.0.so.0 -> libgstcodecparsers-1.0.so.0.603.0
-lrwxrwxrwx	root/root	usr/lib/libgstcodecparsers-1.0.so -> libgstcodecparsers-1.0.so.0.603.0
+-rwxr-xr-x	root/root	usr/lib/libgstcodecparsers-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstcodecparsers-1.0.so.0 -> libgstcodecparsers-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstcodecparsers-1.0.so -> libgstcodecparsers-1.0.so.0.800.0
 -rwxr-xr-x	root/root	usr/lib/libgstinsertbin-1.0.la
--rwxr-xr-x	root/root	usr/lib/libgstinsertbin-1.0.so.0.603.0
-lrwxrwxrwx	root/root	usr/lib/libgstinsertbin-1.0.so.0 -> libgstinsertbin-1.0.so.0.603.0
-lrwxrwxrwx	root/root	usr/lib/libgstinsertbin-1.0.so -> libgstinsertbin-1.0.so.0.603.0
+-rwxr-xr-x	root/root	usr/lib/libgstinsertbin-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstinsertbin-1.0.so.0 -> libgstinsertbin-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstinsertbin-1.0.so -> libgstinsertbin-1.0.so.0.800.0
 -rwxr-xr-x	root/root	usr/lib/libgstmpegts-1.0.la
--rwxr-xr-x	root/root	usr/lib/libgstmpegts-1.0.so.0.603.0
-lrwxrwxrwx	root/root	usr/lib/libgstmpegts-1.0.so.0 -> libgstmpegts-1.0.so.0.603.0
-lrwxrwxrwx	root/root	usr/lib/libgstmpegts-1.0.so -> libgstmpegts-1.0.so.0.603.0
+-rwxr-xr-x	root/root	usr/lib/libgstmpegts-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstmpegts-1.0.so.0 -> libgstmpegts-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstmpegts-1.0.so -> libgstmpegts-1.0.so.0.800.0
 -rwxr-xr-x	root/root	usr/lib/libgstphotography-1.0.la
--rwxr-xr-x	root/root	usr/lib/libgstphotography-1.0.so.0.603.0
-lrwxrwxrwx	root/root	usr/lib/libgstphotography-1.0.so.0 -> libgstphotography-1.0.so.0.603.0
-lrwxrwxrwx	root/root	usr/lib/libgstphotography-1.0.so -> libgstphotography-1.0.so.0.603.0
+-rwxr-xr-x	root/root	usr/lib/libgstphotography-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstphotography-1.0.so.0 -> libgstphotography-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstphotography-1.0.so -> libgstphotography-1.0.so.0.800.0
+-rwxr-xr-x	root/root	usr/lib/libgstplayer-1.0.la
+-rwxr-xr-x	root/root	usr/lib/libgstplayer-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstplayer-1.0.so.0 -> libgstplayer-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgstplayer-1.0.so -> libgstplayer-1.0.so.0.800.0
 -rwxr-xr-x	root/root	usr/lib/libgsturidownloader-1.0.la
--rwxr-xr-x	root/root	usr/lib/libgsturidownloader-1.0.so.0.603.0
-lrwxrwxrwx	root/root	usr/lib/libgsturidownloader-1.0.so.0 -> libgsturidownloader-1.0.so.0.603.0
-lrwxrwxrwx	root/root	usr/lib/libgsturidownloader-1.0.so -> libgsturidownloader-1.0.so.0.603.0
+-rwxr-xr-x	root/root	usr/lib/libgsturidownloader-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgsturidownloader-1.0.so.0 -> libgsturidownloader-1.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libgsturidownloader-1.0.so -> libgsturidownloader-1.0.so.0.800.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-bad-audio-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-bad-base-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-bad-video-1.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-codecparsers-1.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-insertbin-1.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-mpegts-1.0.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-player-1.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gstreamer-plugins-bad-1.0.pc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/gstreamer-1.0/

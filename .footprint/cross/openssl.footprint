@@ -663,6 +663,15 @@ lrwxrwxrwx	root/root	usr/share/man/man3/DSA_SIG_free.3ssl -> DSA_SIG_new.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/DSA_sign_setup.3ssl -> DSA_sign.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/DSA_size.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/DSA_verify.3ssl -> DSA_sign.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/DTLS_client_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/DTLS_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/DTLS_server_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/DTLSv1_2_client_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/DTLSv1_2_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/DTLSv1_2_server_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/DTLSv1_client_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/DTLSv1_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/DTLSv1_server_method.3ssl -> SSL_CTX_new.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/ec.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/ecdsa.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/ECDSA_do_sign.3ssl -> ecdsa.3ssl
@@ -1569,6 +1578,15 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_use_psk_identity_hint.3ssl -> SSL_CT
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_use_RSAPrivateKey.3ssl -> SSL_CTX_use_certificate.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_use_RSAPrivateKey_ASN1.3ssl -> SSL_CTX_use_certificate.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_use_RSAPrivateKey_file.3ssl -> SSL_CTX_use_certificate.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSLv23_client_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSLv23_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSLv23_server_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSLv2_client_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSLv2_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSLv2_server_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSLv3_client_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSLv3_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSLv3_server_method.3ssl -> SSL_CTX_new.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_want.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_want_nothing.3ssl -> SSL_want.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_want_read.3ssl -> SSL_want.3ssl
@@ -1576,6 +1594,15 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_want_write.3ssl -> SSL_want.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_want_x509_lookup.3ssl -> SSL_want.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_write.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/threads.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/TLSv1_1_client_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/TLSv1_1_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/TLSv1_1_server_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/TLSv1_2_client_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/TLSv1_2_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/TLSv1_2_server_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/TLSv1_client_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/TLSv1_method.3ssl -> SSL_CTX_new.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/TLSv1_server_method.3ssl -> SSL_CTX_new.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/ui.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/UI_add_error_string.3ssl -> ui.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/UI_add_info_string.3ssl -> ui.3ssl

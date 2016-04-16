@@ -71,6 +71,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/systemd-notify
 -rwxr-xr-x	root/root	usr/bin/systemd-nspawn
 -rwxr-xr-x	root/root	usr/bin/systemd-path
+-rwxr-xr-x	root/root	usr/bin/systemd-resolve
 -rwxr-xr-x	root/root	usr/bin/systemd-run
 -rwxr-xr-x	root/root	usr/bin/systemd-stdio-bridge
 -rwxr-xr-x	root/root	usr/bin/systemd-sysusers
@@ -120,9 +121,9 @@ lrwxrwxrwx	root/root	usr/lib/libsystemd-journal.so -> libsystemd-journal.so.0.11
 -rwxr-xr-x	root/root	usr/lib/libsystemd-login.so.0.9.3
 lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so.0 -> libsystemd-login.so.0.9.3
 lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so -> libsystemd-login.so.0.9.3
--rwxr-xr-x	root/root	usr/lib/libsystemd.so.0.13.0
-lrwxrwxrwx	root/root	usr/lib/libsystemd.so.0 -> libsystemd.so.0.13.0
-lrwxrwxrwx	root/root	usr/lib/libsystemd.so -> libsystemd.so.0.13.0
+-rwxr-xr-x	root/root	usr/lib/libsystemd.so.0.14.0
+lrwxrwxrwx	root/root	usr/lib/libsystemd.so.0 -> libsystemd.so.0.14.0
+lrwxrwxrwx	root/root	usr/lib/libsystemd.so -> libsystemd.so.0.14.0
 -rwxr-xr-x	root/root	usr/lib/libudev.la
 -rwxr-xr-x	root/root	usr/lib/libudev.so.1.6.4
 lrwxrwxrwx	root/root	usr/lib/libudev.so.1 -> libudev.so.1.6.4
@@ -206,7 +207,6 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/default.target -> multi-user.target
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-remount-fs
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-reply-password
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-resolved
--rwxr-xr-x	root/root	usr/lib/systemd/systemd-resolve-host
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-rfkill
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-shutdown
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-sleep
@@ -318,6 +318,7 @@ drwxr-xr-x	root/root	usr/lib/systemd/system-sleep/
 -rw-r--r--	root/root	usr/lib/systemd/system/smartcard.target
 -rw-r--r--	root/root	usr/lib/systemd/system/sockets.target
 drwxr-xr-x	root/root	usr/lib/systemd/system/sockets.target.wants/
+lrwxrwxrwx	root/root	usr/lib/systemd/system/sockets.target.wants/systemd-coredump.socket -> ../systemd-coredump.socket
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sockets.target.wants/systemd-initctl.socket -> ../systemd-initctl.socket
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sockets.target.wants/systemd-journald-audit.socket -> ../systemd-journald-audit.socket
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sockets.target.wants/systemd-journald-dev-log.socket -> ../systemd-journald-dev-log.socket
@@ -367,6 +368,8 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-vconsol
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-binfmt.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-bus-proxyd.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-bus-proxyd.socket
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-coredump@.service
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-coredump.socket
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-exit.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-firstboot.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-fsck-root.service
@@ -526,6 +529,7 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-delta
 -rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-detect-virt
 -rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-nspawn
+-rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-path
 -rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-run
 -rw-r--r--	root/root	usr/share/bash-completion/completions/timedatectl
 -rw-r--r--	root/root	usr/share/bash-completion/completions/udevadm
@@ -581,6 +585,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/systemd-notify.1
 -rw-r--r--	root/root	usr/share/man/man1/systemd-nspawn.1
 -rw-r--r--	root/root	usr/share/man/man1/systemd-path.1
+-rw-r--r--	root/root	usr/share/man/man1/systemd-resolve.1
 -rw-r--r--	root/root	usr/share/man/man1/systemd-run.1
 -rw-r--r--	root/root	usr/share/man/man1/systemd-tty-ask-password-agent.1
 -rw-r--r--	root/root	usr/share/man/man1/timedatectl.1
@@ -588,6 +593,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/libudev.3
 -rw-r--r--	root/root	usr/share/man/man3/SD_ALERT.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_booted.3
+-rw-r--r--	root/root	usr/share/man/man3/sd-bus.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_creds_get_audit_login_uid.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_creds_get_audit_session_id.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_creds_get_augmented_mask.3
@@ -627,6 +633,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_creds_new_from_pid.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_creds_ref.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_creds_unref.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_bus_creds_unrefp.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_default.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_default_system.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_default_user.3
@@ -711,35 +718,83 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_release_name.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_request_name.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_unref.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_bus_unrefp.3
 -rw-r--r--	root/root	usr/share/man/man3/SD_CRIT.3
 -rw-r--r--	root/root	usr/share/man/man3/sd-daemon.3
 -rw-r--r--	root/root	usr/share/man/man3/SD_DEBUG.3
 -rw-r--r--	root/root	usr/share/man/man3/SD_EMERG.3
 -rw-r--r--	root/root	usr/share/man/man3/SD_ERR.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event.3
+-rw-r--r--	root/root	usr/share/man/man3/sd-event.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_add_child.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_add_defer.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_add_exit.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_add_io.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_add_post.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_add_signal.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_add_time.3
+-rw-r--r--	root/root	usr/share/man/man3/SD_EVENT_ARMED.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_child_handler_t.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_default.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_dispatch.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_exit.3
+-rw-r--r--	root/root	usr/share/man/man3/SD_EVENT_EXITING.3
+-rw-r--r--	root/root	usr/share/man/man3/SD_EVENT_FINISHED.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_get_exit_code.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_get_fd.3
--rw-r--r--	root/root	usr/share/man/man3/sd_event_get_name.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_get_state.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_get_tid.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_get_watchdog.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_handler_t.3
+-rw-r--r--	root/root	usr/share/man/man3/SD_EVENT_INITIAL.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_io_handler_t.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_loop.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_new.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_now.3
+-rw-r--r--	root/root	usr/share/man/man3/SD_EVENT_OFF.3
+-rw-r--r--	root/root	usr/share/man/man3/SD_EVENT_ON.3
+-rw-r--r--	root/root	usr/share/man/man3/SD_EVENT_ONESHOT.3
+-rw-r--r--	root/root	usr/share/man/man3/SD_EVENT_PENDING.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_prepare.3
+-rw-r--r--	root/root	usr/share/man/man3/SD_EVENT_PREPARING.3
+-rw-r--r--	root/root	usr/share/man/man3/SD_EVENT_PRIORITY_IDLE.3
+-rw-r--r--	root/root	usr/share/man/man3/SD_EVENT_PRIORITY_IMPORTANT.3
+-rw-r--r--	root/root	usr/share/man/man3/SD_EVENT_PRIORITY_NORMAL.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_ref.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_run.3
--rw-r--r--	root/root	usr/share/man/man3/sd_event_set_name.3
+-rw-r--r--	root/root	usr/share/man/man3/SD_EVENT_RUNNING.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_set_watchdog.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_signal_handler_t.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_source_get_child_pid.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source_get_description.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source_get_enabled.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source_get_event.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source_get_io_events.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source_get_io_fd.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source_get_io_revents.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source_get_pending.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source_get_priority.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_source_get_signal.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_source_get_time.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_source_get_time_accuracy.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_source_get_time_clock.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source_get_userdata.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source_ref.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source_set_description.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source_set_enabled.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source_set_io_events.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source_set_io_fd.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source_set_prepare.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source_set_priority.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_source_set_time.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_source_set_time_accuracy.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source_set_userdata.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source_unref.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_source_unrefp.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_time_handler_t.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_unref.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_event_unrefp.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_event_wait.3
 -rw-r--r--	root/root	usr/share/man/man3/sd-id128.3
 -rw-r--r--	root/root	usr/share/man/man3/SD_ID128_CONST_STR.3
@@ -769,11 +824,13 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_close.3
 -rw-r--r--	root/root	usr/share/man/man3/SD_JOURNAL_CURRENT_USER.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_enumerate_data.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_journal_enumerate_fields.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_enumerate_unique.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_flush_matches.3
 -rw-r--r--	root/root	usr/share/man/man3/SD_JOURNAL_FOREACH.3
 -rw-r--r--	root/root	usr/share/man/man3/SD_JOURNAL_FOREACH_BACKWARDS.3
 -rw-r--r--	root/root	usr/share/man/man3/SD_JOURNAL_FOREACH_DATA.3
+-rw-r--r--	root/root	usr/share/man/man3/SD_JOURNAL_FOREACH_FIELD.3
 -rw-r--r--	root/root	usr/share/man/man3/SD_JOURNAL_FOREACH_UNIQUE.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_get_catalog.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_get_catalog_for_message_id.3
@@ -788,6 +845,8 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_get_realtime_usec.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_get_timeout.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_get_usage.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_journal_has_persistent_files.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_journal_has_runtime_files.3
 -rw-r--r--	root/root	usr/share/man/man3/SD_JOURNAL_INVALIDATE.3
 -rw-r--r--	root/root	usr/share/man/man3/SD_JOURNAL_LOCAL_ONLY.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_next.3
@@ -806,6 +865,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_query_unique.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_reliable_fd.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_restart_data.3
+-rw-r--r--	root/root	usr/share/man/man3/sd_journal_restart_fields.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_restart_unique.3
 -rw-r--r--	root/root	usr/share/man/man3/SD_JOURNAL_RUNTIME_ONLY.3
 -rw-r--r--	root/root	usr/share/man/man3/sd_journal_seek_cursor.3
@@ -904,6 +964,7 @@ drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/binfmt.d.5
 -rw-r--r--	root/root	usr/share/man/man5/coredump.conf.5
 -rw-r--r--	root/root	usr/share/man/man5/coredump.conf.d.5
+-rw-r--r--	root/root	usr/share/man/man5/dnssec-trust-anchors.d.5
 -rw-r--r--	root/root	usr/share/man/man5/hostname.5
 -rw-r--r--	root/root	usr/share/man/man5/journald.conf.5
 -rw-r--r--	root/root	usr/share/man/man5/journald.conf.d.5
@@ -926,8 +987,10 @@ drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/systemd.kill.5
 -rw-r--r--	root/root	usr/share/man/man5/systemd.link.5
 -rw-r--r--	root/root	usr/share/man/man5/systemd.mount.5
+-rw-r--r--	root/root	usr/share/man/man5/systemd.negative.5
 -rw-r--r--	root/root	usr/share/man/man5/systemd.nspawn.5
 -rw-r--r--	root/root	usr/share/man/man5/systemd.path.5
+-rw-r--r--	root/root	usr/share/man/man5/systemd.positive.5
 -rw-r--r--	root/root	usr/share/man/man5/systemd.preset.5
 -rw-r--r--	root/root	usr/share/man/man5/systemd.resource-control.5
 -rw-r--r--	root/root	usr/share/man/man5/systemd.scope.5
