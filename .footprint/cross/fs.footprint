@@ -8601,7 +8601,6 @@ lrwxrwxrwx	root/root	usr/bin/vimdiff -> vim
 lrwxrwxrwx	root/root	usr/bin/vi -> vim
 -rwxr-xr-x	root/root	usr/bin/vmstat
 -rwxr-xr-x	root/root	usr/bin/w
--rwxr-xr-x	root/root	usr/bin/wall
 -rwxr-xr-x	root/root	usr/bin/watch
 -rwxr-xr-x	root/root	usr/bin/wc
 -rwxr-xr-x	root/root	usr/bin/wdctl
@@ -10315,7 +10314,6 @@ lrwxrwxrwx	root/root	usr/sbin/arptables-compat -> xtables-compat-multi
 -rwxr-xr-x	root/root	usr/sbin/blkdiscard
 -rwxr-xr-x	root/root	usr/sbin/blkid
 -rwxr-xr-x	root/root	usr/sbin/blockdev
--rwxr-xr-x	root/root	usr/sbin/bootlogd
 -rwxr-xr-x	root/root	usr/sbin/cfdisk
 -rwxr-xr-x	root/root	usr/sbin/chcpu
 -rwxr-xr-x	root/root	usr/sbin/chgpasswd
@@ -10333,7 +10331,6 @@ lrwxrwxrwx	root/root	usr/sbin/ebtables-compat -> xtables-compat-multi
 -rwxr-xr-x	root/root	usr/sbin/fsck.cramfs
 -rwxr-xr-x	root/root	usr/sbin/fsck.minix
 -rwxr-xr-x	root/root	usr/sbin/fsfreeze
--rwxr-xr-x	root/root	usr/sbin/fstab-decode
 -rwxr-xr-x	root/root	usr/sbin/fstrim
 -rwxr-xr-x	root/root	usr/sbin/genccode
 -rwxr-xr-x	root/root	usr/sbin/gencmn
@@ -10347,7 +10344,6 @@ lrwxrwxrwx	root/root	usr/sbin/ebtables-compat -> xtables-compat-multi
 -rwxr-xr-x	root/root	usr/sbin/grpck
 -rwxr-xr-x	root/root	usr/sbin/grpconv
 -rwxr-xr-x	root/root	usr/sbin/grpunconv
--rwxr-xr-x	root/root	usr/sbin/halt
 -rwxr-xr-x	root/root	usr/sbin/hwclock
 -rwxr-xr-x	root/root	usr/sbin/iconvconfig
 -rwxr-xr-x	root/root	usr/sbin/icupkg
@@ -10368,7 +10364,6 @@ lrwxrwxrwx	root/root	usr/sbin/iptables-restore -> xtables-multi
 lrwxrwxrwx	root/root	usr/sbin/iptables-save -> xtables-multi
 lrwxrwxrwx	root/root	usr/sbin/iptables -> xtables-multi
 -rwxr-xr-x	root/root	usr/sbin/iptunnel
--rwxr-xr-x	root/root	usr/sbin/killall5
 -rwxr-xr-x	root/root	usr/sbin/ldattach
 -rwxr-xr-x	root/root	usr/sbin/ldconfig
 -rwxr-xr-x	root/root	usr/sbin/losetup
@@ -10398,7 +10393,6 @@ lrwxrwxrwx	root/root	usr/sbin/iptables -> xtables-multi
 -rwxr-xr-x	root/root	usr/sbin/partx
 -rwxr-xr-x	root/root	usr/sbin/pivot_root
 -rwxr-xr-x	root/root	usr/sbin/plipconfig
-lrwxrwxrwx	root/root	usr/sbin/poweroff -> halt
 -rwxr-xr-x	root/root	usr/sbin/pwck
 -rwxr-xr-x	root/root	usr/sbin/pwconv
 -rwxr-xr-x	root/root	usr/sbin/pwunconv
@@ -10407,15 +10401,12 @@ lrwxrwxrwx	root/root	usr/sbin/poweroff -> halt
 -rwxr-xr-x	root/root	usr/sbin/raw
 -rwxr-xr-x	root/root	usr/sbin/rdisc
 -rwxr-xr-x	root/root	usr/sbin/readprofile
-lrwxrwxrwx	root/root	usr/sbin/reboot -> halt
 -rwxr-xr-x	root/root	usr/sbin/resizepart
 -rwxr-xr-x	root/root	usr/sbin/route
 -rwxr-xr-x	root/root	usr/sbin/rtcwake
--rwxr-xr-x	root/root	usr/sbin/runlevel
 -rwxr-xr-x	root/root	usr/sbin/safe_finger
 -rwxr-xr-x	root/root	usr/sbin/setpci
 -rwxr-xr-x	root/root	usr/sbin/sfdisk
--rwxr-xr-x	root/root	usr/sbin/shutdown
 -rwxr-xr-x	root/root	usr/sbin/slattach
 -rwxr-xr-x	root/root	usr/sbin/sln
 -rwxr-xr-x	root/root	usr/sbin/sshd
@@ -10428,7 +10419,6 @@ lrwxrwxrwx	root/root	usr/sbin/reboot -> halt
 -rwxr-xr-x	root/root	usr/sbin/tcpd
 -rwxr-xr-x	root/root	usr/sbin/tcpdchk
 -rwxr-xr-x	root/root	usr/sbin/tcpdmatch
-lrwxrwxrwx	root/root	usr/sbin/telinit -> init
 -rwxr-xr-x	root/root	usr/sbin/tracepath
 -rwxr-xr-x	root/root	usr/sbin/tracepath6
 -rwsr-xr-x	root/root	usr/sbin/traceroute6
@@ -12701,7 +12691,6 @@ lrwxrwxrwx	root/root	usr/share/man/man1/unxz.1 -> xz.1
 -rw-r--r--	root/root	usr/share/man/man1/verify.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/version.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/w.1
--rw-r--r--	root/root	usr/share/man/man1/wall.1
 -rw-r--r--	root/root	usr/share/man/man1/watch.1
 -rw-r--r--	root/root	usr/share/man/man1/wget.1
 -rw-r--r--	root/root	usr/share/man/man1/whatis.1
@@ -16730,8 +16719,6 @@ lrwxrwxrwx	root/root	usr/share/man/man5/host.deny.5.gz -> hosts_access.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/hostname.5
 -rw-r--r--	root/root	usr/share/man/man5/hosts_access.5
 -rw-r--r--	root/root	usr/share/man/man5/hosts_options.5
--rw-r--r--	root/root	usr/share/man/man5/initscript.5
--rw-r--r--	root/root	usr/share/man/man5/inittab.5
 -rw-r--r--	root/root	usr/share/man/man5/journald.conf.5
 -rw-r--r--	root/root	usr/share/man/man5/journald.conf.d.5
 -rw-r--r--	root/root	usr/share/man/man5/keymaps.5
@@ -16841,7 +16828,6 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/blkdiscard.8
 -rw-r--r--	root/root	usr/share/man/man8/blkid.8
 -rw-r--r--	root/root	usr/share/man/man8/blockdev.8
--rw-r--r--	root/root	usr/share/man/man8/bootlogd.8
 -rw-r--r--	root/root	usr/share/man/man8/catman.8
 -rw-r--r--	root/root	usr/share/man/man8/cfdisk.8
 -rw-r--r--	root/root	usr/share/man/man8/chcpu.8
@@ -16862,7 +16848,6 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/fsck.cramfs.8
 -rw-r--r--	root/root	usr/share/man/man8/fsck.minix.8
 -rw-r--r--	root/root	usr/share/man/man8/fsfreeze.8
--rw-r--r--	root/root	usr/share/man/man8/fstab-decode.8
 -rw-r--r--	root/root	usr/share/man/man8/fstrim.8
 -rw-r--r--	root/root	usr/share/man/man8/genccode.8
 -rw-r--r--	root/root	usr/share/man/man8/gencmn.8
@@ -16880,7 +16865,6 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/hwclock.8
 -rw-r--r--	root/root	usr/share/man/man8/icupkg.8
 -rw-r--r--	root/root	usr/share/man/man8/ifconfig.8
--rw-r--r--	root/root	usr/share/man/man8/init.8
 -rw-r--r--	root/root	usr/share/man/man8/insmod.8
 -rw-r--r--	root/root	usr/share/man/man8/ip6tables.8
 -rw-r--r--	root/root	usr/share/man/man8/ip6tables-restore.8
@@ -16892,7 +16876,6 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/isosize.8
 -rw-r--r--	root/root	usr/share/man/man8/kbdrate.8
 -rw-r--r--	root/root	usr/share/man/man8/kernel-install.8
--rw-r--r--	root/root	usr/share/man/man8/killall5.8
 -rw-r--r--	root/root	usr/share/man/man8/kmod.8
 -rw-r--r--	root/root	usr/share/man/man8/lastlog.8
 -rw-r--r--	root/root	usr/share/man/man8/ldattach.8
@@ -16932,7 +16915,6 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/nss-mymachines.8
 -rw-r--r--	root/root	usr/share/man/man8/nss-resolve.8
 -rw-r--r--	root/root	usr/share/man/man8/partx.8
--rw-r--r--	root/root	usr/share/man/man8/pidof.8
 -rw-r--r--	root/root	usr/share/man/man8/ping.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pivot_root.8
 -rw-r--r--	root/root	usr/share/man/man8/plipconfig.8
