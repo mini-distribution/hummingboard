@@ -28,9 +28,9 @@ drwxr-xr-x	root/root	usr/include/gnutls/
 -rw-r--r--	root/root	usr/include/gnutls/x509.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libgnutls.la
--rwxr-xr-x	root/root	usr/lib/libgnutls.so.30.6.0
-lrwxrwxrwx	root/root	usr/lib/libgnutls.so.30 -> libgnutls.so.30.6.0
-lrwxrwxrwx	root/root	usr/lib/libgnutls.so -> libgnutls.so.30.6.0
+-rwxr-xr-x	root/root	usr/lib/libgnutls.so.30.6.3
+lrwxrwxrwx	root/root	usr/lib/libgnutls.so.30 -> libgnutls.so.30.6.3
+lrwxrwxrwx	root/root	usr/lib/libgnutls.so -> libgnutls.so.30.6.3
 -rwxr-xr-x	root/root	usr/lib/libgnutlsxx.la
 -rwxr-xr-x	root/root	usr/lib/libgnutlsxx.so.28.1.0
 lrwxrwxrwx	root/root	usr/lib/libgnutlsxx.so.28 -> libgnutlsxx.so.28.1.0

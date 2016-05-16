@@ -16,9 +16,9 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/sndfile.hh
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libsndfile.la
--rwxr-xr-x	root/root	usr/lib/libsndfile.so.1.0.25
-lrwxrwxrwx	root/root	usr/lib/libsndfile.so.1 -> libsndfile.so.1.0.25
-lrwxrwxrwx	root/root	usr/lib/libsndfile.so -> libsndfile.so.1.0.25
+-rwxr-xr-x	root/root	usr/lib/libsndfile.so.1.0.26
+lrwxrwxrwx	root/root	usr/lib/libsndfile.so.1 -> libsndfile.so.1.0.26
+lrwxrwxrwx	root/root	usr/lib/libsndfile.so -> libsndfile.so.1.0.26
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/sndfile.pc
 drwxr-xr-x	root/root	usr/share/
@@ -33,3 +33,4 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/sndfile-metadata-get.1
 -rw-r--r--	root/root	usr/share/man/man1/sndfile-metadata-set.1
 -rw-r--r--	root/root	usr/share/man/man1/sndfile-play.1
+-rw-r--r--	root/root	usr/share/man/man1/sndfile-salvage.1

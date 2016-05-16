@@ -8078,6 +8078,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/aconnect
 -rwxr-xr-x	root/root	usr/bin/addftinfo
 -rwxr-xr-x	root/root	usr/bin/afmtodit
+-rwxr-xr-x	root/root	usr/bin/alsabat
 -rwxr-xr-x	root/root	usr/bin/alsaloop
 -rwxr-xr-x	root/root	usr/bin/alsamixer
 -rwxr-xr-x	root/root	usr/bin/alsatplg
@@ -8099,7 +8100,6 @@ lrwxrwxrwx	root/root	usr/bin/awk -> gawk
 -rwxr-xr-x	root/root	usr/bin/basename
 -rwxr-xr-x	root/root	usr/bin/bash
 -r-xr-xr-x	root/root	usr/bin/bashbug
--rwxr-xr-x	root/root	usr/bin/bat
 -rwxr-xr-x	root/root	usr/bin/busctl
 -rwxr-xr-x	root/root	usr/bin/cal
 lrwxrwxrwx	root/root	usr/bin/captoinfo -> tic
@@ -9256,9 +9256,9 @@ lrwxrwxrwx	root/root	usr/lib/libg2d.so -> libg2d.so.0.8
 lrwxrwxrwx	root/root	usr/lib/libGAL.so -> libGAL-fb.so
 -rwxr-xr-x	root/root	usr/lib/libGAL-wl.so
 -rwxr-xr-x	root/root	usr/lib/libGAL-x11.so
--rwxr-xr-x	root/root	usr/lib/libgcrypt.so.20.0.5
-lrwxrwxrwx	root/root	usr/lib/libgcrypt.so.20 -> libgcrypt.so.20.0.5
-lrwxrwxrwx	root/root	usr/lib/libgcrypt.so -> libgcrypt.so.20.0.5
+-rwxr-xr-x	root/root	usr/lib/libgcrypt.so.20.1.0
+lrwxrwxrwx	root/root	usr/lib/libgcrypt.so.20 -> libgcrypt.so.20.1.0
+lrwxrwxrwx	root/root	usr/lib/libgcrypt.so -> libgcrypt.so.20.1.0
 -rwxr-xr-x	root/root	usr/lib/libgc_wayland_protocol.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libgc_wayland_protocol.so.0 -> libgc_wayland_protocol.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libgc_wayland_protocol.so -> libgc_wayland_protocol.so.0.0.0
@@ -9268,9 +9268,9 @@ lrwxrwxrwx	root/root	usr/lib/libgdbm_compat.so -> libgdbm_compat.so.4.0.0
 -rwxr-xr-x	root/root	usr/lib/libgdbm.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libgdbm.so.4 -> libgdbm.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libgdbm.so -> libgdbm.so.4.0.0
--rwxr-xr-x	root/root	usr/lib/libgio-2.0.so.0.4800.0
-lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so.0 -> libgio-2.0.so.0.4800.0
-lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so -> libgio-2.0.so.0.4800.0
+-rwxr-xr-x	root/root	usr/lib/libgio-2.0.so.0.4800.1
+lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so.0 -> libgio-2.0.so.0.4800.1
+lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so -> libgio-2.0.so.0.4800.1
 -rwxr-xr-x	root/root	usr/lib/libGLES_CL.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libGLES_CL.so.1 -> libGLES_CL.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libGLES_CL.so -> libGLES_CL.so.1.1.0
@@ -9290,74 +9290,74 @@ lrwxrwxrwx	root/root	usr/lib/libGLESv2.so.2 -> libGLESv2-fb.so
 lrwxrwxrwx	root/root	usr/lib/libGLESv2.so -> libGLESv2-fb.so
 -rwxr-xr-x	root/root	usr/lib/libGLESv2-wl.so
 -rwxr-xr-x	root/root	usr/lib/libGLESv2-x11.so
--rwxr-xr-x	root/root	usr/lib/libglib-2.0.so.0.4800.0
-lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so.0 -> libglib-2.0.so.0.4800.0
-lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so -> libglib-2.0.so.0.4800.0
+-rwxr-xr-x	root/root	usr/lib/libglib-2.0.so.0.4800.1
+lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so.0 -> libglib-2.0.so.0.4800.1
+lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so -> libglib-2.0.so.0.4800.1
 -rwxr-xr-x	root/root	usr/lib/libGLSLC.so
 -rwxr-xr-x	root/root	usr/lib/libGL.so.1.2
 lrwxrwxrwx	root/root	usr/lib/libGL.so.1.2.0 -> libGL.so.1.2
 lrwxrwxrwx	root/root	usr/lib/libGL.so.1 -> libGL.so.1.2
 lrwxrwxrwx	root/root	usr/lib/libGL.so -> libGL.so.1.2
--rwxr-xr-x	root/root	usr/lib/libgmodule-2.0.so.0.4800.0
-lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so.0 -> libgmodule-2.0.so.0.4800.0
-lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so -> libgmodule-2.0.so.0.4800.0
+-rwxr-xr-x	root/root	usr/lib/libgmodule-2.0.so.0.4800.1
+lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so.0 -> libgmodule-2.0.so.0.4800.1
+lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so -> libgmodule-2.0.so.0.4800.1
 -rwxr-xr-x	root/root	usr/lib/libgmp.so.10.3.0
 lrwxrwxrwx	root/root	usr/lib/libgmp.so.10 -> libgmp.so.10.3.0
 lrwxrwxrwx	root/root	usr/lib/libgmp.so -> libgmp.so.10.3.0
 -rwxr-xr-x	root/root	usr/lib/libgmpxx.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libgmpxx.so.4 -> libgmpxx.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libgmpxx.so -> libgmpxx.so.4.5.0
--rwxr-xr-x	root/root	usr/lib/libgnutls.so.30.6.0
-lrwxrwxrwx	root/root	usr/lib/libgnutls.so.30 -> libgnutls.so.30.6.0
-lrwxrwxrwx	root/root	usr/lib/libgnutls.so -> libgnutls.so.30.6.0
+-rwxr-xr-x	root/root	usr/lib/libgnutls.so.30.6.3
+lrwxrwxrwx	root/root	usr/lib/libgnutls.so.30 -> libgnutls.so.30.6.3
+lrwxrwxrwx	root/root	usr/lib/libgnutls.so -> libgnutls.so.30.6.3
 -rwxr-xr-x	root/root	usr/lib/libgnutlsxx.so.28.1.0
 lrwxrwxrwx	root/root	usr/lib/libgnutlsxx.so.28 -> libgnutlsxx.so.28.1.0
 lrwxrwxrwx	root/root	usr/lib/libgnutlsxx.so -> libgnutlsxx.so.28.1.0
--rwxr-xr-x	root/root	usr/lib/libgobject-2.0.so.0.4800.0
-lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so.0 -> libgobject-2.0.so.0.4800.0
-lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so -> libgobject-2.0.so.0.4800.0
+-rwxr-xr-x	root/root	usr/lib/libgobject-2.0.so.0.4800.1
+lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so.0 -> libgobject-2.0.so.0.4800.1
+lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so -> libgobject-2.0.so.0.4800.1
 -rwxr-xr-x	root/root	usr/lib/libgpg-error.so.0.17.0
 lrwxrwxrwx	root/root	usr/lib/libgpg-error.so.0 -> libgpg-error.so.0.17.0
 lrwxrwxrwx	root/root	usr/lib/libgpg-error.so -> libgpg-error.so.0.17.0
--rwxr-xr-x	root/root	usr/lib/libgstadaptivedemux-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstadaptivedemux-1.0.so.0 -> libgstadaptivedemux-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstadaptivedemux-1.0.so -> libgstadaptivedemux-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstallocators-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstallocators-1.0.so.0 -> libgstallocators-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstallocators-1.0.so -> libgstallocators-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstapp-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstapp-1.0.so.0 -> libgstapp-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstapp-1.0.so -> libgstapp-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstaudio-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstaudio-1.0.so.0 -> libgstaudio-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstaudio-1.0.so -> libgstaudio-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstbadaudio-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstbadaudio-1.0.so.0 -> libgstbadaudio-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstbadaudio-1.0.so -> libgstbadaudio-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstbadbase-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstbadbase-1.0.so.0 -> libgstbadbase-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstbadbase-1.0.so -> libgstbadbase-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstbadvideo-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstbadvideo-1.0.so.0 -> libgstbadvideo-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstbadvideo-1.0.so -> libgstbadvideo-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstbase-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstbase-1.0.so.0 -> libgstbase-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstbase-1.0.so -> libgstbase-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so.0 -> libgstbasecamerabinsrc-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so -> libgstbasecamerabinsrc-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstcheck-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstcheck-1.0.so.0 -> libgstcheck-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstcheck-1.0.so -> libgstcheck-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstcodecparsers-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstcodecparsers-1.0.so.0 -> libgstcodecparsers-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstcodecparsers-1.0.so -> libgstcodecparsers-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstcontroller-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstcontroller-1.0.so.0 -> libgstcontroller-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstcontroller-1.0.so -> libgstcontroller-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstfft-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstfft-1.0.so.0 -> libgstfft-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstfft-1.0.so -> libgstfft-1.0.so.0.800.0
+-rwxr-xr-x	root/root	usr/lib/libgstadaptivedemux-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstadaptivedemux-1.0.so.0 -> libgstadaptivedemux-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstadaptivedemux-1.0.so -> libgstadaptivedemux-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstallocators-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstallocators-1.0.so.0 -> libgstallocators-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstallocators-1.0.so -> libgstallocators-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstapp-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstapp-1.0.so.0 -> libgstapp-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstapp-1.0.so -> libgstapp-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstaudio-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstaudio-1.0.so.0 -> libgstaudio-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstaudio-1.0.so -> libgstaudio-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstbadaudio-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadaudio-1.0.so.0 -> libgstbadaudio-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadaudio-1.0.so -> libgstbadaudio-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstbadbase-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadbase-1.0.so.0 -> libgstbadbase-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadbase-1.0.so -> libgstbadbase-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstbadvideo-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadvideo-1.0.so.0 -> libgstbadvideo-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstbadvideo-1.0.so -> libgstbadvideo-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstbase-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstbase-1.0.so.0 -> libgstbase-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstbase-1.0.so -> libgstbase-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so.0 -> libgstbasecamerabinsrc-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstbasecamerabinsrc-1.0.so -> libgstbasecamerabinsrc-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstcheck-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstcheck-1.0.so.0 -> libgstcheck-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstcheck-1.0.so -> libgstcheck-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstcodecparsers-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstcodecparsers-1.0.so.0 -> libgstcodecparsers-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstcodecparsers-1.0.so -> libgstcodecparsers-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstcontroller-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstcontroller-1.0.so.0 -> libgstcontroller-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstcontroller-1.0.so -> libgstcontroller-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstfft-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstfft-1.0.so.0 -> libgstfft-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstfft-1.0.so -> libgstfft-1.0.so.0.801.0
 -rwxr-xr-x	root/root	usr/lib/libgstimxblitter.so.0.12.0
 lrwxrwxrwx	root/root	usr/lib/libgstimxblitter.so.0 -> libgstimxblitter.so.0.12.0
 lrwxrwxrwx	root/root	usr/lib/libgstimxblitter.so -> libgstimxblitter.so.0.12.0
@@ -9367,51 +9367,51 @@ lrwxrwxrwx	root/root	usr/lib/libgstimxcommon.so -> libgstimxcommon.so.0.12.0
 -rwxr-xr-x	root/root	usr/lib/libgstimxcompositor.so.0.12.0
 lrwxrwxrwx	root/root	usr/lib/libgstimxcompositor.so.0 -> libgstimxcompositor.so.0.12.0
 lrwxrwxrwx	root/root	usr/lib/libgstimxcompositor.so -> libgstimxcompositor.so.0.12.0
--rwxr-xr-x	root/root	usr/lib/libgstinsertbin-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstinsertbin-1.0.so.0 -> libgstinsertbin-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstinsertbin-1.0.so -> libgstinsertbin-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstmpegts-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstmpegts-1.0.so.0 -> libgstmpegts-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstmpegts-1.0.so -> libgstmpegts-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstnet-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstnet-1.0.so.0 -> libgstnet-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstnet-1.0.so -> libgstnet-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstpbutils-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstpbutils-1.0.so.0 -> libgstpbutils-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstpbutils-1.0.so -> libgstpbutils-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstphotography-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstphotography-1.0.so.0 -> libgstphotography-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstphotography-1.0.so -> libgstphotography-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstplayer-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstplayer-1.0.so.0 -> libgstplayer-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstplayer-1.0.so -> libgstplayer-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstreamer-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstreamer-1.0.so.0 -> libgstreamer-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstreamer-1.0.so -> libgstreamer-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstriff-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstriff-1.0.so.0 -> libgstriff-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstriff-1.0.so -> libgstriff-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstrtp-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstrtp-1.0.so.0 -> libgstrtp-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstrtp-1.0.so -> libgstrtp-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstrtsp-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstrtsp-1.0.so.0 -> libgstrtsp-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstrtsp-1.0.so -> libgstrtsp-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstsdp-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstsdp-1.0.so.0 -> libgstsdp-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstsdp-1.0.so -> libgstsdp-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgsttag-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgsttag-1.0.so.0 -> libgsttag-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgsttag-1.0.so -> libgsttag-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgsturidownloader-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgsturidownloader-1.0.so.0 -> libgsturidownloader-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgsturidownloader-1.0.so -> libgsturidownloader-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgstvideo-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstvideo-1.0.so.0 -> libgstvideo-1.0.so.0.800.0
-lrwxrwxrwx	root/root	usr/lib/libgstvideo-1.0.so -> libgstvideo-1.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libgthread-2.0.so.0.4800.0
-lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so.0 -> libgthread-2.0.so.0.4800.0
-lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so -> libgthread-2.0.so.0.4800.0
+-rwxr-xr-x	root/root	usr/lib/libgstinsertbin-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstinsertbin-1.0.so.0 -> libgstinsertbin-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstinsertbin-1.0.so -> libgstinsertbin-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstmpegts-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstmpegts-1.0.so.0 -> libgstmpegts-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstmpegts-1.0.so -> libgstmpegts-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstnet-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstnet-1.0.so.0 -> libgstnet-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstnet-1.0.so -> libgstnet-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstpbutils-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstpbutils-1.0.so.0 -> libgstpbutils-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstpbutils-1.0.so -> libgstpbutils-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstphotography-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstphotography-1.0.so.0 -> libgstphotography-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstphotography-1.0.so -> libgstphotography-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstplayer-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstplayer-1.0.so.0 -> libgstplayer-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstplayer-1.0.so -> libgstplayer-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstreamer-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstreamer-1.0.so.0 -> libgstreamer-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstreamer-1.0.so -> libgstreamer-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstriff-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstriff-1.0.so.0 -> libgstriff-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstriff-1.0.so -> libgstriff-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstrtp-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstrtp-1.0.so.0 -> libgstrtp-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstrtp-1.0.so -> libgstrtp-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstrtsp-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstrtsp-1.0.so.0 -> libgstrtsp-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstrtsp-1.0.so -> libgstrtsp-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstsdp-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstsdp-1.0.so.0 -> libgstsdp-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstsdp-1.0.so -> libgstsdp-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgsttag-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgsttag-1.0.so.0 -> libgsttag-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgsttag-1.0.so -> libgsttag-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgsturidownloader-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgsturidownloader-1.0.so.0 -> libgsturidownloader-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgsturidownloader-1.0.so -> libgsturidownloader-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgstvideo-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstvideo-1.0.so.0 -> libgstvideo-1.0.so.0.801.0
+lrwxrwxrwx	root/root	usr/lib/libgstvideo-1.0.so -> libgstvideo-1.0.so.0.801.0
+-rwxr-xr-x	root/root	usr/lib/libgthread-2.0.so.0.4800.1
+lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so.0 -> libgthread-2.0.so.0.4800.1
+lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so -> libgthread-2.0.so.0.4800.1
 -rwxr-xr-x	root/root	usr/lib/libharfbuzz-icu.so.0.941.0
 lrwxrwxrwx	root/root	usr/lib/libharfbuzz-icu.so.0 -> libharfbuzz-icu.so.0.941.0
 lrwxrwxrwx	root/root	usr/lib/libharfbuzz-icu.so -> libharfbuzz-icu.so.0.941.0
@@ -9421,9 +9421,9 @@ lrwxrwxrwx	root/root	usr/lib/libharfbuzz.so -> libharfbuzz.so.0.941.0
 -r-xr-xr-x	root/root	usr/lib/libhistory.so.6.3
 lrwxrwxrwx	root/root	usr/lib/libhistory.so.6 -> libhistory.so.6.3
 lrwxrwxrwx	root/root	usr/lib/libhistory.so -> libhistory.so.6
--rw-r--r--	root/root	usr/lib/libhogweed.so.4.1
-lrwxrwxrwx	root/root	usr/lib/libhogweed.so.4 -> libhogweed.so.4.1
-lrwxrwxrwx	root/root	usr/lib/libhogweed.so -> libhogweed.so.4.1
+-rw-r--r--	root/root	usr/lib/libhogweed.so.4.2
+lrwxrwxrwx	root/root	usr/lib/libhogweed.so.4 -> libhogweed.so.4.2
+lrwxrwxrwx	root/root	usr/lib/libhogweed.so -> libhogweed.so.4.2
 -rwxr-xr-x	root/root	usr/lib/libicudata.so.54.1
 lrwxrwxrwx	root/root	usr/lib/libicudata.so.54 -> libicudata.so.54.1
 lrwxrwxrwx	root/root	usr/lib/libicudata.so -> libicudata.so.54.1
@@ -9466,9 +9466,9 @@ lrwxrwxrwx	root/root	usr/lib/libipq.so -> libipq.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libiptc.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libiptc.so.0 -> libiptc.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libiptc.so -> libiptc.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libjpeg.so.9.1.0
-lrwxrwxrwx	root/root	usr/lib/libjpeg.so.9 -> libjpeg.so.9.1.0
-lrwxrwxrwx	root/root	usr/lib/libjpeg.so -> libjpeg.so.9.1.0
+-rwxr-xr-x	root/root	usr/lib/libjpeg.so.9.2.0
+lrwxrwxrwx	root/root	usr/lib/libjpeg.so.9 -> libjpeg.so.9.2.0
+lrwxrwxrwx	root/root	usr/lib/libjpeg.so -> libjpeg.so.9.2.0
 -rwxr-xr-x	root/root	usr/lib/libkmod.so.2.3.0
 lrwxrwxrwx	root/root	usr/lib/libkmod.so.2 -> libkmod.so.2.3.0
 lrwxrwxrwx	root/root	usr/lib/libkmod.so -> libkmod.so.2.3.0
@@ -9491,9 +9491,9 @@ lrwxrwxrwx	root/root	usr/lib/libm.so -> ../../lib/libm.so.6
 -rwxr-xr-x	root/root	usr/lib/libncurses.so.6.0
 lrwxrwxrwx	root/root	usr/lib/libncurses.so.6 -> libncurses.so.6.0
 lrwxrwxrwx	root/root	usr/lib/libncurses.so -> libncurses.so.6
--rw-r--r--	root/root	usr/lib/libnettle.so.6.1
-lrwxrwxrwx	root/root	usr/lib/libnettle.so.6 -> libnettle.so.6.1
-lrwxrwxrwx	root/root	usr/lib/libnettle.so -> libnettle.so.6.1
+-rw-r--r--	root/root	usr/lib/libnettle.so.6.2
+lrwxrwxrwx	root/root	usr/lib/libnettle.so.6 -> libnettle.so.6.2
+lrwxrwxrwx	root/root	usr/lib/libnettle.so -> libnettle.so.6.2
 -rwxr-xr-x	root/root	usr/lib/libnftnl.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libnftnl.so.4 -> libnftnl.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libnftnl.so -> libnftnl.so.4.0.0
@@ -9546,12 +9546,12 @@ lrwxrwxrwx	root/root	usr/lib/libogg.so -> libogg.so.0.8.2
 -rwxr-xr-x	root/root	usr/lib/libOpenVG.2d.so
 -rwxr-xr-x	root/root	usr/lib/libOpenVG.3d.so
 -rwxr-xr-x	root/root	usr/lib/libOpenVG.so
--rwxr-xr-x	root/root	usr/lib/liborc-0.4.so.0.23.0
-lrwxrwxrwx	root/root	usr/lib/liborc-0.4.so.0 -> liborc-0.4.so.0.23.0
-lrwxrwxrwx	root/root	usr/lib/liborc-0.4.so -> liborc-0.4.so.0.23.0
--rwxr-xr-x	root/root	usr/lib/liborc-test-0.4.so.0.23.0
-lrwxrwxrwx	root/root	usr/lib/liborc-test-0.4.so.0 -> liborc-test-0.4.so.0.23.0
-lrwxrwxrwx	root/root	usr/lib/liborc-test-0.4.so -> liborc-test-0.4.so.0.23.0
+-rwxr-xr-x	root/root	usr/lib/liborc-0.4.so.0.25.0
+lrwxrwxrwx	root/root	usr/lib/liborc-0.4.so.0 -> liborc-0.4.so.0.25.0
+lrwxrwxrwx	root/root	usr/lib/liborc-0.4.so -> liborc-0.4.so.0.25.0
+-rwxr-xr-x	root/root	usr/lib/liborc-test-0.4.so.0.25.0
+lrwxrwxrwx	root/root	usr/lib/liborc-test-0.4.so.0 -> liborc-test-0.4.so.0.25.0
+lrwxrwxrwx	root/root	usr/lib/liborc-test-0.4.so -> liborc-test-0.4.so.0.25.0
 -rwxr-xr-x	root/root	usr/lib/libpanel.so.6.0
 lrwxrwxrwx	root/root	usr/lib/libpanel.so.6 -> libpanel.so.6.0
 lrwxrwxrwx	root/root	usr/lib/libpanel.so -> libpanel.so.6
@@ -9574,9 +9574,9 @@ lrwxrwxrwx	root/root	usr/lib/libpcre.so -> libpcre.so.1.2.6
 -rwxr-xr-x	root/root	usr/lib/libpipeline.so.1.4.1
 lrwxrwxrwx	root/root	usr/lib/libpipeline.so.1 -> libpipeline.so.1.4.1
 lrwxrwxrwx	root/root	usr/lib/libpipeline.so -> libpipeline.so.1.4.1
--rwxr-xr-x	root/root	usr/lib/libpng16.so.16.20.0
-lrwxrwxrwx	root/root	usr/lib/libpng16.so.16 -> libpng16.so.16.20.0
-lrwxrwxrwx	root/root	usr/lib/libpng16.so -> libpng16.so.16.20.0
+-rwxr-xr-x	root/root	usr/lib/libpng16.so.16.21.0
+lrwxrwxrwx	root/root	usr/lib/libpng16.so.16 -> libpng16.so.16.21.0
+lrwxrwxrwx	root/root	usr/lib/libpng16.so -> libpng16.so.16.21.0
 lrwxrwxrwx	root/root	usr/lib/libpng.so -> libpng16.so
 -rwxr-xr-x	root/root	usr/lib/libprocps.so.5.0.0
 lrwxrwxrwx	root/root	usr/lib/libprocps.so.5 -> libprocps.so.5.0.0
@@ -9590,9 +9590,9 @@ lrwxrwxrwx	root/root	usr/lib/librt.so -> ../../lib/librt.so.1
 -rwxr-xr-x	root/root	usr/lib/libsmartcols.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libsmartcols.so.1 -> libsmartcols.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libsmartcols.so -> libsmartcols.so.1.1.0
--rwxr-xr-x	root/root	usr/lib/libsndfile.so.1.0.25
-lrwxrwxrwx	root/root	usr/lib/libsndfile.so.1 -> libsndfile.so.1.0.25
-lrwxrwxrwx	root/root	usr/lib/libsndfile.so -> libsndfile.so.1.0.25
+-rwxr-xr-x	root/root	usr/lib/libsndfile.so.1.0.26
+lrwxrwxrwx	root/root	usr/lib/libsndfile.so.1 -> libsndfile.so.1.0.26
+lrwxrwxrwx	root/root	usr/lib/libsndfile.so -> libsndfile.so.1.0.26
 -rwxr-xr-x	root/root	usr/lib/libsqlite3.so.0.8.6
 lrwxrwxrwx	root/root	usr/lib/libsqlite3.so.0 -> libsqlite3.so.0.8.6
 lrwxrwxrwx	root/root	usr/lib/libsqlite3.so -> libsqlite3.so.0.8.6
@@ -10306,6 +10306,7 @@ drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/accessdb
 -rwxr-xr-x	root/root	usr/sbin/addpart
 -rwxr-xr-x	root/root	usr/sbin/agetty
+-rwxr-xr-x	root/root	usr/sbin/alsabat-test.sh
 -rwxr-xr-x	root/root	usr/sbin/alsactl
 -rwxr-xr-x	root/root	usr/sbin/alsa-info.sh
 -rwxr-xr-x	root/root	usr/sbin/arp
@@ -11439,7 +11440,6 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/gio/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gio/home.png
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gio/icons.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gio/index.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gio/index.sgml
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gio/left-insensitive.png
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gio/left.png
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gio/menu-example.png
@@ -11589,7 +11589,6 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/glib/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/glib/gvariant-text.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/glib/home.png
 -rw-r--r--	root/root	usr/share/gtk-doc/html/glib/index.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/index.sgml
 -rw-r--r--	root/root	usr/share/gtk-doc/html/glib/left-insensitive.png
 -rw-r--r--	root/root	usr/share/gtk-doc/html/glib/left.png
 -rw-r--r--	root/root	usr/share/gtk-doc/html/glib/mainloop-states.gif
@@ -11672,7 +11671,6 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/gobject/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/howto-interface-properties.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/howto-signals.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/index.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/index.sgml
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/left-insensitive.png
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/left.png
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/pr01.html
@@ -12320,7 +12318,9 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/aconnect.1
 -rw-r--r--	root/root	usr/share/man/man1/addftinfo.1
 -rw-r--r--	root/root	usr/share/man/man1/afmtodit.1
+-rw-r--r--	root/root	usr/share/man/man1/alsabat.1
 -rw-r--r--	root/root	usr/share/man/man1/alsactl.1
+-rw-r--r--	root/root	usr/share/man/man1/alsa-info.sh.1
 -rw-r--r--	root/root	usr/share/man/man1/alsaloop.1
 -rw-r--r--	root/root	usr/share/man/man1/alsamixer.1
 -rw-r--r--	root/root	usr/share/man/man1/amidi.1
@@ -12336,7 +12336,6 @@ lrwxrwxrwx	root/root	usr/share/man/man1/arecord.1 -> aplay.1
 -rw-r--r--	root/root	usr/share/man/man1/attr.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/bash.1
 -rw-r--r--	root/root	usr/share/man/man1/bashbug.1
--rw-r--r--	root/root	usr/share/man/man1/bat.1
 -rw-r--r--	root/root	usr/share/man/man1/busctl.1
 -rw-r--r--	root/root	usr/share/man/man1/ca.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/cal.1
@@ -12627,6 +12626,7 @@ lrwxrwxrwx	root/root	usr/share/man/man1/sha512.1ssl -> dgst.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/sndfile-metadata-get.1
 -rw-r--r--	root/root	usr/share/man/man1/sndfile-metadata-set.1
 -rw-r--r--	root/root	usr/share/man/man1/sndfile-play.1
+-rw-r--r--	root/root	usr/share/man/man1/sndfile-salvage.1
 -rw-r--r--	root/root	usr/share/man/man1/soelim.1
 -rw-r--r--	root/root	usr/share/man/man1/speaker-test.1
 -rw-r--r--	root/root	usr/share/man/man1/speed.1ssl
@@ -13584,6 +13584,10 @@ lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_param_to_asn1.3ssl -> EVP_Enc
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_type.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CipherUpdate.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_cleanup.3ssl -> OpenSSL_add_all_algorithms.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_DecodeBlock.3ssl -> EVP_EncodeInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_DecodeFinal.3ssl -> EVP_EncodeInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_DecodeInit.3ssl -> EVP_EncodeInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_DecodeUpdate.3ssl -> EVP_EncodeInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_DecryptFinal.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_DecryptFinal_ex.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_DecryptInit.3ssl -> EVP_EncryptInit.3ssl
@@ -13616,6 +13620,10 @@ lrwxrwxrwx	root/root	usr/share/man/man3/EVP_DigestVerifyUpdate.3ssl -> EVP_Diges
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_dss1.3ssl -> EVP_DigestInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_dss.3ssl -> EVP_DigestInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_enc_null.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_EncodeBlock.3ssl -> EVP_EncodeInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_EncodeFinal.3ssl -> EVP_EncodeInit.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/EVP_EncodeInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_EncodeUpdate.3ssl -> EVP_EncodeInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_EncryptFinal.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_EncryptFinal_ex.3ssl -> EVP_EncryptInit.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/EVP_EncryptInit.3ssl
@@ -16123,6 +16131,8 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set1_chain_cert_store.3ssl -> SS
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set1_curves_list.3ssl -> SSL_CTX_set1_curves.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set1_param.3ssl -> SSL_CTX_get0_param.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set1_verify_cert_store.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set_alpn_protos.3ssl -> SSL_CTX_set_alpn_select_cb.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_alpn_select_cb.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_cert_cb.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_cert_store.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_cert_verify_callback.3ssl
@@ -16179,6 +16189,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSLeay_add_ssl_algorithms.3ssl -> SSL_li
 lrwxrwxrwx	root/root	usr/share/man/man3/SSLeay_version.3ssl -> OPENSSL_VERSION_NUMBER.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_flush_sessions.3ssl -> SSL_CTX_flush_sessions.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_free.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get0_alpn_selected.3ssl -> SSL_CTX_set_alpn_select_cb.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get0_chain_certs.3ssl -> SSL_CTX_add1_chain_cert.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get0_param.3ssl -> SSL_CTX_get0_param.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get1_curves.3ssl -> SSL_CTX_set1_curves.3ssl
@@ -16233,6 +16244,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_remove_session.3ssl -> SSL_CTX_add_s
 -rw-r--r--	root/root	usr/share/man/man3/SSL_rstate_string.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_rstate_string_long.3ssl -> SSL_rstate_string.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_select_current_cert.3ssl -> SSL_CTX_add1_chain_cert.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_select_next_proto.3ssl -> SSL_CTX_set_alpn_select_cb.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_SESSION_free.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_SESSION_get_ex_data.3ssl -> SSL_SESSION_get_ex_new_index.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_SESSION_get_ex_new_index.3ssl
@@ -16251,6 +16263,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set1_curves.3ssl -> SSL_CTX_set1_cur
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set1_curves_list.3ssl -> SSL_CTX_set1_curves.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set1_param.3ssl -> SSL_CTX_get0_param.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set1_verify_cert_store.3ssl -> SSL_CTX_set1_verify_cert_store.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set_alpn_protos.3ssl -> SSL_CTX_set_alpn_select_cb.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_set_bio.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set_cert_cb.3ssl -> SSL_CTX_set_cert_cb.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set_cipher_list.3ssl -> SSL_CTX_set_cipher_list.3ssl

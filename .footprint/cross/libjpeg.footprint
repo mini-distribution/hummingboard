@@ -12,9 +12,9 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/jpeglib.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libjpeg.la
--rwxr-xr-x	root/root	usr/lib/libjpeg.so.9.1.0
-lrwxrwxrwx	root/root	usr/lib/libjpeg.so.9 -> libjpeg.so.9.1.0
-lrwxrwxrwx	root/root	usr/lib/libjpeg.so -> libjpeg.so.9.1.0
+-rwxr-xr-x	root/root	usr/lib/libjpeg.so.9.2.0
+lrwxrwxrwx	root/root	usr/lib/libjpeg.so.9 -> libjpeg.so.9.2.0
+lrwxrwxrwx	root/root	usr/lib/libjpeg.so -> libjpeg.so.9.2.0
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
