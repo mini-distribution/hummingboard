@@ -87,7 +87,7 @@ Build system requirements:
                           libtool-bin libncurses5-dev gawk libexpat1-dev \
                           gettext u-boot-tools libglib2.0-dev intltool \
                           libxml2-utils docbook-xml cmake g++ pixz lzop \
-                          u-boot-tools docbook-xml ruby
+                          u-boot-tools ruby docbook-xsl
 
 
    Also requires reconfiguring "/bin/sh" to use bash:
