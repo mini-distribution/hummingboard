@@ -26,13 +26,13 @@ drwxr-xr-x	root/root	usr/include/harfbuzz/
 -rw-r--r--	root/root	usr/include/harfbuzz/hb-version.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libharfbuzz-icu.la
--rwxr-xr-x	root/root	usr/lib/libharfbuzz-icu.so.0.941.0
-lrwxrwxrwx	root/root	usr/lib/libharfbuzz-icu.so.0 -> libharfbuzz-icu.so.0.941.0
-lrwxrwxrwx	root/root	usr/lib/libharfbuzz-icu.so -> libharfbuzz-icu.so.0.941.0
+-rwxr-xr-x	root/root	usr/lib/libharfbuzz-icu.so.0.10200.7
+lrwxrwxrwx	root/root	usr/lib/libharfbuzz-icu.so.0 -> libharfbuzz-icu.so.0.10200.7
+lrwxrwxrwx	root/root	usr/lib/libharfbuzz-icu.so -> libharfbuzz-icu.so.0.10200.7
 -rwxr-xr-x	root/root	usr/lib/libharfbuzz.la
--rwxr-xr-x	root/root	usr/lib/libharfbuzz.so.0.941.0
-lrwxrwxrwx	root/root	usr/lib/libharfbuzz.so.0 -> libharfbuzz.so.0.941.0
-lrwxrwxrwx	root/root	usr/lib/libharfbuzz.so -> libharfbuzz.so.0.941.0
+-rwxr-xr-x	root/root	usr/lib/libharfbuzz.so.0.10200.7
+lrwxrwxrwx	root/root	usr/lib/libharfbuzz.so.0 -> libharfbuzz.so.0.10200.7
+lrwxrwxrwx	root/root	usr/lib/libharfbuzz.so -> libharfbuzz.so.0.10200.7
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/harfbuzz-icu.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/harfbuzz.pc
@@ -40,13 +40,36 @@ drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/gtk-doc/
 drwxr-xr-x	root/root	usr/share/gtk-doc/html/
 drwxr-xr-x	root/root	usr/share/gtk-doc/html/harfbuzz/
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/adding-text-to-the-buffer.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/annotation-glossary.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/api-index-0-9-10.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/api-index-0-9-11.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/api-index-0-9-20.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/api-index-0-9-22.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/api-index-0-9-28.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/api-index-0-9-2.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/api-index-0-9-30.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/api-index-0-9-31.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/api-index-0-9-38.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/api-index-0-9-39.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/api-index-0-9-41.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/api-index-0-9-42.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/api-index-0-9-5.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/api-index-0-9-7.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/api-index-0-9-8.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/api-index-1-0-5.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/api-index-1-1-2.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/api-index-1-1-3.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/api-index-full.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/ch01.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/buffers-language-script-and-direction.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/building.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/ch07.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/customizing-unicode-functions.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/deprecated-api-index.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/fonts-and-faces.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-Buffers.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz.devhelp2
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-blob.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-buffer.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-common.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-coretext.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-deprecated.html
@@ -58,23 +81,37 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/harfbuzz/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-graphite2.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-icu.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-ot-font.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-ot.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-ot-layout.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-ot-shape.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-ot-tag.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-set.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-shape-plan.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-unicode.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-uniscribe.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-hb-version.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/HarfBuzz.png
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/harfbuzz-Shaping.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/hello-harfbuzz.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/home.png
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/index.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/index.sgml
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/install-harfbuzz.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/left-insensitive.png
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/left.png
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/object-tree.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/plans-and-caching.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/pt01.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/pt02.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/right-insensitive.png
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/right.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/setting-buffer-properties.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/shaping-and-shape-plans.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/style.css
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/up-insensitive.png
 -rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/up.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/using-harfbuzzs-native-opentype-implementation.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/using-your-own-font-functions.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/what-about-the-other-scripts.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/what-is-harfbuzz.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/harfbuzz/why-is-it-called-harfbuzz.html
