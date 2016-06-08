@@ -2,7 +2,7 @@
 # URL: http://qt-project.org/doc/qt-5.0/qtcore/qtcore-index.html
 
 name=qtbase
-version=5.6.0
+version=5.6.1
 release=1
 source=(http://download.qt-project.org/official_releases/qt/${version%.*}/$version/submodules/$name-opensource-src-$version.tar.xz
         qmake.conf qplatformdefs.h qeglfshooks_imx6.cpp)
