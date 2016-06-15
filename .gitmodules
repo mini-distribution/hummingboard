@@ -1,15 +1,15 @@
 [submodule "buildfiles/cross/cross-core"]
 	path = buildfiles/cross/cross-core
-    url = https://github.com/mini-distribution/cross-core.git
+	url = https://github.com/mini-distribution/cross-core.git
 [submodule "buildfiles/cross/cross-opt"]
 	path = buildfiles/cross/cross-opt
-    url = https://github.com/mini-distribution/cross-opt.git
+	url = https://github.com/mini-distribution/cross-opt.git
 [submodule "buildfiles/cross/cross-extra"]
 	path = buildfiles/cross/cross-extra
-    url = https://github.com/mini-distribution/cross-extra.git
+	url = https://github.com/mini-distribution/cross-extra.git
 [submodule "buildfiles/cross/cross-freescale"]
 	path = buildfiles/cross/cross-freescale
-    url = https://github.com/mini-distribution/cross-freescale.git
+	url = https://github.com/mini-distribution/cross-freescale.git
 [submodule "buildfiles/native/native-opt"]
 	path = buildfiles/native/native-opt
 	url = https://github.com/mini-distribution/native-opt.git
