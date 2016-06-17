@@ -28,9 +28,9 @@ drwxr-xr-x	root/root	usr/include/gnutls/
 -rw-r--r--	root/root	usr/include/gnutls/x509.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libgnutls.la
--rwxr-xr-x	root/root	usr/lib/libgnutls.so.30.6.3
-lrwxrwxrwx	root/root	usr/lib/libgnutls.so.30 -> libgnutls.so.30.6.3
-lrwxrwxrwx	root/root	usr/lib/libgnutls.so -> libgnutls.so.30.6.3
+-rwxr-xr-x	root/root	usr/lib/libgnutls.so.30.6.4
+lrwxrwxrwx	root/root	usr/lib/libgnutls.so.30 -> libgnutls.so.30.6.4
+lrwxrwxrwx	root/root	usr/lib/libgnutls.so -> libgnutls.so.30.6.4
 -rwxr-xr-x	root/root	usr/lib/libgnutlsxx.la
 -rwxr-xr-x	root/root	usr/lib/libgnutlsxx.so.28.1.0
 lrwxrwxrwx	root/root	usr/lib/libgnutlsxx.so.28 -> libgnutlsxx.so.28.1.0
@@ -50,6 +50,24 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/srptool.1
 -rw-r--r--	root/root	usr/share/man/man1/tpmtool.1
 drwxr-xr-x	root/root	usr/share/man/man3/
+-rw-r--r--	root/root	usr/share/man/man3/dane_cert_type_name.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_cert_usage_name.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_match_type_name.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_query_data.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_query_deinit.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_query_entries.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_query_status.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_query_tlsa.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_query_to_raw_tlsa.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_raw_tlsa.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_state_deinit.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_state_init.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_state_set_dlv_file.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_strerror.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_verification_status_print.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_verify_crt.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_verify_crt_raw.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_verify_session_crt.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_aead_cipher_decrypt.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_aead_cipher_deinit.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_aead_cipher_encrypt.3

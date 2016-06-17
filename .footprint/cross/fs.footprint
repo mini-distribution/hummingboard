@@ -9380,9 +9380,9 @@ lrwxrwxrwx	root/root	usr/lib/libgmp.so -> libgmp.so.10.3.0
 -rwxr-xr-x	root/root	usr/lib/libgmpxx.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libgmpxx.so.4 -> libgmpxx.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libgmpxx.so -> libgmpxx.so.4.5.0
--rwxr-xr-x	root/root	usr/lib/libgnutls.so.30.6.3
-lrwxrwxrwx	root/root	usr/lib/libgnutls.so.30 -> libgnutls.so.30.6.3
-lrwxrwxrwx	root/root	usr/lib/libgnutls.so -> libgnutls.so.30.6.3
+-rwxr-xr-x	root/root	usr/lib/libgnutls.so.30.6.4
+lrwxrwxrwx	root/root	usr/lib/libgnutls.so.30 -> libgnutls.so.30.6.4
+lrwxrwxrwx	root/root	usr/lib/libgnutls.so -> libgnutls.so.30.6.4
 -rwxr-xr-x	root/root	usr/lib/libgnutlsxx.so.28.1.0
 lrwxrwxrwx	root/root	usr/lib/libgnutlsxx.so.28 -> libgnutlsxx.so.28.1.0
 lrwxrwxrwx	root/root	usr/lib/libgnutlsxx.so -> libgnutlsxx.so.28.1.0
@@ -9628,7 +9628,7 @@ lrwxrwxrwx	root/root	usr/lib/liborc-test-0.4.so -> liborc-test-0.4.so.0.25.0
 -rwxr-xr-x	root/root	usr/lib/libpanel.so.6.0
 lrwxrwxrwx	root/root	usr/lib/libpanel.so.6 -> libpanel.so.6.0
 lrwxrwxrwx	root/root	usr/lib/libpanel.so -> libpanel.so.6
--rw-r--r--	root/root	usr/lib/libpci.so.3.4.1
+-rw-r--r--	root/root	usr/lib/libpci.so.3.5.1
 -rwxr-xr-x	root/root	usr/lib/libpcre16.so.0.2.7
 lrwxrwxrwx	root/root	usr/lib/libpcre16.so.0 -> libpcre16.so.0.2.7
 lrwxrwxrwx	root/root	usr/lib/libpcre16.so -> libpcre16.so.0.2.7
@@ -11875,7 +11875,6 @@ drwxr-xr-x	root/root	usr/share/info/
 -rw-r--r--	root/root	usr/share/info/tar.info
 -rw-r--r--	root/root	usr/share/info/tar.info-1
 -rw-r--r--	root/root	usr/share/info/tar.info-2
--rw-r--r--	root/root	usr/share/info/tar.info-3
 drwxr-xr-x	root/root	usr/share/kbd/
 drwxr-xr-x	root/root	usr/share/kbd/consolefonts/
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/161.cp.gz
@@ -13372,6 +13371,24 @@ lrwxrwxrwx	root/root	usr/share/man/man3/d2i_X509_fp.3ssl -> d2i_X509.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_X509_REQ_bio.3ssl -> d2i_X509_REQ.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_X509_REQ_fp.3ssl -> d2i_X509_REQ.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/d2i_X509_SIG.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/dane_cert_type_name.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_cert_usage_name.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_match_type_name.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_query_data.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_query_deinit.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_query_entries.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_query_status.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_query_tlsa.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_query_to_raw_tlsa.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_raw_tlsa.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_state_deinit.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_state_init.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_state_set_dlv_file.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_strerror.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_verification_status_print.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_verify_crt.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_verify_crt_raw.3
+-rw-r--r--	root/root	usr/share/man/man3/dane_verify_session_crt.3
 -rw-r--r--	root/root	usr/share/man/man3/data.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/data_ahead.3form.gz -> data.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/data_behind.3form.gz -> data.3form.gz
